@@ -1,0 +1,60 @@
+Trajectory ID: 72b810ef-4156-4d09-8f08-a0cf57e7cefe
+Source Model: UI-TARS-0717-100step
+Domain: libreoffice_writer
+
+Task:
+I am peer-reviewing my friend's course outline. I think the last paragraph is redundant so I want to add strike-through on words in the last paragraph. Can you do this for me?
+
+Success Binary: True
+Success Raw: 1.0
+
+Number of Steps: 4
+
+============================================================
+TRAJECTORY
+============================================================
+
+==================================================
+STEP 1
+==================================================
+
+Thought:
+要给最后一段添加删除线，首先需要选中最后一段的文本。观察到最后一段是“Each student will be responsible for one discussion leading in class during the semester...project will be announced in class. The essay writing and presenting comprises 30% of final grade.”。所以第一步应该是用鼠标拖动选中这段文本，然后在工具栏找到删除线按钮（通常是带横线的S图标）点击，或者用格式菜单里的字符设置。现在先选中这段文本。
+
+步骤：
+1. 确定最后一段的范围，从“Each student”开始到“final grade.”结束。
+2. 用鼠标拖动选中这段文本。
+3. 找到工具栏中的删除线按钮（样式为S加横线），点击它来应用删除线格式。
+
+首先执行选中文本的操作，拖动鼠标从段落开头到结尾。
+
+Action:
+pyautogui.moveTo(673.92, 596.16)
+pyautogui.dragTo(1276.8, 664.2, duration=1.0)
+
+==================================================
+STEP 2
+==================================================
+
+Thought:
+现在已经选中了最后一段的文本，接下来需要找到删除线的按钮来应用格式。在LibreOffice Writer的工具栏中，删除线按钮通常显示为带有横线的“S”图标，或者可以通过格式菜单中的字符设置来添加。观察工具栏，在字体样式（B、I、U等）附近，有一个带横线的S图标，点击它就能给选中的文本添加删除线。所以下一步应该点击这个删除线按钮。
+
+Action:
+pyautogui.click(800.64, 143.64, button='left')
+
+==================================================
+STEP 3
+==================================================
+
+Thought:
+现在已经成功给最后一段文本添加了删除线。为了确保修改不会丢失，应该保存文档。可以使用快捷键Ctrl+S来保存，这是最快捷的方式。
+
+Action:
+pyautogui.hotkey('ctrl', 's')
+
+==================================================
+STEP 4
+==================================================
+
+Action:
+DONE

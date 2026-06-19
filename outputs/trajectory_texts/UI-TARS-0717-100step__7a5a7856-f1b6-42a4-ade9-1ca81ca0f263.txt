@@ -1,0 +1,42 @@
+Trajectory ID: 7a5a7856-f1b6-42a4-ade9-1ca81ca0f263
+Source Model: UI-TARS-0717-100step
+Domain: chrome
+
+Task:
+Can you save this webpage I'm looking at to bookmarks bar so I can come back to it later?
+
+Success Binary: False
+Success Raw: 0.0
+
+Number of Steps: 3
+
+============================================================
+TRAJECTORY
+============================================================
+
+==================================================
+STEP 1
+==================================================
+
+Thought:
+要将当前网页保存到书签栏，在Chrome浏览器中有几种方法。首先看地址栏右侧，有个星形图标，点击它可以添加书签。或者用快捷键Ctrl+D。这里直接点击地址栏旁的星形图标是最直接的方式，这样就能把当前的"The Illustrated Transformer"网页添加到书签栏，方便后续访问。
+
+Action:
+pyautogui.click(1624.32, 87.48, button='left')
+
+==================================================
+STEP 2
+==================================================
+
+Thought:
+现在弹出了书签添加的对话框，已经自动填好了网页名称，文件夹默认是"All Bookmarks"。要完成保存到书签栏的操作，需要点击对话框里的"Done"按钮，这样就能确认添加书签，完成任务。
+
+Action:
+pyautogui.click(1578.24, 297.0, button='left')
+
+==================================================
+STEP 3
+==================================================
+
+Action:
+DONE

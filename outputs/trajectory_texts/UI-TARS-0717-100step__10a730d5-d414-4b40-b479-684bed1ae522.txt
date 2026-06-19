@@ -1,0 +1,62 @@
+Trajectory ID: 10a730d5-d414-4b40-b479-684bed1ae522
+Source Model: UI-TARS-0717-100step
+Domain: thunderbird
+
+Task:
+Considering I work late into the night and use Thunderbird frequently, I find that a full dark mode would be easier on my eyes during those hours. Can you help me enable a complete dark mode in Thunderbird?
+
+Success Binary: True
+Success Raw: 1.0
+
+Number of Steps: 5
+
+============================================================
+TRAJECTORY
+============================================================
+
+==================================================
+STEP 1
+==================================================
+
+Thought:
+要在Thunderbird中启用完整的深色模式，首先需要找到主题设置相关的入口。通常Thunderbird的设置可以通过右上角的菜单按钮（三横线图标）进入。所以第一步应该点击右上角的菜单按钮，打开菜单后找到设置选项，进而查找主题相关的配置。
+
+Action:
+pyautogui.click(1835.52, 83.16, button='left')
+
+==================================================
+STEP 2
+==================================================
+
+Thought:
+现在菜单已经展开，要启用深色模式，需要找到主题相关的设置。在菜单中看到“Add-ons and Themes”选项，这应该是管理附加组件和主题的地方，点击它可以进入主题设置界面，从而选择深色主题。
+
+Action:
+pyautogui.click(1620.48, 378.0, button='left')
+
+==================================================
+STEP 3
+==================================================
+
+Thought:
+现在进入了附加组件管理器界面，要设置深色主题，需要点击左侧的“Themes”选项，这样就能进入主题设置页面，查看和选择深色主题。
+
+Action:
+pyautogui.click(199.68, 333.72, button='left')
+
+==================================================
+STEP 4
+==================================================
+
+Thought:
+现在在主题管理页面，看到有Dark主题选项，旁边有Enable按钮。要启用完整的深色模式，需要点击Dark主题对应的Enable按钮，这样就能切换到深色主题，让界面更适合夜间使用。
+
+Action:
+pyautogui.click(1011.84, 666.36, button='left')
+
+==================================================
+STEP 5
+==================================================
+
+Action:
+DONE

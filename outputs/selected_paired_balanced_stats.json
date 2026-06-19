@@ -1,0 +1,164 @@
+{
+  "input_file": "outputs\\screened_manifest.jsonl",
+  "output_file": "outputs\\selected_paired_balanced_manifest.jsonl",
+  "seed": 42,
+  "target_size": null,
+  "target_num_tasks": 150,
+  "max_tasks_per_stratum": null,
+  "balance_columns": [
+    "domain",
+    "success_binary"
+  ],
+  "required_source_models": [
+    "doubao-1-5-thinking-vision-pro-250428-100step",
+    "UI-TARS-0717-100step"
+  ],
+  "include_incomplete": false,
+  "paired_task_requirement": true,
+  "selection_unit": "trajectory_id_task_group",
+  "num_input_records": 722,
+  "num_candidate_records": 477,
+  "num_candidate_paired_task_groups": 201,
+  "num_selected_paired_task_groups": 150,
+  "num_selected_records": 300,
+  "candidate_pairing_summary": {
+    "required_source_models": [
+      "doubao-1-5-thinking-vision-pro-250428-100step",
+      "UI-TARS-0717-100step"
+    ],
+    "num_task_ids": 276,
+    "complete_paired_task_ids": 201,
+    "incomplete_task_ids": 75,
+    "source_model_set_counts": {
+      "UI-TARS-0717-100step": 45,
+      "UI-TARS-0717-100step + doubao-1-5-thinking-vision-pro-250428-100step": 201,
+      "doubao-1-5-thinking-vision-pro-250428-100step": 30
+    },
+    "paired_task_requirement": true
+  },
+  "selected_pairing_summary": {
+    "required_source_models": [
+      "doubao-1-5-thinking-vision-pro-250428-100step",
+      "UI-TARS-0717-100step"
+    ],
+    "num_task_ids": 150,
+    "complete_paired_task_ids": 150,
+    "incomplete_task_ids": 0,
+    "source_model_set_counts": {
+      "UI-TARS-0717-100step + doubao-1-5-thinking-vision-pro-250428-100step": 150
+    },
+    "paired_task_requirement": true
+  },
+  "candidate_record_column_counts": {
+    "domain": {
+      "chrome": 54,
+      "gimp": 29,
+      "libreoffice_calc": 69,
+      "libreoffice_impress": 54,
+      "libreoffice_writer": 24,
+      "multi_apps": 161,
+      "os": 25,
+      "thunderbird": 14,
+      "vlc": 24,
+      "vs_code": 23
+    },
+    "success_binary": {
+      "False": 371,
+      "None": 13,
+      "True": 93
+    },
+    "source_model": {
+      "UI-TARS-0717-100step": 246,
+      "doubao-1-5-thinking-vision-pro-250428-100step": 231
+    }
+  },
+  "selected_record_column_counts": {
+    "domain": {
+      "chrome": 44,
+      "gimp": 26,
+      "libreoffice_calc": 50,
+      "libreoffice_impress": 40,
+      "libreoffice_writer": 20,
+      "multi_apps": 54,
+      "os": 16,
+      "thunderbird": 12,
+      "vlc": 20,
+      "vs_code": 18
+    },
+    "success_binary": {
+      "False": 221,
+      "None": 11,
+      "True": 68
+    },
+    "source_model": {
+      "UI-TARS-0717-100step": 150,
+      "doubao-1-5-thinking-vision-pro-250428-100step": 150
+    }
+  },
+  "candidate_task_strata_counts": {
+    "domain=chrome | success_binary=False": 12,
+    "domain=chrome | success_binary=False+True": 4,
+    "domain=chrome | success_binary=True": 6,
+    "domain=gimp | success_binary=False": 9,
+    "domain=gimp | success_binary=False+True": 3,
+    "domain=gimp | success_binary=True": 1,
+    "domain=libreoffice_calc | success_binary=False": 19,
+    "domain=libreoffice_calc | success_binary=False+None": 1,
+    "domain=libreoffice_calc | success_binary=False+True": 5,
+    "domain=libreoffice_calc | success_binary=True": 5,
+    "domain=libreoffice_impress | success_binary=False": 16,
+    "domain=libreoffice_impress | success_binary=False+True": 2,
+    "domain=libreoffice_impress | success_binary=None": 1,
+    "domain=libreoffice_impress | success_binary=True": 3,
+    "domain=libreoffice_writer | success_binary=False": 7,
+    "domain=libreoffice_writer | success_binary=False+True": 3,
+    "domain=multi_apps | success_binary=False": 58,
+    "domain=multi_apps | success_binary=False+None": 2,
+    "domain=multi_apps | success_binary=False+True": 7,
+    "domain=multi_apps | success_binary=None": 2,
+    "domain=multi_apps | success_binary=True": 2,
+    "domain=os | success_binary=False": 7,
+    "domain=os | success_binary=None": 1,
+    "domain=thunderbird | success_binary=False": 3,
+    "domain=thunderbird | success_binary=False+True": 1,
+    "domain=thunderbird | success_binary=True": 2,
+    "domain=vlc | success_binary=False": 8,
+    "domain=vlc | success_binary=False+True": 1,
+    "domain=vlc | success_binary=True": 1,
+    "domain=vs_code | success_binary=False": 7,
+    "domain=vs_code | success_binary=False+True": 2
+  },
+  "selected_task_strata_counts": {
+    "domain=chrome | success_binary=False": 12,
+    "domain=chrome | success_binary=False+True": 4,
+    "domain=chrome | success_binary=True": 6,
+    "domain=gimp | success_binary=False": 9,
+    "domain=gimp | success_binary=False+True": 3,
+    "domain=gimp | success_binary=True": 1,
+    "domain=libreoffice_calc | success_binary=False": 14,
+    "domain=libreoffice_calc | success_binary=False+None": 1,
+    "domain=libreoffice_calc | success_binary=False+True": 5,
+    "domain=libreoffice_calc | success_binary=True": 5,
+    "domain=libreoffice_impress | success_binary=False": 14,
+    "domain=libreoffice_impress | success_binary=False+True": 2,
+    "domain=libreoffice_impress | success_binary=None": 1,
+    "domain=libreoffice_impress | success_binary=True": 3,
+    "domain=libreoffice_writer | success_binary=False": 7,
+    "domain=libreoffice_writer | success_binary=False+True": 3,
+    "domain=multi_apps | success_binary=False": 14,
+    "domain=multi_apps | success_binary=False+None": 2,
+    "domain=multi_apps | success_binary=False+True": 7,
+    "domain=multi_apps | success_binary=None": 2,
+    "domain=multi_apps | success_binary=True": 2,
+    "domain=os | success_binary=False": 7,
+    "domain=os | success_binary=None": 1,
+    "domain=thunderbird | success_binary=False": 3,
+    "domain=thunderbird | success_binary=False+True": 1,
+    "domain=thunderbird | success_binary=True": 2,
+    "domain=vlc | success_binary=False": 8,
+    "domain=vlc | success_binary=False+True": 1,
+    "domain=vlc | success_binary=True": 1,
+    "domain=vs_code | success_binary=False": 7,
+    "domain=vs_code | success_binary=False+True": 2
+  }
+}

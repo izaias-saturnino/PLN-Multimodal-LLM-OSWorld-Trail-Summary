@@ -1,0 +1,138 @@
+Trajectory ID: 5812b315-e7bd-4265-b51f-863c02174c28
+Source Model: UI-TARS-0717-100step
+Domain: os
+
+Task:
+Please create an SSH user named "charles" with password "Ex@mpleP@55w0rd!" on Ubuntu who is only allowed to access the folder "/home/test1".
+
+Success Binary: False
+Success Raw: 0.0
+
+Number of Steps: 11
+
+============================================================
+TRAJECTORY
+============================================================
+
+==================================================
+STEP 1
+==================================================
+
+Thought:
+要创建指定的SSH用户，首先需要打开终端。在Ubuntu系统中，终端可以通过点击左下角的九宫格图标（显示应用程序）来查找，或者使用快捷键Ctrl+Alt+T。不过先通过点击左上角的“Activities”按钮来打开活动概览，这样能搜索终端。
+
+首先，点击屏幕左上角的“Activities”按钮，进入活动概览界面，以便搜索终端应用程序。
+
+Action:
+pyautogui.click(42.24, 12.96, button='left')
+
+==================================================
+STEP 2
+==================================================
+
+Thought:
+现在已经进入了活动概览界面，顶部有搜索框。要打开终端来执行用户创建和权限设置的命令，需要在搜索框中输入“terminal”来找到终端应用程序。
+
+首先，点击搜索框激活它，然后输入“terminal”来搜索终端。
+
+Action:
+pyperclip.copy('terminal')
+pyautogui.hotkey('ctrl', 'v')
+
+==================================================
+STEP 3
+==================================================
+
+Thought:
+现在在活动概览的搜索界面，需要输入“terminal”来找到终端程序。之前可能输入没成功，现在重新在搜索框输入“terminal”，这样就能显示终端图标，然后打开它来执行后续的用户创建命令。
+
+所以下一步是在搜索框中输入“terminal”，确保搜索到终端应用。
+
+Action:
+pyperclip.copy('terminal')
+pyautogui.hotkey('ctrl', 'v')
+
+==================================================
+STEP 4
+==================================================
+
+Thought:
+现在搜索结果中显示了终端图标，需要点击它来打开终端窗口，这样才能执行创建用户、设置密码和权限的命令。终端图标是一个灰色的矩形，里面有“>_”符号，下面标有“Terminal”。
+
+所以下一步是点击终端图标，打开终端。
+
+Action:
+pyautogui.click(990.72, 184.68, button='left')
+
+==================================================
+STEP 5
+==================================================
+
+Thought:
+现在终端已经打开，首先需要创建用户charles，并指定其主目录为/home/test1。不过创建用户需要管理员权限，所以使用sudo命令。命令应该是sudo useradd -d /home/test1 -m charles。这里-d指定主目录，-m会创建该目录（如果不存在）。
+
+首先输入这个命令，执行用户创建。
+
+Action:
+pyperclip.copy('sudo useradd -d /home/test1 -m charles')
+pyautogui.hotkey('ctrl', 'v')
+
+==================================================
+STEP 6
+==================================================
+
+Thought:
+刚才输入命令时可能没成功，终端里还是空的。现在需要重新输入创建用户的命令：sudo useradd -d /home/test1 -m charles。这个命令的作用是创建用户charles，指定主目录为/home/test1，并且-m参数会创建该目录（如果不存在）。确保终端窗口是激活的，然后输入这条命令，之后按回车执行。
+
+Action:
+pyperclip.copy('sudo useradd -d /home/test1 -m charles')
+pyautogui.hotkey('ctrl', 'v')
+
+==================================================
+STEP 7
+==================================================
+
+Thought:
+看来之前输入命令时终端没激活，导致输入无效。现在先点击终端窗口的输入区域激活它，然后输入正确的命令：sudo useradd -d /home/test1 -m charles。激活后再输入，这样命令才能被终端接收。
+
+Action:
+pyautogui.click(547.2, 116.64, button='left')
+
+==================================================
+STEP 8
+==================================================
+
+Thought:
+现在终端已经激活，先清理掉之前错误输入的字符（按Backspace删除），然后输入正确的命令：sudo useradd -d /home/test1 -m charles。这个命令用于创建用户charles，指定主目录为/home/test1，-m参数会创建该目录。输入完成后按回车执行，之后可能需要输入管理员密码。
+
+Action:
+pyautogui.hotkey('backspace')
+
+==================================================
+STEP 9
+==================================================
+
+Thought:
+现在终端已经清理干净，接下来需要输入创建用户的命令。首先，使用sudo useradd -d /home/test1 -m charles来创建用户charles，并指定主目录为/home/test1，-m参数会自动创建该目录（如果不存在）。输入这条命令，然后按回车执行，之后可能需要输入管理员密码。
+
+Action:
+pyperclip.copy('sudo useradd -d /home/test1 -m charles')
+pyautogui.hotkey('ctrl', 'v')
+
+==================================================
+STEP 10
+==================================================
+
+Thought:
+刚才输入命令时可能又没成功，终端里还是空的。现在确认终端窗口是激活的（光标在闪烁），重新输入命令：sudo useradd -d /home/test1 -m charles。输入时仔细检查每个字符，确保正确，然后按回车执行。
+
+Action:
+pyperclip.copy('sudo useradd -d /home/test1 -m charles')
+pyautogui.hotkey('ctrl', 'v')
+
+==================================================
+STEP 11
+==================================================
+
+Action:
+FAIL

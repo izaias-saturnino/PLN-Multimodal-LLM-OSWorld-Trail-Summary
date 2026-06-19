@@ -1,0 +1,150 @@
+Trajectory ID: e2392362-125e-4f76-a2ee-524b183a3412
+Source Model: UI-TARS-0717-100step
+Domain: multi_apps
+
+Task:
+I recently started using the famous personal academic homepage template from academicpages.github.io to build my own personal homepage, and I have cloned it to my local ~/Code/Website folder. According to an online tutorial, I can configure my name and contact information in the _config.yaml file. However, I am not familiar with the YAML file format. Please help me find the sections related to the name and contact information in this file and change them to "Test Account" and "Test@gmail.com".
+
+Success Binary: False
+Success Raw: 0.0
+
+Number of Steps: 13
+
+============================================================
+TRAJECTORY
+============================================================
+
+==================================================
+STEP 1
+==================================================
+
+Thought:
+现在需要修改本地~/Code/Website里的_config.yaml文件。首先得打开文件管理器找到那个文件夹。左边任务栏有文件管理器图标（灰色文件夹样的），点击它来浏览本地文件，找到Code/Website目录，然后定位到_config.yaml文件，编辑其中的名字和联系信息。
+
+首先，点击左侧的文件管理器图标（第九个图标，灰色文件夹），打开文件浏览器，以便导航到~/Code/Website文件夹。
+
+Action:
+pyautogui.click(30.72, 604.8, button='left')
+
+==================================================
+STEP 2
+==================================================
+
+Thought:
+现在在文件管理器的Home目录，看到Code文件夹。需要进入Code文件夹，然后找到Website子文件夹，因为目标文件在~/Code/Website里。所以下一步应该双击Code文件夹图标，进入该目录。
+
+Action:
+pyautogui.doubleClick(309.12, 114.48, button='left')
+
+==================================================
+STEP 3
+==================================================
+
+Thought:
+现在在Code目录里，看到Website文件夹。需要进入这个文件夹才能找到_config.yaml文件。所以下一步应该双击Website文件夹图标，进入该目录。
+
+Action:
+pyautogui.doubleClick(347.52, 114.48, button='left')
+
+==================================================
+STEP 4
+==================================================
+
+Thought:
+现在在Website目录里，看到academicpages.github.io文件夹，这应该是克隆下来的模板目录。需要进入这个文件夹才能找到_config.yaml文件。所以下一步双击这个文件夹图标，进入其中。
+
+Action:
+pyautogui.doubleClick(347.52, 114.48, button='left')
+
+==================================================
+STEP 5
+==================================================
+
+Thought:
+现在在academicpages.github.io目录里，看到_config.yml文件（注意是.yml，YAML格式）。需要打开这个文件来编辑名字和联系信息。应该双击这个文件，用合适的编辑器打开它。
+
+Action:
+pyautogui.doubleClick(503.04, 114.48, button='left')
+
+==================================================
+STEP 6
+==================================================
+
+Thought:
+现在_config.yml文件已经打开，需要找到name和email相关的配置。首先看name字段：在Basic Site Settings里，name那行是: &name "Your Name"，需要改成"Test Account"。然后email字段在author部分，email: "none@example.org"，改成"Test@gmail.com"。
+
+首先处理name字段：找到第13行（大概）的name: &name "Your Name"，选中"Your Name"，替换成"Test Account"。先点击这个位置，选中要修改的文本。
+
+Action:
+pyautogui.click(456.96, 351.0, button='left')
+
+==================================================
+STEP 7
+==================================================
+
+Thought:
+现在要修改name字段的值。看到name那行是：name: &name "Your Name"。需要选中"Your Name"这个文本，替换成"Test Account"。所以先拖动鼠标选中"Your Name"这部分，从引号内的开头到结尾。
+
+Action:
+pyautogui.moveTo(447.36, 351.0)
+pyautogui.dragTo(547.2, 351.0, duration=1.0)
+
+==================================================
+STEP 8
+==================================================
+
+Thought:
+现在已经选中了name字段里的"Your Name"，需要替换成"Test Account"。直接输入新的内容，因为选中的文本会被输入的内容替换掉。
+
+Action:
+pyperclip.copy('Test Account')
+pyautogui.hotkey('ctrl', 'v')
+
+==================================================
+STEP 9
+==================================================
+
+Thought:
+现在name字段已经改好了，接下来处理email字段。在author部分，看到email: "none@example.org"，需要改成"Test@gmail.com"。先找到这行，点击选中引号里的内容。
+
+Action:
+pyautogui.click(397.44, 732.24, button='left')
+
+==================================================
+STEP 10
+==================================================
+
+Thought:
+现在要修改email字段的值，看到email那行是：email: "none@example.org"。需要选中引号里的内容，替换成"Test@gmail.com"。所以拖动鼠标选中"none@example.org"这部分文本。
+
+Action:
+pyautogui.moveTo(349.44, 732.24)
+pyautogui.dragTo(501.12, 732.24, duration=1.0)
+
+==================================================
+STEP 11
+==================================================
+
+Thought:
+现在已经选中了email字段里的"none@example.org"，需要替换成"Test@gmail.com"。直接输入新的邮箱地址，因为选中的文本会被输入的内容替换。
+
+Action:
+pyperclip.copy('Test@gmail.com')
+pyautogui.hotkey('ctrl', 'v')
+
+==================================================
+STEP 12
+==================================================
+
+Thought:
+现在name和email都修改好了，需要保存文件。点击编辑器右上角的"Save"按钮，保存修改后的_config.yml文件。
+
+Action:
+pyautogui.click(808.32, 95.04, button='left')
+
+==================================================
+STEP 13
+==================================================
+
+Action:
+DONE

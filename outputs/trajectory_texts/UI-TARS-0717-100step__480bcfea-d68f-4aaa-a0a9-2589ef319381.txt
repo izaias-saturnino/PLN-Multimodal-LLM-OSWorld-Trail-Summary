@@ -1,0 +1,135 @@
+Trajectory ID: 480bcfea-d68f-4aaa-a0a9-2589ef319381
+Source Model: UI-TARS-0717-100step
+Domain: chrome
+
+Task:
+I do not like the design of the new 2023 chrome UI. I want to keep using the original one. Can you disable the new 2023 version chrome UI for me? 
+
+Success Binary: False
+Success Raw: 0.0
+
+Number of Steps: 10
+
+============================================================
+TRAJECTORY
+============================================================
+
+==================================================
+STEP 1
+==================================================
+
+Thought:
+要禁用Chrome的2023新UI，需要通过实验性标志（flags）来设置。首先得打开Chrome的flags页面，步骤是：点击地址栏，输入chrome://flags，然后查找相关的UI标志。当前界面先激活地址栏，输入网址。
+
+首先，观察到地址栏在浏览器顶部，显示“Search Google or type a URL”，需要点击它来输入chrome://flags。
+
+目标：点击地址栏，准备输入chrome://flags。
+
+Action:
+pyautogui.click(311.04, 87.48, button='left')
+
+==================================================
+STEP 2
+==================================================
+
+Thought:
+现在地址栏已经激活，下一步需要输入chrome://flags来访问Chrome的实验性标志页面，在那里可以找到控制新UI的相关设置。输入这个网址后按回车就能进入flags页面，之后搜索“chrome refresh 2023”或相关的UI标志来禁用新设计。
+
+目标：在地址栏输入chrome://flags并回车，进入实验性标志页面。
+
+Action:
+pyperclip.copy('chrome://flags')
+pyautogui.hotkey('ctrl', 'v')
+pyautogui.press('enter')
+
+==================================================
+STEP 3
+==================================================
+
+Thought:
+现在进入了Chrome的flags页面，需要找到控制2023新UI的标志。通常这个标志的名称是“Chrome Modern Design”或“Chrome Refresh 2023”。最有效的方法是使用页面顶部的搜索框，输入相关关键词来快速定位。首先点击搜索框，输入“chrome refresh 2023”来查找对应的标志。
+
+目标：点击搜索框，准备输入搜索关键词。
+
+Action:
+pyautogui.click(848.64, 139.32, button='left')
+
+==================================================
+STEP 4
+==================================================
+
+Thought:
+现在搜索框已激活，需要输入关键词来找到控制2023新UI的标志。正确的关键词应该是“chrome refresh 2023”，输入这个后能快速定位到相关的实验性标志，然后将其设置为Disabled来禁用新UI。
+
+目标：在搜索框输入“chrome refresh 2023”来查找相关标志。
+
+Action:
+pyperclip.copy('chrome refresh 2023')
+pyautogui.hotkey('ctrl', 'v')
+
+==================================================
+STEP 5
+==================================================
+
+Thought:
+现在搜索结果显示了多个Chrome Refresh 2023相关的标志，其中“Chrome Refresh 2023”这个标志的描述是“Enables the new desktop design”，这正是控制整体新UI的关键标志。需要点击它旁边的下拉菜单，选择“Disabled”来禁用新设计。
+
+目标：点击“Chrome Refresh 2023”旁边的下拉菜单，准备选择Disabled。
+
+Action:
+pyautogui.click(1267.2, 425.52, button='left')
+
+==================================================
+STEP 6
+==================================================
+
+Thought:
+现在下拉菜单已展开，显示了几个选项，其中“Disabled”选项可以禁用新的2023 UI设计。需要点击“Disabled”来设置这个标志，这样就能关闭新的桌面设计了。
+
+目标：点击下拉菜单中的“Disabled”选项，禁用Chrome Refresh 2023的新UI。
+
+Action:
+pyautogui.click(1223.04, 482.76, button='left')
+
+==================================================
+STEP 7
+==================================================
+
+Thought:
+刚才误点成了“Enabled without Omnibox”，这不对，应该选“Disabled”。现在需要重新点击“Chrome Refresh 2023”旁边的下拉框，选择正确的“Disabled”选项来禁用新UI。
+
+目标：再次点击“Chrome Refresh 2023”的下拉菜单，选择Disabled。
+
+Action:
+pyautogui.click(1267.2, 425.52, button='left')
+
+==================================================
+STEP 8
+==================================================
+
+Thought:
+现在下拉菜单展开，看到有“Disabled”选项，这正是需要的。之前选错了，现在要点击“Disabled”来禁用Chrome Refresh 2023的新UI设计，这样设置后重启Chrome就会恢复原来的界面。
+
+目标：点击下拉菜单中的“Disabled”选项，正确禁用新UI。
+
+Action:
+pyautogui.click(1223.04, 495.72, button='left')
+
+==================================================
+STEP 9
+==================================================
+
+Thought:
+现在已经将“Chrome Refresh 2023”设置为Disabled，接下来需要重启Chrome让更改生效。页面右下角有“Relaunch”按钮，点击它重启浏览器，这样新的设置就会应用，恢复原来的UI。
+
+目标：点击右下角的“Relaunch”按钮，重启Chrome使设置生效。
+
+Action:
+pyautogui.click(1824.0, 1032.48, button='left')
+
+==================================================
+STEP 10
+==================================================
+
+Action:
+DONE

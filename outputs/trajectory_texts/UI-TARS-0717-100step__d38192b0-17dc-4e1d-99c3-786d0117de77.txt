@@ -1,0 +1,52 @@
+Trajectory ID: d38192b0-17dc-4e1d-99c3-786d0117de77
+Source Model: UI-TARS-0717-100step
+Domain: thunderbird
+
+Task:
+Attach the my AWS bill to the email. The bill is stored at ~/aws-bill.pdf. Don't close it or send it. I haven't finish all the contents.
+
+Success Binary: True
+Success Raw: 1.0
+
+Number of Steps: 4
+
+============================================================
+TRAJECTORY
+============================================================
+
+==================================================
+STEP 1
+==================================================
+
+Thought:
+要将AWS账单附加到邮件，首先需要点击邮件撰写窗口中的“Attach”按钮。这个按钮在界面上方，点击后会打开文件选择对话框，然后找到~/aws-bill.pdf文件。所以下一步是点击“Attach”按钮。
+
+Action:
+pyautogui.click(925.44, 176.04, button='left')
+
+==================================================
+STEP 2
+==================================================
+
+Thought:
+现在需要找到~/aws-bill.pdf文件，首先应该进入Home目录，因为~代表用户的主目录。左侧导航栏中有Home选项，点击它可以进入主目录，查找目标文件。
+
+Action:
+pyautogui.click(124.8, 144.72, button='left')
+
+==================================================
+STEP 3
+==================================================
+
+Thought:
+现在已经在Home目录里找到了aws-bill.pdf文件，它已经被选中（橙色高亮）。接下来需要点击右上角的“Open”按钮来附加这个文件到邮件中。这样就能完成附件的添加，同时不会发送或关闭邮件，符合任务要求。
+
+Action:
+pyautogui.click(1223.04, 60.48, button='left')
+
+==================================================
+STEP 4
+==================================================
+
+Action:
+DONE

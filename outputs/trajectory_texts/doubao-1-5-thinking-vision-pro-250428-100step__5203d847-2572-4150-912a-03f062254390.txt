@@ -1,0 +1,155 @@
+Trajectory ID: 5203d847-2572-4150-912a-03f062254390
+Source Model: doubao-1-5-thinking-vision-pro-250428-100step
+Domain: thunderbird
+
+Task:
+Create a local folder called "Promotions" and create a filter to auto move the inbox emails whose subject contains “discount” to the new folder
+
+Success Binary: True
+Success Raw: 1.0
+
+Number of Steps: 14
+
+============================================================
+TRAJECTORY
+============================================================
+
+==================================================
+STEP 1
+==================================================
+
+Thought:
+要完成任务首先需要创建名为“Promotions”的本地文件夹。在Thunderbird界面中，左侧导航栏的“Local Folders”是本地文件夹的根目录，对其右键点击可打开上下文菜单以创建新文件夹。因此，下一步应右键点击“Local Folders”来调出创建文件夹的选项。
+
+Action:
+pyautogui.click(216.96, 427.68, button='right')
+
+==================================================
+STEP 2
+==================================================
+
+Thought:
+右键点击“Local Folders”后弹出了上下文菜单，其中包含“New Folder...”选项，这是创建新本地文件夹的入口。为了继续任务，需要点击该选项来打开新建文件夹的对话框，以便输入文件夹名称“Promotions”。因此，下一步应点击菜单中的“New Folder...”选项。
+
+Action:
+pyautogui.click(289.92, 530.28, button='left')
+
+==================================================
+STEP 3
+==================================================
+
+Thought:
+现在弹出了“New Folder”对话框，需要在“Name”输入框中输入新文件夹的名称“Promotions”。输入框已经处于激活状态（光标闪烁），所以可以直接输入名称。输入完成后才能进行后续的创建操作，因此下一步是在输入框中输入“Promotions”。
+
+Action:
+pyperclip.copy('Promotions')
+pyautogui.hotkey('ctrl', 'v')
+
+==================================================
+STEP 4
+==================================================
+
+Thought:
+现在“New Folder”对话框中已输入名称“Promotions”，需要点击“Create Folder”按钮来完成文件夹的创建。创建完成后，才能继续进行设置邮件过滤规则的任务。因此，下一步是点击对话框中的“Create Folder”按钮。
+
+Action:
+pyautogui.click(1042.56, 627.48, button='left')
+
+==================================================
+STEP 5
+==================================================
+
+Thought:
+现在需要创建邮件过滤规则，将收件箱中主题包含“discount”的邮件自动移动到新创建的“Promotions”文件夹。首先需要进入邮件过滤管理界面，Thunderbird界面中“Manage message filters”选项是进入该功能的入口。因此，下一步应点击“Manage message filters”按钮来打开过滤规则设置页面。
+
+Action:
+pyautogui.click(1008.0, 205.2, button='left')
+
+==================================================
+STEP 6
+==================================================
+
+Thought:
+现在需要创建新的邮件过滤规则，“Message Filters”对话框中的“New...”按钮是创建新规则的入口。点击该按钮后可以进入规则详细设置界面，在那里可以定义过滤条件（主题包含“discount”）和执行动作（移动到“Promotions”文件夹）。因此，下一步应点击“New...”按钮来开始创建新的过滤规则。
+
+Action:
+pyautogui.click(1301.76, 425.52, button='left')
+
+==================================================
+STEP 7
+==================================================
+
+Thought:
+要创建过滤规则，首先需要为规则命名以便识别。当前“Filter Rules”对话框中“Filter name”输入框为空，需在此输入一个描述性名称（如“Move Discount Emails”）。输入名称后才能继续设置过滤条件和动作，因此下一步是在“Filter name”输入框中输入规则名称。
+
+Action:
+pyperclip.copy('Move Discount Emails')
+pyautogui.hotkey('ctrl', 'v')
+
+==================================================
+STEP 8
+==================================================
+
+Thought:
+现在需要设置过滤条件，即主题（Subject）包含“discount”。在“Filter Rules”对话框中，“Subject”行的第三个输入框（当前为空）用于输入要匹配的关键词。需要先点击该输入框使其激活，然后输入“discount”作为匹配的内容。这样过滤规则就能识别主题中包含“discount”的邮件。因此，下一步是点击该输入框并输入“discount”。
+
+Action:
+pyautogui.click(1175.04, 535.68, button='left')
+
+==================================================
+STEP 9
+==================================================
+
+Thought:
+现在需要在过滤条件的关键词输入框中输入“discount”，以指定主题包含该关键词的邮件会被过滤。输入框已激活（光标闪烁），可以直接输入内容。输入“discount”后，过滤规则就能识别符合条件的邮件，因此下一步是在该输入框中输入“discount”。
+
+Action:
+pyperclip.copy('discount')
+pyautogui.hotkey('ctrl', 'v')
+
+==================================================
+STEP 10
+==================================================
+
+Thought:
+现在需要设置过滤规则的执行动作，即将符合条件的邮件移动到“Promotions”文件夹。在“Filter Rules”对话框的“Perform these actions”区域，“Choose Folder...”按钮用于选择目标文件夹。点击该按钮后会弹出文件夹选择对话框，从中可以选择之前创建的“Promotions”文件夹。因此，下一步应点击“Choose Folder...”按钮来选择目标文件夹。
+
+Action:
+pyautogui.click(800.64, 687.96, button='left')
+
+==================================================
+STEP 11
+==================================================
+
+Thought:
+要选择目标文件夹“Promotions”，需先展开“Local Folders”的子文件夹列表。在“Choose Folder...”弹出的菜单中，“Local Folders”是包含目标文件夹的父目录，点击它可展开子项以找到“Promotions”。因此，下一步应点击“Local Folders”选项来展开其子文件夹。
+
+Action:
+pyautogui.click(839.04, 788.4, button='left')
+
+==================================================
+STEP 12
+==================================================
+
+Thought:
+现在需要选择目标文件夹“Promotions”，该选项已在“Local Folders”展开的子菜单中显示。点击“Promotions”即可将其设置为过滤规则的目标文件夹，完成动作设置的关键步骤。因此，下一步应点击“Promotions”选项。
+
+Action:
+pyautogui.click(1368.96, 838.08, button='left')
+
+==================================================
+STEP 13
+==================================================
+
+Thought:
+现在需要确认并保存已设置的过滤规则，点击“Filter Rules”对话框右下角的“OK”按钮即可完成规则创建。保存后，规则将生效，自动处理符合条件的邮件。因此，下一步是点击“OK”按钮确认设置。
+
+Action:
+pyautogui.click(1370.88, 849.96, button='left')
+
+==================================================
+STEP 14
+==================================================
+
+Action:
+DONE

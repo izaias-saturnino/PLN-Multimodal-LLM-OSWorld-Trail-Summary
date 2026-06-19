@@ -1,0 +1,142 @@
+Trajectory ID: b5062e3e-641c-4e3a-907b-ac864d2e7652
+Source Model: UI-TARS-0717-100step
+Domain: multi_apps
+
+Task:
+Please help me to extract the name, e-mail, and affiliation of the first author from each paper in the folder and organize them in an Excel table. Include headers for each field. Sort the authors by their full names alphabetically and save the table as "~/authors.xlsx".
+
+Success Binary: False
+Success Raw: 0.0
+
+Number of Steps: 12
+
+============================================================
+TRAJECTORY
+============================================================
+
+==================================================
+STEP 1
+==================================================
+
+Thought:
+首先，需要处理文件夹里的PDF论文，提取第一作者的姓名、邮箱和所属机构。首先得打开LibreOffice Calc来创建Excel表格（因为系统是Linux，用LibreOffice Calc对应Excel）。左边任务栏有LibreOffice Calc的图标（绿色表格图标），先点击它启动应用，然后创建表头：Name, E-mail, Affiliation。之后需要逐个打开PDF文件，提取信息。
+
+步骤：
+1. 启动LibreOffice Calc，创建新表格。
+2. 设置表头：A1=Name，B1=E-mail，C1=Affiliation。
+3. 打开每个PDF文件（deng_mind2web.pdf，koh_visualweba.pdf等），提取第一作者信息。
+4. 将信息填入表格，之后排序，保存为authors.xlsx。
+
+现在第一步是点击左边的LibreOffice Calc图标（绿色表格样式）。
+
+Action:
+pyautogui.click(30.72, 405.0, button='left')
+
+==================================================
+STEP 2
+==================================================
+
+Action:
+WAIT
+
+==================================================
+STEP 3
+==================================================
+
+Thought:
+现在LibreOffice Calc已经打开，首先需要设置表头。单元格A1应该输入"Name"，B1输入"E-mail"，C1输入"Affiliation"。先点击A1单元格（已经选中，看左上角A1），输入"Name"。
+
+Action:
+pyperclip.copy('Name')
+pyautogui.hotkey('ctrl', 'v')
+
+==================================================
+STEP 4
+==================================================
+
+Thought:
+现在A1已经输入了"Name"，接下来需要在B1输入"E-mail"。先点击B1单元格，然后输入内容。这样表头的第二个字段就设置好了，之后还要处理C1的"Affiliation"。
+
+Action:
+pyautogui.click(228.48, 231.12, button='left')
+
+==================================================
+STEP 5
+==================================================
+
+Thought:
+现在B1单元格已选中，需要输入"E-mail"作为表头的第二个字段。输入完成后，接下来处理C1的"Affiliation"，这样表头就完整了，之后就可以开始提取PDF里的作者信息。
+
+Action:
+pyperclip.copy('E-mail')
+pyautogui.hotkey('ctrl', 'v')
+
+==================================================
+STEP 6
+==================================================
+
+Thought:
+现在B1已经输入了"E-mail"，接下来需要在C1输入"Affiliation"作为第三个表头字段。先点击C1单元格，然后输入内容，这样表头就全部设置完成，之后就可以开始处理PDF文件提取作者信息了。
+
+Action:
+pyautogui.click(311.04, 231.12, button='left')
+
+==================================================
+STEP 7
+==================================================
+
+Thought:
+现在C1单元格已选中，需要输入"Affiliation"作为最后一个表头字段。输入完成后，表头就全部设置好了，接下来需要找到存放论文的文件夹，提取每个论文的第一作者信息。首先得打开文件管理器（左边任务栏的文件夹图标，第九个位置？），找到论文所在的文件夹，比如桌面上的或者其他位置的PDF文件。
+
+Action:
+pyperclip.copy('Affiliation')
+pyautogui.hotkey('ctrl', 'v')
+
+==================================================
+STEP 8
+==================================================
+
+Thought:
+表头已经设置完成，现在需要找到存放论文的文件夹。左边任务栏有文件管理器的图标（第九个，文件夹样式），点击它打开，找到论文所在的位置，比如桌面上的PDF文件，然后逐个打开提取第一作者信息。
+
+Action:
+pyautogui.click(30.72, 604.8, button='left')
+
+==================================================
+STEP 9
+==================================================
+
+Thought:
+现在文件管理器里找到了Papers文件夹，里面有四个PDF文件：deng_mind2web.pdf、koh_visualweba.pdf、niu_screenengen.pdf、zhang_appagent.pdf。首先处理第一个文件deng_mind2web.pdf，双击打开它，提取第一作者的姓名、邮箱和所属机构。
+
+Action:
+pyautogui.doubleClick(328.32, 130.68, button='left')
+
+==================================================
+STEP 10
+==================================================
+
+Thought:
+现在打开了deng_mind2web.pdf，第一作者是Shun Deng。需要提取姓名、邮箱（比如shun.deng@xxx？看PDF里的邮箱，图中蓝色部分可能有邮箱，还有所属机构。首先选中第一作者的姓名：Shun Deng，用鼠标拖动选中，复制（ctrl+c），然后回到LibreOffice Calc，在A2单元格输入或粘贴。
+
+Action:
+pyautogui.moveTo(391.68, 224.64)
+pyautogui.dragTo(455.04, 224.64, duration=1.0)
+
+==================================================
+STEP 11
+==================================================
+
+Thought:
+刚才尝试选中第一作者姓名时可能没选准，现在重新看PDF，第一作者是Shun Deng，应该准确拖动选中这个名字，然后复制。之后还要找邮箱和机构。先把姓名复制下来，粘贴到表格的A2单元格。
+
+Action:
+pyautogui.moveTo(389.76, 223.56)
+pyautogui.dragTo(451.2, 223.56, duration=1.0)
+
+==================================================
+STEP 12
+==================================================
+
+Action:
+FAIL

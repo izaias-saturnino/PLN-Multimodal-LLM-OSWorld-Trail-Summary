@@ -1,0 +1,25 @@
+# Gold Draft Review
+
+## Metadata
+
+- trajectory_id: `2e6f678f-472d-4c55-99cc-8e7c5c402a71`
+- source_model: `doubao-1-5-thinking-vision-pro-250428-100step`
+- domain: `gimp`
+- success_binary: `False`
+- success_raw: `0.0`
+- num_steps: `100`
+- gold_draft_status: `ERROR`
+
+## Task Instruction
+
+Please batch process all images on the desktop by increasing their brightness to 50, instead of adjusting them individually within GIMP.
+
+## Draft Summary
+
+
+
+## Human-Revised Gold Summary
+
+<!-- Replace this section with your final human-revised gold summary. -->
+
+

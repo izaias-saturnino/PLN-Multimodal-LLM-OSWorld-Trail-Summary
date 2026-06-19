@@ -1,0 +1,52 @@
+Trajectory ID: 5ea617a3-0e86-4ba6-aab2-dac9aa2e8d57
+Source Model: doubao-1-5-thinking-vision-pro-250428-100step
+Domain: os
+
+Task:
+I am currently using an Ubuntu system, and I have wrongly deleted a poster of party night. Could you help me recover it from the Trash?
+
+Success Binary: True
+Success Raw: 1.0
+
+Number of Steps: 4
+
+============================================================
+TRAJECTORY
+============================================================
+
+==================================================
+STEP 1
+==================================================
+
+Thought:
+要恢复误删的文件，首先需要打开回收站（Trash）查看其中的内容。在Ubuntu系统的左侧任务栏中可以看到Trash的图标，点击该图标可以打开回收站。接下来的步骤是点击左侧任务栏中的Trash图标，以访问回收站并查找被删除的海报文件。
+
+Action:
+pyautogui.click(32.64, 886.68, button='left')
+
+==================================================
+STEP 2
+==================================================
+
+Thought:
+现在回收站窗口中显示了误删的“poster_party_night.webp”文件，要恢复该文件需要先选中它，以便后续执行恢复操作。因此，我需要点击这个文件图标来选中它，为点击“Restore”按钮做准备。
+
+Action:
+pyautogui.click(351.36, 172.8, button='left')
+
+==================================================
+STEP 3
+==================================================
+
+Thought:
+现在已经成功选中了回收站中的“poster_party_night.webp”文件，要完成恢复操作，需要点击窗口右上角的“Restore”按钮。点击该按钮后，文件会被还原到它被删除前的原始位置。因此，下一步是点击“Restore”按钮来执行恢复操作。
+
+Action:
+pyautogui.click(1751.04, 97.2, button='left')
+
+==================================================
+STEP 4
+==================================================
+
+Action:
+DONE

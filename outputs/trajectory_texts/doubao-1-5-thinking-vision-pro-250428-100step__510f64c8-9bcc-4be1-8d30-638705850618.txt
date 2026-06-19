@@ -1,0 +1,64 @@
+Trajectory ID: 510f64c8-9bcc-4be1-8d30-638705850618
+Source Model: doubao-1-5-thinking-vision-pro-250428-100step
+Domain: multi_apps
+
+Task:
+Could you start VS Code in folder ~/Desktop/project from the terminal?
+
+Success Binary: False
+Success Raw: 0.0
+
+Number of Steps: 5
+
+============================================================
+TRAJECTORY
+============================================================
+
+==================================================
+STEP 1
+==================================================
+
+Thought:
+要从终端在~/Desktop/project文件夹启动VS Code，需先导航到该文件夹，再执行启动命令。首先需输入`cd ~/Desktop/project`切换到目标目录。终端当前处于用户主目录（提示符显示`~`），输入该命令可进入指定文件夹。接下来执行输入该命令并回车的操作。
+
+Action:
+pyperclip.copy('cd ~/Desktop/project')
+pyautogui.hotkey('ctrl', 'v')
+
+==================================================
+STEP 2
+==================================================
+
+Thought:
+要完成在终端中切换到~/Desktop/project目录的操作，需先执行已输入的`cd ~/Desktop/project`命令。按下回车键可让终端执行该目录切换指令，为后续启动VS Code做准备。因此，下一步是按下回车键执行该命令。
+
+Action:
+pyautogui.hotkey('enter')
+
+==================================================
+STEP 3
+==================================================
+
+Thought:
+现在需要在终端中输入命令来启动VS Code。在Linux系统中，VS Code的启动命令是`code`，加上当前目录`.`可以让VS Code在当前工作目录（即刚切换到的~/Desktop/project）中打开。因此，下一步是输入`code .`命令，之后按回车执行。这样VS Code就会在指定文件夹中启动。
+
+Action:
+pyperclip.copy('code .')
+pyautogui.hotkey('ctrl', 'v')
+
+==================================================
+STEP 4
+==================================================
+
+Thought:
+现在终端中已输入启动VS Code的命令`code .`，需要按下回车键来执行该命令，这样VS Code就会在当前工作目录（即~/Desktop/project）中启动。按下回车键是执行终端命令的标准操作，因此下一步是按下回车键来完成命令执行。
+
+Action:
+pyautogui.hotkey('enter')
+
+==================================================
+STEP 5
+==================================================
+
+Action:
+DONE

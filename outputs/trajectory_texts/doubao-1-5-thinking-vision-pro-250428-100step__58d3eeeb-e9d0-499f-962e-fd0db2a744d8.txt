@@ -1,0 +1,22 @@
+Trajectory ID: 58d3eeeb-e9d0-499f-962e-fd0db2a744d8
+Source Model: doubao-1-5-thinking-vision-pro-250428-100step
+Domain: gimp
+
+Task:
+Based on the image above, translate the hidden audio conversation into French.
+
+Success Binary: False
+Success Raw: 0.0
+
+Number of Steps: 1
+
+============================================================
+TRAJECTORY
+============================================================
+
+==================================================
+STEP 1
+==================================================
+
+Action:
+DONE

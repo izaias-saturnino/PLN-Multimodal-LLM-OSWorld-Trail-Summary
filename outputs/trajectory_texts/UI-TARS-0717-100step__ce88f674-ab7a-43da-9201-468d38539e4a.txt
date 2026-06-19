@@ -1,0 +1,42 @@
+Trajectory ID: ce88f674-ab7a-43da-9201-468d38539e4a
+Source Model: UI-TARS-0717-100step
+Domain: libreoffice_impress
+
+Task:
+Please set my slides upright instead of sideways.
+
+Success Binary: False
+Success Raw: 0.0
+
+Number of Steps: 3
+
+============================================================
+TRAJECTORY
+============================================================
+
+==================================================
+STEP 1
+==================================================
+
+Thought:
+要将幻灯片从横向（Landscape）改为纵向（Portrait），需要操作右侧属性面板中的Orientation选项。首先观察到右侧Properties面板里的Orientation当前是Landscape，点击这个下拉菜单，选择Portrait即可完成设置。
+
+Action:
+pyautogui.click(1733.76, 270.0, button='left')
+
+==================================================
+STEP 2
+==================================================
+
+Thought:
+现在下拉菜单已经展开，里面有Portrait选项，这正是需要的纵向设置。所以下一步应该点击Portrait来将幻灯片方向改为 upright（纵向）。
+
+Action:
+pyautogui.click(1618.56, 324.0, button='left')
+
+==================================================
+STEP 3
+==================================================
+
+Action:
+DONE

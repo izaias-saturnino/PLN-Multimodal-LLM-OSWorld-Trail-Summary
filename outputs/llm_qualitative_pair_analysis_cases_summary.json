@@ -1,0 +1,18 @@
+{
+  "num_records": 20,
+  "num_ok": 20,
+  "num_error": 0,
+  "recommended_paper_use_counts": {
+    "high": 13,
+    "medium": 7
+  },
+  "case_type_counts": {
+    "both_success": 1,
+    "mixed_success_failure": 19
+  },
+  "better_failure_awareness_counts": {
+    "claude_sonnet_4_6": 2,
+    "gpt_5_5": 3,
+    "tie": 15
+  }
+}

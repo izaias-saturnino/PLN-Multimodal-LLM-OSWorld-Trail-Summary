@@ -1,0 +1,73 @@
+Trajectory ID: 37887e8c-da15-4192-923c-08fa390a176d
+Source Model: UI-TARS-0717-100step
+Domain: os
+
+Task:
+Compress all files under "/tmp/test_files" that were last modified 30 days ago and put them in "/tmp/test_files/old_files". Move all other files to "/tmp/test_files/new_files.
+
+Success Binary: False
+Success Raw: 0.0
+
+Number of Steps: 5
+
+============================================================
+TRAJECTORY
+============================================================
+
+==================================================
+STEP 1
+==================================================
+
+Thought:
+要完成压缩/tmp/test_files目录下30天前修改的文件的任务，首先需要打开终端来执行命令。在Ubuntu系统中，点击左上角的“Activities”按钮可以打开活动概览，从而搜索终端。
+
+首先，点击屏幕左上角的“Activities”按钮，进入活动概览界面，以便搜索并启动终端应用程序。
+
+Action:
+pyautogui.click(42.24, 12.96, button='left')
+
+==================================================
+STEP 2
+==================================================
+
+Thought:
+现在已经进入了活动概览界面，顶部有搜索框。为了打开终端执行压缩命令，需要在搜索框中输入“terminal”来找到终端应用程序。
+
+首先，点击搜索框激活它，然后输入“terminal”来搜索终端应用。
+
+Action:
+pyperclip.copy('terminal')
+pyautogui.hotkey('ctrl', 'v')
+
+==================================================
+STEP 3
+==================================================
+
+Thought:
+现在搜索结果中显示了终端应用程序的图标，需要点击它来启动终端，这样才能执行压缩文件的命令。终端图标是一个带有“>_”符号的灰色方块，位于搜索结果的上方。
+
+点击终端图标，启动终端应用程序，以便后续输入命令来查找并压缩30天前修改的文件。
+
+Action:
+pyautogui.click(990.72, 184.68, button='left')
+
+==================================================
+STEP 4
+==================================================
+
+Thought:
+现在终端已经打开，需要执行命令来查找并压缩/tmp/test_files目录下30天前修改的文件。首先，使用find命令结合tar来实现：find /tmp/test_files -type f -mtime +30 -exec tar -czvf old_files.tar.gz {} +。这个命令的作用是找到该目录下修改时间超过30天的文件，然后打包成tar.gz压缩包。
+
+在终端中输入这个命令，然后回车执行。
+
+Action:
+pyperclip.copy('find /tmp/test_files -type f -mtime +30 -exec tar -czvf old_files.tar.gz {} +')
+pyautogui.hotkey('ctrl', 'v')
+pyautogui.press('enter')
+
+==================================================
+STEP 5
+==================================================
+
+Action:
+DONE

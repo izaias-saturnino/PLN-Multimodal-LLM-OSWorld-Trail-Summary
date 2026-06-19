@@ -1,0 +1,58 @@
+Trajectory ID: 6a33f9b9-0a56-4844-9c3f-96ec3ffb3ba2
+Source Model: UI-TARS-0717-100step
+Domain: libreoffice_writer
+
+Task:
+I have been editing my document and some words that needed to be rewritten are highlighted in yellow. As I fixed those words, please help me remove all highlight. I want to make sure that there is no highlight word.
+
+Success Binary: True
+Success Raw: 1.0
+
+Number of Steps: 4
+
+============================================================
+TRAJECTORY
+============================================================
+
+==================================================
+STEP 1
+==================================================
+
+Thought:
+要移除文档中的黄色高亮，首先需要选中所有带高亮的文本。观察到文档中有“UCSF”等黄色高亮的文字，先全选文档内容（Ctrl+A），然后找到工具栏中的高亮颜色按钮，选择无填充或清除高亮。步骤：1. 全选文档内容；2. 点击高亮颜色按钮，选择清除。
+
+首先，使用Ctrl+A全选所有文本，这样能确保所有高亮部分都被选中，然后处理高亮。
+
+Action:
+pyautogui.hotkey('ctrl', 'a')
+
+==================================================
+STEP 2
+==================================================
+
+Thought:
+现在已经全选了文档内容，接下来需要移除黄色高亮。在LibreOffice Writer的工具栏中，找到字符高亮颜色的按钮（图标是一个笔刷带黄色的，旁边有下拉箭头）。点击该按钮的下拉箭头，选择“无填充”或清除高亮的选项，这样就能移除所有选中内容的高亮。
+
+目标元素是工具栏中的高亮颜色下拉按钮，点击它来选择清除高亮。
+
+Action:
+pyautogui.click(1032.96, 145.8, button='left')
+
+==================================================
+STEP 3
+==================================================
+
+Thought:
+现在高亮颜色的下拉菜单已经打开，里面有“No Fill”选项，这正是用来清除字符高亮的。选中的文本已经是全选状态，所以点击“No Fill”就能移除所有黄色高亮。
+
+目标是点击下拉菜单中的“No Fill”选项，清除所有选中内容的高亮。
+
+Action:
+pyautogui.click(1059.84, 200.88, button='left')
+
+==================================================
+STEP 4
+==================================================
+
+Action:
+DONE

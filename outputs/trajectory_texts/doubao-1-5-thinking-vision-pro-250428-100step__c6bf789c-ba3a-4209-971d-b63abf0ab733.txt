@@ -1,0 +1,94 @@
+Trajectory ID: c6bf789c-ba3a-4209-971d-b63abf0ab733
+Source Model: doubao-1-5-thinking-vision-pro-250428-100step
+Domain: vs_code
+
+Task:
+Please help me modify VS Code setting to hide all "__pycache__" folders in the explorer view.
+
+Success Binary: True
+Success Raw: 1.0
+
+Number of Steps: 8
+
+============================================================
+TRAJECTORY
+============================================================
+
+==================================================
+STEP 1
+==================================================
+
+Thought:
+要修改VS Code设置隐藏“__pycache__”文件夹，首先需打开设置界面。VS Code的设置可通过菜单栏“File”进入，因此第一步应点击左上角的“File”菜单，展开后续选项以找到设置入口。
+
+Action:
+pyautogui.click(90.24, 71.28, button='left')
+
+==================================================
+STEP 2
+==================================================
+
+Thought:
+要进入VS Code的设置界面，需先通过File菜单展开Preferences子菜单。当前File菜单已打开，下一步应点击“Preferences”选项，以展开其包含设置入口的子菜单，进而继续操作修改资源管理器中隐藏__pycache__文件夹的配置。
+
+Action:
+pyautogui.click(144.0, 540.0, button='left')
+
+==================================================
+STEP 3
+==================================================
+
+Thought:
+要修改VS Code隐藏“__pycache__”文件夹的设置，需先进入设置界面。当前Preferences子菜单已展开，其中“Settings”选项是进入设置页面的入口。因此，下一步应点击“Settings”选项，打开VS Code的设置界面，以便后续查找并修改资源管理器中隐藏文件夹的配置。
+
+Action:
+pyautogui.click(497.28, 563.76, button='left')
+
+==================================================
+STEP 4
+==================================================
+
+Thought:
+要找到隐藏“__pycache__”文件夹的设置，需先定位到`files.exclude`配置项。VS Code设置页面的搜索框可快速筛选相关选项，因此下一步应在搜索框中输入`files.exclude`，以找到控制资源管理器中文件/文件夹显示的排除规则设置。需先激活搜索框，再输入关键词。
+
+Action:
+pyperclip.copy('files.exclude')
+pyautogui.hotkey('ctrl', 'v')
+
+==================================================
+STEP 5
+==================================================
+
+Thought:
+要隐藏“__pycache__”文件夹，需在`files.exclude`中添加对应的glob匹配模式。当前界面显示“Add Pattern”按钮，点击该按钮可创建新的排除规则输入项。因此，下一步应点击“Add Pattern”按钮，以添加用于匹配__pycache__文件夹的排除规则。
+
+Action:
+pyautogui.click(829.44, 475.2, button='left')
+
+==================================================
+STEP 6
+==================================================
+
+Thought:
+要隐藏所有“__pycache__”文件夹，需在`files.exclude`的排除规则中添加对应的glob模式。Glob模式“**/__pycache__”可匹配项目中所有层级下的“__pycache__”文件夹。当前输入框已激活，因此需在输入框中输入该模式，以配置资源管理器隐藏此类文件夹。
+
+Action:
+pyperclip.copy('**/__pycache__')
+pyautogui.hotkey('ctrl', 'v')
+
+==================================================
+STEP 7
+==================================================
+
+Thought:
+已在输入框中输入用于匹配所有“__pycache__”文件夹的glob模式“**/__pycache__”，现在需点击“OK”按钮确认添加该排除规则，使设置生效。点击“OK”后，VS Code的资源管理器将不再显示任何层级下的“__pycache__”文件夹。
+
+Action:
+pyautogui.click(1608.96, 475.2, button='left')
+
+==================================================
+STEP 8
+==================================================
+
+Action:
+DONE

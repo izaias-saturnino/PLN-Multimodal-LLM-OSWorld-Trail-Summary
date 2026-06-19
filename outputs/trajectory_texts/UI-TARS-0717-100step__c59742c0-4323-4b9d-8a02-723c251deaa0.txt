@@ -1,0 +1,72 @@
+Trajectory ID: c59742c0-4323-4b9d-8a02-723c251deaa0
+Source Model: UI-TARS-0717-100step
+Domain: libreoffice_impress
+
+Task:
+I am making PPT about the history of baseball. I want to add an introduction audio named "Baseball.mp3" on the Desktop into my PPT, but I do not know how. Could you help me add audio into my presentation file?
+
+Success Binary: True
+Success Raw: 1.0
+
+Number of Steps: 6
+
+============================================================
+TRAJECTORY
+============================================================
+
+==================================================
+STEP 1
+==================================================
+
+Thought:
+要在LibreOffice Impress中添加音频文件，首先需要找到插入音频的选项。通常在顶部菜单栏的“Insert”菜单里会有相关的媒体插入选项。所以下一步应该点击顶部菜单栏的“Insert”选项，展开菜单后寻找插入音频的功能。
+
+Action:
+pyautogui.click(224.64, 72.36, button='left')
+
+==================================================
+STEP 2
+==================================================
+
+Thought:
+现在Insert菜单已经展开，看到里面有“Audio or Video...”选项，这正是用来插入音频文件的功能。所以下一步应该点击这个选项，打开文件选择对话框，以便选择桌面上的“Baseball.mp3”文件。
+
+Action:
+pyautogui.click(282.24, 124.2, button='left')
+
+==================================================
+STEP 3
+==================================================
+
+Thought:
+现在需要找到桌面上的“Baseball.mp3”文件，所以在“Insert Audio or Video”对话框的左侧导航栏中，应该点击“Desktop”选项，进入桌面目录查找目标音频文件。
+
+Action:
+pyautogui.click(455.04, 216.0, button='left')
+
+==================================================
+STEP 4
+==================================================
+
+Thought:
+现在已经在桌面目录中找到了“Baseball.mp3”文件，并且它已经被选中。接下来需要点击对话框右上角的“Open”按钮，来将这个音频文件插入到PPT中。
+
+Action:
+pyautogui.click(1545.6, 99.36, button='left')
+
+==================================================
+STEP 5
+==================================================
+
+Thought:
+现在音频已经成功插入到PPT中，显示为音乐图标。为了确保修改被保存，应该使用快捷键Ctrl+S来保存文件，这样音频的插入就会被永久保存到演示文稿中。
+
+Action:
+pyautogui.hotkey('ctrl', 's')
+
+==================================================
+STEP 6
+==================================================
+
+Action:
+DONE

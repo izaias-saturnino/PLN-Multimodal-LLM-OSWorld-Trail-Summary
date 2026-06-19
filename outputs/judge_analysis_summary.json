@@ -1,0 +1,114 @@
+{
+  "num_judge_by_model_rows": 276,
+  "num_judge_comparisons": 138,
+  "num_joined_rows": 276,
+  "score_fields": [
+    "coverage_score",
+    "factuality_score",
+    "temporal_order_score",
+    "specificity_score",
+    "procedural_usefulness_score"
+  ],
+  "pairwise_winners": {
+    "claude_sonnet_4_6": 83,
+    "gpt_5_5": 11,
+    "tie": 44
+  },
+  "by_model": [
+    {
+      "eval_model_name": "claude_sonnet_4_6",
+      "n": 138,
+      "coverage_score_mean": 4.971014492753623,
+      "factuality_score_mean": 4.8768115942028984,
+      "temporal_order_score_mean": 4.971014492753623,
+      "specificity_score_mean": 4.949275362318841,
+      "procedural_usefulness_score_mean": 4.956521739130435,
+      "best_count": 83,
+      "tie_count": 44,
+      "best_rate": 0.6014492753623188,
+      "tie_rate": 0.3188405797101449,
+      "major_or_critical_omission_count": 0,
+      "major_or_critical_hallucination_count": 2,
+      "major_or_critical_omission_rate": 0.0,
+      "major_or_critical_hallucination_rate": 0.014492753623188406,
+      "omission_severity_counts": {
+        "minor": 9,
+        "none": 129
+      },
+      "hallucination_severity_counts": {
+        "major": 2,
+        "minor": 9,
+        "none": 127
+      },
+      "main_error_type_counts": {
+        "hallucination": 5,
+        "loss_of_specificity": 4,
+        "misleading_framing": 6,
+        "omission": 6,
+        "wrong_order": 2,
+        "wrong_outcome": 3
+      },
+      "main_error_severity_counts": {
+        "major": 2,
+        "minor": 24
+      }
+    },
+    {
+      "eval_model_name": "gpt_5_5",
+      "n": 138,
+      "coverage_score_mean": 4.804347826086956,
+      "factuality_score_mean": 4.927536231884058,
+      "temporal_order_score_mean": 4.956521739130435,
+      "specificity_score_mean": 4.282608695652174,
+      "procedural_usefulness_score_mean": 4.579710144927536,
+      "best_count": 11,
+      "tie_count": 44,
+      "best_rate": 0.07971014492753623,
+      "tie_rate": 0.3188405797101449,
+      "major_or_critical_omission_count": 0,
+      "major_or_critical_hallucination_count": 0,
+      "major_or_critical_omission_rate": 0.0,
+      "major_or_critical_hallucination_rate": 0.0,
+      "omission_severity_counts": {
+        "minor": 39,
+        "none": 99
+      },
+      "hallucination_severity_counts": {
+        "minor": 6,
+        "none": 132
+      },
+      "main_error_type_counts": {
+        "hallucination": 1,
+        "loss_of_specificity": 64,
+        "misleading_framing": 4,
+        "omission": 16,
+        "wrong_order": 1
+      },
+      "main_error_severity_counts": {
+        "minor": 86
+      }
+    }
+  ],
+  "score_gap_summary_for_two_model_setting": {
+    "n": 138,
+    "models_compared": [
+      "claude_sonnet_4_6",
+      "gpt_5_5"
+    ],
+    "mean_gaps": {
+      "coverage_score_gap_claude_sonnet_4_6_minus_gpt_5_5": 0.16666666666666666,
+      "factuality_score_gap_claude_sonnet_4_6_minus_gpt_5_5": -0.050724637681159424,
+      "temporal_order_score_gap_claude_sonnet_4_6_minus_gpt_5_5": 0.014492753623188406,
+      "specificity_score_gap_claude_sonnet_4_6_minus_gpt_5_5": 0.6666666666666666,
+      "procedural_usefulness_score_gap_claude_sonnet_4_6_minus_gpt_5_5": 0.37681159420289856
+    }
+  },
+  "outputs": {
+    "by_model_csv": "outputs\\judge_analysis_by_model.csv",
+    "by_domain_csv": "outputs\\judge_analysis_by_domain.csv",
+    "by_source_agent_csv": "outputs\\judge_analysis_by_source_agent.csv",
+    "by_success_csv": "outputs\\judge_analysis_by_success.csv",
+    "with_metrics_csv": "outputs\\judge_analysis_with_metrics.csv",
+    "error_examples_output": "outputs\\judge_error_examples.jsonl"
+  }
+}

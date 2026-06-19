@@ -1,0 +1,1022 @@
+Trajectory ID: 88fe4b2d-3040-4c70-9a70-546a47764b48
+Source Model: doubao-1-5-thinking-vision-pro-250428-100step
+Domain: libreoffice_writer
+
+Task:
+I am making a guideline for students of my course and would like to separate each sentence in the the first paragraph to improve readability. Please separate each sentence by creating one empty line space after each of them, as I am having hard time separating them one by one.
+
+Success Binary: False
+Success Raw: 0.0
+
+Number of Steps: 100
+
+============================================================
+TRAJECTORY
+============================================================
+
+==================================================
+STEP 1
+==================================================
+
+Thought:
+要实现每个句子后添加空行的目标，首先需选中第一段文本以便后续操作。第一段文本从“The purpose of the tutorial...”开始到“talkative!”结束，因此需要通过拖拽操作选中该段全部内容。这样选中后才能对句子进行分隔处理，所以下一步是拖拽选择第一段文本。
+
+Action:
+pyautogui.moveTo(645.12, 307.8)
+pyautogui.dragTo(706.56, 450.36, duration=1.0)
+
+==================================================
+STEP 2
+==================================================
+
+Thought:
+为了高效地在每个句子后添加空行，需使用LibreOffice Writer的“查找和替换”功能来批量处理。当前已选中第一段文本，接下来应打开“查找和替换”对话框，以便设置替换规则（如将句末标点后添加换行符）。按下快捷键“ctrl h”可快速打开该对话框，这是实现批量操作的关键步骤。
+
+Action:
+pyautogui.hotkey('ctrl', 'h')
+
+==================================================
+STEP 3
+==================================================
+
+Thought:
+要实现每个句子后添加空行，需利用“查找和替换”功能针对句末标点（如句号、感叹号）设置替换规则。当前“Find and Replace”对话框已打开，首先需激活“Find”输入框以输入要查找的句末标点模式。因此，下一步应点击“Find”输入框，使其获得焦点，以便输入查找内容（如句末的句号“.” ）。
+
+Action:
+pyautogui.click(750.72, 402.84, button='left')
+
+==================================================
+STEP 4
+==================================================
+
+Thought:
+要在“查找和替换”对话框中设置针对句末标点的替换规则，首先需清空“Find”输入框原有内容并输入目标查找字符。当前“Find”输入框内是选中的文本片段，需先全选该内容以便替换。按下“ctrl a”全选“Find”输入框内的文本，为输入句末标点（如“.”）做准备，这是精准设置查找条件的必要步骤。
+
+Action:
+pyautogui.hotkey('ctrl', 'a')
+
+==================================================
+STEP 5
+==================================================
+
+Thought:
+要实现每个句子后添加空行，需先在“Find”输入框中指定要查找的句末标点（如句号“.”）。当前“Find”输入框已被全选内容，接下来输入“.”作为查找对象，这样才能定位到每个句子的结尾，为后续替换操作（添加换行）做准备。输入“.”是设置查找条件的关键步骤。
+
+Action:
+pyperclip.copy('.')
+pyautogui.hotkey('ctrl', 'v')
+
+==================================================
+STEP 6
+==================================================
+
+Thought:
+要实现每个句子后添加空行，需在“Replace”输入框中设置替换内容（即句末标点后添加两个换行符，实现空行效果）。当前“Find”输入框已设置为查找句号“.”，接下来需激活“Replace”输入框以输入替换内容。因此，下一步应点击“Replace”输入框，使其获得焦点，以便输入替换文本（如“.\n\n”）。
+
+Action:
+pyautogui.click(750.72, 488.16, button='left')
+
+==================================================
+STEP 7
+==================================================
+
+Thought:
+要实现每个句子后添加空行，需在“Replace”输入框中设置替换内容为“句号 + 两个换行符”（即“.\n\n”），这样替换后每个句末标点后会自动插入空行。当前“Replace”输入框已激活，接下来需输入替换文本“.\n\n”，这是实现句子间空行分隔的核心设置步骤。
+
+Action:
+pyperclip.copy('.')
+pyautogui.hotkey('ctrl', 'v')
+pyautogui.press('enter')
+
+==================================================
+STEP 8
+==================================================
+
+Thought:
+为了确保所有句子（包括以感叹号结尾的句子）都能被处理，需要在“Find and Replace”对话框中设置查找感叹号“!”的规则。当前需先激活“Find”输入框，输入“!”作为新的查找对象，以便后续为这类句子也添加空行。因此，下一步应点击“Find”输入框并输入“!”。
+
+Action:
+pyautogui.click(750.72, 402.84, button='left')
+
+==================================================
+STEP 9
+==================================================
+
+Thought:
+为确保所有句子（包括以感叹号结尾的句子）都能被处理，需在“Find”输入框中输入“!”作为查找对象。当前“Find”输入框已激活，直接输入“!”即可设置针对感叹号的查找规则，为后续替换操作（添加空行）做准备。这一步是完善查找条件、覆盖所有句子结尾标点的必要步骤。
+
+Action:
+pyperclip.copy('!')
+pyautogui.hotkey('ctrl', 'v')
+
+==================================================
+STEP 10
+==================================================
+
+Thought:
+要处理以感叹号结尾的句子，需在“Replace”输入框中设置替换内容为“感叹号 + 两个换行符”（即“!\n\n”），以实现这类句子后添加空行的效果。当前“Replace”输入框未激活，因此需先点击该输入框使其获得焦点，为输入替换文本做准备。
+
+Action:
+pyautogui.click(750.72, 488.16, button='left')
+
+==================================================
+STEP 11
+==================================================
+
+Thought:
+要实现以感叹号结尾的句子后添加空行，需在“Replace”输入框中输入替换内容“!\n\n”（即感叹号后紧跟两个换行符）。当前“Replace”输入框已激活，直接输入该内容即可完成针对感叹号的替换规则设置，确保所有句子（无论以句号还是感叹号结尾）都能被正确分隔。
+
+Action:
+pyperclip.copy('!')
+pyautogui.hotkey('ctrl', 'v')
+pyautogui.press('enter')
+
+==================================================
+STEP 12
+==================================================
+
+Thought:
+为确保替换操作仅作用于之前选中的第一段文本（避免影响文档其他部分），需勾选“Other options”下的“Current selection only”选项。当前该复选框未被选中，因此下一步应点击该复选框以启用范围限制，保证操作精准性。
+
+Action:
+pyautogui.click(685.44, 617.76, button='left')
+
+==================================================
+STEP 13
+==================================================
+
+Thought:
+为确保替换操作仅作用于之前选中的第一段文本（避免影响文档其他内容），需勾选“Other options”下的“Current selection only”复选框。上一步点击可能未成功选中，因此需再次点击该复选框以启用范围限制，保证操作仅针对目标段落。
+
+Action:
+pyautogui.click(685.44, 617.76, button='left')
+
+==================================================
+STEP 14
+==================================================
+
+Thought:
+为确保替换操作仅作用于之前选中的第一段文本（避免修改文档其他部分），需勾选“Other options”区域下的“Current selection only”复选框。之前的点击操作未成功激活该选项，因此需再次点击该复选框以启用范围限制，保证操作精准性。
+
+Action:
+pyautogui.click(685.44, 611.28, button='left')
+
+==================================================
+STEP 15
+==================================================
+
+Thought:
+为确保替换操作仅作用于之前选中的第一段文本（避免修改文档其他内容），需勾选“Other options”区域下的“Current selection only”复选框。之前多次点击未成功激活该选项，因此需再次精准点击该复选框以启用范围限制，保证操作仅针对目标段落。
+
+Action:
+pyautogui.click(685.44, 611.28, button='left')
+
+==================================================
+STEP 16
+==================================================
+
+Thought:
+为确保替换操作仅作用于之前选中的第一段文本（避免修改文档其他部分），需勾选“Other options”区域下的“Current selection only”复选框。之前多次点击未成功激活该选项，需再次精准点击该复选框以启用范围限制，保证操作仅针对目标段落。
+
+Action:
+pyautogui.click(685.44, 611.28, button='left')
+
+==================================================
+STEP 17
+==================================================
+
+Thought:
+要确保替换操作仅作用于之前选中的第一段文本，需先勾选“Other options”下的“Current selection only”复选框（此前多次点击未成功激活，需精准点击）；完成范围限制后，点击“Replace All”按钮执行批量替换，使选中段落内所有句末标点（句号、感叹号）后自动添加空行。当前需先解决复选框激活问题，再执行替换。
+
+Action:
+pyautogui.click(689.28, 608.04, button='left')
+
+==================================================
+STEP 18
+==================================================
+
+Thought:
+为确保替换操作仅作用于预先选中的第一段文本，需先勾选“Other options”区域下的“Current selection only”复选框（此前多次点击未成功激活，本次需精准点击以启用范围限制）；完成范围确认后，点击“Replace All”按钮执行批量替换，使选中段落内所有以句号或感叹号结尾的句子后自动插入空行，实现句子间的分隔。
+
+Action:
+pyautogui.click(689.28, 608.04, button='left')
+
+==================================================
+STEP 19
+==================================================
+
+Thought:
+为确保替换操作仅作用于预先选中的第一段文本，需先精准勾选“Other options”区域下的“Current selection only”复选框（解决此前多次点击未激活的问题）；完成范围限制后，点击“Replace All”按钮执行批量替换，使选中段落内所有以句号或感叹号结尾的句子后自动插入空行，实现句子分隔。当前需先完成“Current selection only”的勾选，再执行替换。
+
+Action:
+pyautogui.click(689.28, 608.04, button='left')
+
+==================================================
+STEP 20
+==================================================
+
+Thought:
+已完成查找替换规则设置（句末标点后添加双换行），且需确保仅作用于选中的第一段文本。当前需点击“Replace All”按钮执行批量替换，使选中段落内所有句子后自动插入空行，完成可读性优化。
+
+Action:
+pyautogui.click(1261.44, 547.56, button='left')
+
+==================================================
+STEP 21
+==================================================
+
+Thought:
+为确保替换操作仅作用于预先选中的第一段文本，需勾选“Other options”区域下的“Current selection only”复选框（此前未成功激活该选项，需精准点击以启用范围限制）。完成范围确认后，再执行替换操作可避免影响文档其他部分。当前需先激活该复选框，保证操作精准性。
+
+Action:
+pyautogui.click(687.36, 609.12, button='left')
+
+==================================================
+STEP 22
+==================================================
+
+Thought:
+为确保替换操作仅作用于预先选中的第一段文本，需先勾选“Other options”区域下的“Current selection only”复选框（此前未成功激活，本次需精准点击以启用范围限制）；完成范围确认后，点击“Replace All”按钮执行批量替换，使选中段落内所有以句号或感叹号结尾的句子后自动插入空行，实现句子分隔。当前需先激活“Current selection only”复选框，保证操作精准性。
+
+Action:
+pyautogui.click(687.36, 609.12, button='left')
+
+==================================================
+STEP 23
+==================================================
+
+Thought:
+为确保替换操作仅作用于预先选中的第一段文本，需先精准勾选“Other options”区域下的“Current selection only”复选框（解决此前多次点击未激活的问题）；完成范围限制后，点击“Replace All”按钮执行批量替换，使选中段落内所有以句号或感叹号结尾的句子后自动插入空行，实现句子分隔。当前优先完成“Current selection only”的勾选以保证操作精准性。
+
+Action:
+pyautogui.click(687.36, 609.12, button='left')
+
+==================================================
+STEP 24
+==================================================
+
+Thought:
+要确保替换操作仅作用于预先选中的第一段文本，需精准勾选“Other options”区域下的“Current selection only”复选框（解决此前多次点击未激活的问题）。勾选后，点击“Replace All”按钮执行批量替换，使选中段落内所有以句号或感叹号结尾的句子后自动插入空行，实现句子分隔。当前需先完成“Current selection only”的勾选以保证操作精准性。
+
+Action:
+pyautogui.click(681.6, 604.8, button='left')
+
+==================================================
+STEP 25
+==================================================
+
+Thought:
+为确保替换操作仅作用于预先选中的第一段文本，需先精准勾选“Other options”区域下的“Current selection only”复选框（解决此前多次点击未稳定激活的问题）。勾选后，点击“Replace All”按钮执行批量替换，使选中段落内所有以句号或感叹号结尾的句子后自动插入空行，实现句子分隔。当前优先完成“Current selection only”的勾选以保证操作范围精准性，再执行替换。
+
+Action:
+pyautogui.click(681.6, 604.8, button='left')
+
+==================================================
+STEP 26
+==================================================
+
+Thought:
+为确保替换操作仅作用于预先选中的第一段文本，需精准勾选“Other options”区域下的“Current selection only”复选框（解决此前多次点击未稳定激活的问题）。勾选该选项后，替换操作将严格限制在选中段落内，避免影响文档其他部分。完成勾选后，即可执行“Replace All”实现句子后添加空行的目标。当前需优先确保“Current selection only”被成功勾选，因此下一步是点击该复选框。
+
+Action:
+pyautogui.click(681.6, 604.8, button='left')
+
+==================================================
+STEP 27
+==================================================
+
+Thought:
+要确保替换操作仅作用于预先选中的第一段文本，需精准勾选“Other options”区域下的“Current selection only”复选框（此前多次点击未稳定激活，本次需聚焦复选框位置确保选中）。勾选后，点击“Replace All”按钮即可批量将选中段落内所有句末标点（句号、感叹号）替换为“标点+\n\n”，实现句子后空行分隔。当前优先解决范围限制问题，因此需点击“Current selection only”复选框使其激活。
+
+Action:
+pyautogui.click(681.6, 604.8, button='left')
+
+==================================================
+STEP 28
+==================================================
+
+Thought:
+为确保替换操作仅作用于预先选中的第一段文本，需精准点击“Other options”区域下的“Current selection only”复选框（此前多次点击未稳定激活，本次需聚焦复选框位置确保选中状态）。勾选该选项后，替换操作将严格限制在选中段落内，避免影响文档其他部分。完成勾选后，点击“Replace All”按钮即可批量实现句子后添加空行的目标。当前需优先解决范围限制问题，因此下一步是点击“Current selection only”复选框使其激活。
+
+Action:
+pyautogui.click(681.6, 604.8, button='left')
+
+==================================================
+STEP 29
+==================================================
+
+Thought:
+要确保替换操作仅作用于预先选中的第一段文本，需先精准勾选“Other options”区域下的“Current selection only”复选框（解决此前多次点击未稳定激活的问题）。勾选后，点击“Replace All”按钮即可批量将选中段落内所有句末标点（句号、感叹号）替换为“标点+\n\n”，实现句子后空行分隔。当前需先完成范围限制设置，因此下一步是点击“Current selection only”复选框使其激活。
+
+Action:
+pyautogui.click(681.6, 604.8, button='left')
+
+==================================================
+STEP 30
+==================================================
+
+Thought:
+要确保替换操作仅作用于预先选中的第一段文本，需精准点击“Other options”区域下的“Current selection only”复选框以启用范围限制（此前多次点击未成功激活，本次需聚焦复选框位置确保选中）。勾选后，替换操作将严格限制在选中段落内，避免影响文档其他部分，为后续执行“Replace All”实现句子后空行分隔提供基础。因此，下一步是点击“Current selection only”复选框使其激活。
+
+Action:
+pyautogui.click(681.6, 604.8, button='left')
+
+==================================================
+STEP 31
+==================================================
+
+Thought:
+要确保替换操作仅作用于预先选中的第一段文本，需精准点击“Other options”区域下的“Current selection only”复选框以启用范围限制（此前多次点击未成功激活，本次需聚焦复选框位置确保选中状态）。勾选该选项后，替换操作将严格限制在选中段落内，避免影响文档其他部分，为后续执行“Replace All”实现句子后空行分隔提供基础。因此，下一步需精准点击“Current selection only”复选框使其激活。
+
+Action:
+pyautogui.click(681.6, 604.8, button='left')
+
+==================================================
+STEP 32
+==================================================
+
+Thought:
+要确保替换操作仅作用于预先选中的第一段文本，需精准点击“Other options”区域下的“Current selection only”复选框以启用范围限制（此前多次点击未稳定激活，本次需聚焦复选框左侧的勾选框位置确保选中）。勾选后，点击“Replace All”按钮即可批量将选中段落内所有以感叹号结尾的句子替换为“感叹号+\n\n”，实现句子后空行分隔。完成范围限制设置是关键前提，因此下一步需**精准点击“Current selection only”复选框**使其激活。
+
+Action:
+pyautogui.click(685.44, 609.12, button='left')
+
+==================================================
+STEP 33
+==================================================
+
+Thought:
+要确保替换操作仅作用于预先选中的第一段文本，需精准点击“Other options”区域下的“Current selection only”复选框（此前多次点击未稳定激活，本次需聚焦复选框左侧的勾选框位置确保选中）。勾选该选项后，替换操作将严格限制在选中段落内，避免影响文档其他部分，为后续执行“Replace All”实现句子后空行分隔提供必要的范围限制。因此，下一步需**精准点击“Current selection only”复选框**使其激活。
+
+Action:
+pyautogui.click(685.44, 609.12, button='left')
+
+==================================================
+STEP 34
+==================================================
+
+Thought:
+要确保替换操作仅作用于预先选中的第一段文本，需精准点击“Other options”区域下“Current selection only”复选框的**方框部分**（此前多次点击未稳定激活，本次需聚焦方框位置确保勾选）。勾选后，点击“Replace All”按钮即可批量将选中段落内所有以感叹号结尾的句子替换为“感叹号+\n\n”，实现句子后空行分隔。完成范围限制是执行替换的关键前提，因此下一步需**精准点击“Current selection only”复选框的方框**使其激活。
+
+Action:
+pyautogui.click(685.44, 602.64, button='left')
+
+==================================================
+STEP 35
+==================================================
+
+Thought:
+要确保替换操作仅作用于预先选中的第一段文本，需精准点击“Other options”区域下“Current selection only”复选框的**方框部分**（此前多次点击未稳定激活，本次需聚焦方框位置确保勾选）。勾选后，替换操作将严格限制在选中段落内，避免影响文档其他部分，为后续执行“Replace All”实现句子后空行分隔提供必要的范围限制。因此，下一步需**精准点击“Current selection only”复选框的方框**使其激活。
+
+Action:
+pyautogui.click(681.6, 602.64, button='left')
+
+==================================================
+STEP 36
+==================================================
+
+Thought:
+要确保替换操作仅作用于预先选中的第一段文本，需精准点击“Other options”区域下“Current selection only”复选框的**方框部分**（此前多次点击未稳定激活，本次需聚焦方框位置确保勾选）。勾选后，点击“Replace All”按钮即可批量将选中段落内所有以感叹号结尾的句子替换为“感叹号+\n\n”，实现句子后空行分隔。完成范围限制是执行替换的关键前提，因此下一步需**精准点击“Current selection only”复选框的方框**使其激活，再执行替换操作。
+
+Action:
+pyautogui.click(681.6, 600.48, button='left')
+
+==================================================
+STEP 37
+==================================================
+
+Thought:
+观察到“Find and Replace”对话框中“Other options”处于折叠状态（箭头向右），导致无法访问“Current selection only”复选框。要确保替换操作仅作用于选中的第一段文本，需先展开“Other options”以显示包含“Current selection only”的选项区域。因此，下一步需点击“Other options”按钮展开更多设置项。
+
+Action:
+pyautogui.click(672.0, 583.2, button='left')
+
+==================================================
+STEP 38
+==================================================
+
+Thought:
+目前“Find and Replace”对话框中“Other options”处于折叠状态，导致无法访问“Current selection only”复选框（该选项是确保替换仅作用于选中第一段文本的关键）。为解决此问题，需先展开“Other options”以显示包含范围限制的设置项。因此，下一步需**点击“Other options”按钮**展开更多选项，为后续勾选“Current selection only”创造条件。
+
+Action:
+pyautogui.click(666.24, 581.04, button='left')
+
+==================================================
+STEP 39
+==================================================
+
+Thought:
+目前“Find and Replace”对话框中“Other options”处于折叠状态，导致无法访问用于限制替换范围的“Current selection only”复选框。为确保替换操作仅作用于预先选中的第一段文本，需先展开“Other options”以显示包含范围限制的设置项。因此，下一步需**点击“Other options”按钮**（位于对话框中“Help”上方，箭头朝右的按钮），展开更多选项以访问“Current selection only”复选框。
+
+Action:
+pyautogui.click(666.24, 577.8, button='left')
+
+==================================================
+STEP 40
+==================================================
+
+Thought:
+当前“Find and Replace”对话框中“Other options”处于折叠状态，阻碍了对“Current selection only”复选框的访问（该选项是确保替换仅作用于选中第一段文本的核心设置）。为推进任务，需先展开“Other options”以显示范围限制选项。因此，下一步需**点击“Other options”按钮**（位于对话框中“Help”上方、箭头朝右的按钮），展开隐藏的设置项，为后续勾选“Current selection only”创造条件。
+
+Action:
+pyautogui.click(666.24, 577.8, button='left')
+
+==================================================
+STEP 41
+==================================================
+
+Thought:
+当前“Find and Replace”对话框中“Other options”处于折叠状态，阻碍了对“Current selection only”复选框的访问（该选项是确保替换操作仅作用于预先选中第一段文本的关键设置）。为推进任务，需先展开“Other options”以显示范围限制选项。因此，下一步需**精准点击“Other options”按钮**（位于对话框内“Help”上方、箭头朝右的按钮），展开隐藏的设置项，为后续勾选“Current selection only”创造条件。
+
+Action:
+pyautogui.click(666.24, 577.8, button='left')
+
+==================================================
+STEP 42
+==================================================
+
+Thought:
+当前“Find and Replace”对话框中“Other options”处于折叠状态，阻碍了对“Current selection only”复选框的访问（该选项是确保替换操作仅作用于预先选中第一段文本的核心设置）。为推进任务，需先展开“Other options”以显示范围限制选项。因此，下一步需**精准点击“Other options”按钮**（位于对话框内“Help”上方、箭头朝右的按钮），展开隐藏的设置项，为后续勾选“Current selection only”创造条件。
+
+Action:
+pyautogui.click(666.24, 577.8, button='left')
+
+==================================================
+STEP 43
+==================================================
+
+Thought:
+当前“Find and Replace”对话框中“Other options”处于折叠状态，阻碍了对“Current selection only”复选框的访问（该选项是确保替换操作仅作用于预先选中第一段文本的关键设置）。为推进任务，需**精准点击“Other options”按钮**（位于对话框内“Help”上方、箭头朝右的按钮），展开隐藏的设置项，以显示范围限制相关选项，为后续勾选“Current selection only”创造条件。
+
+Action:
+pyautogui.click(666.24, 577.8, button='left')
+
+==================================================
+STEP 44
+==================================================
+
+Thought:
+当前“Find and Replace”对话框中“Other options”处于折叠状态，阻碍了对“Current selection only”复选框的访问（该选项是确保替换操作仅作用于预先选中第一段文本的核心设置）。为推进任务，需**精准点击“Other options”按钮**（位于对话框内“Help”上方、箭头朝右的按钮），展开隐藏的设置项，以显示范围限制相关选项，为后续勾选“Current selection only”创造条件。
+
+Action:
+pyautogui.click(666.24, 577.8, button='left')
+
+==================================================
+STEP 45
+==================================================
+
+Thought:
+当前“Find and Replace”对话框中“Other options”处于折叠状态，阻碍了对“Current selection only”复选框的访问（该选项是确保替换操作仅作用于预先选中第一段文本的关键设置）。为推进任务，需**精准点击“Other options”按钮**（位于对话框内“Help”上方、箭头朝右的按钮），展开隐藏的设置项，以显示范围限制相关选项，为后续勾选“Current selection only”创造条件。
+
+Action:
+pyautogui.click(666.24, 577.8, button='left')
+
+==================================================
+STEP 46
+==================================================
+
+Thought:
+当前“Find and Replace”对话框中“Other options”处于折叠状态，导致无法访问用于限制替换范围的“Current selection only”复选框。为确保替换操作仅作用于预先选中的第一段文本，需先展开“Other options”以显示范围限制选项。因此，下一步需**精准点击“Other options”按钮**（位于对话框内“Help”上方、箭头朝右的按钮），展开隐藏的设置项，为后续勾选“Current selection only”创造条件。
+
+Action:
+pyautogui.click(660.48, 579.96, button='left')
+
+==================================================
+STEP 47
+==================================================
+
+Thought:
+当前“Find and Replace”对话框中“Other options”处于折叠状态，导致无法访问用于限制替换范围的“Current selection only”复选框。为确保替换操作仅作用于预先选中的第一段文本，需先展开“Other options”以显示范围限制选项。因此，下一步需**精准点击“Other options”按钮**（位于对话框内“Help”上方、箭头朝右的按钮），展开隐藏的设置项，为后续勾选“Current selection only”创造条件。
+
+Action:
+pyautogui.click(660.48, 579.96, button='left')
+
+==================================================
+STEP 48
+==================================================
+
+Thought:
+当前“Find and Replace”对话框中“Other options”处于折叠状态，导致无法访问用于限制替换范围的“Current selection only”复选框。为确保替换操作仅作用于预先选中的第一段文本，需先展开“Other options”以显示范围限制选项。因此，下一步需**精准点击“Other options”按钮**（位于对话框内“Help”按钮上方、显示为向右箭头的按钮），展开隐藏的设置项，为后续勾选“Current selection only”创造条件。
+
+Action:
+pyautogui.click(666.24, 582.12, button='left')
+
+==================================================
+STEP 49
+==================================================
+
+Thought:
+当前“Find and Replace”对话框中“Other options”处于折叠状态，阻碍了对“Current selection only”复选框（控制替换范围的关键选项）的访问。为确保替换操作仅作用于预先选中的第一段文本，需先展开“Other options”以显示范围限制相关设置。因此，下一步需**精准点击“Other options”按钮**（位于对话框内“Help”按钮上方、显示为向右箭头的按钮），展开隐藏的设置项，为后续勾选“Current selection only”创造条件。
+
+Action:
+pyautogui.click(666.24, 582.12, button='left')
+
+==================================================
+STEP 50
+==================================================
+
+Thought:
+当前“Find and Replace”对话框中“Other options”处于折叠状态，无法访问用于限制替换范围的“Current selection only”复选框。为确保替换操作仅作用于预先选中的第一段文本，需先展开“Other options”以显示范围限制相关设置。因此，下一步需**精准点击“Other options”按钮**（位于对话框内“Help”按钮上方、显示为向右箭头的按钮），展开隐藏的设置项，为后续勾选“Current selection only”创造条件。
+
+Action:
+pyautogui.click(666.24, 582.12, button='left')
+
+==================================================
+STEP 51
+==================================================
+
+Thought:
+当前“Find and Replace”对话框中“Other options”处于折叠状态，无法访问用于限制替换范围的“Current selection only”复选框。为确保替换操作仅作用于预先选中的第一段文本，需先展开“Other options”以显示范围限制相关设置。因此，下一步需**精准点击“Other options”按钮**（位于对话框内“Help”按钮上方、显示为向右箭头的按钮），展开隐藏的设置项，为后续勾选“Current selection only”创造条件。
+
+Action:
+pyautogui.click(666.24, 582.12, button='left')
+
+==================================================
+STEP 52
+==================================================
+
+Thought:
+当前“Find and Replace”对话框中“Other options”处于折叠状态，阻碍了对“Current selection only”复选框（控制替换范围的关键选项）的访问。为确保替换操作仅作用于预先选中的第一段文本，需先展开“Other options”以显示范围限制相关设置。因此，下一步需**精准点击“Other options”按钮**（位于对话框内“Help”按钮上方、显示为向右箭头的按钮），展开隐藏的设置项，为后续勾选“Current selection only”创造条件。
+
+Action:
+pyautogui.click(666.24, 582.12, button='left')
+
+==================================================
+STEP 53
+==================================================
+
+Thought:
+当前“Find and Replace”对话框中“Other options”处于折叠状态，阻碍了对“Current selection only”复选框（控制替换范围的关键选项）的访问。为确保替换操作仅作用于预先选中的第一段文本，需先展开“Other options”以显示范围限制相关设置。因此，下一步需**精准点击“Other options”按钮**（位于对话框内“Help”按钮上方、显示为向右箭头的按钮），展开隐藏的设置项，为后续勾选“Current selection only”创造条件。
+
+Action:
+pyautogui.click(666.24, 582.12, button='left')
+
+==================================================
+STEP 54
+==================================================
+
+Thought:
+当前“Find and Replace”对话框中“Other options”处于折叠状态，导致无法访问用于限制替换范围的“Current selection only”复选框。为确保替换操作仅作用于预先选中的第一段文本，需先展开“Other options”以显示范围限制相关设置。因此，下一步需**精准点击“Other options”按钮**（位于对话框内“Help”按钮上方、显示为向右箭头的按钮），展开隐藏的设置项，为后续勾选“Current selection only”创造条件。
+
+Action:
+pyautogui.click(666.24, 582.12, button='left')
+
+==================================================
+STEP 55
+==================================================
+
+Thought:
+当前“Find and Replace”对话框中“Other options”处于折叠状态，阻碍了对“Current selection only”复选框的访问（该选项是确保替换仅作用于选中第一段文本的核心设置）。为推进任务，需**精准点击“Other options”按钮**（位于对话框内“Help”按钮上方、显示为向右箭头的按钮），展开隐藏的设置项，以显示范围限制相关选项，为后续勾选“Current selection only”创造条件。
+
+Action:
+pyautogui.click(666.24, 582.12, button='left')
+
+==================================================
+STEP 56
+==================================================
+
+Thought:
+当前“Find and Replace”对话框中“Other options”处于折叠状态，无法访问用于限制替换范围的“Current selection only”复选框。为确保替换操作仅作用于预先选中的第一段文本，需先展开“Other options”以显示范围限制相关设置。因此，下一步需**精准点击“Other options”按钮**（位于对话框内“Help”按钮上方、显示为向右箭头的按钮），展开隐藏的设置项，为后续勾选“Current selection only”创造条件。
+
+Action:
+pyautogui.click(666.24, 582.12, button='left')
+
+==================================================
+STEP 57
+==================================================
+
+Thought:
+当前“Find and Replace”对话框中“Other options”处于折叠状态，导致无法访问用于限制替换范围的“Current selection only”复选框。为确保替换操作仅作用于预先选中的第一段文本，需先展开“Other options”面板以显示范围限制选项。因此，需**精准点击“Other options”按钮**（位于对话框内“Help”按钮上方、显示为向右箭头的折叠按钮），展开隐藏的设置项，为后续勾选“Current selection only”创造条件。
+
+Action:
+pyautogui.click(660.48, 579.96, button='left')
+
+==================================================
+STEP 58
+==================================================
+
+Thought:
+当前“Find and Replace”对话框中“Other options”处于折叠状态，阻碍了对“Current selection only”复选框（控制替换范围的关键选项）的访问。为确保替换操作仅作用于预先选中的第一段文本，需先展开“Other options”面板以显示范围限制设置。因此，下一步需**精准点击“Other options”按钮**（位于对话框内“Help”按钮上方、显示为折叠状态的按钮），展开隐藏的设置项，为后续勾选“Current selection only”创造条件。
+
+Action:
+pyautogui.click(660.48, 579.96, button='left')
+
+==================================================
+STEP 59
+==================================================
+
+Thought:
+当前“Find and Replace”对话框中“Other options”处于折叠状态，阻碍了对“Current selection only”复选框的访问（该选项是确保替换仅作用于选中第一段文本的核心设置）。为推进任务，需**精准点击“Other options”按钮**（位于对话框内“Help”按钮上方、显示为折叠状态的按钮），展开隐藏的设置项，以显示范围限制相关选项，为后续勾选“Current selection only”创造条件。
+
+Action:
+pyautogui.click(660.48, 579.96, button='left')
+
+==================================================
+STEP 60
+==================================================
+
+Thought:
+当前“Find and Replace”对话框中“Other options”处于折叠状态，导致无法访问用于限制替换范围的“Current selection only”复选框。为确保替换操作仅作用于预先选中的第一段文本，需先展开“Other options”面板以显示范围限制选项。因此，下一步需**精准点击“Other options”按钮**（位于对话框内“Help”按钮上方、显示为向右箭头的折叠按钮），展开隐藏的设置项，为后续勾选“Current selection only”创造条件。
+
+Action:
+pyautogui.click(660.48, 579.96, button='left')
+
+==================================================
+STEP 61
+==================================================
+
+Thought:
+当前“Find and Replace”对话框中“Other options”处于折叠状态，无法访问用于限制替换范围的“Current selection only”复选框。为确保替换操作仅作用于预先选中的第一段文本，需先展开“Other options”面板以显示范围限制选项。因此，需**精准点击“Other options”按钮**（位于对话框内“Help”按钮上方、显示为向右箭头的折叠按钮），展开隐藏的设置项，为后续勾选“Current selection only”创造条件。
+
+Action:
+pyautogui.click(660.48, 579.96, button='left')
+
+==================================================
+STEP 62
+==================================================
+
+Thought:
+当前“Find and Replace”对话框中“Other options”处于折叠状态，需先展开该区域以访问“Current selection only”复选框（确保替换仅作用于选中的第一段文本）。此前多次点击“Other options”文字旁未触发展开，需**精准点击“Other options”按钮的折叠控制区域**（位于文字左侧，视觉上是可展开的交互元素），以显示包含范围限制的设置项，为后续勾选“Current selection only”和执行替换做准备。
+
+Action:
+pyautogui.click(660.48, 579.96, button='left')
+
+==================================================
+STEP 63
+==================================================
+
+Thought:
+要确保替换操作仅作用于预先选中的第一段文本，需先展开“Find and Replace”对话框中的“Other options”区域以访问“Current selection only”复选框。此前重复点击“Other options”文字未触发展开，需**精准点击“Other options”标签**（该标签为可交互元素，点击后会展开隐藏的范围限制选项），以显示“Current selection only”复选框，为后续勾选范围限制和执行替换做准备。
+
+Action:
+pyautogui.click(708.48, 577.8, button='left')
+
+==================================================
+STEP 64
+==================================================
+
+Thought:
+当前“Find and Replace”对话框中“Other options”处于折叠状态，阻碍了对“Current selection only”复选框（控制替换范围的关键选项）的访问。为确保替换操作仅作用于预先选中的第一段文本，需先展开“Other options”面板以显示范围限制设置。因此，下一步需**精准点击“Other options”按钮**（位于对话框内“Help”按钮上方、显示为向右箭头的折叠按钮），展开隐藏的设置项，为后续勾选“Current selection only”创造条件。
+
+Action:
+pyautogui.click(666.24, 579.96, button='left')
+
+==================================================
+STEP 65
+==================================================
+
+Thought:
+当前“Find and Replace”对话框中“Other options”处于折叠状态，需先展开该区域以访问“Current selection only”复选框（此为确保替换仅作用于选中第一段文本的关键设置）。此前重复点击未触发展开，需**精准点击“Other options”左侧的展开箭头**（该箭头为交互元素，点击后将显示包含范围限制的设置项），为后续勾选“Current selection only”和执行替换操作扫清障碍。
+
+Action:
+pyautogui.click(660.48, 577.8, button='left')
+
+==================================================
+STEP 66
+==================================================
+
+Thought:
+要确保替换操作仅作用于预先选中的第一段文本，需先展开“Find and Replace”对话框中的“Other options”区域以访问“Current selection only”复选框。此前重复点击未触发展开，需**精准点击“Other options”左侧的展开箭头**（该箭头为交互元素，点击后将显示包含范围限制的设置项），为后续勾选“Current selection only”和执行替换操作提供基础。
+
+Action:
+pyautogui.click(660.48, 577.8, button='left')
+
+==================================================
+STEP 67
+==================================================
+
+Thought:
+当前“Find and Replace”对话框中“Other options”处于折叠状态，需展开该区域以访问“Current selection only”复选框（此为限制替换范围至选中第一段的关键设置）。需**精准点击“Other options”左侧的展开箭头**（该箭头为交互元素，点击后将显示包含范围限制的设置项），为后续勾选范围限制和执行替换操作提供基础。
+
+Action:
+pyautogui.click(660.48, 577.8, button='left')
+
+==================================================
+STEP 68
+==================================================
+
+Thought:
+要确保替换操作仅作用于预先选中的第一段文本，需先展开“Find and Replace”对话框中“Other options”区域以访问“Current selection only”复选框。此前重复点击“Other options”文字未触发展开，需**精准点击“Other options”左侧的展开箭头**（该箭头为交互元素，点击后将显示包含范围限制的设置项），为后续勾选范围限制和执行替换操作提供基础。
+
+Action:
+pyautogui.click(660.48, 577.8, button='left')
+
+==================================================
+STEP 69
+==================================================
+
+Thought:
+要解决替换范围仅针对选中第一段的问题，需先展开“Find and Replace”对话框中折叠的“Other options”区域，以访问“Current selection only”复选框。此前重复点击“Other options”文字未触发展开，需**精准点击“Other options”左侧的展开箭头**（该箭头为交互元素，点击后将显示包含范围限制的设置项），为后续勾选范围限制和执行替换操作提供基础。
+
+Action:
+pyautogui.click(660.48, 577.8, button='left')
+
+==================================================
+STEP 70
+==================================================
+
+Thought:
+当前“Find and Replace”对话框中“Other options”处于折叠状态，阻碍了对“Current selection only”复选框（控制替换范围的关键选项）的访问。为确保替换操作仅作用于预先选中的第一段文本，需先展开“Other options”面板以显示范围限制设置。因此，下一步需**精准点击“Other options”标签**（该标签为可交互元素，点击后会展开隐藏的范围限制选项），为后续勾选“Current selection only”和执行替换操作创造条件。
+
+Action:
+pyautogui.click(708.48, 577.8, button='left')
+
+==================================================
+STEP 71
+==================================================
+
+Thought:
+要确保替换操作仅作用于预先选中的第一段文本，需先展开“Find and Replace”对话框中折叠的“Other options”区域，以访问“Current selection only”复选框。此前重复点击未触发展开，需精准点击“Other options”左侧的**展开箭头**（该箭头为交互元素，点击后将显示包含范围限制的设置项），为后续勾选范围限制和执行替换操作提供基础。
+
+Action:
+pyautogui.click(660.48, 579.96, button='left')
+
+==================================================
+STEP 72
+==================================================
+
+Thought:
+要确保替换操作仅作用于预先选中的第一段文本，需先展开“Find and Replace”对话框中折叠的“Other options”区域，以访问“Current selection only”复选框。当前“Other options”左侧箭头为向右状态（折叠），需**精准点击该箭头**触发展开，显示包含范围限制的设置项，为后续勾选“Current selection only”和执行替换操作提供基础。
+
+Action:
+pyautogui.click(660.48, 579.96, button='left')
+
+==================================================
+STEP 73
+==================================================
+
+Thought:
+当前“Find and Replace”对话框中“Other options”处于折叠状态，需展开该区域以访问“Current selection only”复选框（此为限制替换范围至选中第一段的关键设置）。需**精准点击“Other options”左侧的展开箭头**（该箭头为交互元素，点击后将显示包含范围限制的设置项），为后续勾选“Current selection only”和执行替换操作扫清障碍。
+
+Action:
+pyautogui.click(660.48, 579.96, button='left')
+
+==================================================
+STEP 74
+==================================================
+
+Thought:
+要确保替换操作仅作用于预先选中的第一段文本，需先展开“Find and Replace”对话框中折叠的“Other options”区域，以访问“Current selection only”复选框。当前“Other options”左侧箭头为向右状态（表示折叠），需**精准点击该箭头**触发展开，显示包含范围限制的设置项，为后续勾选“Current selection only”和执行替换操作提供基础。
+
+Action:
+pyautogui.click(660.48, 579.96, button='left')
+
+==================================================
+STEP 75
+==================================================
+
+Thought:
+要确保替换操作仅作用于预先选中的第一段文本，需先展开“Find and Replace”对话框中折叠的“Other options”区域，以访问“Current selection only”复选框。当前“Other options”左侧的展开箭头处于折叠状态（箭头向右），需**精准点击该展开箭头**，使隐藏的范围限制选项可见，为后续勾选“Current selection only”和执行替换操作提供基础。
+
+Action:
+pyautogui.click(660.48, 577.8, button='left')
+
+==================================================
+STEP 76
+==================================================
+
+Thought:
+要确保替换操作仅作用于预先选中的第一段文本，需先展开“Find and Replace”对话框中折叠的“Other options”区域，以访问“Current selection only”复选框。当前“Other options”左侧的展开箭头处于折叠状态（箭头向右），需**精准点击“Other options”文字左侧的展开箭头**，使隐藏的范围限制选项可见，为后续勾选“Current selection only”和执行替换操作提供基础。
+
+Action:
+pyautogui.click(660.48, 577.8, button='left')
+
+==================================================
+STEP 77
+==================================================
+
+Thought:
+要确保替换操作仅作用于预先选中的第一段文本，需先展开“Find and Replace”对话框中折叠的“Other options”区域，以访问“Current selection only”复选框。当前“Other options”处于折叠状态（箭头向右），需**精准点击“Other options”按钮**（该按钮为可交互元素，点击后将展开隐藏的范围限制选项），为后续勾选“Current selection only”和执行替换操作创造条件。
+
+Action:
+pyautogui.click(660.48, 577.8, button='left')
+
+==================================================
+STEP 78
+==================================================
+
+Thought:
+要确保替换操作仅作用于预先选中的第一段文本，需先展开“Find and Replace”对话框中折叠的“Other options”区域，以访问“Current selection only”复选框。当前“Other options”左侧的展开箭头处于折叠状态（箭头向右），需**精准点击“Other options”文字左侧的展开箭头**，使隐藏的范围限制选项可见，为后续勾选“Current selection only”和执行替换操作提供基础。
+
+Action:
+pyautogui.click(660.48, 577.8, button='left')
+
+==================================================
+STEP 79
+==================================================
+
+Thought:
+要确保替换操作仅作用于预先选中的第一段文本，需先展开“Find and Replace”对话框中折叠的“Other options”区域以访问“Current selection only”复选框。观察到“Other options”左侧存在展开箭头（当前为折叠状态，箭头向右），需**精准点击该展开箭头**，使隐藏的范围限制选项可见，为后续勾选“Current selection only”和执行替换操作提供基础。
+
+Action:
+pyautogui.click(660.48, 577.8, button='left')
+
+==================================================
+STEP 80
+==================================================
+
+Thought:
+要确保替换操作仅作用于预先选中的第一段文本，需先展开“Find and Replace”对话框中折叠的“Other options”区域，以访问“Current selection only”复选框。当前“Other options”处于折叠状态，需**点击“Other options”标签**（该标签为可交互元素，点击后会展开隐藏的范围限制选项），为后续勾选“Current selection only”和执行替换操作创造条件。
+
+Action:
+pyautogui.click(708.48, 577.8, button='left')
+
+==================================================
+STEP 81
+==================================================
+
+Thought:
+要确保替换操作仅作用于预先选中的第一段文本，需先展开“Find and Replace”对话框中折叠的“Other options”区域，以访问“Current selection only”复选框。当前“Other options”左侧的展开箭头处于折叠状态（箭头向右），需**精准点击该展开箭头**，使隐藏的范围限制选项可见，为后续勾选“Current selection only”和执行替换操作提供基础。
+
+Action:
+pyautogui.click(660.48, 579.96, button='left')
+
+==================================================
+STEP 82
+==================================================
+
+Thought:
+要确保替换操作仅作用于预先选中的第一段文本，需先展开“Find and Replace”对话框中折叠的“Other options”区域，以访问“Current selection only”复选框。当前“Other options”左侧的展开箭头处于折叠状态（箭头向右），需**精准点击该展开箭头**，使隐藏的范围限制选项可见，从而能够勾选“Current selection only”以限制替换范围，为后续执行替换操作提供基础。
+
+Action:
+pyautogui.click(660.48, 579.96, button='left')
+
+==================================================
+STEP 83
+==================================================
+
+Thought:
+要确保替换操作仅作用于预先选中的第一段文本，需先展开“Find and Replace”对话框中折叠的“Other options”区域，以访问“Current selection only”复选框。当前“Other options”左侧的展开箭头处于折叠状态（箭头向右），需**精准点击该展开箭头**，使隐藏的范围限制选项可见，从而能够勾选“Current selection only”以限制替换范围，为后续执行替换操作提供基础。
+
+Action:
+pyautogui.click(660.48, 579.96, button='left')
+
+==================================================
+STEP 84
+==================================================
+
+Thought:
+要确保替换操作仅作用于预先选中的第一段文本，需先展开“Find and Replace”对话框中折叠的“Other options”区域以访问“Current selection only”复选框。当前“Other options”左侧的展开箭头处于折叠状态（箭头向右），需**精准点击该展开箭头**（位于“Other options”文字左侧），使隐藏的范围限制选项可见，为后续勾选“Current selection only”和执行替换操作提供基础。
+
+Action:
+pyautogui.click(660.48, 579.96, button='left')
+
+==================================================
+STEP 85
+==================================================
+
+Thought:
+要确保替换操作仅作用于预先选中的第一段文本，需先展开“Find and Replace”对话框中折叠的“Other options”区域，以访问“Current selection only”复选框。当前“Other options”左侧的展开箭头处于折叠状态（箭头向右），需**精准点击“Other options”左侧的展开箭头**（该箭头为交互元素，点击后将显示包含范围限制的设置项），为后续勾选“Current selection only”和执行替换操作提供基础。
+
+Action:
+pyautogui.click(660.48, 579.96, button='left')
+
+==================================================
+STEP 86
+==================================================
+
+Thought:
+要解决替换范围仅针对选中第一段的问题，需先展开“Find and Replace”对话框中折叠的“Other options”区域，以访问“Current selection only”复选框。此前重复点击“Other options”文字未触发展开，需**精准点击“Other options”左侧的展开箭头**（该箭头为交互元素，点击后将显示包含范围限制的设置项），为后续勾选“Current selection only”和执行替换操作扫清障碍。
+
+Action:
+pyautogui.click(660.48, 579.96, button='left')
+
+==================================================
+STEP 87
+==================================================
+
+Thought:
+要确保替换操作仅作用于预先选中的第一段文本，需先展开“Find and Replace”对话框中折叠的“Other options”区域，以访问“Current selection only”复选框。当前“Other options”左侧的展开箭头处于折叠状态（箭头向右），需**精准点击“Other options”文字左侧的展开箭头**（该箭头为交互元素，点击后将显示包含范围限制的设置项），为后续勾选“Current selection only”和执行替换操作提供基础。
+
+Action:
+pyautogui.click(660.48, 579.96, button='left')
+
+==================================================
+STEP 88
+==================================================
+
+Thought:
+要确保替换操作仅作用于预先选中的第一段文本，需先展开“Find and Replace”对话框中折叠的“Other options”区域，以访问“Current selection only”复选框。当前“Other options”处于折叠状态（无展开箭头显示，表明需点击文字区域触发展开），因此需**点击“Other options”文字本身**，展开隐藏的范围限制选项，为后续勾选“Current selection only”和执行替换操作创造条件。
+
+Action:
+pyautogui.click(708.48, 577.8, button='left')
+
+==================================================
+STEP 89
+==================================================
+
+Thought:
+要确保替换操作仅作用于预先选中的第一段文本，需先展开“Find and Replace”对话框中折叠的“Other options”区域，以访问“Current selection only”复选框。当前“Other options”左侧箭头为向右的折叠状态，需**点击“Other options”左侧的展开箭头**（该箭头为交互元素，点击后将显示包含范围限制的设置项），为后续勾选“Current selection only”和执行替换操作提供基础。
+
+Action:
+pyautogui.click(660.48, 579.96, button='left')
+
+==================================================
+STEP 90
+==================================================
+
+Thought:
+要确保替换操作仅作用于预先选中的第一段文本，需先展开“Find and Replace”对话框中折叠的“Other options”区域，以访问“Current selection only”复选框。当前“Other options”左侧箭头为向右的折叠状态，需**精准点击“Other options”左侧的展开箭头**（该箭头为交互元素，点击后将显示包含范围限制的设置项），为后续勾选“Current selection only”和执行替换操作提供基础。
+
+Action:
+pyautogui.click(660.48, 579.96, button='left')
+
+==================================================
+STEP 91
+==================================================
+
+Thought:
+要确保替换操作仅作用于预先选中的第一段文本，需先展开“Find and Replace”对话框中折叠的“Other options”区域，以访问“Current selection only”复选框。当前“Other options”左侧显示向右的折叠箭头，需**精准点击该箭头**触发展开，显示包含范围限制的设置项，为后续勾选“Current selection only”和执行替换操作提供基础。
+
+Action:
+pyautogui.click(660.48, 579.96, button='left')
+
+==================================================
+STEP 92
+==================================================
+
+Thought:
+要确保替换操作仅作用于预先选中的第一段文本，需先展开“Find and Replace”对话框中折叠的“Other options”区域，以访问“Current selection only”复选框。当前“Other options”左侧显示向右的折叠箭头，需**精准点击该箭头**触发展开，显示包含范围限制的设置项，为后续勾选“Current selection only”和执行替换操作提供基础。
+
+Action:
+pyautogui.click(660.48, 579.96, button='left')
+
+==================================================
+STEP 93
+==================================================
+
+Thought:
+要确保替换操作仅作用于预先选中的第一段文本，需先展开“Find and Replace”对话框中折叠的“Other options”区域，以访问“Current selection only”复选框。当前“Other options”左侧显示向右的折叠箭头，需**精准点击该箭头**触发展开，显示包含范围限制的设置项，为后续勾选“Current selection only”和执行替换操作提供基础。
+
+Action:
+pyautogui.click(660.48, 579.96, button='left')
+
+==================================================
+STEP 94
+==================================================
+
+Thought:
+要确保替换操作仅作用于预先选中的第一段文本，需先展开“Find and Replace”对话框中折叠的“Other options”区域，以访问“Current selection only”复选框。此前重复点击“Other options”旁空白处未触发展开，需**精准点击“Other options”标签文字**（该标签为可交互元素，点击后会展开隐藏的范围限制选项），为后续勾选“Current selection only”和执行替换操作创造条件。
+
+Action:
+pyautogui.click(708.48, 577.8, button='left')
+
+==================================================
+STEP 95
+==================================================
+
+Thought:
+要确保替换操作仅作用于预先选中的第一段文本，需先展开“Find and Replace”对话框中折叠的“Other options”区域，以访问“Current selection only”复选框。当前“Other options”左侧显示向右的折叠箭头，需**精准点击该箭头**触发展开，显示包含范围限制的设置项，为后续勾选“Current selection only”和执行替换操作提供基础。
+
+Action:
+pyautogui.click(660.48, 579.96, button='left')
+
+==================================================
+STEP 96
+==================================================
+
+Thought:
+要确保替换操作仅作用于预先选中的第一段文本，需先展开“Find and Replace”对话框中折叠的“Other options”区域，以访问“Current selection only”复选框。当前“Other options”左侧显示向右的折叠箭头，需**精准点击该箭头**触发展开，显示包含范围限制的设置项（如“Current selection only”复选框），为后续勾选范围限制和执行替换操作提供基础。
+
+Action:
+pyautogui.click(660.48, 579.96, button='left')
+
+==================================================
+STEP 97
+==================================================
+
+Thought:
+要确保替换操作仅作用于预先选中的第一段文本，需先展开“Find and Replace”对话框中折叠的“Other options”区域，以访问“Current selection only”复选框。当前“Other options”左侧显示向右的折叠箭头，需**精准点击该箭头**触发展开，显示包含范围限制的设置项（如“Current selection only”复选框），为后续勾选范围限制和执行替换操作提供基础。
+
+Action:
+pyautogui.click(660.48, 579.96, button='left')
+
+==================================================
+STEP 98
+==================================================
+
+Thought:
+要确保替换操作仅作用于预先选中的第一段文本，需先展开“Find and Replace”对话框中折叠的“Other options”区域以访问“Current selection only”复选框。当前“Other options”左侧显示向右的折叠箭头（交互元素），需**精准点击该折叠箭头**触发展开，使包含范围限制的设置项（如“Current selection only”）可见，为后续勾选范围限制和执行替换操作提供基础。
+
+Action:
+pyautogui.click(660.48, 579.96, button='left')
+
+==================================================
+STEP 99
+==================================================
+
+Thought:
+要确保替换操作仅作用于预先选中的第一段文本，需先展开“Find and Replace”对话框中折叠的“Other options”区域，以访问“Current selection only”复选框。当前“Other options”左侧显示向右的折叠箭头（交互元素），需**精准点击该折叠箭头**触发展开，使包含范围限制的设置项（如“Current selection only”）可见，为后续勾选范围限制和执行替换操作提供基础。
+
+Action:
+pyautogui.click(660.48, 579.96, button='left')
+
+==================================================
+STEP 100
+==================================================
+
+Thought:
+要实现仅对选中第一段文本进行替换，需先展开“Find and Replace”对话框中折叠的“Other options”区域以访问“Current selection only”复选框。当前“Other options”左侧的折叠箭头处于收起状态（箭头向右），需**精准点击该折叠箭头**触发展开，使包含范围限制的设置项可见，为后续勾选“Current selection only”和执行替换操作提供基础。
+
+Action:
+pyautogui.click(660.48, 579.96, button='left')

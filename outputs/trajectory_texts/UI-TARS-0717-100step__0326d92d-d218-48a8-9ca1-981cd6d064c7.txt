@@ -1,0 +1,34 @@
+Trajectory ID: 0326d92d-d218-48a8-9ca1-981cd6d064c7
+Source Model: UI-TARS-0717-100step
+Domain: libreoffice_calc
+
+Task:
+Calculate the total sales in an underneath row called "Total" and display the total of each month as bars. Then calculate the month-on-month growth percentage for Feb to Jun in another row called "Growth" and show them in a line chart (Jan should be omitted in the chart as well). Set the chart titles as the two row headers respectively.
+
+Success Binary: False
+Success Raw: 0.0
+
+Number of Steps: 2
+
+============================================================
+TRAJECTORY
+============================================================
+
+==================================================
+STEP 1
+==================================================
+
+Thought:
+首先，需要添加“Total”行来计算每月总销售额。先确定行的位置，应该在数据下方，比如第13行？不对，现有数据到第12行，所以第13行可以作为Total行。首先，在A13单元格输入“Total”，然后在B13到G13分别计算每月的总和，用SUM函数，比如B13=SUM(B2:B12)，依次计算Feb到Jun的总和。然后添加“Growth”行，计算环比增长率，环比增长率公式是（本月-上月）/上月*100，从Feb到Jun，所以A14输入“Growth”，然后C14=(C13-B13)/B13，D14=(D13-C13)/C13，依此类推到G14。之后制作图表：首先处理柱状图，选中Total行的月份数据（B13到G13）和标题A13，插入柱状图，标题为“Total”。然后处理折线图，选中Growth行的C14到G14（因为Jan省略，所以从Feb到Jun，对应C到G）和标题A14，插入折线图，标题为“Growth”。
+
+首先第一步，定位到A13单元格，输入“Total”，然后计算每月总和。所以先点击A13单元格，输入“Total”。
+
+Action:
+pyautogui.click(145.92, 432.0, button='left')
+
+==================================================
+STEP 2
+==================================================
+
+Action:
+FAIL

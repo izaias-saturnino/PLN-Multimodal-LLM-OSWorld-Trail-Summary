@@ -1,0 +1,42 @@
+Trajectory ID: ce88f674-ab7a-43da-9201-468d38539e4a
+Source Model: doubao-1-5-thinking-vision-pro-250428-100step
+Domain: libreoffice_impress
+
+Task:
+Please set my slides upright instead of sideways.
+
+Success Binary: False
+Success Raw: 0.0
+
+Number of Steps: 3
+
+============================================================
+TRAJECTORY
+============================================================
+
+==================================================
+STEP 1
+==================================================
+
+Thought:
+要将幻灯片从横向改为纵向，需操作右侧Properties面板中的Orientation选项。当前Orientation显示为“Landscape”（横向），需点击该下拉菜单并选择“Portrait”（纵向）来完成设置。因此，下一步是点击Orientation的下拉框以展开选项列表。
+
+Action:
+pyautogui.click(1656.96, 263.52, button='left')
+
+==================================================
+STEP 2
+==================================================
+
+Thought:
+右侧Properties面板中Orientation的下拉菜单已展开，显示“Landscape”（横向）和“Portrait”（纵向）选项。要将幻灯片设置为 upright（纵向），需选择“Portrait”选项。因此，下一步是点击下拉菜单中的“Portrait”选项来更改幻灯片方向。
+
+Action:
+pyautogui.click(1626.24, 321.84, button='left')
+
+==================================================
+STEP 3
+==================================================
+
+Action:
+DONE

@@ -1,0 +1,31 @@
+{
+  "output_dir": "outputs\\paper_tables",
+  "output_files": {
+    "table1_dataset_construction": "outputs\\paper_tables\\table1_dataset_construction.csv",
+    "table2_final_gold_distribution": "outputs\\paper_tables\\table2_final_gold_distribution.csv",
+    "table3_reference_metrics": "outputs\\paper_tables\\table3_reference_metrics.csv",
+    "table4_llm_judge_results": "outputs\\paper_tables\\table4_llm_judge_results.csv",
+    "table5_paired_outcome_distribution": "outputs\\paper_tables\\table5_paired_outcome_distribution.csv",
+    "table6_qualitative_findings": "outputs\\paper_tables\\table6_qualitative_findings.csv"
+  },
+  "num_rows": {
+    "table1_dataset_construction": 9,
+    "table2_final_gold_distribution": 32,
+    "table3_reference_metrics": 2,
+    "table4_llm_judge_results": 2,
+    "table5_paired_outcome_distribution": 20,
+    "table6_qualitative_findings": 134
+  },
+  "inputs": {
+    "screened_manifest": "outputs\\screened_manifest.jsonl",
+    "selected_stats": "outputs\\selected_paired_balanced_stats.json",
+    "gold_clean_stats": "outputs\\gold_final_paired_clean_stats.json",
+    "reference_metrics_summary": "outputs\\reference_metrics_summary.json",
+    "judge_analysis_summary": "outputs\\judge_analysis_summary.json",
+    "qualitative_pair_summary": "outputs\\qualitative_pair_analysis_summary.json",
+    "llm_qual_summary": "outputs\\llm_qualitative_pair_analysis_success_failure_summary.json",
+    "llm_qual_records": "outputs\\llm_qualitative_pair_analysis_success_failure.jsonl",
+    "optional_llm_qual_summary": "outputs\\llm_qualitative_pair_analysis_cases_summary.json",
+    "optional_llm_qual_records": "outputs\\llm_qualitative_pair_analysis_cases.jsonl"
+  }
+}

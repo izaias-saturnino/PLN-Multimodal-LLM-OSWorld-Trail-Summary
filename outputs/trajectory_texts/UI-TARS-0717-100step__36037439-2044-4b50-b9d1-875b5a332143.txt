@@ -1,0 +1,82 @@
+Trajectory ID: 36037439-2044-4b50-b9d1-875b5a332143
+Source Model: UI-TARS-0717-100step
+Domain: multi_apps
+
+Task:
+Could you please pull up the Google Scholar page of the corresponding author for me in Chrome?
+
+Success Binary: False
+Success Raw: 0.0
+
+Number of Steps: 7
+
+============================================================
+TRAJECTORY
+============================================================
+
+==================================================
+STEP 1
+==================================================
+
+Thought:
+现在屏幕显示的是PDF文档，要完成任务首先需要退出这个PDF查看界面，然后打开Chrome浏览器。第一步应该是关闭当前的PDF窗口，或者使用快捷键退出全屏（如果是全屏的话），比如按Esc键退出全屏，然后找到Chrome图标打开浏览器，之后搜索Google Scholar并查找对应作者的页面。
+
+首先，当前PDF可能是全屏显示，按Esc键退出全屏，这样能看到桌面或应用程序列表，以便打开Chrome。
+
+Action:
+pyautogui.hotkey('esc')
+
+==================================================
+STEP 2
+==================================================
+
+Thought:
+现在已经退出了PDF的全屏模式，看到桌面左侧有Chrome浏览器的图标（最上方的彩色圆环图标）。要完成任务，首先需要打开Chrome浏览器，然后访问Google Scholar，查找对应作者的页面。所以下一步应该点击左侧的Chrome图标启动浏览器。
+
+Action:
+pyautogui.click(30.72, 61.56, button='left')
+
+==================================================
+STEP 3
+==================================================
+
+Action:
+WAIT
+
+==================================================
+STEP 4
+==================================================
+
+Thought:
+现在Chrome已经打开，显示Google主页。要访问Google Scholar，需要在地址栏或搜索框输入"Google Scholar"。首先点击搜索框（中间的"Search Google or type a URL"），然后输入关键词进行搜索。
+
+Action:
+pyautogui.click(950.4, 426.6, button='left')
+
+==================================================
+STEP 5
+==================================================
+
+Thought:
+现在搜索框已经激活，接下来需要输入"Google Scholar"来访问该页面。输入这个关键词后按回车键，就能搜索到Google Scholar的官方页面，之后再查找对应作者的信息。
+
+Action:
+pyperclip.copy('Google Scholar')
+pyautogui.hotkey('ctrl', 'v')
+
+==================================================
+STEP 6
+==================================================
+
+Thought:
+现在地址栏下方的建议列表中，有"Google Scholar - scholar.google.com"这个选项，这是官方的Google Scholar页面链接。点击这个选项可以直接进入Google Scholar，之后就能搜索对应作者的页面了。所以下一步应该点击这个建议项。
+
+Action:
+pyautogui.click(282.24, 409.32, button='left')
+
+==================================================
+STEP 7
+==================================================
+
+Action:
+DONE

@@ -1,0 +1,70 @@
+Trajectory ID: bba3381f-b5eb-4439-bd9e-80c22218d5a7
+Source Model: UI-TARS-0717-100step
+Domain: vlc
+
+Task:
+Can you start streaming the video from this link for me? https://devstreaming-cdn.apple.com/videos/streaming/examples/img_bipbop_adv_example_fmp4/master.m3u8
+
+Success Binary: True
+Success Raw: 1.0
+
+Number of Steps: 6
+
+============================================================
+TRAJECTORY
+============================================================
+
+==================================================
+STEP 1
+==================================================
+
+Thought:
+要在VLC中播放给定的m3u8链接，首先需要打开媒体相关的选项来添加网络流。VLC的菜单栏里有“Media”选项，点击它可以找到打开网络串流的功能。所以下一步应该点击VLC窗口顶部的“Media”菜单。
+
+Action:
+pyautogui.click(654.72, 370.44, button='left')
+
+==================================================
+STEP 2
+==================================================
+
+Thought:
+现在Media菜单已经展开，要播放网络流链接，需要选择“Open Network Stream...”选项，这个选项对应的快捷键是Ctrl+N，点击它可以打开网络串流的输入窗口，之后就能输入给定的m3u8链接了。所以下一步应该点击“Open Network Stream...”。
+
+Action:
+pyautogui.click(737.28, 486.0, button='left')
+
+==================================================
+STEP 3
+==================================================
+
+Thought:
+现在已经打开了“Open Media”窗口的Network标签页，输入框已经激活（可以看到光标）。需要把给定的m3u8链接输入进去，也就是https://devstreaming-cdn.apple.com/videos/streaming/examples/img_bipbop_adv_example_fmp4/master.m3u8，输入完成后才能点击Play按钮播放。
+
+Action:
+pyperclip.copy('https://devstreaming-cdn.apple.com/videos/streaming/examples/img_bipbop_adv_example_fmp4/master.m3u8')
+pyautogui.hotkey('ctrl', 'v')
+
+==================================================
+STEP 4
+==================================================
+
+Thought:
+现在链接已经输入到Network URL的输入框中，接下来需要点击“Play”按钮来开始播放这个网络流。这个按钮在“Open Media”窗口的右下角，点击它VLC就会尝试加载并播放这个m3u8链接的视频流。
+
+Action:
+pyautogui.click(1059.84, 750.6, button='left')
+
+==================================================
+STEP 5
+==================================================
+
+Action:
+WAIT
+
+==================================================
+STEP 6
+==================================================
+
+Action:
+DONE

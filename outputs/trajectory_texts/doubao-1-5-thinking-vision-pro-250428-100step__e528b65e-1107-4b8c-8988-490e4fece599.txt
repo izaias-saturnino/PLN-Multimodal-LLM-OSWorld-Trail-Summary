@@ -1,0 +1,62 @@
+Trajectory ID: e528b65e-1107-4b8c-8988-490e4fece599
+Source Model: doubao-1-5-thinking-vision-pro-250428-100step
+Domain: libreoffice_writer
+
+Task:
+Please help me make the first letter of each word to uppercase.
+
+Success Binary: False
+Success Raw: 0.0
+
+Number of Steps: 5
+
+============================================================
+TRAJECTORY
+============================================================
+
+==================================================
+STEP 1
+==================================================
+
+Thought:
+要将每个单词的首字母大写，首先需要选中所有文本内容，这样才能对整体应用格式修改。在LibreOffice Writer中，使用快捷键“ctrl a”可以快速全选文本。因此，下一步是执行全选操作。
+
+Action:
+pyautogui.hotkey('ctrl', 'a')
+
+==================================================
+STEP 2
+==================================================
+
+Thought:
+现在文本已全选，需要将每个单词首字母大写。在LibreOffice Writer中，该功能位于Format菜单的Text子菜单下的Capitalization选项中。因此，下一步需点击顶部菜单栏的Format选项，以展开格式设置菜单，进而找到首字母大写的功能入口。
+
+Action:
+pyautogui.click(288.0, 76.68, button='left')
+
+==================================================
+STEP 3
+==================================================
+
+Thought:
+已打开Format菜单，接下来需展开Text子菜单以找到首字母大写的功能。在LibreOffice Writer中，文本格式相关的大小写设置位于Format→Text子菜单下，因此需点击Text选项来展开其子菜单，进而找到实现每个单词首字母大写的选项。
+
+Action:
+pyautogui.click(320.64, 100.44, button='left')
+
+==================================================
+STEP 4
+==================================================
+
+Thought:
+现在Text子菜单已展开，其中“Capitalize Every Word”选项正是实现每个单词首字母大写的功能。由于之前已全选文本，点击该选项即可完成格式设置。因此，下一步需点击“Capitalize Every Word”选项来应用此格式。
+
+Action:
+pyautogui.click(618.24, 482.76, button='left')
+
+==================================================
+STEP 5
+==================================================
+
+Action:
+DONE

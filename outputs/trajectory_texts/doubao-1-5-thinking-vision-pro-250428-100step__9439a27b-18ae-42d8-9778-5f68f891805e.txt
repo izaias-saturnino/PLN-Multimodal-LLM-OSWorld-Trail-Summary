@@ -1,0 +1,73 @@
+Trajectory ID: 9439a27b-18ae-42d8-9778-5f68f891805e
+Source Model: doubao-1-5-thinking-vision-pro-250428-100step
+Domain: vs_code
+
+Task:
+Please help me modify the setting of VS Code to keep my cursor focused on the debug console when debugging in VS Code, instead of automatically focusing back on the Editor.
+
+Success Binary: True
+Success Raw: 1.0
+
+Number of Steps: 6
+
+============================================================
+TRAJECTORY
+============================================================
+
+==================================================
+STEP 1
+==================================================
+
+Thought:
+要修改VS Code的调试光标焦点设置，首先需要打开设置界面。VS Code的设置可以通过菜单栏的File选项进入。因此，第一步应点击顶部菜单栏的“File”选项，以展开后续的设置入口菜单。
+
+Action:
+pyautogui.click(90.24, 70.2, button='left')
+
+==================================================
+STEP 2
+==================================================
+
+Thought:
+要进入VS Code的设置界面，需先通过File菜单打开Preferences子菜单。当前File菜单已展开，下一步应点击“Preferences”选项，以展开包含设置入口的子菜单，从而继续后续的设置修改操作。
+
+Action:
+pyautogui.click(144.0, 540.0, button='left')
+
+==================================================
+STEP 3
+==================================================
+
+Thought:
+要修改VS Code的调试光标焦点设置，需先进入设置界面。当前Preferences子菜单已展开，其中“Settings”选项是进入设置页面的入口。因此，下一步应点击“Settings”选项，以打开VS Code的设置界面，进而查找并修改调试相关的配置项。
+
+Action:
+pyautogui.click(497.28, 561.6, button='left')
+
+==================================================
+STEP 4
+==================================================
+
+Thought:
+要找到控制调试时光标焦点的设置项，需在设置页面的搜索框中输入相关关键词。当前已进入设置界面，顶部的搜索框是定位特定设置的关键入口。因此，下一步应在搜索框中输入“debug focus”，以筛选出与调试焦点相关的配置选项，从而找到控制调试控制台焦点行为的设置。
+
+Action:
+pyperclip.copy('debug focus')
+pyautogui.hotkey('ctrl', 'v')
+
+==================================================
+STEP 5
+==================================================
+
+Thought:
+要实现调试时让光标保持在调试控制台而不自动聚焦回编辑器，需要禁用“Debug: Focus Editor On Break”选项。该选项当前处于勾选状态，取消勾选后，调试暂停时编辑器将不会被自动聚焦。因此，下一步应点击“Debug: Focus Editor On Break”对应的复选框，取消其选中状态。
+
+Action:
+pyautogui.click(791.04, 264.6, button='left')
+
+==================================================
+STEP 6
+==================================================
+
+Action:
+DONE

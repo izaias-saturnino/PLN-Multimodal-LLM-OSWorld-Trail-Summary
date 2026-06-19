@@ -1,0 +1,52 @@
+Trajectory ID: a728a36e-8bf1-4bb6-9a03-ef039a5233f0
+Source Model: doubao-1-5-thinking-vision-pro-250428-100step
+Domain: chrome
+
+Task:
+Find the Driver License Eligibility Requirements
+
+Success Binary: True
+Success Raw: 1.0
+
+Number of Steps: 4
+
+============================================================
+TRAJECTORY
+============================================================
+
+==================================================
+STEP 1
+==================================================
+
+Thought:
+要找到驾照资格要求，首先应进入与驾照相关的板块。页面顶部导航栏中的“LICENSES & IDS”选项是处理驾照（License）和身份证件相关事务的入口，点击该选项可进入对应页面，进而查找资格要求信息。因此，下一步是点击“LICENSES & IDS”导航按钮。
+
+Action:
+pyautogui.click(468.48, 270.0, button='left')
+
+==================================================
+STEP 2
+==================================================
+
+Thought:
+要找到驾照资格要求，需进入“Driver's License”相关页面。当前页面“LICENSES & IDS”下拉菜单中列出了“Driver's License”选项，点击该选项可进入驾照详细信息页面，进而查找资格要求。因此，下一步是点击“Driver's License”链接。
+
+Action:
+pyautogui.click(439.68, 425.52, button='left')
+
+==================================================
+STEP 3
+==================================================
+
+Thought:
+要找到驾照资格要求，页面中“Driver's License Eligibility”选项是直接对应目标的入口。点击该选项可进入详细说明资格要求的页面，因此下一步是点击“Driver's License Eligibility”卡片。
+
+Action:
+pyautogui.click(1344.0, 631.8, button='left')
+
+==================================================
+STEP 4
+==================================================
+
+Action:
+DONE

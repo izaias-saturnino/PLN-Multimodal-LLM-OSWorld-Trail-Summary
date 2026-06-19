@@ -1,0 +1,63 @@
+Trajectory ID: f723c744-e62c-4ae6-98d1-750d3cd7d79d
+Source Model: doubao-1-5-thinking-vision-pro-250428-100step
+Domain: gimp
+
+Task:
+I'd like to make the picture's contrast stronger to really bring out the main subject. Could you assist me in boosting the contrast?
+
+Success Binary: True
+Success Raw: 1.0
+
+Number of Steps: 5
+
+============================================================
+TRAJECTORY
+============================================================
+
+==================================================
+STEP 1
+==================================================
+
+Thought:
+要增强图片对比度，在GIMP中需通过“Colors”菜单下的“Brightness-Contrast”工具调整。首先需点击顶部菜单栏的“Colors”选项以打开相关设置菜单。因此，下一步是点击界面顶部的“Colors”菜单。
+
+Action:
+pyautogui.click(368.64, 74.52, button='left')
+
+==================================================
+STEP 2
+==================================================
+
+Thought:
+现在Colors菜单已展开，要增强图片对比度，需选择“Brightness-Contrast”选项来打开调节窗口。点击该选项后，就能在弹出的对话框中调整对比度参数，从而突出主体。因此，下一步是点击“Brightness-Contrast”选项。
+
+Action:
+pyautogui.click(441.6, 276.48, button='left')
+
+==================================================
+STEP 3
+==================================================
+
+Thought:
+现在“Brightness-Contrast”调节窗口已打开，要增强对比度需调整“Contrast”滑块。通过向右拖动“Contrast”滑块可增加图像对比度，使主体（红色浆果）与背景的明暗差异更显著。因此，下一步是拖动“Contrast”滑块来提升对比度数值。
+
+Action:
+pyautogui.moveTo(456.96, 299.16)
+pyautogui.dragTo(487.68, 301.32, duration=1.0)
+
+==================================================
+STEP 4
+==================================================
+
+Thought:
+对比度调整已通过拖动滑块完成，现在需要确认更改以应用到图像上。点击“Brightness-Contrast”对话框中的“OK”按钮，即可保存调整并关闭该窗口，完成增强对比度的操作。因此，下一步是点击“OK”按钮。
+
+Action:
+pyautogui.click(576.0, 427.68, button='left')
+
+==================================================
+STEP 5
+==================================================
+
+Action:
+DONE

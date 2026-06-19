@@ -1,0 +1,252 @@
+Trajectory ID: f178a4a9-d090-4b56-bc4c-4b72a61a035d
+Source Model: UI-TARS-0717-100step
+Domain: libreoffice_writer
+
+Task:
+Make Times New Roman the default Font
+
+Success Binary: False
+Success Raw: 0.0
+
+Number of Steps: 23
+
+============================================================
+TRAJECTORY
+============================================================
+
+==================================================
+STEP 1
+==================================================
+
+Thought:
+要将Times New Roman设为LibreOffice Writer的默认字体，首先需要打开工具或格式相关的设置。通常默认字体设置在“Tools”菜单下的“Options”里，或者通过格式菜单的字体设置并保存为默认。
+
+首先，点击顶部菜单栏的“Tools”选项，进入选项设置界面，找到字体相关的设置项，将默认字体改为Times New Roman。
+
+步骤：
+1. 点击顶部菜单栏的“Tools”。
+2. 在下拉菜单中找到“Options”。
+3. 在Options窗口中，找到“LibreOffice Writer”->“Basic Fonts (Western)”。
+4. 将默认字体（如正文）设置为Times New Roman，并应用保存。
+
+现在第一步是点击顶部的“Tools”菜单。
+
+Action:
+pyautogui.click(483.84, 72.36, button='left')
+
+==================================================
+STEP 2
+==================================================
+
+Thought:
+刚才误点了“Form”菜单，这不是设置默认字体的路径。需要纠正，应该点击“Tools”菜单，因为默认字体的设置通常在Tools下的Options里。现在先关闭当前打开的Form菜单，点击Tools选项，进入正确的设置路径。
+
+Action:
+pyautogui.click(516.48, 72.36, button='left')
+
+==================================================
+STEP 3
+==================================================
+
+Thought:
+现在Tools菜单已经展开，下一步需要点击“Options...”选项，这会打开LibreOffice的选项设置窗口，在那里可以找到字体相关的设置来修改默认字体为Times New Roman。
+
+Action:
+pyautogui.click(535.68, 706.32, button='left')
+
+==================================================
+STEP 4
+==================================================
+
+Thought:
+现在Options窗口已打开，需要找到字体相关的设置。在左侧导航栏中，展开“LibreOffice Writer”选项，然后找到“Basic Fonts (Western)”或者直接找“Fonts”？不对，应该是在LibreOffice Writer下的Basic Fonts。首先点击左侧的“LibreOffice Writer”展开其下级菜单。
+
+Action:
+pyautogui.click(512.64, 616.68, button='left')
+
+==================================================
+STEP 5
+==================================================
+
+Thought:
+现在LibreOffice Writer的子菜单已经展开，下一步需要点击“Basic Fonts (Western)”选项，这样就能进入字体设置界面，在那里可以将默认字体（如正文）设置为Times New Roman。
+
+Action:
+pyautogui.click(597.12, 739.8, button='left')
+
+==================================================
+STEP 6
+==================================================
+
+Thought:
+现在进入了Basic Fonts (Western)设置界面，看到Default字体当前是Arial。需要点击Default旁边的下拉菜单，选择Times New Roman作为默认字体。
+
+Action:
+pyautogui.click(1326.72, 335.88, button='left')
+
+==================================================
+STEP 7
+==================================================
+
+Thought:
+现在下拉菜单展开了，需要找到Times New Roman。当前显示的字体列表里还没看到，所以需要向下滚动列表来查找。可以用PageDown键或者鼠标滚轮向下滚动，直到找到Times New Roman。
+
+Action:
+pyautogui.hotkey('pagedown')
+
+==================================================
+STEP 8
+==================================================
+
+Thought:
+现在字体下拉列表已经展开，还没找到Times New Roman，需要继续向下滚动列表。使用PageDown键继续翻页，直到找到目标字体。
+
+Action:
+pyautogui.hotkey('pagedown')
+
+==================================================
+STEP 9
+==================================================
+
+Thought:
+目前在字体下拉列表中还没找到Times New Roman，需要继续向下滚动。继续按PageDown键翻页，直到找到目标字体，因为Times New Roman通常在字母T开头的位置，现在列表里还没到I之后的部分，所以继续翻。
+
+Action:
+pyautogui.hotkey('pagedown')
+
+==================================================
+STEP 10
+==================================================
+
+Thought:
+现在字体列表里到了K开头的字体，还没到T，需要继续向下翻页。按PageDown键，直到找到Times New Roman，因为它是以T开头的，所以还要翻很多页，继续按PageDown。
+
+Action:
+pyautogui.hotkey('pagedown')
+
+==================================================
+STEP 11
+==================================================
+
+Thought:
+现在字体列表到了L开头的，还没到T，继续按PageDown翻页，直到找到Times New Roman。因为目标字体是以T开头，所以还需要翻很多页，继续按PageDown键。
+
+Action:
+pyautogui.hotkey('pagedown')
+
+==================================================
+STEP 12
+==================================================
+
+Thought:
+现在字体列表到了M开头的，还没到T，继续按PageDown翻页，直到找到Times New Roman。因为目标字体是以T开头，所以还需要翻几页，继续按PageDown键。
+
+Action:
+pyautogui.hotkey('pagedown')
+
+==================================================
+STEP 13
+==================================================
+
+Thought:
+现在字体列表到了N开头的，还没到T，继续按PageDown翻页，直到找到Times New Roman。因为目标字体是以T开头，所以还需要翻几页，继续按PageDown键。
+
+Action:
+pyautogui.hotkey('pagedown')
+
+==================================================
+STEP 14
+==================================================
+
+Thought:
+现在字体列表到了N开头的，还没到T，继续按PageDown翻页，直到找到Times New Roman。因为目标字体是以T开头，所以还需要翻几页，继续按PageDown键。
+
+Action:
+pyautogui.hotkey('pagedown')
+
+==================================================
+STEP 15
+==================================================
+
+Thought:
+现在字体列表还在N开头的区域，离T开头的Times New Roman还有距离。继续按PageDown键翻页，直到找到目标字体。因为Times New Roman以T开头，所以需要翻到T字母开头的部分。
+
+Action:
+pyautogui.hotkey('pagedown')
+
+==================================================
+STEP 16
+==================================================
+
+Thought:
+现在字体列表到了O开头的，还没到T，继续按PageDown翻页，直到找到Times New Roman。因为目标字体是以T开头，所以还需要翻几页，继续按PageDown键。
+
+Action:
+pyautogui.hotkey('pagedown')
+
+==================================================
+STEP 17
+==================================================
+
+Thought:
+现在字体列表到了P开头的，还没到T，继续按PageDown翻页，直到找到Times New Roman。因为目标字体是以T开头，所以还需要翻几页，继续按PageDown键。
+
+Action:
+pyautogui.hotkey('pagedown')
+
+==================================================
+STEP 18
+==================================================
+
+Thought:
+现在字体列表到了P和R开头的，还没到T，继续按PageDown翻页，直到找到Times New Roman。因为目标字体是以T开头，所以还需要翻几页，继续按PageDown键。
+
+Action:
+pyautogui.hotkey('pagedown')
+
+==================================================
+STEP 19
+==================================================
+
+Thought:
+现在字体列表到了R开头的，还没到T，继续按PageDown翻页，直到找到Times New Roman。因为目标字体是以T开头，所以还需要翻几页，继续按PageDown键。
+
+Action:
+pyautogui.hotkey('pagedown')
+
+==================================================
+STEP 20
+==================================================
+
+Thought:
+现在字体列表到了R和S开头的，还没到T，继续按PageDown翻页，直到找到Times New Roman。因为目标字体是以T开头，所以还需要翻几页，继续按PageDown键。
+
+Action:
+pyautogui.hotkey('pagedown')
+
+==================================================
+STEP 21
+==================================================
+
+Thought:
+终于找到了Times New Roman！现在需要点击这个选项，将其设为默认字体，然后点击OK按钮保存设置。
+
+Action:
+pyautogui.click(950.4, 739.8, button='left')
+
+==================================================
+STEP 22
+==================================================
+
+Thought:
+现在已经将Default字体设置为Times New Roman，接下来需要点击“OK”按钮来保存这个设置，完成默认字体的修改。
+
+Action:
+pyautogui.click(1428.48, 854.28, button='left')
+
+==================================================
+STEP 23
+==================================================
+
+Action:
+DONE

@@ -1,0 +1,104 @@
+Trajectory ID: a10b69e1-6034-4a2b-93e1-571d45194f75
+Source Model: doubao-1-5-thinking-vision-pro-250428-100step
+Domain: thunderbird
+
+Task:
+Create two local folders in Thunderbird for me: COMPANY and UNIVERSITY.
+
+Success Binary: True
+Success Raw: 1.0
+
+Number of Steps: 9
+
+============================================================
+TRAJECTORY
+============================================================
+
+==================================================
+STEP 1
+==================================================
+
+Thought:
+要在Thunderbird中创建本地文件夹，首先需对“Local Folders”触发右键菜单以找到创建文件夹的选项。观察界面左侧导航栏，“Local Folders”是目标区域。右键点击该区域可打开上下文菜单，后续能选择创建新文件夹。因此，下一步是右键点击“Local Folders”。
+
+Action:
+pyautogui.click(216.96, 427.68, button='right')
+
+==================================================
+STEP 2
+==================================================
+
+Thought:
+右键点击“Local Folders”后弹出了上下文菜单，其中包含“New Folder...”选项。要创建新的本地文件夹，下一步需要点击该选项来打开新建文件夹的对话框，以便输入文件夹名称。因此，我需要点击菜单中的“New Folder...”选项。
+
+Action:
+pyautogui.click(289.92, 530.28, button='left')
+
+==================================================
+STEP 3
+==================================================
+
+Thought:
+现在弹出了“New Folder”对话框，需要创建第一个文件夹“COMPANY”。首先要在“Name”输入框中输入文件夹名称。输入框已经处于可输入状态，所以接下来要输入“COMPANY”这个名称，为后续点击“Create Folder”按钮做准备。
+
+Action:
+pyperclip.copy('COMPANY')
+pyautogui.hotkey('ctrl', 'v')
+
+==================================================
+STEP 4
+==================================================
+
+Thought:
+现在“New Folder”对话框中已输入“COMPANY”作为文件夹名称，需要点击“Create Folder”按钮来完成第一个文件夹的创建。点击该按钮后，文件夹会被添加到Local Folders下，之后还需创建第二个文件夹“UNIVERSITY”。因此，当前步骤是点击“Create Folder”按钮确认创建COMPANY文件夹。
+
+Action:
+pyautogui.click(1042.56, 627.48, button='left')
+
+==================================================
+STEP 5
+==================================================
+
+Thought:
+要创建第二个本地文件夹“UNIVERSITY”，需再次对“Local Folders”触发右键菜单以访问“New Folder...”选项。观察左侧导航栏，“Local Folders”是操作目标，右键点击该区域可打开上下文菜单，进而选择创建新文件夹。因此，下一步是右键点击“Local Folders”。
+
+Action:
+pyautogui.click(216.96, 427.68, button='right')
+
+==================================================
+STEP 6
+==================================================
+
+Thought:
+右键点击“Local Folders”后弹出上下文菜单，其中“New Folder...”选项是创建第二个文件夹的入口。为了创建“UNIVERSITY”文件夹，需点击该选项以打开新建文件夹对话框。因此，下一步是点击菜单中的“New Folder...”选项。
+
+Action:
+pyautogui.click(289.92, 530.28, button='left')
+
+==================================================
+STEP 7
+==================================================
+
+Thought:
+现在“New Folder”对话框已打开，需创建第二个文件夹“UNIVERSITY”。输入框处于可输入状态，因此要在“Name”输入框中输入“UNIVERSITY”，为后续点击“Create Folder”按钮做准备。输入完成后就能确认创建该文件夹。
+
+Action:
+pyperclip.copy('UNIVERSITY')
+pyautogui.hotkey('ctrl', 'v')
+
+==================================================
+STEP 8
+==================================================
+
+Thought:
+现在“New Folder”对话框中已输入“UNIVERSITY”作为文件夹名称，点击“Create Folder”按钮即可完成第二个本地文件夹的创建。完成此操作后，任务要求的两个本地文件夹（COMPANY和UNIVERSITY）就都创建成功了。因此，当前步骤是点击“Create Folder”按钮确认创建UNIVERSITY文件夹。
+
+Action:
+pyautogui.click(1042.56, 627.48, button='left')
+
+==================================================
+STEP 9
+==================================================
+
+Action:
+DONE

@@ -1,0 +1,74 @@
+Trajectory ID: 3f28fe4f-5d9d-4994-a456-efd78cfae1a3
+Source Model: UI-TARS-0717-100step
+Domain: thunderbird
+
+Task:
+Set up a plain text signature for my email account in Thunderbird. The first line is my name "Anonym" and the second line is my affiliation "XYZ Lab".
+
+Success Binary: True
+Success Raw: 1.0
+
+Number of Steps: 6
+
+============================================================
+TRAJECTORY
+============================================================
+
+==================================================
+STEP 1
+==================================================
+
+Thought:
+要在Thunderbird中设置邮件签名，首先需要进入账户设置。观察界面，右上角有“Account Settings”按钮，点击它可以进入账户相关配置，其中应该包含签名设置选项。所以下一步应该点击这个按钮。
+
+Action:
+pyautogui.click(1808.64, 137.16, button='left')
+
+==================================================
+STEP 2
+==================================================
+
+Thought:
+现在已经进入账户设置界面，看到有“Signature text”的文本框。需要先点击这个文本框激活它，然后输入第一行“Anonym”，第二行“XYZ Lab”。首先要激活输入框，所以下一步点击签名文本框。
+
+Action:
+pyautogui.click(528.0, 654.48, button='left')
+
+==================================================
+STEP 3
+==================================================
+
+Thought:
+现在签名文本框已经激活，需要输入两行内容：第一行是“Anonym”，然后按回车键换行，输入第二行“XYZ Lab”。这样就能设置纯文本签名，符合要求。所以下一步开始输入第一行内容。
+
+Action:
+pyperclip.copy('Anonym')
+pyautogui.hotkey('ctrl', 'v')
+
+==================================================
+STEP 4
+==================================================
+
+Thought:
+现在签名文本框里已经输入了第一行“Anonym”，接下来需要换行输入第二行“XYZ Lab”。所以先按回车键换行，然后输入第二行内容。
+
+Action:
+pyautogui.hotkey('enter')
+
+==================================================
+STEP 5
+==================================================
+
+Thought:
+现在签名文本框里已经有了第一行“Anonym”并换行了，接下来需要输入第二行“XYZ Lab”来完成纯文本签名的设置。直接输入这行内容即可。
+
+Action:
+pyperclip.copy('XYZ Lab')
+pyautogui.hotkey('ctrl', 'v')
+
+==================================================
+STEP 6
+==================================================
+
+Action:
+DONE

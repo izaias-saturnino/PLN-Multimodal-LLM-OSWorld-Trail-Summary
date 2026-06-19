@@ -1,0 +1,1015 @@
+Trajectory ID: 99146c54-4f37-4ab8-9327-5f3291665e1e
+Source Model: doubao-1-5-thinking-vision-pro-250428-100step
+Domain: chrome
+
+Task:
+Please help me set Chrome to delete my browsing data automatically every time I close the browser.
+
+Success Binary: False
+Success Raw: 0.0
+
+Number of Steps: 100
+
+============================================================
+TRAJECTORY
+============================================================
+
+==================================================
+STEP 1
+==================================================
+
+Thought:
+要设置Chrome关闭时自动删除浏览数据，首先需打开Chrome的设置菜单。界面右上角的三点图标是进入设置的入口，点击它可展开菜单选项。因此，下一步要点击右上角的三点菜单按钮。
+
+Action:
+pyautogui.click(1895.04, 88.56, button='left')
+
+==================================================
+STEP 2
+==================================================
+
+Thought:
+要设置Chrome关闭时自动删除浏览数据，需先进入设置页面。当前已打开Chrome的菜单，其中“Settings”选项是进入设置界面的入口。点击“Settings”后，可在设置中找到隐私和安全性相关选项来配置自动删除功能。因此，下一步应点击菜单中的“Settings”选项。
+
+Action:
+pyautogui.click(1555.2, 810.0, button='left')
+
+==================================================
+STEP 3
+==================================================
+
+Thought:
+要设置Chrome关闭时自动删除浏览数据，需先进入“隐私和安全性”设置页面，因为浏览数据的自动删除功能属于隐私安全范畴。当前左侧菜单栏中可见“Privacy and security”选项，点击该选项可进入相关设置界面。因此，下一步应点击左侧菜单中的“Privacy and security”选项。
+
+Action:
+pyautogui.click(174.72, 276.48, button='left')
+
+==================================================
+STEP 4
+==================================================
+
+Thought:
+要设置Chrome关闭时自动删除浏览数据，需先进入“Clear browsing data”的设置界面，因为该选项包含浏览数据的清除规则配置。当前页面中“Clear browsing data”选项清晰可见，点击它可进入下一步配置自动删除的设置。因此，下一步应点击“Clear browsing data”选项。
+
+Action:
+pyautogui.click(748.8, 651.24, button='left')
+
+==================================================
+STEP 5
+==================================================
+
+Thought:
+当前处于“Clear browsing data”弹窗，但设置“关闭浏览器时自动删除浏览数据”的选项不在此弹窗内，需先关闭该弹窗返回“Privacy and security”主页面。点击“Cancel”按钮关闭弹窗后，才能找到并配置“On exit”（退出时清除）的自动删除功能。因此，下一步需点击弹窗右下角的“Cancel”按钮。
+
+Action:
+pyautogui.click(1100.16, 798.12, button='left')
+
+==================================================
+STEP 6
+==================================================
+
+Thought:
+要设置Chrome关闭时自动删除浏览数据，需再次进入“Clear browsing data”界面，因为该功能的配置项（如“退出时清除”）位于此页面的深层设置中。当前“Privacy and security”页面下“Clear browsing data”选项清晰可见，点击该选项可进入包含自动删除规则的配置界面。因此，下一步应点击“Clear browsing data”选项。
+
+Action:
+pyautogui.click(746.88, 651.24, button='left')
+
+==================================================
+STEP 7
+==================================================
+
+Thought:
+当前“Clear browsing data”弹窗仅用于手动清除数据，设置“关闭浏览器时自动删除”的选项需返回“Privacy and security”主页面后查找。因此需先关闭该弹窗，点击右下角“Cancel”按钮退出弹窗，以便后续找到自动删除功能的配置入口。
+
+Action:
+pyautogui.click(1100.16, 798.12, button='left')
+
+==================================================
+STEP 8
+==================================================
+
+Thought:
+要设置Chrome关闭时自动删除浏览数据，需进入“Clear browsing data”的详细设置界面，因为“退出时自动删除”的功能配置项位于该页面内。当前“Privacy and security”页面中“Clear browsing data”选项清晰可见，点击该选项可进入包含自动删除规则的配置界面。因此，下一步应点击“Clear browsing data”选项，以继续配置自动删除功能。
+
+Action:
+pyautogui.click(746.88, 651.24, button='left')
+
+==================================================
+STEP 9
+==================================================
+
+Thought:
+当前“Clear browsing data”弹窗用于手动清除数据，而设置“关闭浏览器时自动删除”的功能需返回“Privacy and security”主页面后查找对应选项。因此需先关闭该弹窗，点击右下角“Cancel”按钮退出弹窗，以便后续定位自动删除功能的配置入口。
+
+Action:
+pyautogui.click(1100.16, 798.12, button='left')
+
+==================================================
+STEP 10
+==================================================
+
+Thought:
+要配置Chrome关闭时自动删除浏览数据，需进入“Clear browsing data”的深层设置界面（该界面包含“退出时自动清除”的功能开关）。当前“Privacy and security”页面中“Clear browsing data”选项是进入该设置的入口，因此需点击该选项以继续配置。之前重复打开/关闭弹窗属于无效操作，现在需重新点击进入并定位“On exit”相关设置。
+
+Action:
+pyautogui.click(746.88, 651.24, button='left')
+
+==================================================
+STEP 11
+==================================================
+
+Thought:
+当前“Clear browsing data”弹窗仅支持手动清除数据，而“关闭浏览器时自动删除浏览数据”的配置项需返回“Privacy and security”主页面后查找。为继续操作，需先关闭该弹窗，点击右下角“Cancel”按钮退出弹窗，以便后续定位自动删除功能的入口。
+
+Action:
+pyautogui.click(1100.16, 798.12, button='left')
+
+==================================================
+STEP 12
+==================================================
+
+Thought:
+要实现Chrome关闭时自动删除浏览数据，需进入“Clear browsing data”的**深层设置界面**（该界面包含“退出时自动清除”的功能开关）。当前“Privacy and security”页面中，“Clear browsing data”是进入该设置的唯一入口。之前重复打开/关闭弹窗属于无效操作，现在需重新点击进入，并定位“On exit”相关配置项。因此，下一步应点击“Clear browsing data”选项，进入后找到“On exit”标签页或开关。
+
+Action:
+pyautogui.click(746.88, 651.24, button='left')
+
+==================================================
+STEP 13
+==================================================
+
+Thought:
+当前“Clear browsing data”弹窗仅用于手动清除数据，而“关闭浏览器时自动删除浏览数据”的配置项需返回“Privacy and security”主页面后查找。为继续操作，需先关闭该弹窗以回到主页面，后续才能定位到自动删除功能的入口（如“On exit”相关设置）。因此，下一步应点击弹窗右下角的“Cancel”按钮关闭弹窗。
+
+Action:
+pyautogui.click(1100.16, 798.12, button='left')
+
+==================================================
+STEP 14
+==================================================
+
+Thought:
+要实现Chrome关闭时自动删除浏览数据，需进入“Clear browsing data”界面并找到“On exit”（退出时清除）的配置项。当前处于“Privacy and security”页面，“Clear browsing data”是进入该功能的入口。之前重复打开/关闭弹窗属于无效操作，现在需重新点击进入该选项，以定位“On exit”相关设置。因此，下一步应点击“Clear browsing data”选项，进入后查找自动删除功能的配置区域。
+
+Action:
+pyautogui.click(746.88, 651.24, button='left')
+
+==================================================
+STEP 15
+==================================================
+
+Thought:
+要设置Chrome关闭时自动删除浏览数据，需先退出当前“Clear browsing data”的Basic标签页弹窗（该弹窗仅支持手动清除，无自动删除配置项），返回“Privacy and security”主页面后，重新进入“Clear browsing data”并切换到“On exit”标签页配置自动删除规则。因此，当前需点击弹窗右下角的“Cancel”按钮关闭弹窗，为后续操作铺路。
+
+Action:
+pyautogui.click(1100.16, 798.12, button='left')
+
+==================================================
+STEP 16
+==================================================
+
+Thought:
+要配置Chrome关闭时自动删除浏览数据，需进入“Clear browsing data”界面并切换到**“On exit”标签页**（该标签页包含自动删除功能的配置项）。当前处于“Privacy and security”页面，“Clear browsing data”是进入该功能的唯一入口。之前重复打开/关闭弹窗属于无效操作，现在需重新点击进入该选项，并在弹窗中定位“On exit”标签页以配置自动删除规则。因此，下一步应点击“Clear browsing data”选项，进入后查找“On exit”标签页。
+
+Action:
+pyautogui.click(746.88, 651.24, button='left')
+
+==================================================
+STEP 17
+==================================================
+
+Thought:
+要设置Chrome关闭时自动删除浏览数据，需先退出当前仅支持手动清除的“Clear browsing data - Basic”弹窗，返回“Privacy and security”主页面后，重新进入“Clear browsing data”并切换到**“On exit”标签页**（该标签页包含自动删除功能的配置项）。当前需点击弹窗右下角的“Cancel”按钮关闭弹窗，为后续定位自动删除配置项铺路。
+
+Action:
+pyautogui.click(1100.16, 798.12, button='left')
+
+==================================================
+STEP 18
+==================================================
+
+Thought:
+要实现Chrome关闭时自动删除浏览数据，需进入“Clear browsing data”界面并切换到**“On exit”标签页**（该标签页包含自动删除功能的配置项）。当前处于“Privacy and security”页面，“Clear browsing data”是进入该功能的入口。之前重复打开/关闭弹窗属于无效操作，现在需重新点击进入该选项，并在弹窗中定位“On exit”标签页以配置自动删除规则。因此，下一步应点击“Clear browsing data”选项，进入后查找“On exit”标签页。
+
+Action:
+pyautogui.click(746.88, 651.24, button='left')
+
+==================================================
+STEP 19
+==================================================
+
+Thought:
+要设置Chrome关闭时自动删除浏览数据，需先退出当前仅支持手动清除的“Clear browsing data - Basic”弹窗，返回“Privacy and security”主页面后，找到并进入**“On exit”标签页**（该标签页包含自动删除功能的配置项）。当前需点击弹窗右下角的“Cancel”按钮关闭弹窗，为后续定位自动删除配置项铺路。
+
+Action:
+pyautogui.click(1100.16, 798.12, button='left')
+
+==================================================
+STEP 20
+==================================================
+
+Thought:
+要实现Chrome关闭时自动删除浏览数据，需进入“Clear browsing data”界面并切换到**“On exit”标签页**（该标签页包含自动删除功能的配置项）。当前处于“Privacy and security”页面，“Clear browsing data”是进入该功能的入口。之前重复打开/关闭弹窗属于无效操作，现在需重新点击进入该选项，并在弹窗中定位“On exit”标签页以配置自动删除规则。因此，下一步应点击“Clear browsing data”选项，进入后查找“On exit”标签页。
+
+Action:
+pyautogui.click(746.88, 651.24, button='left')
+
+==================================================
+STEP 21
+==================================================
+
+Thought:
+要设置Chrome关闭时自动删除浏览数据，需先退出当前仅支持手动清除的“Clear browsing data - Basic”弹窗，返回“Privacy and security”主页面后，找到并进入**“On exit”标签页**（该标签页包含自动删除功能的配置项）。当前需点击弹窗右下角的“Cancel”按钮关闭弹窗，为后续定位自动删除配置项铺路。
+
+Action:
+pyautogui.click(1100.16, 798.12, button='left')
+
+==================================================
+STEP 22
+==================================================
+
+Thought:
+要配置Chrome关闭时自动删除浏览数据，需进入“Clear browsing data”界面并切换到**“On exit”标签页**（该标签页包含自动删除功能的配置项）。当前处于“Privacy and security”页面，“Clear browsing data”是进入该功能的入口。之前重复打开/关闭“Basic”标签页弹窗属于无效操作，现在需重新点击“Clear browsing data”选项，进入弹窗后定位“On exit”标签页以配置自动删除规则。因此，下一步应点击“Clear browsing data”选项，进入后查找“On exit”标签页。
+
+Action:
+pyautogui.click(746.88, 651.24, button='left')
+
+==================================================
+STEP 23
+==================================================
+
+Thought:
+要设置Chrome关闭时自动删除浏览数据，需先退出当前仅用于手动清除的“Clear browsing data - Basic”弹窗，返回“Privacy and security”主页面后，**找到并切换到“On exit”标签页**（该标签页是配置自动删除功能的核心入口）。当前需点击弹窗右下角的“Cancel”按钮关闭弹窗，为后续定位“On exit”配置项扫清障碍。
+
+Action:
+pyautogui.click(1100.16, 798.12, button='left')
+
+==================================================
+STEP 24
+==================================================
+
+Thought:
+要实现Chrome关闭时自动删除浏览数据，需进入“Clear browsing data”界面并切换到**“On exit”标签页**（该标签页包含自动删除功能的配置项）。之前重复打开/关闭“Basic”标签页弹窗属于无效操作，现在需重新点击“Clear browsing data”选项进入弹窗，之后定位并切换到“On exit”标签页以配置自动删除规则。因此，下一步应点击“Clear browsing data”选项进入弹窗，为后续配置“On exit”功能铺路。
+
+Action:
+pyautogui.click(746.88, 651.24, button='left')
+
+==================================================
+STEP 25
+==================================================
+
+Thought:
+要设置Chrome关闭时自动删除浏览数据，需先退出当前仅用于手动清除的“Clear browsing data - Basic”弹窗，返回“Privacy and security”主页面后，**找到并切换到“On exit”标签页**（该标签页是配置自动删除功能的核心入口）。当前需点击弹窗右下角的“Cancel”按钮关闭弹窗，为后续定位“On exit”配置项扫清障碍。
+
+Action:
+pyautogui.click(1100.16, 798.12, button='left')
+
+==================================================
+STEP 26
+==================================================
+
+Thought:
+要实现Chrome关闭时自动删除浏览数据，需进入“Clear browsing data”弹窗并切换到**“On exit”标签页**（该标签页包含自动删除功能的配置项）。之前重复打开/关闭“Basic”标签页弹窗属于无效操作，现在需重新点击“Clear browsing data”选项进入弹窗，之后定位并切换到“On exit”标签页以配置自动删除规则。因此，下一步应点击“Clear browsing data”选项进入弹窗，为后续配置“On exit”功能铺路。
+
+Action:
+pyautogui.click(746.88, 651.24, button='left')
+
+==================================================
+STEP 27
+==================================================
+
+Thought:
+之前重复打开和关闭“Clear browsing data”的Basic弹窗属于无效循环，需先打破循环。要设置关闭浏览器时自动删除浏览数据，核心是找到**“On exit”（退出时清除）**的配置项，而该配置项不在当前Basic标签页弹窗中。因此，需先点击弹窗右下角的“Cancel”按钮关闭弹窗，返回“Privacy and security”主页面，后续再定位“On exit”相关设置。
+
+Action:
+pyautogui.click(1100.16, 798.12, button='left')
+
+==================================================
+STEP 28
+==================================================
+
+Thought:
+要设置Chrome关闭时自动删除浏览数据，需进入“Clear browsing data”弹窗并切换到**“On exit”标签页**（该标签页包含自动删除功能的配置项）。之前重复打开/关闭“Basic”标签页属于无效循环，现在需重新点击“Clear browsing data”选项进入弹窗，之后定位并切换到“On exit”标签页以配置自动删除规则。因此，下一步应点击“Clear browsing data”选项进入弹窗，为后续配置“On exit”功能铺路。
+
+Action:
+pyautogui.click(746.88, 651.24, button='left')
+
+==================================================
+STEP 29
+==================================================
+
+Thought:
+之前重复打开和关闭“Clear browsing data”的Basic弹窗属于无效操作，需先关闭该弹窗打破循环。要设置关闭浏览器时自动删除浏览数据，核心是找到**“On exit”（退出时清除）**的配置项，该配置项不在当前Basic标签页弹窗中。因此，需点击弹窗右下角的“Cancel”按钮关闭弹窗，返回“Privacy and security”主页面，后续再定位“On exit”相关设置。
+
+Action:
+pyautogui.click(1100.16, 798.12, button='left')
+
+==================================================
+STEP 30
+==================================================
+
+Thought:
+要设置Chrome关闭时自动删除浏览数据，需进入“Clear browsing data”弹窗并定位**“On exit”标签页**（该标签页是配置自动删除功能的核心入口）。之前重复打开/关闭“Basic”标签页属于无效循环，现在需重新点击“Clear browsing data”选项进入弹窗，之后切换到“On exit”标签页以配置自动删除规则。因此，下一步应点击“Clear browsing data”选项，进入弹窗后查找“On exit”标签页。
+
+Action:
+pyautogui.click(746.88, 651.24, button='left')
+
+==================================================
+STEP 31
+==================================================
+
+Thought:
+之前重复打开/关闭“Clear browsing data - Basic”弹窗属于无效循环，需先关闭弹窗打破循环。要设置“关闭浏览器时自动删除浏览数据”，核心功能“On exit（退出时清除）”的配置项**不在当前Basic标签页**，因此需先点击弹窗右下角的“Cancel”按钮关闭弹窗，返回“Privacy and security”主页面，后续再定位“On exit”相关设置入口。
+
+Action:
+pyautogui.click(1100.16, 798.12, button='left')
+
+==================================================
+STEP 32
+==================================================
+
+Thought:
+要实现Chrome关闭时自动删除浏览数据，需进入“Clear browsing data”弹窗并切换至**“On exit”标签页**（该标签页包含自动删除功能的配置项）。之前重复打开/关闭“Basic”标签页属于无效循环，现在需重新点击“Clear browsing data”选项进入弹窗，之后定位并切换到“On exit”标签页以配置自动删除规则。因此，下一步应点击“Clear browsing data”选项进入弹窗，为后续配置“On exit”功能铺路。
+
+Action:
+pyautogui.click(746.88, 651.24, button='left')
+
+==================================================
+STEP 33
+==================================================
+
+Thought:
+之前重复打开和关闭“Clear browsing data - Basic”弹窗属于无效循环，需先打破该循环。设置“关闭浏览器时自动删除浏览数据”的核心功能“On exit（退出时清除）”配置项**不在当前Basic标签页**，因此需先点击弹窗右下角的“Cancel”按钮关闭弹窗，返回“Privacy and security”主页面，后续再定位“On exit”相关设置入口。
+
+Action:
+pyautogui.click(1100.16, 798.12, button='left')
+
+==================================================
+STEP 34
+==================================================
+
+Thought:
+要实现Chrome关闭时自动删除浏览数据，需进入“Clear browsing data”弹窗并切换至**“On exit”标签页**（该标签页是配置自动删除功能的核心入口）。之前重复打开/关闭“Basic”标签页属于无效循环，现在需重新点击“Clear browsing data”选项进入弹窗，之后定位并切换到“On exit”标签页以配置自动删除规则。因此，下一步应点击“Clear browsing data”选项进入弹窗，为后续配置“On exit”功能铺路。
+
+Action:
+pyautogui.click(746.88, 651.24, button='left')
+
+==================================================
+STEP 35
+==================================================
+
+Thought:
+之前重复打开/关闭“Clear browsing data - Basic”弹窗属于无效循环，需先打破该循环。设置“关闭浏览器时自动删除浏览数据”的核心功能“On exit（退出时清除）”配置项**不在当前Basic标签页**，因此需先点击弹窗右下角的“Cancel”按钮关闭弹窗，返回“Privacy and security”主页面，后续再定位“On exit”相关设置入口。
+
+Action:
+pyautogui.click(1100.16, 798.12, button='left')
+
+==================================================
+STEP 36
+==================================================
+
+Thought:
+要设置Chrome关闭时自动删除浏览数据，需进入“Clear browsing data”弹窗并切换至**“On exit”标签页**（该标签页包含自动删除功能的配置项）。之前重复打开/关闭“Basic”标签页属于无效循环，现在需重新点击“Clear browsing data”选项进入弹窗，之后定位并切换到“On exit”标签页以配置自动删除规则。因此，下一步应点击“Clear browsing data”选项进入弹窗，为后续配置“On exit”功能铺路。
+
+Action:
+pyautogui.click(746.88, 651.24, button='left')
+
+==================================================
+STEP 37
+==================================================
+
+Thought:
+之前重复打开/关闭“Clear browsing data - Basic”弹窗属于无效循环，需先打破该循环。设置“关闭浏览器时自动删除浏览数据”的核心功能**“On exit（退出时清除）”配置项不在当前Basic标签页**，因此需先点击弹窗右下角的“Cancel”按钮关闭弹窗，返回“Privacy and security”主页面，后续再定位“On exit”相关设置入口。
+
+Action:
+pyautogui.click(1100.16, 798.12, button='left')
+
+==================================================
+STEP 38
+==================================================
+
+Thought:
+要设置Chrome关闭时自动删除浏览数据，需进入“Clear browsing data”弹窗并切换至**“On exit”标签页**（该标签页是配置自动删除功能的核心入口）。之前重复打开/关闭“Basic”标签页属于无效循环，现在需重新点击“Clear browsing data”选项进入弹窗，之后定位并切换到“On exit”标签页以配置自动删除规则。因此，下一步应点击“Clear browsing data”选项进入弹窗，为后续配置“On exit”功能铺路。
+
+Action:
+pyautogui.click(746.88, 651.24, button='left')
+
+==================================================
+STEP 39
+==================================================
+
+Thought:
+之前反复打开和关闭“Clear browsing data - Basic”弹窗属于无效循环，需先打破该循环。设置“关闭浏览器时自动删除浏览数据”的核心功能**“On exit（退出时清除）”配置项位于“Clear browsing data”弹窗的“On exit”标签页**，而非当前显示的“Basic”标签页。因此，需先点击弹窗右下角的“Cancel”按钮关闭弹窗，返回“Privacy and security”主页面，后续再重新进入“Clear browsing data”并切换到“On exit”标签页配置自动删除规则。
+
+Action:
+pyautogui.click(1100.16, 798.12, button='left')
+
+==================================================
+STEP 40
+==================================================
+
+Thought:
+要实现Chrome关闭时自动删除浏览数据，需进入“Clear browsing data”弹窗并切换至**“On exit”标签页**（该标签页包含自动删除功能的配置项）。之前重复打开/关闭“Basic”标签页属于无效循环，现在需重新点击“Clear browsing data”选项进入弹窗，之后定位并切换到“On exit”标签页以配置自动删除规则。因此，下一步应点击“Clear browsing data”选项进入弹窗，为后续配置“On exit”功能铺路。
+
+Action:
+pyautogui.click(746.88, 651.24, button='left')
+
+==================================================
+STEP 41
+==================================================
+
+Thought:
+之前重复打开/关闭“Clear browsing data - Basic”弹窗属于无效循环，需先打破该循环。设置“关闭浏览器时自动删除浏览数据”的核心功能**“On exit（退出时清除）”配置项位于“Clear browsing data”弹窗的“On exit”标签页**，而非当前显示的“Basic”标签页。因此，需先点击弹窗右下角的“Cancel”按钮关闭弹窗，返回“Privacy and security”主页面，后续再重新进入“Clear browsing data”并切换到“On exit”标签页配置自动删除规则。
+
+Action:
+pyautogui.click(1100.16, 798.12, button='left')
+
+==================================================
+STEP 42
+==================================================
+
+Thought:
+要设置Chrome关闭时自动删除浏览数据，需进入“Clear browsing data”弹窗并切换至**“On exit”标签页**（该标签页是配置自动删除功能的核心入口）。之前重复打开/关闭“Basic”标签页属于无效循环，现在需重新点击“Clear browsing data”选项进入弹窗，之后定位并切换到“On exit”标签页以配置自动删除规则。因此，下一步应点击“Clear browsing data”选项进入弹窗，为后续配置“On exit”功能铺路。
+
+Action:
+pyautogui.click(746.88, 651.24, button='left')
+
+==================================================
+STEP 43
+==================================================
+
+Thought:
+之前持续重复打开和关闭“Clear browsing data - Basic”弹窗属于无效循环，需先终止该循环。设置“关闭浏览器时自动删除浏览数据”的核心功能“On exit（退出时清除）”配置项位于“Clear browsing data”弹窗的**“On exit”标签页**，而非当前显示的“Basic”标签页。因此，需先点击弹窗右下角的“Cancel”按钮关闭弹窗，返回“Privacy and security”主页面，后续再重新进入“Clear browsing data”并切换到“On exit”标签页来配置自动删除规则。
+
+Action:
+pyautogui.click(1100.16, 798.12, button='left')
+
+==================================================
+STEP 44
+==================================================
+
+Thought:
+要实现Chrome关闭时自动删除浏览数据，需进入“Clear browsing data”弹窗并切换至**“On exit”标签页**（该标签页包含自动删除功能的配置项）。之前重复打开/关闭“Basic”标签页属于无效循环，现在需重新点击“Clear browsing data”选项进入弹窗，之后定位并切换到“On exit”标签页以配置自动删除规则。因此，下一步应点击“Clear browsing data”选项进入弹窗，为后续配置“On exit”功能铺路。
+
+Action:
+pyautogui.click(746.88, 651.24, button='left')
+
+==================================================
+STEP 45
+==================================================
+
+Thought:
+之前重复打开/关闭“Clear browsing data - Basic”弹窗属于无效循环，需先关闭该弹窗打破循环。设置“关闭浏览器时自动删除浏览数据”的核心功能“On exit（退出时清除）”配置项**不在当前Basic标签页**，因此需点击弹窗右下角的“Cancel”按钮关闭弹窗，返回“Privacy and security”主页面，后续再定位“On exit”相关设置入口。
+
+Action:
+pyautogui.click(1100.16, 798.12, button='left')
+
+==================================================
+STEP 46
+==================================================
+
+Thought:
+要实现Chrome关闭时自动删除浏览数据，需进入“Clear browsing data”弹窗并切换至**“On exit”标签页**（该标签页包含自动删除功能的配置项）。之前重复打开/关闭“Basic”标签页属于无效循环，现在需重新点击“Clear browsing data”选项进入弹窗，之后定位并切换到“On exit”标签页以配置自动删除规则。因此，下一步应点击“Clear browsing data”选项进入弹窗，为后续配置“On exit”功能铺路。
+
+Action:
+pyautogui.click(746.88, 651.24, button='left')
+
+==================================================
+STEP 47
+==================================================
+
+Thought:
+之前反复在“Clear browsing data - Basic”弹窗中打开和关闭属于无效操作，需先打破该循环。设置“关闭浏览器时自动删除浏览数据”的核心功能位于**“Clear browsing data”弹窗的“On exit”标签页**，而非当前显示的“Basic”标签页。因此，需先点击弹窗右下角的“Cancel”按钮关闭弹窗，返回“Privacy and security”主页面，后续再重新进入“Clear browsing data”并切换到“On exit”标签页配置自动删除规则。
+
+Action:
+pyautogui.click(1100.16, 798.12, button='left')
+
+==================================================
+STEP 48
+==================================================
+
+Thought:
+要实现Chrome关闭时自动删除浏览数据，需进入“Clear browsing data”弹窗并切换至**“On exit”标签页**（该标签页包含自动删除功能的配置项）。之前重复打开/关闭“Basic”标签页属于无效循环，现在需重新点击“Clear browsing data”选项进入弹窗，之后定位并切换到“On exit”标签页以配置自动删除规则。因此，下一步应点击“Clear browsing data”选项进入弹窗，为后续配置“On exit”功能铺路。
+
+Action:
+pyautogui.click(746.88, 651.24, button='left')
+
+==================================================
+STEP 49
+==================================================
+
+Thought:
+之前重复打开/关闭“Clear browsing data - Basic”弹窗属于无效循环，需先关闭该弹窗打破循环。设置“关闭浏览器时自动删除浏览数据”的核心功能“On exit（退出时清除）”配置项**不在当前Basic标签页**，因此需点击弹窗右下角的“Cancel”按钮关闭弹窗，返回“Privacy and security”主页面，后续再定位“On exit”相关设置入口。
+
+Action:
+pyautogui.click(1100.16, 798.12, button='left')
+
+==================================================
+STEP 50
+==================================================
+
+Thought:
+要设置Chrome关闭时自动删除浏览数据，需进入“Clear browsing data”弹窗并切换至**“On exit”标签页**（该标签页包含自动删除功能的配置项）。之前重复打开/关闭“Basic”标签页属于无效循环，现在需重新点击“Clear browsing data”选项进入弹窗，之后定位并切换到“On exit”标签页以配置自动删除规则。因此，下一步应点击“Clear browsing data”选项进入弹窗，为后续配置“On exit”功能铺路。
+
+Action:
+pyautogui.click(746.88, 651.24, button='left')
+
+==================================================
+STEP 51
+==================================================
+
+Thought:
+之前的操作陷入了重复打开和关闭“Clear browsing data - Basic”弹窗的无效循环，需先打破该循环。设置“关闭浏览器时自动删除浏览数据”的核心功能位于**“Clear browsing data”弹窗的“On exit”标签页**，但当前显示的是仅支持手动清除的“Basic”标签页。因此，需先点击弹窗右下角的“Cancel”按钮关闭弹窗，返回“Privacy and security”主页面，后续再重新进入“Clear browsing data”并切换到“On exit”标签页配置自动删除规则。
+
+Action:
+pyautogui.click(1100.16, 798.12, button='left')
+
+==================================================
+STEP 52
+==================================================
+
+Thought:
+要实现Chrome关闭时自动删除浏览数据，需进入“Clear browsing data”弹窗并切换至**“On exit”标签页**（该标签页包含自动删除功能的配置项）。之前重复打开/关闭“Basic”标签页属于无效循环，现在需重新点击“Clear browsing data”选项进入弹窗，之后定位并切换到“On exit”标签页以配置自动删除规则。因此，下一步应点击“Clear browsing data”选项进入弹窗，为后续配置“On exit”功能铺路。
+
+Action:
+pyautogui.click(746.88, 651.24, button='left')
+
+==================================================
+STEP 53
+==================================================
+
+Thought:
+之前的操作陷入重复打开/关闭“Clear browsing data - Basic”弹窗的无效循环，需先打破循环。设置“关闭浏览器时自动删除浏览数据”的核心功能位于**“Clear browsing data”弹窗的“On exit”标签页**，但当前显示的“Basic”标签页仅支持手动清除。因此，需先点击弹窗右下角的“Cancel”按钮关闭弹窗，返回“Privacy and security”主页面，后续再重新进入“Clear browsing data”并切换到“On exit”标签页配置自动删除规则。
+
+Action:
+pyautogui.click(1100.16, 798.12, button='left')
+
+==================================================
+STEP 54
+==================================================
+
+Thought:
+要设置Chrome关闭时自动删除浏览数据，需进入“Clear browsing data”弹窗并切换至**“On exit”标签页**（该标签页包含自动删除功能的配置项）。之前重复打开/关闭“Basic”标签页属于无效循环，现在需重新点击“Clear browsing data”选项进入弹窗，之后定位并切换到“On exit”标签页以配置自动删除规则。因此，下一步应点击“Clear browsing data”选项进入弹窗，为后续配置“On exit”功能铺路。
+
+Action:
+pyautogui.click(746.88, 651.24, button='left')
+
+==================================================
+STEP 55
+==================================================
+
+Thought:
+之前的操作陷入重复打开/关闭“Clear browsing data - Basic”弹窗的无效循环，需先打破该循环。设置“关闭浏览器时自动删除浏览数据”的核心功能位于**“Clear browsing data”弹窗的“On exit”标签页**，但当前显示的“Basic”标签页仅支持手动清除。因此，需先点击弹窗右下角的“Cancel”按钮关闭弹窗，返回“Privacy and security”主页面，后续再重新进入“Clear browsing data”并切换到“On exit”标签页配置自动删除规则。
+
+Action:
+pyautogui.click(1100.16, 798.12, button='left')
+
+==================================================
+STEP 56
+==================================================
+
+Thought:
+要实现Chrome关闭时自动删除浏览数据，需进入“Clear browsing data”弹窗并切换至**“On exit”标签页**（该标签页包含自动删除功能的配置项）。之前重复打开/关闭“Basic”标签页属于无效循环，现在需重新点击“Clear browsing data”选项进入弹窗，之后定位并切换到“On exit”标签页以配置自动删除规则。因此，下一步应点击“Clear browsing data”选项进入弹窗，为后续配置“On exit”功能铺路。
+
+Action:
+pyautogui.click(746.88, 651.24, button='left')
+
+==================================================
+STEP 57
+==================================================
+
+Thought:
+之前的操作陷入了重复打开/关闭“Clear browsing data - Basic”弹窗的无效循环，核心问题是未定位到**“On exit”标签页**（该标签页是配置“关闭浏览器时自动删除浏览数据”的关键入口）。当前需先打破循环：点击弹窗右下角的“Cancel”按钮关闭Basic弹窗，返回“Privacy and security”主页面，后续再重新进入“Clear browsing data”并切换到“On exit”标签页配置自动删除规则。
+
+Action:
+pyautogui.click(1100.16, 798.12, button='left')
+
+==================================================
+STEP 58
+==================================================
+
+Thought:
+要设置Chrome关闭时自动删除浏览数据，需进入“Clear browsing data”弹窗并切换至**“On exit”标签页**（该标签页是配置自动删除功能的核心入口）。之前重复打开/关闭“Basic”标签页属于无效循环，现在需重新点击“Clear browsing data”选项进入弹窗，之后定位并切换到“On exit”标签页以配置自动删除规则。因此，下一步应点击“Clear browsing data”选项进入弹窗，为后续配置“On exit”功能铺路。
+
+Action:
+pyautogui.click(746.88, 651.24, button='left')
+
+==================================================
+STEP 59
+==================================================
+
+Thought:
+之前的操作陷入重复打开/关闭“Clear browsing data - Basic”弹窗的无效循环，核心问题是未定位到**“On exit”标签页**（配置“关闭浏览器时自动删除浏览数据”的关键入口）。当前需先打破循环：点击弹窗右下角的“Cancel”按钮关闭Basic弹窗，返回“Privacy and security”主页面，后续再重新进入“Clear browsing data”并切换到“On exit”标签页配置自动删除规则。
+
+Action:
+pyautogui.click(1100.16, 798.12, button='left')
+
+==================================================
+STEP 60
+==================================================
+
+Thought:
+要实现Chrome关闭时自动删除浏览数据，需进入“Clear browsing data”弹窗并切换至**“On exit”标签页**（该标签页是配置自动删除功能的核心入口）。之前重复打开/关闭“Basic”标签页属于无效循环，现在需重新点击“Clear browsing data”选项进入弹窗，之后定位并切换到“On exit”标签页以配置自动删除规则。因此，下一步应点击“Clear browsing data”选项进入弹窗，为后续配置“On exit”功能铺路。
+
+Action:
+pyautogui.click(746.88, 651.24, button='left')
+
+==================================================
+STEP 61
+==================================================
+
+Thought:
+之前的操作陷入重复打开/关闭“Clear browsing data - Basic”弹窗的无效循环，核心问题是未定位到**“On exit”标签页**（配置“关闭浏览器时自动删除浏览数据”的关键入口）。当前需先打破循环：点击弹窗右下角的“Cancel”按钮关闭Basic弹窗，返回“Privacy and security”主页面，后续再重新进入“Clear browsing data”并切换到“On exit”标签页配置自动删除规则。
+
+Action:
+pyautogui.click(1100.16, 798.12, button='left')
+
+==================================================
+STEP 62
+==================================================
+
+Thought:
+要实现Chrome关闭时自动删除浏览数据，需进入“Clear browsing data”弹窗并切换至**“On exit”标签页**（该标签页是配置自动删除功能的核心入口）。之前重复打开/关闭“Basic”标签页属于无效循环，现在需重新点击“Clear browsing data”选项进入弹窗，之后定位并切换到“On exit”标签页以配置自动删除规则。因此，下一步应点击“Clear browsing data”选项进入弹窗，为后续配置“On exit”功能铺路。
+
+Action:
+pyautogui.click(746.88, 651.24, button='left')
+
+==================================================
+STEP 63
+==================================================
+
+Thought:
+之前的操作陷入重复打开/关闭“Clear browsing data - Basic”弹窗的无效循环，核心问题是未定位到**“On exit”标签页**（配置“关闭浏览器时自动删除浏览数据”的关键入口）。当前需先打破循环：点击弹窗右下角的“Cancel”按钮关闭Basic弹窗，返回“Privacy and security”主页面，后续再重新进入“Clear browsing data”并切换到“On exit”标签页配置自动删除规则。
+
+Action:
+pyautogui.click(1100.16, 798.12, button='left')
+
+==================================================
+STEP 64
+==================================================
+
+Thought:
+要设置Chrome关闭时自动删除浏览数据，需进入“Clear browsing data”弹窗并切换至**“On exit”标签页**（该标签页是配置自动删除功能的核心入口）。之前重复打开/关闭“Basic”标签页属于无效循环，现在需重新点击“Clear browsing data”选项进入弹窗，之后定位并切换到“On exit”标签页以配置自动删除规则。因此，下一步应点击“Clear browsing data”选项进入弹窗，为后续配置“On exit”功能铺路。
+
+Action:
+pyautogui.click(746.88, 651.24, button='left')
+
+==================================================
+STEP 65
+==================================================
+
+Thought:
+之前的操作陷入重复打开/关闭“Clear browsing data - Basic”弹窗的无效循环，核心问题是未定位到**“On exit”标签页**（配置“关闭浏览器时自动删除浏览数据”的关键入口）。当前需先打破循环：点击弹窗右下角的“Cancel”按钮关闭Basic弹窗，返回“Privacy and security”主页面，后续再重新进入“Clear browsing data”并切换到“On exit”标签页配置自动删除规则。
+
+Action:
+pyautogui.click(1100.16, 798.12, button='left')
+
+==================================================
+STEP 66
+==================================================
+
+Thought:
+要实现Chrome关闭时自动删除浏览数据，需进入“Clear browsing data”弹窗并切换至**“On exit”标签页**（该标签页是配置自动删除功能的核心入口）。之前重复打开/关闭“Basic”标签页属于无效循环，现在需重新点击“Clear browsing data”选项进入弹窗，之后定位并切换到“On exit”标签页以配置自动删除规则。因此，下一步应点击“Clear browsing data”选项进入弹窗，为后续配置“On exit”功能铺路。
+
+Action:
+pyautogui.click(746.88, 651.24, button='left')
+
+==================================================
+STEP 67
+==================================================
+
+Thought:
+之前的操作陷入重复打开/关闭“Clear browsing data - Basic”弹窗的无效循环，核心问题是未定位到**“On exit”标签页**（配置“关闭浏览器时自动删除浏览数据”的关键入口）。当前需先打破循环：点击弹窗右下角的“Cancel”按钮关闭Basic弹窗，返回“Privacy and security”主页面，后续再重新进入“Clear browsing data”并切换到“On exit”标签页配置自动删除规则。
+
+Action:
+pyautogui.click(1100.16, 798.12, button='left')
+
+==================================================
+STEP 68
+==================================================
+
+Thought:
+要设置Chrome关闭时自动删除浏览数据，需进入“Clear browsing data”弹窗并切换至**“On exit”标签页**（该标签页是配置自动删除功能的核心入口）。之前重复打开/关闭“Basic”标签页属于无效循环，现在需重新点击“Clear browsing data”选项进入弹窗，之后定位并切换到“On exit”标签页以配置自动删除规则。因此，下一步应点击“Clear browsing data”选项进入弹窗，为后续配置“On exit”功能铺路。
+
+Action:
+pyautogui.click(746.88, 651.24, button='left')
+
+==================================================
+STEP 69
+==================================================
+
+Thought:
+之前的操作陷入重复打开/关闭“Clear browsing data - Basic”弹窗的无效循环，核心问题是未定位到**“On exit”标签页**（配置“关闭浏览器时自动删除浏览数据”的关键入口）。当前需先打破循环：点击弹窗右下角的“Cancel”按钮关闭Basic弹窗，返回“Privacy and security”主页面，后续再重新进入“Clear browsing data”并切换到“On exit”标签页配置自动删除规则。
+
+Action:
+pyautogui.click(1100.16, 798.12, button='left')
+
+==================================================
+STEP 70
+==================================================
+
+Thought:
+要实现Chrome关闭时自动删除浏览数据，需进入“Clear browsing data”弹窗并切换至**“On exit”标签页**（该标签页是配置自动删除功能的核心入口）。之前重复打开/关闭“Basic”标签页属于无效循环，现在需重新点击“Clear browsing data”选项进入弹窗，之后定位并切换到“On exit”标签页以配置自动删除规则。因此，下一步应点击“Clear browsing data”选项进入弹窗，为后续配置“On exit”功能铺路。
+
+Action:
+pyautogui.click(746.88, 651.24, button='left')
+
+==================================================
+STEP 71
+==================================================
+
+Thought:
+之前的操作陷入重复打开/关闭“Clear browsing data - Basic”弹窗的无效循环，核心问题是未发现**“On exit”标签页**（配置“关闭浏览器时自动删除浏览数据”的关键入口）。需先打破循环：点击弹窗右下角“Cancel”按钮关闭Basic弹窗，返回“Privacy and security”主页面，后续重新进入“Clear browsing data”并切换到“On exit”标签页完成配置。
+
+Action:
+pyautogui.click(1100.16, 798.12, button='left')
+
+==================================================
+STEP 72
+==================================================
+
+Thought:
+要设置Chrome关闭时自动删除浏览数据，需进入“Clear browsing data”弹窗并定位**“On exit”标签页**（该标签页是配置自动删除功能的核心入口）。之前重复打开/关闭“Basic”标签页属于无效循环，现在需重新点击“Clear browsing data”选项进入弹窗，之后切换到“On exit”标签页以配置自动删除规则。因此，下一步应点击“Clear browsing data”选项进入弹窗，为后续配置“On exit”功能铺路。
+
+Action:
+pyautogui.click(746.88, 651.24, button='left')
+
+==================================================
+STEP 73
+==================================================
+
+Thought:
+之前的操作陷入重复打开/关闭“Clear browsing data - Basic”弹窗的无效循环，核心问题是未发现**“On exit”标签页**（配置“关闭浏览器时自动删除浏览数据”的关键入口）。需先打破循环：点击弹窗右下角“Cancel”按钮关闭Basic弹窗，返回“Privacy and security”主页面，后续重新进入“Clear browsing data”并切换到“On exit”标签页完成配置。
+
+Action:
+pyautogui.click(1100.16, 798.12, button='left')
+
+==================================================
+STEP 74
+==================================================
+
+Thought:
+要实现Chrome关闭时自动删除浏览数据，需进入“Clear browsing data”弹窗并切换至**“On exit”标签页**（该标签页是配置自动删除功能的核心入口）。之前重复打开/关闭“Basic”标签页属于无效循环，现在需重新点击“Clear browsing data”选项进入弹窗，之后定位并切换到“On exit”标签页以配置自动删除规则。因此，下一步应点击“Clear browsing data”选项进入弹窗，为后续配置“On exit”功能铺路。
+
+Action:
+pyautogui.click(746.88, 651.24, button='left')
+
+==================================================
+STEP 75
+==================================================
+
+Thought:
+之前的操作陷入重复打开/关闭“Clear browsing data - Basic”弹窗的无效循环，核心是未发现**“On exit”标签页**（配置“关闭浏览器时自动删除浏览数据”的关键入口）。需先打破循环：点击弹窗右下角“Cancel”按钮关闭Basic弹窗，返回“Privacy and security”主页面，后续重新进入“Clear browsing data”并切换到“On exit”标签页完成配置。
+
+Action:
+pyautogui.click(1100.16, 798.12, button='left')
+
+==================================================
+STEP 76
+==================================================
+
+Thought:
+要配置Chrome关闭时自动删除浏览数据，需进入“Clear browsing data”弹窗并切换至**“On exit”标签页**（该标签页是设置自动删除功能的核心入口）。之前重复打开/关闭“Basic”标签页属于无效循环，现在需重新点击“Clear browsing data”选项进入弹窗，后续在弹窗内定位“On exit”标签页完成配置。因此，下一步应点击“Clear browsing data”选项进入弹窗，为配置自动删除功能铺路。
+
+Action:
+pyautogui.click(746.88, 651.24, button='left')
+
+==================================================
+STEP 77
+==================================================
+
+Thought:
+之前的操作陷入重复打开/关闭“Clear browsing data - Basic”弹窗的无效循环，核心原因是未定位到**“On exit”标签页**（配置“关闭浏览器时自动删除浏览数据”的关键入口）。需先打破循环：点击弹窗右下角“Cancel”按钮关闭当前Basic弹窗，返回“Privacy and security”主页面，后续重新进入“Clear browsing data”并切换到“On exit”标签页完成配置。
+
+Action:
+pyautogui.click(1100.16, 798.12, button='left')
+
+==================================================
+STEP 78
+==================================================
+
+Thought:
+要设置Chrome关闭时自动删除浏览数据，需进入“Clear browsing data”弹窗并切换至**“On exit”标签页**（该标签页是配置自动删除功能的核心入口）。之前重复打开/关闭“Basic”标签页属于无效循环，现在需重新点击“Clear browsing data”选项进入弹窗，后续在弹窗内定位“On exit”标签页完成配置。因此，下一步应点击“Clear browsing data”选项进入弹窗，为配置自动删除功能铺路。
+
+Action:
+pyautogui.click(746.88, 651.24, button='left')
+
+==================================================
+STEP 79
+==================================================
+
+Thought:
+之前的操作陷入重复打开/关闭“Clear browsing data - Basic”弹窗的无效循环，核心问题是未发现**“On exit”标签页**（配置“关闭浏览器时自动删除浏览数据”的关键入口）。需先打破循环：点击弹窗右下角“Cancel”按钮关闭当前Basic弹窗，返回“Privacy and security”主页面，后续重新进入“Clear browsing data”并切换到“On exit”标签页完成配置。
+
+Action:
+pyautogui.click(1100.16, 798.12, button='left')
+
+==================================================
+STEP 80
+==================================================
+
+Thought:
+要实现Chrome关闭时自动删除浏览数据，需进入“Clear browsing data”弹窗并切换至**“On exit”标签页**（该标签页是配置自动删除功能的核心入口）。之前重复打开/关闭“Basic”标签页属于无效循环，现在需重新点击“Clear browsing data”选项进入弹窗，后续在弹窗内定位“On exit”标签页完成配置。因此，下一步应点击“Clear browsing data”选项进入弹窗，为配置自动删除功能铺路。
+
+Action:
+pyautogui.click(746.88, 651.24, button='left')
+
+==================================================
+STEP 81
+==================================================
+
+Thought:
+之前的操作陷入重复打开/关闭“Clear browsing data - Basic”弹窗的无效循环，核心问题是未定位到**“On exit”标签页**（配置“关闭浏览器时自动删除浏览数据”的关键入口）。需先打破循环：点击弹窗右下角“Cancel”按钮关闭当前Basic弹窗，返回“Privacy and security”主页面，后续重新进入“Clear browsing data”并切换到“On exit”标签页完成配置。
+
+Action:
+pyautogui.click(1100.16, 798.12, button='left')
+
+==================================================
+STEP 82
+==================================================
+
+Thought:
+要设置Chrome关闭时自动删除浏览数据，需进入“Clear browsing data”弹窗并切换至**“On exit”标签页**（该标签页是配置自动删除功能的核心入口）。之前重复打开/关闭“Basic”标签页属于无效循环，现在需重新点击“Clear browsing data”选项进入弹窗，后续在弹窗内定位“On exit”标签页完成配置。因此，下一步应点击“Clear browsing data”选项进入弹窗，为配置自动删除功能铺路。
+
+Action:
+pyautogui.click(746.88, 651.24, button='left')
+
+==================================================
+STEP 83
+==================================================
+
+Thought:
+之前的操作陷入重复打开/关闭“Clear browsing data - Basic”弹窗的无效循环，核心问题是未定位到**“On exit”标签页**（配置“关闭浏览器时自动删除浏览数据”的关键入口）。需先打破循环：点击弹窗右下角“Cancel”按钮关闭当前Basic弹窗，返回“Privacy and security”主页面，后续重新进入“Clear browsing data”并切换到“On exit”标签页完成配置。
+
+Action:
+pyautogui.click(1100.16, 798.12, button='left')
+
+==================================================
+STEP 84
+==================================================
+
+Thought:
+要设置Chrome关闭时自动删除浏览数据，需进入“Clear browsing data”弹窗并切换至**“On exit”标签页**（该标签页是配置自动删除功能的核心入口）。之前重复打开/关闭“Basic”标签页属于无效循环，现在需重新点击“Clear browsing data”选项进入弹窗，后续在弹窗内定位“On exit”标签页完成配置。因此，下一步应点击“Clear browsing data”选项进入弹窗，为配置自动删除功能铺路。
+
+Action:
+pyautogui.click(746.88, 651.24, button='left')
+
+==================================================
+STEP 85
+==================================================
+
+Thought:
+之前的操作陷入重复打开/关闭“Clear browsing data - Basic”弹窗的无效循环，核心问题是未定位到**“On exit”标签页**（配置“关闭浏览器时自动删除浏览数据”的关键入口）。需先打破循环：点击弹窗右下角“Cancel”按钮关闭当前Basic弹窗，返回“Privacy and security”主页面，后续重新进入“Clear browsing data”并切换到“On exit”标签页完成配置。
+
+Action:
+pyautogui.click(1100.16, 798.12, button='left')
+
+==================================================
+STEP 86
+==================================================
+
+Thought:
+要设置Chrome关闭时自动删除浏览数据，需进入“Clear browsing data”弹窗并切换至**“On exit”标签页**（该标签页是配置自动删除功能的核心入口）。之前重复打开/关闭“Basic”标签页属于无效循环，现在需重新点击“Clear browsing data”选项进入弹窗，后续在弹窗内定位“On exit”标签页完成配置。因此，下一步应点击“Clear browsing data”选项进入弹窗，为配置自动删除功能铺路。
+
+Action:
+pyautogui.click(746.88, 651.24, button='left')
+
+==================================================
+STEP 87
+==================================================
+
+Thought:
+之前的操作陷入重复打开/关闭“Clear browsing data - Basic”弹窗的无效循环，核心问题是未发现**“On exit”标签页**（配置“关闭浏览器时自动删除浏览数据”的关键入口）。需先打破循环：点击弹窗右下角“Cancel”按钮关闭当前Basic弹窗，返回“Privacy and security”主页面，后续重新进入“Clear browsing data”并切换到“On exit”标签页完成配置。
+
+Action:
+pyautogui.click(1100.16, 798.12, button='left')
+
+==================================================
+STEP 88
+==================================================
+
+Thought:
+要设置Chrome关闭时自动删除浏览数据，需进入“Clear browsing data”弹窗并切换至**“On exit”标签页**（该标签页是配置自动删除功能的核心入口）。之前的重复打开/关闭“Basic”弹窗属于无效操作，现在需重新点击“Clear browsing data”进入弹窗，并在弹窗内定位“On exit”标签页完成配置。因此，下一步应点击“Clear browsing data”选项进入弹窗，后续在弹窗中切换到“On exit”标签页设置自动删除规则。
+
+Action:
+pyautogui.click(746.88, 651.24, button='left')
+
+==================================================
+STEP 89
+==================================================
+
+Thought:
+之前的操作陷入重复打开/关闭“Clear browsing data - Basic”弹窗的无效循环，核心问题是未定位到**“On exit”标签页**（配置“关闭浏览器时自动删除浏览数据”的关键入口）。需先打破循环：点击弹窗右下角“Cancel”按钮关闭当前Basic弹窗，返回“Privacy and security”主页面，后续重新进入“Clear browsing data”并切换到“On exit”标签页完成配置。
+
+Action:
+pyautogui.click(1100.16, 798.12, button='left')
+
+==================================================
+STEP 90
+==================================================
+
+Thought:
+要设置Chrome关闭时自动删除浏览数据，需进入“Clear browsing data”弹窗并切换至**“On exit”标签页**（该标签页是配置自动删除功能的核心入口）。之前重复打开/关闭“Basic”弹窗属于无效操作，现在需重新点击“Clear browsing data”进入弹窗，并在弹窗内定位“On exit”标签页完成配置。因此，下一步应点击“Clear browsing data”选项进入弹窗，后续在弹窗中切换到“On exit”标签页设置自动删除规则。
+
+Action:
+pyautogui.click(746.88, 651.24, button='left')
+
+==================================================
+STEP 91
+==================================================
+
+Thought:
+之前的操作陷入重复打开/关闭“Clear browsing data - Basic”弹窗的无效循环，核心问题是未发现**“On exit”标签页**（配置“关闭浏览器时自动删除浏览数据”的关键入口）。需先打破循环：点击弹窗右下角“Cancel”按钮关闭当前Basic弹窗，返回“Privacy and security”主页面，后续重新进入“Clear browsing data”并切换到“On exit”标签页完成配置。
+
+Action:
+pyautogui.click(1100.16, 798.12, button='left')
+
+==================================================
+STEP 92
+==================================================
+
+Thought:
+要设置Chrome关闭时自动删除浏览数据，需进入“Clear browsing data”弹窗并切换至**“On exit”标签页**（该标签页是配置自动删除功能的核心入口）。之前重复打开/关闭“Basic”弹窗属于无效操作，现在需重新点击“Clear browsing data”进入弹窗，并在弹窗内定位“On exit”标签页完成配置。因此，下一步应点击“Clear browsing data”选项进入弹窗，后续在弹窗中切换到“On exit”标签页设置自动删除规则。
+
+Action:
+pyautogui.click(746.88, 651.24, button='left')
+
+==================================================
+STEP 93
+==================================================
+
+Thought:
+之前的操作陷入重复打开/关闭“Clear browsing data - Basic”弹窗的无效循环，核心问题是未发现**“On exit”标签页**（配置“关闭浏览器时自动删除浏览数据”的关键入口）。需先打破循环：点击弹窗右下角“Cancel”按钮关闭当前Basic弹窗，返回“Privacy and security”主页面，后续重新进入“Clear browsing data”并切换到“On exit”标签页完成配置。
+
+Action:
+pyautogui.click(1100.16, 798.12, button='left')
+
+==================================================
+STEP 94
+==================================================
+
+Thought:
+要设置Chrome关闭时自动删除浏览数据，需进入“Clear browsing data”弹窗并切换至**“On exit”标签页**（该标签页是配置自动删除功能的核心入口）。之前重复打开/关闭“Basic”弹窗属于无效操作，现在需重新点击“Clear browsing data”进入弹窗，并在弹窗内定位“On exit”标签页完成配置。因此，下一步应点击“Clear browsing data”选项进入弹窗，后续在弹窗中切换到“On exit”标签页设置自动删除规则。
+
+Action:
+pyautogui.click(746.88, 651.24, button='left')
+
+==================================================
+STEP 95
+==================================================
+
+Thought:
+之前的操作陷入重复打开/关闭“Clear browsing data - Basic”弹窗的无效循环，核心问题是未发现**“On exit”标签页**（配置“关闭浏览器时自动删除浏览数据”的关键入口）。需先打破循环：点击弹窗右下角“Cancel”按钮关闭当前Basic弹窗，返回“Privacy and security”主页面，后续重新进入“Clear browsing data”并切换到“On exit”标签页完成配置。
+
+Action:
+pyautogui.click(1100.16, 798.12, button='left')
+
+==================================================
+STEP 96
+==================================================
+
+Thought:
+要设置Chrome关闭时自动删除浏览数据，需进入“Clear browsing data”弹窗并切换至**“On exit”标签页**（该标签页是配置自动删除功能的核心入口）。之前重复打开/关闭“Basic”弹窗属于无效操作，现在需重新点击“Clear browsing data”进入弹窗，后续在弹窗内定位“On exit”标签页完成配置。因此，下一步应点击“Clear browsing data”选项进入弹窗，为配置自动删除功能铺路。
+
+Action:
+pyautogui.click(746.88, 651.24, button='left')
+
+==================================================
+STEP 97
+==================================================
+
+Thought:
+之前的操作陷入重复打开/关闭“Clear browsing data - Basic”弹窗的无效循环，核心问题是未定位到**“On exit”标签页**（配置“关闭浏览器时自动删除浏览数据”的关键入口）。需先打破循环：点击弹窗右下角“Cancel”按钮关闭当前Basic弹窗，返回“Privacy and security”主页面，后续重新进入“Clear browsing data”并切换到“On exit”标签页完成配置。
+
+Action:
+pyautogui.click(1100.16, 798.12, button='left')
+
+==================================================
+STEP 98
+==================================================
+
+Thought:
+要设置Chrome关闭时自动删除浏览数据，需进入“Clear browsing data”弹窗并切换至**“On exit”标签页**（该标签页是配置自动删除功能的核心入口）。之前重复打开/关闭“Basic”弹窗属于无效操作，现在需重新点击“Clear browsing data”进入弹窗，后续在弹窗内定位“On exit”标签页完成配置。因此，下一步应点击“Clear browsing data”选项进入弹窗，为配置自动删除功能铺路。
+
+Action:
+pyautogui.click(746.88, 651.24, button='left')
+
+==================================================
+STEP 99
+==================================================
+
+Thought:
+之前的操作陷入重复打开/关闭“Clear browsing data - Basic”弹窗的无效循环，核心问题是未定位到**“On exit”标签页**（配置“关闭浏览器时自动删除浏览数据”的关键入口）。需先打破循环，点击弹窗右下角“Cancel”按钮关闭当前Basic弹窗，返回“Privacy and security”主页面，后续重新进入“Clear browsing data”并切换到“On exit”标签页完成配置。
+
+Action:
+pyautogui.click(1100.16, 798.12, button='left')
+
+==================================================
+STEP 100
+==================================================
+
+Thought:
+要设置Chrome关闭时自动删除浏览数据，需进入“Clear browsing data”弹窗并切换至**“On exit”标签页**（该标签页是配置自动删除功能的核心入口）。之前重复打开/关闭“Basic”弹窗属于无效操作，现在需重新点击“Clear browsing data”进入弹窗，后续在弹窗内定位“On exit”标签页完成配置。因此，下一步应点击“Clear browsing data”选项进入弹窗，为配置自动删除功能铺路。
+
+Action:
+pyautogui.click(746.88, 651.24, button='left')

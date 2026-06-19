@@ -1,0 +1,82 @@
+Trajectory ID: 9f935cce-0a9f-435f-8007-817732bfc0a5
+Source Model: UI-TARS-0717-100step
+Domain: chrome
+
+Task:
+Browse list of Civil Division forms.
+
+Success Binary: True
+Success Raw: 1.0
+
+Number of Steps: 7
+
+============================================================
+TRAJECTORY
+============================================================
+
+==================================================
+STEP 1
+==================================================
+
+Thought:
+要浏览民事部门（Civil Division）的表格列表，首先需要找到相关的资源入口。当前在司法部官网，顶部导航栏有“Resources”菜单，可能包含表单相关内容。首先应该点击“Resources”下拉菜单，查看是否有Forms或Civil Division相关的选项。如果没有，可能需要使用搜索框，输入“Civil Division forms”进行搜索。不过先尝试点击“Resources”菜单，展开选项。
+
+Action:
+pyautogui.click(837.12, 297.0, button='left')
+
+==================================================
+STEP 2
+==================================================
+
+Thought:
+现在Resources下拉菜单已经展开，看到有“Forms”选项。要浏览Civil Division的表格，首先需要进入Forms页面，然后在其中查找Civil Division相关的表单列表。所以下一步应该点击下拉菜单中的“Forms”选项。
+
+Action:
+pyautogui.click(821.76, 434.16, button='left')
+
+==================================================
+STEP 3
+==================================================
+
+Thought:
+现在在Forms页面，需要筛选出Civil Division的表单。页面上有Agency的下拉筛选框，当前显示为“-Any-”。应该点击这个下拉框，找到Civil Division选项并选择，然后应用筛选，这样就能看到相关表单列表。
+
+Action:
+pyautogui.click(1011.84, 639.36, button='left')
+
+==================================================
+STEP 4
+==================================================
+
+Thought:
+现在Agency下拉框已展开，看到有“Civil Division”选项。需要选择这个选项来筛选相关表单，然后点击“Apply Filters”应用筛选，就能看到Civil Division的表单列表。所以下一步点击下拉列表中的“Civil Division”。
+
+Action:
+pyautogui.click(896.64, 747.36, button='left')
+
+==================================================
+STEP 5
+==================================================
+
+Thought:
+已经在Agency下拉框中选择了“Civil Division”，现在需要应用筛选来显示相关的表单列表。页面上有“Apply Filters”按钮，点击它就能筛选出Civil Division的表单，完成任务目标。
+
+Action:
+pyautogui.click(608.64, 702.0, button='left')
+
+==================================================
+STEP 6
+==================================================
+
+Thought:
+现在页面已经显示了Civil Division的表单列表，有11个结果。为了完整浏览列表，需要向下滚动页面查看所有表单。使用鼠标滚轮向下滚动，查看剩余的表单内容。
+
+Action:
+pyautogui.scroll(-5, x=960.0, y=756.0)
+
+==================================================
+STEP 7
+==================================================
+
+Action:
+DONE

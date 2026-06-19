@@ -1,0 +1,43 @@
+Trajectory ID: 788b3701-3ec9-4b67-b679-418bfa726c22
+Source Model: UI-TARS-0717-100step
+Domain: multi_apps
+
+Task:
+I'm tracking updates for a short tale set on https://github.com/liangjs333/4th-year-in-tsinghua-eng. I have already downloaded several chapters for reading and archiving. Please assist me in downloading the next chapter I haven't obtained yet and save it to my novel collection folder.
+
+Success Binary: False
+Success Raw: 0.0
+
+Number of Steps: 3
+
+============================================================
+TRAJECTORY
+============================================================
+
+==================================================
+STEP 1
+==================================================
+
+Thought:
+现在需要访问GitHub仓库来获取下一章内容。首先看到左侧有Chrome浏览器图标，应该先打开Chrome。步骤：点击左侧的Chrome图标（彩色圆环的那个），打开浏览器，然后导航到目标GitHub地址。
+
+Action:
+pyautogui.click(30.72, 61.56, button='left')
+
+==================================================
+STEP 2
+==================================================
+
+Thought:
+现在Chrome浏览器已经打开，地址栏是空的。需要访问目标GitHub仓库，所以应该在地址栏输入网址https://github.com/liangjs333/4th-year-in-tsinghua-eng。这样就能进入仓库查看新的章节内容。
+
+Action:
+pyperclip.copy('https://github.com/liangjs333/4th-year-in-tsinghua-eng')
+pyautogui.hotkey('ctrl', 'v')
+
+==================================================
+STEP 3
+==================================================
+
+Action:
+FAIL

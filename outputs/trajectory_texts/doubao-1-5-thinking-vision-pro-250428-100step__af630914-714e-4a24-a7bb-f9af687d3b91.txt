@@ -1,0 +1,82 @@
+Trajectory ID: af630914-714e-4a24-a7bb-f9af687d3b91
+Source Model: doubao-1-5-thinking-vision-pro-250428-100step
+Domain: chrome
+
+Task:
+My grandmother has been using the Chrome lately and told me that the font size is way too small for her poor eyesight. Could you set the default font size to the largest for her?
+
+Success Binary: True
+Success Raw: 1.0
+
+Number of Steps: 7
+
+============================================================
+TRAJECTORY
+============================================================
+
+==================================================
+STEP 1
+==================================================
+
+Thought:
+要调整Chrome的默认字体大小，首先需要进入设置页面。Chrome的设置入口是右上角的三点菜单按钮，所以第一步要点击该按钮来展开菜单选项。这样后续才能找到字体大小的设置项。
+
+Action:
+pyautogui.click(1895.04, 88.56, button='left')
+
+==================================================
+STEP 2
+==================================================
+
+Thought:
+要调整字体大小，需先进入Chrome的设置页面。当前菜单已展开，“Settings”选项是进入设置的入口，点击它可进入后续调整字体大小的界面。因此，下一步应点击菜单中的“Settings”选项。
+
+Action:
+pyautogui.click(1566.72, 807.84, button='left')
+
+==================================================
+STEP 3
+==================================================
+
+Thought:
+要设置默认字体大小，需先进入“Appearance”（外观）设置页面，因为字体大小选项位于该部分。当前左侧菜单栏中可见“Appearance”选项，点击它可进入对应的设置界面，以便后续调整字体大小。因此，下一步应点击左侧菜单中的“Appearance”选项。
+
+Action:
+pyautogui.click(170.88, 335.88, button='left')
+
+==================================================
+STEP 4
+==================================================
+
+Thought:
+要设置字体大小，需进入“Appearance”（外观）设置页面，因为字体大小选项位于该部分。当前页面为“Performance”设置，左侧菜单栏中“Appearance”选项是目标入口，点击它可进入对应设置界面。因此，下一步应点击左侧菜单中的“Appearance”选项。
+
+Action:
+pyautogui.click(170.88, 358.56, button='left')
+
+==================================================
+STEP 5
+==================================================
+
+Thought:
+要将字体大小设置为最大，需先展开“Font size”下拉菜单以查看所有选项。当前“Font size”显示为“Medium (Recommended)”，点击该下拉菜单可展开选项列表，进而选择最大字体大小。因此，下一步应点击“Font size”对应的下拉菜单。
+
+Action:
+pyautogui.click(1213.44, 726.84, button='left')
+
+==================================================
+STEP 6
+==================================================
+
+Thought:
+要将字体大小设置为最大，需在展开的“Font size”下拉菜单中选择“Very large”选项。该选项是下拉列表中最大的字体尺寸，选择后可满足需求。因此，下一步应点击下拉菜单中的“Very large”选项。
+
+Action:
+pyautogui.click(1159.68, 820.8, button='left')
+
+==================================================
+STEP 7
+==================================================
+
+Action:
+DONE

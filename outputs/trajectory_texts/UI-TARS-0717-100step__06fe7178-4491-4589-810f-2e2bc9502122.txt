@@ -1,0 +1,32 @@
+Trajectory ID: 06fe7178-4491-4589-810f-2e2bc9502122
+Source Model: UI-TARS-0717-100step
+Domain: chrome
+
+Task:
+Can you make my computer bring back the last tab I shut down?
+
+Success Binary: True
+Success Raw: 1.0
+
+Number of Steps: 2
+
+============================================================
+TRAJECTORY
+============================================================
+
+==================================================
+STEP 1
+==================================================
+
+Thought:
+要恢复最近关闭的标签页，在Chrome浏览器中有快捷键Ctrl+Shift+T，或者通过菜单操作。首先确认当前是Chrome浏览器，使用快捷键更快捷。所以下一步按Ctrl+Shift+T组合键来恢复最近关闭的标签页。
+
+Action:
+pyautogui.hotkey('ctrl', 'shift', 't')
+
+==================================================
+STEP 2
+==================================================
+
+Action:
+DONE

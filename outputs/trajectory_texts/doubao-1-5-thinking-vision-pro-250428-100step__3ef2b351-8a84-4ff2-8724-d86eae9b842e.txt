@@ -1,0 +1,43 @@
+Trajectory ID: 3ef2b351-8a84-4ff2-8724-d86eae9b842e
+Source Model: doubao-1-5-thinking-vision-pro-250428-100step
+Domain: libreoffice_writer
+
+Task:
+Help me center align the heading in LibreOffice.
+
+Success Binary: True
+Success Raw: 1.0
+
+Number of Steps: 3
+
+============================================================
+TRAJECTORY
+============================================================
+
+==================================================
+STEP 1
+==================================================
+
+Thought:
+要将标题居中对齐，首先需要选中标题文本。观察到标题为“Guidelines on drawing up a Constitution”，需通过拖拽操作选中该文本，以便后续点击居中对齐按钮。因此，下一步是拖拽选择标题文本。
+
+Action:
+pyautogui.moveTo(683.52, 308.88)
+pyautogui.dragTo(996.48, 309.96, duration=1.0)
+
+==================================================
+STEP 2
+==================================================
+
+Thought:
+现在标题文本已被选中，需要将其设置为居中对齐。在LibreOffice Writer的工具栏中，存在“居中对齐”按钮，点击该按钮可实现文本居中。因此，下一步应点击工具栏上的居中对齐按钮来完成操作。
+
+Action:
+pyautogui.click(1098.24, 145.8, button='left')
+
+==================================================
+STEP 3
+==================================================
+
+Action:
+DONE

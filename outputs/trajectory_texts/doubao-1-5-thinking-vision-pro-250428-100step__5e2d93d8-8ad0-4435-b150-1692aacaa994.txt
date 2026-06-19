@@ -1,0 +1,73 @@
+Trajectory ID: 5e2d93d8-8ad0-4435-b150-1692aacaa994
+Source Model: doubao-1-5-thinking-vision-pro-250428-100step
+Domain: vs_code
+
+Task:
+Please help me save current project as workspace "project" at "/home/user/project/".
+
+Success Binary: True
+Success Raw: 1.0
+
+Number of Steps: 6
+
+============================================================
+TRAJECTORY
+============================================================
+
+==================================================
+STEP 1
+==================================================
+
+Thought:
+要将当前项目保存为workspace，首先需要打开VS Code的File菜单，因为保存workspace的相关选项通常在File菜单下。所以下一步应点击界面左上角的“File”选项，展开菜单以查看后续可用操作。
+
+Action:
+pyautogui.click(88.32, 73.44, button='left')
+
+==================================================
+STEP 2
+==================================================
+
+Thought:
+现在File菜单已展开，要保存工作区需选择“Save Workspace As...”选项。点击该选项后会打开文件保存对话框，后续可指定保存路径为“/home/user/”并命名为“project”。因此下一步应点击“Save Workspace As...”选项。
+
+Action:
+pyautogui.click(174.72, 329.4, button='left')
+
+==================================================
+STEP 3
+==================================================
+
+Thought:
+要将工作区保存到“/home/user/”路径，首先需要导航到该目录。当前文件保存对话框左侧有“Home”选项，点击它可进入用户主目录（即“/home/user/”）。因此，下一步应点击左侧导航栏中的“Home”选项，以切换到目标保存路径。
+
+Action:
+pyautogui.click(449.28, 145.8, button='left')
+
+==================================================
+STEP 4
+==================================================
+
+Thought:
+现在需要将工作区文件命名为“project”。当前文件名输入框中显示的是“project.code-workspace”，需要确保名称部分为“project”。由于输入框已被选中（内容高亮），直接输入“project”即可替换原有内容。输入完成后，点击“Save”按钮就能完成保存。因此下一步是在名称输入框中输入“project”。
+
+Action:
+pyperclip.copy('project')
+pyautogui.hotkey('ctrl', 'v')
+
+==================================================
+STEP 5
+==================================================
+
+Thought:
+现在已经导航到目标路径“/home/user/”（通过点击Home进入），并且文件名已设置为“project”。要完成保存操作，需要点击对话框右上角的绿色“Save”按钮。点击该按钮后，VS Code会将当前工作区以“project.code-workspace”的形式保存到指定路径，从而完成任务。
+
+Action:
+pyautogui.click(1547.52, 103.68, button='left')
+
+==================================================
+STEP 6
+==================================================
+
+Action:
+DONE

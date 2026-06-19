@@ -1,0 +1,98 @@
+{
+  "num_paired_tasks": 69,
+  "num_records": 138,
+  "required_source_models": [
+    "doubao-1-5-thinking-vision-pro-250428-100step",
+    "UI-TARS-0717-100step"
+  ],
+  "eval_model_names": [
+    "claude_sonnet_4_6",
+    "gpt_5_5"
+  ],
+  "pair_outcome_counts": {
+    "both_failure": 38,
+    "both_success": 19,
+    "both_unknown": 1,
+    "mixed_failure_unknown": 1,
+    "mixed_success_failure": 10
+  },
+  "success_pattern_counts": {
+    "False+False": 38,
+    "False+None": 1,
+    "False+True": 10,
+    "None+None": 1,
+    "True+True": 19
+  },
+  "domain_counts": {
+    "chrome": 10,
+    "gimp": 9,
+    "libreoffice_calc": 11,
+    "libreoffice_impress": 11,
+    "libreoffice_writer": 2,
+    "multi_apps": 10,
+    "os": 2,
+    "thunderbird": 5,
+    "vlc": 6,
+    "vs_code": 3
+  },
+  "num_mixed_success_failure_pairs": 10,
+  "by_eval_model": {
+    "claude_sonnet_4_6": {
+      "n": 138,
+      "reference_metric_means": {
+        "rouge1_f1": 0.5545577228747459,
+        "rouge2_f1": 0.2863419115935936,
+        "rougeL_f1": 0.3983795814519142,
+        "bertscore_precision": 0.23636544553859942,
+        "bertscore_recall": 0.4414055602544028,
+        "bertscore_f1": 0.3373845878286638
+      },
+      "judge_score_means": {
+        "coverage_score": 4.971014492753623,
+        "factuality_score": 4.8768115942028984,
+        "temporal_order_score": 4.971014492753623,
+        "specificity_score": 4.949275362318841,
+        "procedural_usefulness_score": 4.956521739130435
+      },
+      "best_count": 83,
+      "tie_count": 44,
+      "omission_severity_counts": {
+        "minor": 9,
+        "none": 129
+      },
+      "hallucination_severity_counts": {
+        "major": 2,
+        "minor": 9,
+        "none": 127
+      }
+    },
+    "gpt_5_5": {
+      "n": 138,
+      "reference_metric_means": {
+        "rouge1_f1": 0.6455055700648222,
+        "rouge2_f1": 0.316726790151547,
+        "rougeL_f1": 0.4718906355361313,
+        "bertscore_precision": 0.4255077070084171,
+        "bertscore_recall": 0.4864308162308905,
+        "bertscore_f1": 0.4560711211052494
+      },
+      "judge_score_means": {
+        "coverage_score": 4.804347826086956,
+        "factuality_score": 4.927536231884058,
+        "temporal_order_score": 4.956521739130435,
+        "specificity_score": 4.282608695652174,
+        "procedural_usefulness_score": 4.579710144927536
+      },
+      "best_count": 11,
+      "tie_count": 44,
+      "omission_severity_counts": {
+        "minor": 39,
+        "none": 99
+      },
+      "hallucination_severity_counts": {
+        "minor": 6,
+        "none": 132
+      }
+    }
+  }
+}

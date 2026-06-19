@@ -1,0 +1,25 @@
+# Gold Draft Review
+
+## Metadata
+
+- trajectory_id: `ae78f875-5b98-4907-bbb5-9c737fc68c03`
+- source_model: `doubao-1-5-thinking-vision-pro-250428-100step`
+- domain: `chrome`
+- success_binary: `False`
+- success_raw: `0.0`
+- num_steps: `100`
+- gold_draft_status: `ERROR`
+
+## Task Instruction
+
+Could you please change the number of search results displayed on one page to 50? I find that having more results visible at once significantly enhances my research efficiency, as it reduces the need to constantly click through multiple pages. 
+
+## Draft Summary
+
+
+
+## Human-Revised Gold Summary
+
+<!-- Replace this section with your final human-revised gold summary. -->
+
+

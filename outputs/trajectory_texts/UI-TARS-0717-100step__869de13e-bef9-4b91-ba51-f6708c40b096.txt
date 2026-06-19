@@ -1,0 +1,188 @@
+Trajectory ID: 869de13e-bef9-4b91-ba51-f6708c40b096
+Source Model: UI-TARS-0717-100step
+Domain: multi_apps
+
+Task:
+Can you organize my desktop by identifying academic papers, coding projects, and other documents, ensuring no file is misplaced? Specifically, place academic papers in the 'Paper_reading' folder, coding projects in 'Projects', and categorize everything else under 'Miscellaneous'. For files lacking clear extensions or names, apply content analysis to determine their appropriate classification.
+
+Success Binary: True
+Success Raw: 1.0
+
+Number of Steps: 15
+
+============================================================
+TRAJECTORY
+============================================================
+
+==================================================
+STEP 1
+==================================================
+
+Thought:
+首先，需要处理学术论文。观察到桌面上有多个PDF文件，比如1802.05365.pdf、1909.10351.pdf、paper01.pdf、1706.03762.pdf等，这些应该属于学术论文，需要移动到Paper_reading文件夹。先处理1802.05365.pdf，将其拖拽到Paper_reading文件夹。
+
+步骤：
+1. 确定目标文件：1802.05365.pdf，位置在桌面右侧。
+2. 确定目标文件夹：Paper_reading，在桌面右侧列。
+3. 执行拖拽操作，将文件拖到文件夹中。
+
+这样可以开始分类学术论文，后续再处理其他类型文件。
+
+Action:
+pyautogui.moveTo(1716.48, 184.68)
+pyautogui.dragTo(1848.96, 425.52, duration=1.0)
+
+==================================================
+STEP 2
+==================================================
+
+Thought:
+现在需要继续分类学术论文。桌面上还有1909.10351.pdf，这是学术论文格式（arxiv编号），应该移动到Paper_reading文件夹。首先确认文件位置，然后拖拽到目标文件夹。
+
+步骤：
+1. 定位文件1909.10351.pdf在桌面右侧。
+2. 定位目标文件夹Paper_reading。
+3. 执行拖拽操作，将该PDF拖入Paper_reading文件夹，继续整理学术论文类文件。
+
+Action:
+pyautogui.moveTo(1716.48, 302.4)
+pyautogui.dragTo(1848.96, 425.52, duration=1.0)
+
+==================================================
+STEP 3
+==================================================
+
+Thought:
+接下来处理paper01.pdf，这个文件名和格式（PDF）表明是学术论文，应该移动到Paper_reading文件夹。先找到该文件在桌面右侧的位置，然后拖拽到目标文件夹，继续整理学术类文件。
+
+Action:
+pyautogui.moveTo(1716.48, 540.0)
+pyautogui.dragTo(1848.96, 425.52, duration=1.0)
+
+==================================================
+STEP 4
+==================================================
+
+Thought:
+现在处理1706.03762.pdf，这个文件名是arxiv编号格式，属于学术论文，应该移动到Paper_reading文件夹。找到该文件在桌面右侧的位置，执行拖拽操作到目标文件夹，继续完成学术论文的分类。
+
+Action:
+pyautogui.moveTo(1848.96, 891.0)
+pyautogui.dragTo(1848.96, 425.52, duration=1.0)
+
+==================================================
+STEP 5
+==================================================
+
+Thought:
+现在看CLUE-A-MULTI-TASK.BENCHM...这个文件，从名称看是学术相关的基准测试论文，属于学术论文，应该移动到Paper_reading文件夹。找到该文件位置，拖拽到目标文件夹，继续分类学术类文件。
+
+Action:
+pyautogui.moveTo(1716.48, 422.28)
+pyautogui.dragTo(1848.96, 425.52, duration=1.0)
+
+==================================================
+STEP 6
+==================================================
+
+Thought:
+现在处理coding projects相关文件。看到assign1-data_python3这个文件夹，名称里有python3，属于coding project，应该移动到Projects文件夹。找到该文件夹位置，拖拽到Projects文件夹，开始分类项目类文件。
+
+Action:
+pyautogui.moveTo(1848.96, 548.64)
+pyautogui.dragTo(1848.96, 309.96, duration=1.0)
+
+==================================================
+STEP 7
+==================================================
+
+Thought:
+现在看2-i-for-array这个文件夹，名称像是编程相关的项目（可能和数组相关的代码项目），属于coding projects，应该移动到Projects文件夹。找到该文件夹位置，拖拽到Projects文件夹，继续分类项目类文件。
+
+Action:
+pyautogui.moveTo(1716.48, 72.36)
+pyautogui.dragTo(1848.96, 309.96, duration=1.0)
+
+==================================================
+STEP 8
+==================================================
+
+Thought:
+现在处理剩下的文件，归类到Miscellaneous。首先看assignment_mark_frontpag...这个Word文件，不属于学术论文（学术论文多是PDF，且名称不像论文）也不属于coding project，所以移动到Miscellaneous文件夹。找到该文件位置，拖拽到目标文件夹。
+
+Action:
+pyautogui.moveTo(1848.96, 72.36)
+pyautogui.dragTo(1848.96, 189.0, duration=1.0)
+
+==================================================
+STEP 9
+==================================================
+
+Thought:
+现在处理IA_Format.docx这个Word文件，它不属于学术论文（学术论文通常是PDF，且名称是格式相关，不是论文）也不是coding project，所以归类到Miscellaneous。找到该文件位置，拖拽到Miscellaneous文件夹。
+
+Action:
+pyautogui.moveTo(1716.48, 653.4)
+pyautogui.dragTo(1848.96, 189.0, duration=1.0)
+
+==================================================
+STEP 10
+==================================================
+
+Thought:
+现在处理2023_validation_7bd855db-463d...这个Excel文件，它不属于学术论文或coding project，归类到Miscellaneous。找到该文件位置，拖拽到目标文件夹。
+
+Action:
+pyautogui.moveTo(1848.96, 653.4)
+pyautogui.dragTo(1848.96, 189.0, duration=1.0)
+
+==================================================
+STEP 11
+==================================================
+
+Thought:
+现在处理Family Status Equality(Eng A...这个文件，看起来是文档类，不属于学术论文或coding project，归类到Miscellaneous。找到该文件位置，拖拽到目标文件夹。
+
+Action:
+pyautogui.moveTo(1716.48, 770.04)
+pyautogui.dragTo(1848.96, 189.0, duration=1.0)
+
+==================================================
+STEP 12
+==================================================
+
+Thought:
+现在处理07-cluster-kMean (1).ppt这个PPT文件，不属于学术论文或coding project，归类到Miscellaneous。找到该文件位置，拖拽到目标文件夹。
+
+Action:
+pyautogui.moveTo(1848.96, 770.04)
+pyautogui.dragTo(1848.96, 189.0, duration=1.0)
+
+==================================================
+STEP 13
+==================================================
+
+Thought:
+现在处理DOC_2480903712718...这个文件，看起来是普通文档，不属于学术论文或coding project，归类到Miscellaneous。找到该文件位置，拖拽到目标文件夹。
+
+Action:
+pyautogui.moveTo(1716.48, 891.0)
+pyautogui.dragTo(1848.96, 189.0, duration=1.0)
+
+==================================================
+STEP 14
+==================================================
+
+Thought:
+现在处理cco-return-to-school-survey-u...这个Excel文件，不属于学术论文或coding project，归类到Miscellaneous。找到该文件位置，拖拽到目标文件夹。
+
+Action:
+pyautogui.moveTo(1716.48, 1007.64)
+pyautogui.dragTo(1848.96, 189.0, duration=1.0)
+
+==================================================
+STEP 15
+==================================================
+
+Action:
+DONE

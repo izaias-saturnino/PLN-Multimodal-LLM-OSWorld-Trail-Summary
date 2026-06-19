@@ -1,0 +1,164 @@
+Trajectory ID: e528b65e-1107-4b8c-8988-490e4fece599
+Source Model: UI-TARS-0717-100step
+Domain: libreoffice_writer
+
+Task:
+Please help me make the first letter of each word to uppercase.
+
+Success Binary: True
+Success Raw: 1.0
+
+Number of Steps: 15
+
+============================================================
+TRAJECTORY
+============================================================
+
+==================================================
+STEP 1
+==================================================
+
+Thought:
+要将每个单词的首字母大写，首先需要选中所有文本。在LibreOffice Writer中，使用快捷键Ctrl+A可以全选文本，然后通过格式菜单或工具栏找到“首字母大写”的功能。首先执行全选操作。
+
+Action:
+pyautogui.hotkey('ctrl', 'a')
+
+==================================================
+STEP 2
+==================================================
+
+Thought:
+现在文本已经全选，接下来需要找到将每个单词首字母大写的功能。在LibreOffice Writer中，这个功能在“Format”菜单下的“Change Case”里，选择“Capitalize Each Word”。所以先点击顶部菜单栏的“Format”。
+
+Action:
+pyautogui.click(288.0, 75.6, button='left')
+
+==================================================
+STEP 3
+==================================================
+
+Thought:
+现在Format菜单已经展开，需要找到Text子菜单，因为大小写转换的功能在Text里面。所以下一步应该将鼠标移动到Text选项上，展开其子菜单，以便找到Change Case中的Capitalize Each Word选项。
+
+Action:
+pyautogui.click(318.72, 124.2, button='left')
+
+==================================================
+STEP 4
+==================================================
+
+Thought:
+刚才点错了Spacing，现在需要回到Text子菜单，找到Change Case。首先，Format菜单下的Text子菜单里，应该有Change Case选项，所以重新点击Text，然后找到Change Case，再选择Capitalize Each Word。现在先纠正，点击Text选项，展开正确的子菜单。
+
+Action:
+pyautogui.click(295.68, 99.36, button='left')
+
+==================================================
+STEP 5
+==================================================
+
+Thought:
+现在Text子菜单下的Change Case相关选项已经展开，看到了“Capitalize Every Word”选项，这正是需要的功能，点击它就能将每个单词的首字母大写。
+
+Action:
+pyautogui.click(624.0, 486.0, button='left')
+
+==================================================
+STEP 6
+==================================================
+
+Thought:
+刚才的操作好像出错了，因为原本的标题首字母是大写的，现在反而变成小写了，这说明可能点错了选项？不对，任务是每个单词首字母大写，现在看文本里的单词，比如“question two”变成了小写开头，这说明刚才的操作可能选成了其他大小写转换。哦，不对，刚才可能误点了，应该是“Capitalize Each Word”，但现在文本的首字母反而变小写了，这说明可能之前的全选后，误操作了。现在需要撤销，按Ctrl+Z，然后重新操作。
+Wait，不对，刚才的步骤中，可能在Format->Text里选错了选项。比如，可能点成了“lowercase”？不，刚才选的是“Capitalize Every Word”，但效果不对。哦，原来文本原本有些首字母是大写的，现在变成每个单词首字母大写，比如“Question Two”变成“Question Two”是对的，但现在看到“question two”，说明可能之前的操作反向了。哦，不对，刚才全选后，可能原本的文本有大小写，现在需要重新来。先撤销，按Ctrl+Z，回到之前的状态，然后重新全选，再选Format->Text->Capitalize Each Word。
+
+Action:
+pyautogui.hotkey('ctrl', 'z')
+
+==================================================
+STEP 7
+==================================================
+
+Thought:
+刚才撤销了错误的操作，现在文本回到了原来的状态。需要重新执行将每个单词首字母大写的操作。首先确认文本已全选（当前显示选中状态），然后再次打开Format菜单，找到Text子菜单，选择“Capitalize Each Word”（正确的选项，之前可能误操作）。现在点击Format菜单。
+
+Action:
+pyautogui.click(288.0, 75.6, button='left')
+
+==================================================
+STEP 8
+==================================================
+
+Thought:
+现在Format菜单已展开，需要将鼠标移到Text子菜单上，展开它以找到“Capitalize Each Word”选项。之前的错误是因为误操作，现在重新操作，确保选对选项。
+
+Action:
+pyautogui.click(295.68, 99.36, button='left')
+
+==================================================
+STEP 9
+==================================================
+
+Thought:
+现在Text子菜单下的选项已展开，看到“Capitalize Every Word”选项，这正是将每个单词首字母大写的功能。之前的撤销是因为误操作导致效果相反，现在确认这个选项是正确的，点击它来完成操作。
+
+Action:
+pyautogui.click(624.0, 486.0, button='left')
+
+==================================================
+STEP 10
+==================================================
+
+Thought:
+哦，发现问题了！刚才两次操作都把原本大写的首字母变成小写了，这说明选的选项是错误的。应该是“Sentence case”？不，不对，任务是每个单词首字母大写。哦，原来LibreOffice里的“Capitalize Every Word”是将每个单词首字母大写，而原本的文本中有些单词首字母已经是大写的，比如“Latin”，现在变成小写，这说明可能文本的语言设置有问题？或者我搞反了？不，不对，全选后执行“Capitalize Every Word”应该是每个单词首字母大写，不管原来的大小写。比如“question two”会变成“Question Two”，而“Latin America”会变成“Latin America”（因为首字母已经大写）。但现在看到的是“latin america”，这说明刚才的操作是将首字母小写了，这说明我选错了选项！啊，原来在Text子菜单里，“Capitalize Every Word”旁边还有其他选项，比如“lowercase”是小写，“UPPERCASE”是大写，“Sentence case”是句首大写。哦，天哪，我刚才可能点错了选项，点成了“lowercase”？不，不对，刚才的菜单里“Capitalize Every Word”是正确的，但效果相反，这说明可能文本原本是首字母大写，现在被转换成每个单词首字母小写？这不可能。哦，不对，看当前文本：“Question two”变成了“question two”，“Latin america”变成了“latin america”，这说明是将首字母大写的变成小写，小写的还是小写，这说明我点的是“lowercase”选项！啊，原来刚才在菜单里看错了选项，把“Capitalize Every Word”和“lowercase”搞混了。现在必须撤销，按Ctrl+Z，然后重新打开Format->Text，找到正确的“Capitalize Every Word”选项，它应该在菜单里的位置，比如在“Sentence case”下面？不，看菜单结构：在Text子菜单里，选项有UPPERCASE、lowercase、Cycle Case、Sentence case、Capitalize Every Word、TOGGLE CASE、Small capitals。哦，原来“Capitalize Every Word”是正确的，刚才可能点错了，点成了“lowercase”。现在撤销，重新操作，这次要仔细看选项。
+首先按Ctrl+Z撤销错误操作，回到之前的状态。
+
+Action:
+pyautogui.hotkey('ctrl', 'z')
+
+==================================================
+STEP 11
+==================================================
+
+Thought:
+现在回到了正确的文本状态，全选已完成。这次要仔细操作：打开Format菜单，进入Text子菜单，找到“Capitalize Every Word”选项，确保点击正确的选项。首先点击Format菜单。
+
+Action:
+pyautogui.click(288.0, 75.6, button='left')
+
+==================================================
+STEP 12
+==================================================
+
+Thought:
+现在Format菜单已展开，需要准确点击Text子菜单，然后在其中找到“Capitalize Every Word”选项。之前的错误是因为误点了其他选项，这次要仔细识别菜单中的选项名称，确保点击正确的功能。
+
+Action:
+pyautogui.click(295.68, 99.36, button='left')
+
+==================================================
+STEP 13
+==================================================
+
+Thought:
+现在Text子菜单下的选项清晰可见，“Capitalize Every Word”正是所需功能。之前的错误是误点了其他选项，这次要准确点击该选项，确保每个单词的首字母变为大写，完成任务。
+
+Action:
+pyautogui.click(612.48, 505.44, button='left')
+
+==================================================
+STEP 14
+==================================================
+
+Thought:
+现在检查文本，每个单词的首字母都已大写，如“There Is A Lot Of...”等，符合任务要求。为了保存修改，需要按Ctrl+S快捷键保存文档，确保更改不会丢失。
+
+Action:
+pyautogui.hotkey('ctrl', 's')
+
+==================================================
+STEP 15
+==================================================
+
+Action:
+DONE

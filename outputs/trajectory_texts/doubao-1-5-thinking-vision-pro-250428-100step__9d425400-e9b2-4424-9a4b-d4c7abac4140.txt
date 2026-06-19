@@ -1,0 +1,84 @@
+Trajectory ID: 9d425400-e9b2-4424-9a4b-d4c7abac4140
+Source Model: doubao-1-5-thinking-vision-pro-250428-100step
+Domain: vs_code
+
+Task:
+I want to make the tabs wrapped over multiple lines when exceeding available space, please help modify the setting of VS Code.
+
+Success Binary: True
+Success Raw: 1.0
+
+Number of Steps: 7
+
+============================================================
+TRAJECTORY
+============================================================
+
+==================================================
+STEP 1
+==================================================
+
+Thought:
+要修改VS Code中标签多行显示的设置，首先需要打开设置界面。VS Code的设置可以通过菜单栏的File选项进入。因此，第一步应点击左上角的File菜单，以展开后续的设置入口选项。
+
+Action:
+pyautogui.click(90.24, 70.2, button='left')
+
+==================================================
+STEP 2
+==================================================
+
+Thought:
+要进入VS Code的设置界面，需先点击File菜单下的Preferences选项。因为设置相关的配置项（包括标签显示设置）都在Preferences的子菜单中，所以下一步应选择点击Preferences来展开其子菜单，进而找到Settings入口。
+
+Action:
+pyautogui.click(144.0, 534.6, button='left')
+
+==================================================
+STEP 3
+==================================================
+
+Thought:
+要修改标签多行显示的设置，需先进入VS Code的设置界面。当前已展开Preferences子菜单，其中的Settings选项是进入设置页面的入口。因此，下一步应点击Settings选项，以打开设置界面，后续才能找到标签换行显示的配置项。
+
+Action:
+pyautogui.click(497.28, 552.96, button='left')
+
+==================================================
+STEP 4
+==================================================
+
+Thought:
+要找到标签多行显示的设置，需在设置搜索框中输入关键词筛选相关配置。当前已进入设置界面，搜索框是定位特定设置的高效方式。因此，下一步应点击搜索框并输入“tabs”，以筛选出所有与标签（tabs）相关的设置项，其中包含控制标签换行的选项。
+
+Action:
+pyperclip.copy('tabs')
+pyautogui.hotkey('ctrl', 'v')
+
+==================================================
+STEP 5
+==================================================
+
+Thought:
+要定位到控制标签多行显示的设置项，需在搜索框中输入更精准的关键词“wrap tabs”。当前搜索框已输入“tabs”，范围较广，输入“wrap tabs”可缩小范围，快速找到“Workbench > Editor: Wrap Tabs”这一关键设置。因此，下一步需在搜索框中输入“wrap tabs”以筛选目标配置项。
+
+Action:
+pyperclip.copy('wrap tabs')
+pyautogui.hotkey('ctrl', 'v')
+
+==================================================
+STEP 6
+==================================================
+
+Thought:
+现在已定位到“Workbench > Editor: Wrap Tabs”设置项，其功能是控制标签在空间不足时是否换行显示。当前该选项的复选框未勾选，需点击勾选以启用标签多行换行功能。因此，下一步应点击“Wrap Tabs”对应的复选框，激活该设置。
+
+Action:
+pyautogui.click(792.96, 681.48, button='left')
+
+==================================================
+STEP 7
+==================================================
+
+Action:
+DONE

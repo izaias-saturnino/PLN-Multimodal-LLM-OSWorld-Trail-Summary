@@ -1,0 +1,25 @@
+# Gold Draft Review
+
+## Metadata
+
+- trajectory_id: `d1acdb87-bb67-4f30-84aa-990e56a09c92`
+- source_model: `doubao-1-5-thinking-vision-pro-250428-100step`
+- domain: `multi_apps`
+- success_binary: `False`
+- success_raw: `0.0`
+- num_steps: `65`
+- gold_draft_status: `ERROR`
+
+## Task Instruction
+
+Hello! I'm eagerly planning a culinary adventure to Hong Kong and have curated a list of must-visit restaurants that I've been longing to explore. However, I could use some assistance in compiling a few essential details about these establishments. Would you be so kind as to help me out? It would be fantastic if you could search for these restaurants on Google Maps. I'm particularly interested in obtaining their addresses, any available websites, and contact phone numbers. If you could gather this information and input it into my form file, I would be immensely grateful. Many thanks in advance!
+
+## Draft Summary
+
+
+
+## Human-Revised Gold Summary
+
+<!-- Replace this section with your final human-revised gold summary. -->
+
+

@@ -1,0 +1,34 @@
+Trajectory ID: 347ef137-7eeb-4c80-a3bb-0951f26a8aff
+Source Model: doubao-1-5-thinking-vision-pro-250428-100step
+Domain: libreoffice_calc
+
+Task:
+Here are two tables recording the per-month costs in 2019 and 2020. I want to create two column bar charts reflecting per-month total costs for each year from these data. Help me, Mr. Assistant!
+
+Success Binary: False
+Success Raw: 0.0
+
+Number of Steps: 2
+
+============================================================
+TRAJECTORY
+============================================================
+
+==================================================
+STEP 1
+==================================================
+
+Thought:
+要创建2019年的月度总成本柱状图，首先需选择对应的数据区域：2019年的月份（A3到A14）和各月总成本（I3到I14）。需先通过拖动选择A3至A14的月份单元格，为后续关联成本数据做准备。  
+接下来的操作是拖动鼠标从A3单元格到A14单元格，选中2019年所有月份的文本内容。
+
+Action:
+pyautogui.moveTo(205.44, 274.32)
+pyautogui.dragTo(205.44, 465.48, duration=1.0)
+
+==================================================
+STEP 2
+==================================================
+
+Action:
+FAIL

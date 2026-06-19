@@ -1,0 +1,23 @@
+models:
+  - name: gemini_2_5_flash
+    litellm_model: gemini/gemini-2.5-flash
+
+  - name: gpt_4_1_mini
+    litellm_model: openai/gpt-4.1-mini
+
+  - name: claude_4_5_haiku
+    litellm_model: anthropic/claude-haiku-4-5-20251001
+
+generation:
+  temperature: 0
+  top_p: 1
+  max_tokens: 1200
+
+selection:
+  minimum_non_simple_votes: 2
+  required_valid_votes: 3
+
+trajectory_context:
+  max_steps_before_truncation: 20
+  head_steps: 10
+  tail_steps: 10

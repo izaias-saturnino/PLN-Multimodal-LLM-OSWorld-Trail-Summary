@@ -1,0 +1,72 @@
+Trajectory ID: 3f49d2cc-f400-4e7d-90cc-9b18e401cc31
+Source Model: UI-TARS-0717-100step
+Domain: thunderbird
+
+Task:
+I've got a bunch of email accounts in Thunderbird, and it's a hassle to check them one by one. Can you show me how to set up a unified inbox so I can see all my emails in one place?
+
+Success Binary: True
+Success Raw: 1.0
+
+Number of Steps: 6
+
+============================================================
+TRAJECTORY
+============================================================
+
+==================================================
+STEP 1
+==================================================
+
+Thought:
+要设置统一收件箱，首先需要找到相关的设置选项。在Thunderbird中，菜单按钮（右上角的三横线图标）通常包含账户或视图相关的设置。首先应该点击这个菜单按钮，查看是否有统一收件箱或智能文件夹的选项，或者进入设置界面配置。
+
+Action:
+pyautogui.click(1835.52, 83.16, button='left')
+
+==================================================
+STEP 2
+==================================================
+
+Thought:
+现在菜单已经展开，要设置统一收件箱，可能需要通过Settings（设置）来配置，或者查看Account Settings（账户设置）。不过先看View选项，因为统一收件箱可能属于视图相关的配置，比如智能文件夹或统一收件箱的显示。所以下一步应该点击View选项，展开其子菜单，查看是否有相关选项。
+
+Action:
+pyautogui.click(1572.48, 216.0, button='left')
+
+==================================================
+STEP 3
+==================================================
+
+Thought:
+现在View子菜单展开了，看到Folders选项，统一收件箱的设置应该和文件夹视图有关，比如智能文件夹或统一收件箱的配置。所以下一步点击Folders选项，展开其子菜单，查看是否有Unified Inbox（统一收件箱）的选项。
+
+Action:
+pyautogui.click(1572.48, 216.0, button='left')
+
+==================================================
+STEP 4
+==================================================
+
+Thought:
+现在Folders子菜单展开了，看到Unified Folders选项，这应该就是统一收件箱相关的设置。点击Unified Folders，启用统一文件夹视图，这样就能看到所有账户的邮件在一个地方了。
+
+Action:
+pyautogui.click(1605.12, 222.48, button='left')
+
+==================================================
+STEP 5
+==================================================
+
+Thought:
+现在已经启用了Unified Folders，左侧面板出现了Unified Folders部分，里面有Inbox等文件夹，这些就是统一的文件夹，包含所有账户的邮件。接下来需要确认Inbox是否显示所有账户的邮件，点击Unified Folders下的Inbox，查看是否有所有账户的邮件。
+
+Action:
+pyautogui.click(192.0, 622.08, button='left')
+
+==================================================
+STEP 6
+==================================================
+
+Action:
+DONE

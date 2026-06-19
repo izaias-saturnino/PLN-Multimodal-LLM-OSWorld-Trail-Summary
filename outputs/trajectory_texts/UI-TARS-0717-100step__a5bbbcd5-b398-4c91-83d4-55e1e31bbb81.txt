@@ -1,0 +1,42 @@
+Trajectory ID: a5bbbcd5-b398-4c91-83d4-55e1e31bbb81
+Source Model: UI-TARS-0717-100step
+Domain: vlc
+
+Task:
+Enable VLC Minimal Interface in window mode so the bottom playback controls are hidden, and make sure the setting persists after restarting VLC. I often multitask on my computer, and the persistent toolbar in VLC is very distracting.
+
+Success Binary: False
+Success Raw: 0.0
+
+Number of Steps: 3
+
+============================================================
+TRAJECTORY
+============================================================
+
+==================================================
+STEP 1
+==================================================
+
+Thought:
+要隐藏VLC窗口模式下的底部工具栏，首先需要找到相关设置。VLC的视图（View）菜单里可能有控制界面元素显示的选项，比如隐藏工具栏。所以先点击顶部菜单栏的“View”选项，查看里面的设置。
+
+Action:
+pyautogui.click(984.96, 370.44, button='left')
+
+==================================================
+STEP 2
+==================================================
+
+Thought:
+现在View菜单已经展开，看到里面有“Minimal Interface”选项，这个选项可以简化界面，隐藏底部工具栏等元素。不过还有“Status Bar”？不对，底部的是控制栏，不过Minimal Interface应该能隐藏。或者看，当前底部工具栏是控制栏，Minimal Interface会切换界面模式，隐藏这些控件。所以点击“Minimal Interface”选项，这样就能隐藏底部工具栏，同时简化界面，适合多任务时减少干扰。
+
+Action:
+pyautogui.click(975.36, 471.96, button='left')
+
+==================================================
+STEP 3
+==================================================
+
+Action:
+DONE

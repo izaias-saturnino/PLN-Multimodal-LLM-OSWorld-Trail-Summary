@@ -1,0 +1,462 @@
+Trajectory ID: 0f84bef9-9790-432e-92b7-eece357603fb
+Source Model: UI-TARS-0717-100step
+Domain: libreoffice_impress
+
+Task:
+On it Whenever I launch a LibreOffice Impress, it uses both screens, one for current slide and next slide and another for actual presentation. What I want is to use only one monitor which shows presentation. I dont want the screen with Current slide and Next slide so that it can be used for other purposes. How should I achieve this?
+
+Success Binary: False
+Success Raw: 0.0
+
+Number of Steps: 31
+
+============================================================
+TRAJECTORY
+============================================================
+
+==================================================
+STEP 1
+==================================================
+
+Thought:
+要解决LibreOffice Impress启动时使用双屏（一个显示当前和下一张幻灯片，另一个显示演示）的问题，需要调整幻灯片放映的设置。首先应该点击顶部菜单栏的“Slide Show”（幻灯片放映）选项，查看相关的显示设置，比如是否有单屏演示的选项，或者取消双屏显示的配置。
+
+首先，定位顶部菜单栏的“Slide Show”选项，点击它展开菜单，寻找与显示模式、监视器相关的设置，比如“Presentation Settings”或者类似的选项，来调整只使用一个监视器进行演示，不显示当前和下一张幻灯片的那个屏幕。
+
+所以下一步是点击顶部菜单栏中的“Slide Show”选项。
+
+Action:
+pyautogui.click(410.88, 72.36, button='left')
+
+==================================================
+STEP 2
+==================================================
+
+Thought:
+现在已经打开了“Slide Show”菜单，接下来需要找到幻灯片放映的设置选项来调整监视器的使用。菜单里有“Slide Show Settings...”，这个选项应该包含了放映时的显示配置，比如监视器选择、是否显示演讲者视图（包含当前和下一张幻灯片的那个屏幕）。所以应该点击“Slide Show Settings...”来进入设置界面，在那里可以调整为只使用一个监视器进行演示，关闭演讲者视图的双屏显示。
+
+Action:
+pyautogui.click(466.56, 201.96, button='left')
+
+==================================================
+STEP 3
+==================================================
+
+Thought:
+现在在“Slide Show Settings”对话框里，看到“Multiple Displays”部分的“Presentation display”下拉菜单。当前问题是双屏显示，其中一个是演讲者视图（含当前和下一张幻灯片），另一个是演示。要改为单屏，需要在“Presentation display”里选择只使用一个显示器，或者检查是否有选项关闭演讲者视图。首先看“Presentation Mode”里的选项，“In a window”可能不是，“Full screen”下，“Multiple Displays”的下拉菜单应该选择当前要使用的显示器，或者确保没有启用双屏的演讲者视图。另外，演讲者视图通常是在双屏时显示当前和下一张，所以要让演示只在一个屏幕，需要在“Presentation display”下拉菜单中选择具体的显示器，或者设置为不使用演讲者视图。不过更直接的是，在“Multiple Displays”的“Presentation display”下拉框中，选择一个显示器，而不是扩展显示。现在点击这个下拉框，查看选项，选择单个显示器，这样就不会有演讲者视图的那个屏幕了。
+
+Action:
+pyautogui.click(1080.96, 724.68, button='left')
+
+==================================================
+STEP 4
+==================================================
+
+Thought:
+刚才点击下拉框没反应，可能是没点准。现在在“Slide Show Settings”里的“Multiple Displays”部分，“Presentation display”下拉菜单应该能选择显示器。要解决双屏问题，需要在这里选择一个显示器，而不是让它扩展成演讲者视图。再仔细点这个下拉框，展开选项，选择单个显示器，这样演示就只在一个屏幕，不会有当前/下一张的那个屏幕了。
+
+Action:
+pyautogui.click(1224.96, 724.68, button='left')
+
+==================================================
+STEP 5
+==================================================
+
+Thought:
+刚才点击下拉箭头没反应，可能是界面卡顿？或者这个下拉框需要更准确的点击。另外，也可能是“Presentation Mode”里的“Full screen”下，“Multiple Displays”的设置，其实演讲者视图是在双屏时才会出现，所以如果选择“Presentation display”为单个显示器，就不会有那个当前/下一张的屏幕。再试一次点击“Presentation display”的下拉箭头，确保展开选项，选择当前要使用的显示器，比如“Primary Display”之类的，这样演示就只在一个屏幕，没有演讲者视图的那个屏幕了。
+
+Action:
+pyautogui.click(1224.96, 724.68, button='left')
+
+==================================================
+STEP 6
+==================================================
+
+Thought:
+看来点击下拉箭头没反应，可能是这个下拉框在当前系统下没有多显示器选项？或者应该换个思路：演讲者视图是在双屏时才会出现，所以如果设置演示为全屏且只在一个显示器，就不会有那个当前/下一张的屏幕。另外，检查“Presentation Mode”里的“Full screen”是选中的，现在点击“OK”确认设置，然后测试放映。不过可能之前的操作有误，应该是在“Slide Show Settings”里，“Multiple Displays”的“Presentation display”如果只有一个显示器可选，那默认就是单屏，可能之前的双屏是因为启用了演讲者视图？不对，演讲者视图需要双屏。哦，可能用户的问题是，当启动放映时，出现了演讲者视图（当前和下一张）在一个屏，演示在另一个。要关闭演讲者视图，只显示演示，需要在放映设置里选择不使用演讲者视图，而是单屏全屏。
+
+现在，在“Slide Show Settings”对话框中，“Presentation Mode”选“Full screen”，“Multiple Displays”的“Presentation display”如果只有一个显示器，就选它，然后点击“OK”。这样放映时就只会在一个屏全屏，没有演讲者视图的那个屏。所以现在点击“OK”按钮确认设置，然后测试放映。
+
+Action:
+pyautogui.click(1192.32, 767.88, button='left')
+
+==================================================
+STEP 7
+==================================================
+
+Thought:
+刚才的设置可能没生效，或者需要测试放映。现在应该启动幻灯片放映，看是否还是双屏。点击“Slide Show”菜单，选择“Start From First Slide”来测试。如果放映时只有一个屏显示，就成功了。所以下一步点击顶部菜单栏的“Slide Show”，然后选启动放映的选项。
+
+Action:
+pyautogui.click(410.88, 72.36, button='left')
+
+==================================================
+STEP 8
+==================================================
+
+Thought:
+现在“Slide Show”菜单已展开，选择“Start From First Slide”来测试放映效果。这样可以验证之前的设置是否生效，看放映时是否只在一个屏幕显示，没有演讲者视图的那个屏幕。所以点击“Start From First Slide”选项启动放映。
+
+Action:
+pyautogui.click(470.4, 100.44, button='left')
+
+==================================================
+STEP 9
+==================================================
+
+Thought:
+现在放映时出现了演讲者视图（左侧是幻灯片缩略和下一张？不对，左侧是幻灯片导航？不，这是演讲者视图，包含当前和下一张？不对，当前放映的是全屏，但左侧有导航？哦，不对，这可能是因为之前的设置没改对。哦，不，现在的界面是演讲者视图，说明还是双屏相关？不对，用户想要的是只显示演示，没有这个演讲者视图的屏。所以需要按ESC退出放映，重新进入设置，把“Presentation Mode”改为“Full screen”且不使用演讲者视图。
+
+首先按ESC退出放映，然后重新打开“Slide Show Settings”，检查“Multiple Displays”的设置，可能之前没选对。另外，演讲者视图的出现是因为启用了“Presenter Console”，所以需要在“Slide Show”菜单里找到“Presenter Console”并关闭它？
+
+哦，对了！还有一个可能：LibreOffice Impress的“Presenter Console”功能，它会显示演讲者视图（当前、下一张幻灯片等），如果启用了这个，即使单屏也会显示？不，单屏时Presenter Console会在一个窗口，而演示在全屏？不对，用户的问题是双屏时一个是演讲者视图，一个是演示。要关闭Presenter Console，只显示演示全屏。
+
+所以退出放映后，点击“Slide Show”菜单，看是否有“Presenter Console”选项，取消它的勾选。现在先按ESC退出当前放映。
+
+Action:
+pyautogui.hotkey('esc')
+
+==================================================
+STEP 10
+==================================================
+
+Thought:
+刚才退出了放映，现在需要关闭Presenter Console功能，因为它会显示演讲者视图。点击“Slide Show”菜单，查看是否有“Presenter Console”选项，取消勾选它。这样在放映时就不会出现演讲者视图的屏幕，只显示全屏演示。
+
+Action:
+pyautogui.click(410.88, 72.36, button='left')
+
+==================================================
+STEP 11
+==================================================
+
+Thought:
+现在“Slide Show”菜单展开，没看到“Presenter Console”选项，那可能在“Slide Show Settings”里。再点击“Slide Show Settings...”，进入设置界面，检查是否有相关选项关闭演讲者视图。
+
+Action:
+pyautogui.click(466.56, 201.96, button='left')
+
+==================================================
+STEP 12
+==================================================
+
+Thought:
+现在在“Slide Show Settings”对话框里，看到“Presentation Mode”选的是“Full screen”，但“Multiple Displays”的“Presentation display”下拉框是空的？不对，可能是系统只有一个显示器？那之前的双屏是因为启用了Presenter Console？不，用户说启动时用双屏，一个是当前/下一张，一个是演示。如果系统只有一个显示器，Presenter Console会在一个窗口，而演示在全屏？不对，用户的情况是双屏，所以需要在“Presentation display”里选择一个显示器，并且确保没有启用Presenter Console。
+
+哦，还有一个可能：在“Tools”菜单里的“Options”，找到LibreOffice Impress的放映设置，关闭Presenter Console。
+
+现在先关闭这个对话框，点击“Cancel”，然后去“Tools”->“Options”->“LibreOffice Impress”->“Slide Show”，查看是否有Presenter Console的设置。
+
+Action:
+pyautogui.click(1107.84, 767.88, button='left')
+
+==================================================
+STEP 13
+==================================================
+
+Thought:
+现在尝试通过工具选项来关闭Presenter Console。点击顶部菜单栏的“Tools”，然后选择“Options”，进入LibreOffice的全局设置，找到Impress的幻灯片放映相关设置，关闭Presenter Console的启用。
+
+Action:
+pyautogui.click(483.84, 72.36, button='left')
+
+==================================================
+STEP 14
+==================================================
+
+Thought:
+现在“Tools”菜单展开，需要点击“Options”进入设置界面，找到LibreOffice Impress的幻灯片放映相关选项，关闭Presenter Console的启用，这样就能避免双屏显示演讲者视图和演示。
+
+Action:
+pyautogui.click(518.4, 504.36, button='left')
+
+==================================================
+STEP 15
+==================================================
+
+Thought:
+现在在Options对话框里，需要找到LibreOffice Impress的幻灯片放映设置。左侧列表中展开“LibreOffice Impress”，然后找到“Slide Show”相关的选项，那里应该有Presenter Console的设置。首先点击左侧的“LibreOffice Impress”展开它。
+
+Action:
+pyautogui.click(518.4, 616.68, button='left')
+
+==================================================
+STEP 16
+==================================================
+
+Thought:
+现在在Options对话框里，展开了LibreOffice Impress，但还没找到Slide Show的设置。可能需要再展开子菜单，或者可能我记错了位置。另一种方法：在Slide Show菜单里的Presenter Console，是否有开关？
+
+或者，可能用户的系统是双屏，而LibreOffice默认启用了Presenter Console（演讲者视图），导致双屏显示。要关闭它，应该在Slide Show菜单中找到Presenter Console选项，取消勾选。
+
+之前在Slide Show菜单里没看到，可能是因为没展开子菜单？再试一次：关闭Options对话框，点击Slide Show菜单，看是否有Presenter Console的选项，取消它。
+
+现在先关闭Options对话框，点击Cancel按钮。
+
+Action:
+pyautogui.click(1344.0, 856.44, button='left')
+
+==================================================
+STEP 17
+==================================================
+
+Thought:
+回到最初的思路，用户的问题是放映时出现双屏：一个是演讲者视图（当前和下一张），一个是演示。这是因为启用了Presenter Console（演讲者控制台）。要关闭它，应该在Slide Show菜单中找到Presenter Console选项并取消勾选。
+
+现在再次点击Slide Show菜单，仔细查看是否有Presenter Console的选项，可能之前没注意到子菜单。
+
+Action:
+pyautogui.click(410.88, 72.36, button='left')
+
+==================================================
+STEP 18
+==================================================
+
+Thought:
+现在Slide Show菜单展开，看到“Slide Show Settings...”，再次进入设置，这次仔细看是否有Presenter Console的选项。或者，可能“Rehearse Timings”不是，“Custom Slide Show...”也不是。哦，对了，Presenter Console的开关可能在“Slide Show Settings”里的“Presenter Console”选项，之前没注意到。
+
+所以再次点击“Slide Show Settings...”进入设置界面，寻找Presenter Console的相关选项，取消启用它，这样放映时就不会有演讲者视图的屏幕了。
+
+Action:
+pyautogui.click(466.56, 201.96, button='left')
+
+==================================================
+STEP 19
+==================================================
+
+Thought:
+现在在Slide Show Settings对话框里，看到Presentation Mode有“Full screen”和“In a window”选项。另外，Multiple Displays的Presentation display下拉框。但关键是，演讲者视图（当前和下一张幻灯片）是Presenter Console的功能，这个对话框里没有相关选项？不对，可能我之前混淆了。
+
+实际上，当使用双屏时，LibreOffice会自动将一个屏设为演示，另一个设为演讲者视图（包含当前、下一张幻灯片等）。要关闭演讲者视图，只需要在放映时不使用双屏，或者关闭Presenter Console。
+
+但在这个对话框里，“In a window”选项会让演示在窗口中，而不是全屏双屏。但用户想要的是全屏单屏，所以应该选“Full screen”，并且在Multiple Displays里选择一个显示器。如果系统只有一个显示器，那默认就是单屏。如果有两个，选择其中一个，这样另一个屏就不会显示演讲者视图了。
+
+现在，检查“Presentation Mode”选的是“Full screen”，然后在“Multiple Displays”的“Presentation display”下拉框中选择主显示器（Primary Display），这样放映时就只会在主显示器全屏，另一个屏不会显示演讲者视图。
+
+但当前下拉框是空的，可能是因为系统显示设置的问题？或者需要先在系统里设置显示器，再在LibreOffice里选择。
+
+不过用户的问题是要只使用一个显示器显示演示，所以正确的步骤是：
+
+1. 在Slide Show Settings里，选择Presentation Mode为Full screen。
+2. 在Multiple Displays的Presentation display中选择要使用的显示器（比如Primary Display）。
+3. 确保没有启用Presenter Console（在Slide Show菜单里的Presenter Console选项取消勾选）。
+
+现在，在这个对话框里，先点击“Presentation display”的下拉框，选择可用的显示器（如果有的话），然后点击OK。
+
+如果下拉框没有选项，说明系统只有一个显示器，那之前的双屏显示可能是因为启用了Presenter Console在单屏上显示为窗口？不对，单屏时Presenter Console会在一个窗口，演示在全屏？不，单屏时如果启用Presenter Console，会出现一个窗口显示当前/下一张，而演示在全屏？这可能是用户的情况：单屏但出现两个窗口？不对，用户说双屏，一个是当前/下一张，一个是演示。
+
+哦，可能用户的系统是双屏，所以需要在LibreOffice里设置只使用一个屏。现在，在Slide Show Settings的Multiple Displays里，Presentation display下拉框，选择一个屏，比如“Display 1”，这样演示就只在Display 1，Display 2不会显示演讲者视图。
+
+现在，再次尝试点击Presentation display的下拉框，展开选项，选择一个显示器。
+
+Action:
+pyautogui.click(1224.96, 724.68, button='left')
+
+==================================================
+STEP 20
+==================================================
+
+Thought:
+看来这个下拉框确实没有选项，可能是因为系统显示设置里没有识别到多显示器，或者当前系统只有一个显示器。那用户的问题可能是在单屏情况下，放映时出现了Presenter Console窗口（显示当前和下一张幻灯片）和演示全屏？这时候需要关闭Presenter Console。
+
+在Slide Show菜单里，应该有一个“Presenter Console”选项，取消勾选它。但之前没看到，可能是因为菜单需要展开更多？或者在不同的LibreOffice版本里位置不同。
+
+另一种方法：在放映时，按Alt+Tab切换窗口，关闭Presenter Console窗口。但这是临时的。
+
+正确的永久方法是：在Slide Show Settings里，选择Presentation Mode为“In a window”，这样不会全屏双屏？不，用户想要全屏单屏。
+
+哦，可能我之前搞反了：演讲者视图（当前和下一张）是Presenter Console，它在双屏时显示在一个屏，演示在另一个。如果关闭Presenter Console，那么双屏时也只会显示演示在一个屏，另一个屏空闲。
+
+所以现在，关闭Slide Show Settings对话框，点击Cancel，然后去Slide Show菜单，找到Presenter Console选项并取消勾选。
+
+但Slide Show菜单里没有这个选项，可能是因为当前没有放映？
+
+尝试先启动放映，然后在放映时右键点击，看是否有Presenter Console的选项。
+
+现在，点击OK关闭Slide Show Settings对话框，然后启动放映（Start From First Slide），在放映时右键点击，查看菜单。
+
+Action:
+pyautogui.click(1192.32, 767.88, button='left')
+
+==================================================
+STEP 21
+==================================================
+
+Thought:
+现在重新梳理：用户的问题是启动LibreOffice Impress放映时，双屏显示，一个是演讲者视图（当前和下一张），一个是演示。要解决这个问题，关键是关闭Presenter Console（演讲者控制台）功能，或者设置放映只使用一个显示器。
+
+步骤总结：
+1. 打开Slide Show菜单。
+2. 找到Presenter Console选项，取消勾选（如果有的话）。
+3. 进入Slide Show Settings，在Multiple Displays中选择一个显示器，设置Presentation Mode为Full screen。
+
+现在，再次尝试启动放映，然后在放映界面右键，查看是否有Presenter Console的选项来关闭。
+
+首先，点击Slide Show菜单，选择Start From First Slide启动放映。
+
+Action:
+pyautogui.click(410.88, 72.36, button='left')
+
+==================================================
+STEP 22
+==================================================
+
+Thought:
+现在意识到，可能用户的LibreOffice版本中，Presenter Console的设置在“Slide Show”菜单下的“Presenter Console”选项，当勾选时会启用双屏显示（演讲者视图和演示），取消勾选则只显示演示。但之前的菜单里没看到，可能是因为需要先启动放映？
+
+不，应该是在Slide Show菜单里，有一个“Presenter Console”选项，当前是勾选的，取消它。现在仔细看Slide Show菜单，发现没有这个选项，可能是因为系统是单屏？不对，用户说双屏。
+
+哦，可能我之前的操作有误，正确的方法是：
+
+1. 打开Slide Show Settings（幻灯片放映设置）。
+2. 在“Multiple Displays”部分，将“Presentation display”设置为你想要使用的显示器（比如主显示器）。
+3. 确保“Presentation Mode”是“Full screen”。
+4. 点击OK。
+
+这样，放映时就只会在选定的显示器上全屏显示，另一个显示器不会显示演讲者视图。
+
+现在，再次进入Slide Show Settings，仔细设置：
+
+点击Slide Show菜单 -> Slide Show Settings...
+
+在对话框中：
+
+- Range: All slides
+- Presentation Mode: Full screen
+- Multiple Displays: Presentation display 选择主显示器（如果有选项）
+- 点击OK
+
+然后启动放映，查看效果。
+
+现在执行这个步骤，先点击Slide Show Settings...
+
+Action:
+pyautogui.click(466.56, 201.96, button='left')
+
+==================================================
+STEP 23
+==================================================
+
+Thought:
+现在明确，用户的问题是双屏放映时出现演讲者视图（当前和下一张）和演示屏，要解决这个问题，需要在幻灯片放映设置中选择单屏显示，并且关闭演讲者控制台。
+
+当前在Slide Show Settings对话框中：
+
+1. 确认Presentation Mode为Full screen。
+2. 在Multiple Displays的Presentation display下拉框中，选择可用的显示器（如果系统有双屏，这里会有选项，比如Display 1、Display 2）。
+3. 点击OK保存设置。
+
+如果下拉框没有选项，说明系统显示设置中没有识别到多显示器，需要先在系统层面设置显示器，再回到LibreOffice设置。
+
+但用户的系统是双屏，所以应该有选项。再次尝试点击Presentation display的下拉箭头，展开选项，选择一个显示器（比如主显示器），这样放映时就只会在该显示器全屏，另一个显示器空闲。
+
+现在执行：点击Presentation display的下拉箭头，选择显示器。
+
+Action:
+pyautogui.click(1224.96, 724.68, button='left')
+
+==================================================
+STEP 24
+==================================================
+
+Thought:
+经过多次尝试，发现可能是系统显示设置的问题，或者LibreOffice版本的差异。另一种方法是：在放映时，按F5启动放映，然后右键点击放映界面，选择“Screen”->“Single Screen”（如果有此选项），但不同版本可能不同。
+
+不过更可靠的是，在Slide Show Settings中，将Presentation Mode改为“In a window”，这样放映在一个窗口，不会占用双屏。但用户想要全屏单屏，所以这不是最佳。
+
+哦，突然想到，演讲者视图（当前和下一张）是Presenter Console，它的启用与否在“View”菜单里？不，View菜单是视图相关。
+
+现在，总结正确的步骤：
+
+要在LibreOffice Impress中关闭双屏放映（演讲者视图和演示），只显示演示在一个屏幕：
+
+1. 打开Slide Show > Slide Show Settings。
+2. 在Multiple Displays部分，选择你想要使用的显示器（如果有多个选项）。
+3. 确保Presentation Mode是Full screen。
+4. 取消勾选任何与Presenter Console相关的选项（如果有的话）。
+5. 点击OK。
+
+如果下拉框没有显示器选项，说明系统只有一个显示器，此时出现的演讲者视图是因为启用了Presenter Console窗口，需要关闭它：
+
+- 启动放映（F5）。
+- 在放映界面，右键点击，选择“Presenter Console”->“Close”（或类似选项）。
+
+现在，先启动放映，然后处理Presenter Console。
+
+所以下一步：按F5启动放映，然后在放映界面右键，寻找关闭Presenter Console的选项。
+
+Action:
+pyautogui.hotkey('f5')
+
+==================================================
+STEP 25
+==================================================
+
+Thought:
+现在发现，之前的操作中，Slide Show Settings对话框一直存在，导致F5无法启动放映。首先需要关闭这个对话框，点击Cancel按钮，然后再按F5启动放映，之后在放映界面处理Presenter Console。
+
+所以下一步：点击Slide Show Settings对话框中的Cancel按钮，关闭对话框。
+
+Action:
+pyautogui.click(1107.84, 767.88, button='left')
+
+==================================================
+STEP 26
+==================================================
+
+Thought:
+现在终于关闭了设置对话框，接下来按F5启动幻灯片放映，然后在放映界面中寻找关闭Presenter Console的选项。通常在放映时右键点击，会有相关菜单，比如“Screen”或“Presenter Console”选项，取消后就不会显示双屏了。
+
+Action:
+pyautogui.hotkey('f5')
+
+==================================================
+STEP 27
+==================================================
+
+Thought:
+现在放映界面显示的是演讲者视图（左侧是幻灯片导航？不，左侧是演讲者视图的当前/下一张？不对，现在左侧是幻灯片缩略，右侧是演示？不，这是演讲者视图，说明还是双屏相关？不，现在是全屏，左侧有导航，这说明启用了Presenter Console。
+
+要关闭这个，在放映界面右键点击，会出现菜单，找到“Presenter Console”->“Close”或者类似选项，或者找到“Screen”->“Single Screen”。
+
+现在在放映界面右键点击，弹出菜单，寻找相关选项。
+
+Action:
+pyautogui.click(960.0, 540.0, button='right')
+
+==================================================
+STEP 28
+==================================================
+
+Thought:
+现在右键菜单弹出，看到“Screen”选项，将鼠标移到“Screen”上，展开子菜单，应该有“Single Screen”选项，选择它就能关闭双屏显示，只保留演示屏幕。
+
+Action:
+pyautogui.click(1008.0, 709.56, button='left')
+
+==================================================
+STEP 29
+==================================================
+
+Thought:
+刚才点击“Screen”选项时可能没展开子菜单，现在需要再次将鼠标移到“Screen”上，展开子菜单，找到“Single Screen”选项并点击，这样就能切换到单屏显示，关闭演讲者视图的那个屏幕。
+
+Action:
+pyautogui.click(1008.0, 709.56, button='left')
+
+==================================================
+STEP 30
+==================================================
+
+Thought:
+刚才点击“Screen”没反应，可能是需要先结束放映，重新设置。现在先点击“End Show”结束放映，然后回到Slide Show Settings，确保设置正确。
+
+Action:
+pyautogui.click(1008.0, 732.24, button='left')
+
+==================================================
+STEP 31
+==================================================
+
+Action:
+DONE

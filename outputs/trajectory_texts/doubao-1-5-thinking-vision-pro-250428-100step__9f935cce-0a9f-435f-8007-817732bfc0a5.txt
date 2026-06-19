@@ -1,0 +1,102 @@
+Trajectory ID: 9f935cce-0a9f-435f-8007-817732bfc0a5
+Source Model: doubao-1-5-thinking-vision-pro-250428-100step
+Domain: chrome
+
+Task:
+Browse list of Civil Division forms.
+
+Success Binary: True
+Success Raw: 1.0
+
+Number of Steps: 9
+
+============================================================
+TRAJECTORY
+============================================================
+
+==================================================
+STEP 1
+==================================================
+
+Thought:
+要浏览Civil Division的表格列表，首先需探索导航栏中的“Resources”选项，因为这类资源类内容常归类于此。点击“Resources”可展开下拉菜单，查看是否有表单或Civil Division相关入口。因此，下一步是点击页面顶部导航栏的“Resources”按钮。
+
+Action:
+pyautogui.click(835.2, 293.76, button='left')
+
+==================================================
+STEP 2
+==================================================
+
+Thought:
+要浏览Civil Division的表格列表，需先进入“Forms”页面，因为表单类资源通常集中在此入口。当前“Resources”下拉菜单已展开，其中“Forms”选项是进入表单列表的关键路径。因此，下一步应点击下拉菜单中的“Forms”选项，以导航至表单页面。
+
+Action:
+pyautogui.click(823.68, 427.68, button='left')
+
+==================================================
+STEP 3
+==================================================
+
+Thought:
+要浏览Civil Division的表格，需先通过“Agency”筛选器选择对应机构。当前“Agency”下拉框显示为“-Any-”，需点击该下拉框展开选项列表，找到并选择“Civil Division”以过滤出该部门的表单。因此，下一步是点击“Agency”下拉选择框。
+
+Action:
+pyautogui.click(1023.36, 638.28, button='left')
+
+==================================================
+STEP 4
+==================================================
+
+Thought:
+要浏览Civil Division的表格，需在展开的“Agency”下拉列表中选择“Civil Division”选项，以过滤出该部门的表单。当前下拉列表已展开，“Civil Division”选项清晰可见，点击该选项即可完成机构筛选，进而查看对应表单。因此，下一步是点击下拉列表中的“Civil Division”选项。
+
+Action:
+pyautogui.click(896.64, 745.2, button='left')
+
+==================================================
+STEP 5
+==================================================
+
+Thought:
+要浏览Civil Division的表格，需先修正之前错误选择的“Antitrust Division”，重新打开“Agency”下拉列表以选择“Civil Division”。当前“Agency”下拉框显示为“Antitrust Division”，需点击该下拉框展开选项列表，找到并选择“Civil Division”。因此，下一步是点击“Agency”下拉选择框。
+
+Action:
+pyautogui.click(1023.36, 638.28, button='left')
+
+==================================================
+STEP 6
+==================================================
+
+Thought:
+要浏览Civil Division的表格，需在展开的“Agency”下拉列表中准确选择“Civil Division”选项，以替换当前错误选择的“Antitrust Division”并过滤出目标部门的表单。当前下拉列表已展开且“Civil Division”选项可见，点击该选项即可完成机构筛选。因此，下一步是点击下拉列表中的“Civil Division”选项。
+
+Action:
+pyautogui.click(896.64, 762.48, button='left')
+
+==================================================
+STEP 7
+==================================================
+
+Thought:
+已选择“Civil Division”作为筛选的机构，需点击“Apply Filters”按钮以应用筛选条件，从而显示该部门对应的表单列表。点击该按钮后，页面会根据筛选条件更新结果，展示Civil Division的表单。因此，下一步是点击“Apply Filters”按钮。
+
+Action:
+pyautogui.click(608.64, 702.0, button='left')
+
+==================================================
+STEP 8
+==================================================
+
+Thought:
+已成功筛选出Civil Division的表单列表，当前页面仅显示部分结果。为浏览完整的表单列表，需向下滚动页面以查看更多内容。因此，下一步是在页面表格区域执行向下滚动操作，确保所有Civil Division的表单都能被浏览到。
+
+Action:
+pyautogui.scroll(-5, x=960.0, y=804.6)
+
+==================================================
+STEP 9
+==================================================
+
+Action:
+DONE

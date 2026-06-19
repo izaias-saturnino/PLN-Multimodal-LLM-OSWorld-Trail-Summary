@@ -1,0 +1,72 @@
+Trajectory ID: 9656a811-9b5b-4ddf-99c7-5117bcef0626
+Source Model: UI-TARS-0717-100step
+Domain: chrome
+
+Task:
+I want Chrome to warn me whenever I visit a potentially harmful or unsafe website. Can you enable this safety feature?
+
+Success Binary: True
+Success Raw: 1.0
+
+Number of Steps: 6
+
+============================================================
+TRAJECTORY
+============================================================
+
+==================================================
+STEP 1
+==================================================
+
+Thought:
+要启用Chrome的安全警告功能，首先需要进入设置。Chrome的设置入口在右上角的三点菜单按钮。所以第一步应该点击浏览器右上角的三点图标，打开菜单，之后找到设置里的安全相关选项。
+
+Action:
+pyautogui.click(1893.12, 87.48, button='left')
+
+==================================================
+STEP 2
+==================================================
+
+Thought:
+现在菜单已经展开，要进入设置页面来配置安全功能。看到菜单里有“Settings”选项，点击它就能进入Chrome的设置界面，之后就可以找到安全相关的设置项了。
+
+Action:
+pyautogui.click(1576.32, 813.24, button='left')
+
+==================================================
+STEP 3
+==================================================
+
+Thought:
+现在在Chrome的设置页面，要找到安全相关的设置，左侧菜单栏里有“Privacy and security”（隐私和安全）选项，这里面应该包含网站安全警告的设置。所以下一步点击左侧的“Privacy and security”选项，进入相关设置界面。
+
+Action:
+pyautogui.click(172.8, 275.4, button='left')
+
+==================================================
+STEP 4
+==================================================
+
+Thought:
+现在在隐私和安全页面，看到“Security”选项，描述里提到“Safe Browsing (protection from dangerous sites) and other security settings”，这正是需要的安全浏览设置，用来启用网站安全警告。所以下一步点击“Security”选项进入详细设置。
+
+Action:
+pyautogui.click(731.52, 914.76, button='left')
+
+==================================================
+STEP 5
+==================================================
+
+Thought:
+现在在安全设置页面，看到Safe Browsing部分。当前选中的是Standard protection，而Enhanced protection提供更主动的警告，包括危险网站、下载和扩展的预警，更符合需求。所以应该点击Enhanced protection的单选按钮，启用更高等级的安全警告功能。
+
+Action:
+pyautogui.click(675.84, 577.8, button='left')
+
+==================================================
+STEP 6
+==================================================
+
+Action:
+DONE

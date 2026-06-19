@@ -1,0 +1,840 @@
+Trajectory ID: 185f29bd-5da0-40a6-b69c-ba7f4e0324ef
+Source Model: UI-TARS-0717-100step
+Domain: multi_apps
+
+Task:
+Transfer the data from our 'Employee Performance Evaluation Summary' Excel sheet into our standardized PDF evaluation forms. Each employee's evaluation data should be accurately filled into the designated fields of the PDF form. It's crucial that the final PDF documents retain a uniform and professional look, ready for distribution to our staff or for filing purposes. Furthermore, please ensure that each PDF file is named according to the employee's name as it appears in the Excel document. This will greatly streamline our evaluation process and enhance our efficiency in managing employee performance records. Oh, use "√" as mark on characters.
+
+Success Binary: None
+Success Raw: 0.13895268718419845
+
+Number of Steps: 82
+
+============================================================
+TRAJECTORY
+============================================================
+
+==================================================
+STEP 1
+==================================================
+
+Thought:
+首先，需要处理Excel中的员工绩效数据并填入PDF表单。当前屏幕有LibreOffice Calc（Excel文件）和Document Viewer（PDF预览？）。首先应该关闭遮挡的Document Viewer窗口，以便清晰操作Excel。点击Document Viewer的关闭按钮（右上角的×），这样可以专注处理Excel数据，之后需要找到标准化PDF表单模板，提取Excel中每个员工的信息（姓名、评分等），填入PDF对应字段，命名PDF为员工名，用√标记。第一步先关闭多余窗口。
+
+Action:
+pyautogui.click(681.6, 83.16, button='left')
+
+==================================================
+STEP 2
+==================================================
+
+Thought:
+现在需要将Excel中的员工绩效数据转移到标准化PDF表单。首先，得找到或打开对应的PDF模板。但当前只有LibreOffice Calc窗口。首先，应该先提取Excel中的数据，比如先处理第一个员工John Doe的数据。不过可能需要先打开PDF表单模板。检查左侧任务栏，有没有PDF编辑器或表单工具？或者先确认是否有PDF模板文件。另外，可能需要先导出或准备PDF表单。不过首先，需要确定标准化PDF表单的位置。或者，可能需要先创建PDF表单，但任务说“standardized PDF evaluation forms”，所以应该已有模板。可能需要打开文件管理器找PDF模板，或者检查是否有相关应用。不过当前步骤：首先，需要获取Excel中的员工数据，比如先选中John Doe的行（行2），复制相关数据，然后填入PDF表单。但首先需要打开PDF表单。所以下一步应该是点击左侧的文件管理器（文件夹图标），查找标准化PDF evaluation form模板。
+
+Action:
+pyautogui.click(30.72, 611.28, button='left')
+
+==================================================
+STEP 3
+==================================================
+
+Thought:
+现在在文件管理器里，需要找到标准化的PDF评估表单模板。通常模板可能在Templates文件夹里，所以应该点击Templates文件夹查看是否有相关PDF文件。这样可以找到用于填写员工数据的PDF表单，之后才能提取Excel中的数据填入。
+
+Action:
+pyautogui.click(1367.04, 114.48, button='left')
+
+==================================================
+STEP 4
+==================================================
+
+Thought:
+刚才点击Templates文件夹没反应，可能需要双击打开。现在要找到标准化PDF评估表单，Templates文件夹是存放模板的地方，所以双击Templates文件夹查看里面的内容，这样才能找到需要的PDF表单模板，进而处理Excel中的员工数据。
+
+Action:
+pyautogui.doubleClick(1367.04, 114.48, button='left')
+
+==================================================
+STEP 5
+==================================================
+
+Thought:
+Templates文件夹是空的，那标准化PDF评估表单可能在Documents文件夹里。现在需要点击左侧导航栏的Documents文件夹，查看里面是否有相关的PDF文件，这样才能找到用于填写员工数据的表单模板，继续完成数据转移的任务。
+
+Action:
+pyautogui.click(144.0, 243.0, button='left')
+
+==================================================
+STEP 6
+==================================================
+
+Thought:
+Documents文件夹也是空的，那可能标准化PDF评估表单在Desktop上。现在点击左侧导航栏的Desktop选项，查看桌面是否有相关的PDF文件，这样才能找到表单模板，继续处理Excel中的员工数据转移任务。
+
+Action:
+pyautogui.click(144.0, 205.2, button='left')
+
+==================================================
+STEP 7
+==================================================
+
+Thought:
+现在在桌面找到了两个文件：Excel文件（Employee Performance Evaluation...）和PDF模板（review template.pdf）。首先需要打开PDF模板，以便填入Excel中的员工数据。所以双击review template.pdf文件，打开它，准备进行数据填写。
+
+Action:
+pyautogui.doubleClick(503.04, 131.76, button='left')
+
+==================================================
+STEP 8
+==================================================
+
+Thought:
+现在需要同时查看Excel中的员工数据和PDF模板，以便填入信息。首先打开Excel文件，左侧任务栏有LibreOffice Calc的图标（绿色表格图标），点击它切换到Excel文件，获取员工数据，比如第一个员工John Doe的信息，然后填入PDF对应的字段。
+
+Action:
+pyautogui.click(30.72, 405.0, button='left')
+
+==================================================
+STEP 9
+==================================================
+
+Thought:
+现在需要处理第一个员工John Doe的数据。首先，选中B2单元格（John Doe的姓名），复制这个姓名，之后填入PDF表单的Employee Name字段。这样可以准确获取员工姓名，为后续填写和命名PDF做准备。
+
+Action:
+pyautogui.click(215.04, 252.72, button='left')
+
+==================================================
+STEP 10
+==================================================
+
+Thought:
+刚才点错了B2单元格，应该是A2单元格是John Doe的姓名。现在需要选中A2单元格，复制姓名，这样才能准确获取员工姓名，填入PDF表单的Employee Name字段，同时后续命名PDF也需要这个姓名。
+
+Action:
+pyautogui.click(145.92, 252.72, button='left')
+
+==================================================
+STEP 11
+==================================================
+
+Thought:
+现在已经选中了A2单元格（John Doe的姓名），需要复制这个姓名，以便填入PDF表单的Employee Name字段，同时后续命名PDF文件也需要这个姓名。使用快捷键Ctrl+C复制单元格内容。
+
+Action:
+pyautogui.hotkey('ctrl', 'c')
+
+==================================================
+STEP 12
+==================================================
+
+Thought:
+已经复制了John Doe的姓名，现在需要切换到PDF表单窗口，填入Employee Name字段。左侧任务栏有Document Viewer的图标（之前打开的review template.pdf），点击它切换到PDF窗口，准备粘贴或输入姓名。
+
+Action:
+pyautogui.click(30.72, 876.96, button='left')
+
+==================================================
+STEP 13
+==================================================
+
+Thought:
+现在PDF窗口是小窗口，需要最大化以便清晰填写内容。点击PDF窗口右上角的最大化按钮，这样能看到完整的表单字段，方便填入John Doe的姓名和其他数据。
+
+Action:
+pyautogui.click(643.2, 86.4, button='left')
+
+==================================================
+STEP 14
+==================================================
+
+Thought:
+现在需要在PDF表单的EMPLOYEE NAME字段填入John Doe。首先点击该字段的输入区域，激活它，然后粘贴之前复制的姓名。这样可以准确填入员工姓名，开始填写第一个员工的评估数据。
+
+Action:
+pyautogui.click(410.88, 342.36, button='left')
+
+==================================================
+STEP 15
+==================================================
+
+Thought:
+现在EMPLOYEE NAME字段已激活，需要粘贴之前复制的John Doe。使用快捷键Ctrl+V粘贴内容，这样可以准确填入员工姓名，继续处理其他字段。
+
+Action:
+pyautogui.hotkey('ctrl', 'v')
+
+==================================================
+STEP 16
+==================================================
+
+Thought:
+现在需要填写Employee ID字段。切换回Excel窗口，找到John Doe的Employee ID（B2单元格，12345），复制该内容，再切换回PDF表单填入Employee ID字段。首先点击左侧LibreOffice Calc图标，回到Excel表格。
+
+Action:
+pyautogui.click(30.72, 405.0, button='left')
+
+==================================================
+STEP 17
+==================================================
+
+Thought:
+现在需要获取John Doe的Employee ID，即B2单元格的12345。点击B2单元格，复制内容，以便填入PDF表单的Employee ID字段。
+
+Action:
+pyautogui.click(215.04, 252.72, button='left')
+
+==================================================
+STEP 18
+==================================================
+
+Thought:
+现在B2单元格（Employee ID 12345）已选中，需要复制该内容，以便填入PDF表单的Employee ID字段。使用快捷键Ctrl+C复制。
+
+Action:
+pyautogui.hotkey('ctrl', 'c')
+
+==================================================
+STEP 19
+==================================================
+
+Thought:
+已经复制了Employee ID 12345，现在需要切换回PDF表单窗口，填入Employee ID字段。点击左侧Document Viewer图标，回到PDF表单，准备粘贴内容。
+
+Action:
+pyautogui.click(30.72, 876.96, button='left')
+
+==================================================
+STEP 20
+==================================================
+
+Thought:
+现在需要将Employee ID填入对应的字段。首先点击Employee ID的输入区域，激活它，然后粘贴之前复制的12345。这样可以准确填入员工ID，继续完善员工信息。
+
+Action:
+pyautogui.click(992.64, 342.36, button='left')
+
+==================================================
+STEP 21
+==================================================
+
+Thought:
+现在Employee ID字段已激活，需要粘贴之前复制的12345。使用快捷键Ctrl+V粘贴内容，这样可以准确填入员工ID，继续处理其他字段如Position Held等。
+
+Action:
+pyautogui.hotkey('ctrl', 'v')
+
+==================================================
+STEP 22
+==================================================
+
+Thought:
+现在需要填写Position Held字段。切换回Excel窗口，找到John Doe的Position（C2单元格，Analyst），复制该内容，再切换回PDF表单填入Position Held字段。首先点击左侧LibreOffice Calc图标，回到Excel表格。
+
+Action:
+pyautogui.click(30.72, 405.0, button='left')
+
+==================================================
+STEP 23
+==================================================
+
+Thought:
+现在需要获取John Doe的Position，即C2单元格的Analyst。点击C2单元格，复制内容，以便填入PDF表单的Position Held字段。
+
+Action:
+pyautogui.click(347.52, 252.72, button='left')
+
+==================================================
+STEP 24
+==================================================
+
+Thought:
+现在C2单元格（Position: Analyst）已选中，需要复制该内容，以便填入PDF表单的Position Held字段。使用快捷键Ctrl+C复制。
+
+Action:
+pyautogui.hotkey('ctrl', 'c')
+
+==================================================
+STEP 25
+==================================================
+
+Thought:
+已经复制了Position（Analyst），现在需要切换回PDF表单窗口，填入Position Held字段。点击左侧Document Viewer图标，回到PDF表单，准备粘贴内容。
+
+Action:
+pyautogui.click(30.72, 876.96, button='left')
+
+==================================================
+STEP 26
+==================================================
+
+Thought:
+现在需要将Position Held填入对应的字段。首先点击Position Held的输入区域，激活它，然后粘贴之前复制的Analyst。这样可以准确填入职位信息，继续完善员工资料。
+
+Action:
+pyautogui.click(410.88, 447.12, button='left')
+
+==================================================
+STEP 27
+==================================================
+
+Thought:
+现在Position Held字段已激活，需要粘贴之前复制的Analyst。使用快捷键Ctrl+V粘贴内容，这样可以准确填入职位信息，接下来还要处理Department等字段。
+
+Action:
+pyautogui.hotkey('ctrl', 'v')
+
+==================================================
+STEP 28
+==================================================
+
+Thought:
+现在需要填写Department字段。切换回Excel窗口，找到John Doe的Department（E2单元格，Finance），复制该内容，再切换回PDF表单填入Department字段。首先点击左侧LibreOffice Calc图标，回到Excel表格。
+
+Action:
+pyautogui.click(30.72, 405.0, button='left')
+
+==================================================
+STEP 29
+==================================================
+
+Thought:
+现在需要获取John Doe的Department，即E2单元格的Finance。点击E2单元格，复制内容，以便填入PDF表单的Department字段。
+
+Action:
+pyautogui.click(460.8, 252.72, button='left')
+
+==================================================
+STEP 30
+==================================================
+
+Thought:
+现在E2单元格（Department: Finance）已选中，需要复制该内容，以便填入PDF表单的Department字段。使用快捷键Ctrl+C复制。
+
+Action:
+pyautogui.hotkey('ctrl', 'c')
+
+==================================================
+STEP 31
+==================================================
+
+Thought:
+已经复制了Department（Finance），现在需要切换回PDF表单窗口，填入Department字段。点击左侧Document Viewer图标，回到PDF表单，准备粘贴内容。
+
+Action:
+pyautogui.click(30.72, 876.96, button='left')
+
+==================================================
+STEP 32
+==================================================
+
+Thought:
+现在需要将Department填入对应的字段。首先点击Department的输入区域（在Position Held右侧的单元格），激活它，然后粘贴之前复制的Finance。这样可以准确填入部门信息，继续完善员工资料。
+
+Action:
+pyautogui.click(879.36, 447.12, button='left')
+
+==================================================
+STEP 33
+==================================================
+
+Thought:
+现在Department字段已激活，需要粘贴之前复制的Finance。使用快捷键Ctrl+V粘贴内容，这样可以准确填入部门信息，接下来还要处理Date of Current Review等日期字段。
+
+Action:
+pyautogui.hotkey('ctrl', 'v')
+
+==================================================
+STEP 34
+==================================================
+
+Thought:
+现在需要填写Date of Current Review字段。切换回Excel窗口，找到John Doe的Date of Current Review（D2单元格，2023-04-25），复制该内容，再切换回PDF表单填入对应的字段。首先点击左侧LibreOffice Calc图标，回到Excel表格。
+
+Action:
+pyautogui.click(30.72, 405.0, button='left')
+
+==================================================
+STEP 35
+==================================================
+
+Thought:
+现在需要获取John Doe的Date of Current Review，即D2单元格的2023-04-25。点击D2单元格，复制内容，以便填入PDF表单的Date of Current Review字段。
+
+Action:
+pyautogui.click(288.0, 252.72, button='left')
+
+==================================================
+STEP 36
+==================================================
+
+Thought:
+现在D2单元格（Date of Current Review: 2023-04-01？哦，刚才看错了，John Doe的Date of Current Review是C2？不对，表头是DATE OF CURRENT REVIEW在C列？哦，表头第一行：A是EMPLOYEE NAME，B是EMPLOYEE ID，C是DATE OF CURRENT REVIEW，D是POSITION HELD，E是DEPARTMENT，F是DATE OF LAST REVIEW。所以John Doe的Date of Current Review是C2单元格，内容是2023-04-01。现在已经选中C2单元格，需要复制该内容，以便填入PDF表单的Date of Current Review字段。使用快捷键Ctrl+C复制。
+
+Action:
+pyautogui.hotkey('ctrl', 'c')
+
+==================================================
+STEP 37
+==================================================
+
+Thought:
+已经复制了Date of Current Review（2023-04-01），现在需要切换回PDF表单窗口，填入对应的字段。点击左侧Document Viewer图标，回到PDF表单，准备粘贴内容。
+
+Action:
+pyautogui.click(30.72, 876.96, button='left')
+
+==================================================
+STEP 38
+==================================================
+
+Thought:
+现在需要将Date of Current Review填入对应的字段。首先点击DATE OF CURRENT REVIEW的输入区域（在EMPLOYEE ID右侧的单元格），激活它，然后粘贴之前复制的2023-04-01。这样可以准确填入当前评估日期，继续完善员工信息。
+
+Action:
+pyautogui.click(1507.2, 342.36, button='left')
+
+==================================================
+STEP 39
+==================================================
+
+Thought:
+现在DATE OF CURRENT REVIEW字段已激活，需要粘贴之前复制的2023-04-01。使用快捷键Ctrl+V粘贴内容，这样可以准确填入当前评估日期，接下来还要处理Date of Last Review等字段。
+
+Action:
+pyautogui.hotkey('ctrl', 'v')
+
+==================================================
+STEP 40
+==================================================
+
+Thought:
+现在需要填写Date of Last Review字段。切换回Excel窗口，找到John Doe的Date of Last Review（F2单元格，2022-01-04），复制该内容，再切换回PDF表单填入对应的字段。首先点击左侧LibreOffice Calc图标，回到Excel表格。
+
+Action:
+pyautogui.click(30.72, 405.0, button='left')
+
+==================================================
+STEP 41
+==================================================
+
+Thought:
+现在需要获取John Doe的Date of Last Review，即F2单元格的2022-01-04。点击F2单元格，复制内容，以便填入PDF表单的Date of Last Review字段。
+
+Action:
+pyautogui.click(528.0, 252.72, button='left')
+
+==================================================
+STEP 42
+==================================================
+
+Thought:
+现在F2单元格（Date of Last Review: 2022-01-04）已选中，需要复制该内容，以便填入PDF表单的Date of Last Review字段。使用快捷键Ctrl+C复制。
+
+Action:
+pyautogui.hotkey('ctrl', 'c')
+
+==================================================
+STEP 43
+==================================================
+
+Thought:
+已经复制了Date of Last Review（2022-01-04），现在需要切换回PDF表单窗口，填入对应的字段。点击左侧Document Viewer图标，回到PDF表单，准备粘贴内容。
+
+Action:
+pyautogui.click(30.72, 876.96, button='left')
+
+==================================================
+STEP 44
+==================================================
+
+Thought:
+现在需要将Date of Last Review填入对应的字段。首先点击DATE OF LAST REVIEW的输入区域（在POSITION HELD右侧的单元格），激活它，然后粘贴之前复制的2022-01-04。这样可以准确填入上次评估日期，继续完善员工信息。
+
+Action:
+pyautogui.click(1507.2, 447.12, button='left')
+
+==================================================
+STEP 45
+==================================================
+
+Thought:
+现在DATE OF LAST REVIEW字段已激活，需要粘贴之前复制的2022-01-04。使用快捷键Ctrl+V粘贴内容，这样可以准确填入上次评估日期，接下来还要处理Reviewer Name和Reviewer Title等字段。
+
+Action:
+pyautogui.hotkey('ctrl', 'v')
+
+==================================================
+STEP 46
+==================================================
+
+Thought:
+现在需要填写Reviewer Name字段。切换回Excel窗口，找到John Doe的Reviewer Name（G2单元格，Jane Smith），复制该内容，再切换回PDF表单填入对应的字段。首先点击左侧LibreOffice Calc图标，回到Excel表格。
+
+Action:
+pyautogui.click(30.72, 405.0, button='left')
+
+==================================================
+STEP 47
+==================================================
+
+Thought:
+现在需要获取John Doe的Reviewer Name，即G2单元格的Jane Smith。点击G2单元格，复制内容，以便填入PDF表单的Reviewer Name字段。
+
+Action:
+pyautogui.click(610.56, 252.72, button='left')
+
+==================================================
+STEP 48
+==================================================
+
+Thought:
+现在G2单元格（Reviewer Name: Jane Smith）已选中，需要复制该内容，以便填入PDF表单的Reviewer Name字段。使用快捷键Ctrl+C复制。
+
+Action:
+pyautogui.hotkey('ctrl', 'c')
+
+==================================================
+STEP 49
+==================================================
+
+Thought:
+已经复制了Reviewer Name（Jane Smith），现在需要切换回PDF表单窗口，填入对应的字段。点击左侧Document Viewer图标，回到PDF表单，准备粘贴内容。
+
+Action:
+pyautogui.click(30.72, 876.96, button='left')
+
+==================================================
+STEP 50
+==================================================
+
+Thought:
+现在需要将Reviewer Name填入对应的字段。首先点击REVIEWER NAME的输入区域（在POSITION HELD下方的单元格），激活它，然后粘贴之前复制的Jane Smith。这样可以准确填入审核人姓名，继续完善表单信息。
+
+Action:
+pyautogui.click(410.88, 551.88, button='left')
+
+==================================================
+STEP 51
+==================================================
+
+Thought:
+现在REVIEWER NAME字段已激活，需要粘贴之前复制的Jane Smith。使用快捷键Ctrl+V粘贴内容，这样可以准确填入审核人姓名，接下来还要处理Reviewer Title和Date Submitted等字段，以及特性评分部分的√标记。
+
+Action:
+pyautogui.hotkey('ctrl', 'v')
+
+==================================================
+STEP 52
+==================================================
+
+Thought:
+现在需要填写Reviewer Title字段。切换回Excel窗口，找到John Doe的Reviewer Title（H2单元格，Senior Manager），复制该内容，再切换回PDF表单填入对应的字段。首先点击左侧LibreOffice Calc图标，回到Excel表格。
+
+Action:
+pyautogui.click(30.72, 405.0, button='left')
+
+==================================================
+STEP 53
+==================================================
+
+Thought:
+现在需要获取John Doe的Reviewer Title，即H2单元格的Senior Manager。点击H2单元格，复制内容，以便填入PDF表单的Reviewer Title字段。
+
+Action:
+pyautogui.click(681.6, 252.72, button='left')
+
+==================================================
+STEP 54
+==================================================
+
+Thought:
+现在H2单元格（Reviewer Title: Senior Manager）已选中，需要复制该内容，以便填入PDF表单的Reviewer Title字段。使用快捷键Ctrl+C复制。
+
+Action:
+pyautogui.hotkey('ctrl', 'c')
+
+==================================================
+STEP 55
+==================================================
+
+Thought:
+已经复制了Reviewer Title（Senior Manager），现在需要切换回PDF表单窗口，填入对应的字段。点击左侧Document Viewer图标，回到PDF表单，准备粘贴内容。
+
+Action:
+pyautogui.click(30.72, 876.96, button='left')
+
+==================================================
+STEP 56
+==================================================
+
+Thought:
+现在需要将Reviewer Title填入对应的字段。首先点击REVIEWER TITLE的输入区域（在REVIEWER NAME右侧的单元格），激活它，然后粘贴之前复制的Senior Manager。这样可以准确填入审核人职位，继续完善表单信息。
+
+Action:
+pyautogui.click(879.36, 551.88, button='left')
+
+==================================================
+STEP 57
+==================================================
+
+Thought:
+现在REVIEWER TITLE字段已激活，需要粘贴之前复制的Senior Manager。使用快捷键Ctrl+V粘贴内容，这样可以准确填入审核人职位，接下来还要处理Date Submitted字段和特性评分部分的√标记。
+
+Action:
+pyautogui.hotkey('ctrl', 'v')
+
+==================================================
+STEP 58
+==================================================
+
+Thought:
+现在需要填写Date Submitted字段。切换回Excel窗口，找到John Doe的Date Submitted（I2单元格，2023-04-22），复制该内容，再切换回PDF表单填入对应的字段。首先点击左侧LibreOffice Calc图标，回到Excel表格。
+
+Action:
+pyautogui.click(30.72, 405.0, button='left')
+
+==================================================
+STEP 59
+==================================================
+
+Thought:
+现在需要获取John Doe的Date Submitted，即I2单元格的2023-04-22。点击I2单元格，复制内容，以便填入PDF表单的Date Submitted字段。
+
+Action:
+pyautogui.click(768.0, 252.72, button='left')
+
+==================================================
+STEP 60
+==================================================
+
+Thought:
+现在I2单元格（Date Submitted: 2023-04-22）已选中，需要复制该内容，以便填入PDF表单的Date Submitted字段。使用快捷键Ctrl+C复制。
+
+Action:
+pyautogui.hotkey('ctrl', 'c')
+
+==================================================
+STEP 61
+==================================================
+
+Thought:
+已经复制了Date Submitted（2023-04-22），现在需要切换回PDF表单窗口，填入对应的字段。点击左侧Document Viewer图标，回到PDF表单，准备粘贴内容。
+
+Action:
+pyautogui.click(30.72, 876.96, button='left')
+
+==================================================
+STEP 62
+==================================================
+
+Thought:
+现在需要将Date Submitted填入对应的字段。首先点击DATE SUBMITTED的输入区域（在REVIEWER TITLE右侧的单元格），激活它，然后粘贴之前复制的2023-04-22。这样可以准确填入提交日期，完成员工信息部分的填写，接下来处理特性评分的√标记。
+
+Action:
+pyautogui.click(1507.2, 551.88, button='left')
+
+==================================================
+STEP 63
+==================================================
+
+Thought:
+现在DATE SUBMITTED字段已激活，需要粘贴之前复制的2023-04-22。使用快捷键Ctrl+V粘贴内容，完成员工信息部分的填写，接下来处理特性评分的√标记。首先处理“Works to Full Potential”这一项，在Excel中John Doe的该项评分是Good（J2单元格），所以需要在PDF的Good列对应位置打√。
+
+Action:
+pyautogui.hotkey('ctrl', 'v')
+
+==================================================
+STEP 64
+==================================================
+
+Thought:
+现在需要处理特性评分的√标记。首先看“Works to Full Potential”这一项，在Excel中John Doe的J2单元格是Good，所以需要在PDF的Good列对应行打√。先切换回Excel窗口，确认各评分项，然后在PDF中对应位置输入√。首先处理“Works to Full Potential”的Good列，点击该单元格，输入√。
+
+Action:
+pyautogui.click(1430.4, 724.68, button='left')
+
+==================================================
+STEP 65
+==================================================
+
+Thought:
+现在需要在“Works to Full Potential”的Good列输入√，因为John Doe的该项评分是Good。直接输入√符号，完成该评分项的标记。
+
+Action:
+pyperclip.copy('√')
+pyautogui.hotkey('ctrl', 'v')
+
+==================================================
+STEP 66
+==================================================
+
+Thought:
+接下来处理“Quality of Work”这一项，在Excel中John Doe的K2单元格是Excellent，所以需要在PDF的Excellent列对应行打√。先点击该单元格，输入√。
+
+Action:
+pyautogui.click(1680.0, 774.36, button='left')
+
+==================================================
+STEP 67
+==================================================
+
+Thought:
+现在需要在“Quality of Work”的Excellent列输入√，因为John Doe的该项评分是Excellent。直接输入√符号，完成该评分项的标记。
+
+Action:
+pyperclip.copy('√')
+pyautogui.hotkey('ctrl', 'v')
+
+==================================================
+STEP 68
+==================================================
+
+Thought:
+接下来处理“Work Consistency”这一项，在Excel中John Doe的L2单元格是Satisfactory，所以需要在PDF的Satisfactory列对应行打√。先点击该单元格，输入√。
+
+Action:
+pyautogui.click(1169.28, 830.52, button='left')
+
+==================================================
+STEP 69
+==================================================
+
+Thought:
+现在需要在“Work Consistency”的Satisfactory列输入√，因为John Doe的该项评分是Satisfactory。直接输入√符号，完成该评分项的标记。
+
+Action:
+pyperclip.copy('√')
+pyautogui.hotkey('ctrl', 'v')
+
+==================================================
+STEP 70
+==================================================
+
+Thought:
+接下来处理“Communication”这一项，在Excel中John Doe的M2单元格是Good，所以需要在PDF的Good列对应行打√。先点击该单元格，输入√。
+
+Action:
+pyautogui.click(1430.4, 882.36, button='left')
+
+==================================================
+STEP 71
+==================================================
+
+Thought:
+现在需要在“Communication”的Good列输入√，因为John Doe的该项评分是Good。直接输入√符号，完成该评分项的标记。
+
+Action:
+pyperclip.copy('√')
+pyautogui.hotkey('ctrl', 'v')
+
+==================================================
+STEP 72
+==================================================
+
+Thought:
+接下来处理“Independent Work”这一项，在Excel中John Doe的N2单元格是Excellent，所以需要在PDF的Excellent列对应行打√。先点击该单元格，输入√。
+
+Action:
+pyautogui.click(1680.0, 937.44, button='left')
+
+==================================================
+STEP 73
+==================================================
+
+Thought:
+现在需要在“Independent Work”的Excellent列输入√，因为John Doe的该项评分是Excellent。直接输入√符号，完成该评分项的标记。
+
+Action:
+pyperclip.copy('√')
+pyautogui.hotkey('ctrl', 'v')
+
+==================================================
+STEP 74
+==================================================
+
+Thought:
+接下来处理“Takes Initiative”这一项，在Excel中John Doe的O2单元格是Good，所以需要在PDF的Good列对应行打√。先点击该单元格，输入√。
+
+Action:
+pyautogui.click(1430.4, 992.52, button='left')
+
+==================================================
+STEP 75
+==================================================
+
+Thought:
+现在需要在“Takes Initiative”的Good列输入√，因为John Doe的该项评分是Good。直接输入√符号，完成该评分项的标记。
+
+Action:
+pyperclip.copy('√')
+pyautogui.hotkey('ctrl', 'v')
+
+==================================================
+STEP 76
+==================================================
+
+Thought:
+接下来处理“Group Work”这一项，在Excel中John Doe的P2单元格是Satisfactory，所以需要在PDF的Satisfactory列对应行打√。先点击该单元格，输入√。
+
+Action:
+pyautogui.click(1169.28, 1048.68, button='left')
+
+==================================================
+STEP 77
+==================================================
+
+Thought:
+现在需要在“Group Work”的Satisfactory列输入√，因为John Doe的该项评分是Satisfactory。直接输入√符号，完成该评分项的标记。之后还需要保存PDF并以员工姓名命名，比如“John Doe.pdf”。
+
+Action:
+pyperclip.copy('√')
+pyautogui.hotkey('ctrl', 'v')
+
+==================================================
+STEP 78
+==================================================
+
+Thought:
+现在需要保存这个填写好的PDF，并以员工姓名“John Doe”命名。首先点击Document Viewer的菜单按钮（右上角的三条横线），找到保存选项，或者使用另存为功能，将文件命名为John Doe.pdf，确保保存到合适的位置，完成任务。
+
+Action:
+pyautogui.click(1758.72, 47.52, button='left')
+
+==================================================
+STEP 79
+==================================================
+
+Thought:
+现在需要将填写好的PDF另存为，以员工姓名“John Doe”命名。菜单中已经打开，找到“Save As...”选项，点击它，这样可以指定文件名和保存位置，完成文件的命名和保存，确保每个PDF以员工姓名命名。
+
+Action:
+pyautogui.click(1697.28, 243.0, button='left')
+
+==================================================
+STEP 80
+==================================================
+
+Thought:
+现在需要将文件名改为员工姓名“John Doe”，因为当前文件名是“review_template.pdf”，且输入框已被选中（橙色高亮），直接输入新的文件名“John Doe”，确保PDF以员工姓名命名，符合任务要求。
+
+Action:
+pyperclip.copy('John Doe')
+pyautogui.hotkey('ctrl', 'v')
+
+==================================================
+STEP 81
+==================================================
+
+Thought:
+现在文件名已经改为“John Doe.pdf”，需要点击“Save”按钮完成保存，这样就完成了第一个员工的PDF表单填写、标记√以及命名保存。之后还需要处理其他员工的数据，但当前任务中先完成这一步，确认保存成功。
+
+Action:
+pyautogui.click(1545.6, 99.36, button='left')
+
+==================================================
+STEP 82
+==================================================
+
+Action:
+DONE

@@ -1,0 +1,7 @@
+judge:
+  name: claude_judge
+  litellm_model: anthropic/claude-opus-4-6
+
+generation:
+  temperature: 0
+  max_tokens: 6000

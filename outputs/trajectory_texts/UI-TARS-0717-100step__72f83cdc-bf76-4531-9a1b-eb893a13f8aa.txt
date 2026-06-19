@@ -1,0 +1,62 @@
+Trajectory ID: 72f83cdc-bf76-4531-9a1b-eb893a13f8aa
+Source Model: UI-TARS-0717-100step
+Domain: gimp
+
+Task:
+Please rotate my figure to mirror it horizontally.
+
+Success Binary: True
+Success Raw: 1.0
+
+Number of Steps: 5
+
+============================================================
+TRAJECTORY
+============================================================
+
+==================================================
+STEP 1
+==================================================
+
+Thought:
+要在GIMP中水平镜像图像，首先需要找到相关的变换功能。GIMP里，水平镜像的操作可以通过菜单栏的“Image”选项，然后找到“Transform”子菜单中的“Flip Horizontally”来实现。所以第一步应该点击顶部菜单栏的“Image”选项，展开相关菜单。
+
+Action:
+pyautogui.click(264.96, 73.44, button='left')
+
+==================================================
+STEP 2
+==================================================
+
+Thought:
+现在Image菜单已经展开，接下来需要找到Transform子菜单，因为水平镜像的功能在Transform里面。所以应该将鼠标移动到Transform选项上，展开它的子菜单，以便找到Flip Horizontally选项。
+
+Action:
+pyautogui.click(303.36, 225.72, button='left')
+
+==================================================
+STEP 3
+==================================================
+
+Thought:
+刚才点击Transform时可能没正确展开子菜单，现在需要再次将鼠标移到Transform选项上，确保子菜单展开，这样才能找到Flip Horizontally选项来完成水平镜像。所以下一步应该是将鼠标悬停在Transform上，展开子菜单。
+
+Action:
+pyautogui.click(407.04, 225.72, button='left')
+
+==================================================
+STEP 4
+==================================================
+
+Thought:
+现在Transform的子菜单已经展开，里面有Flip Horizontally选项，这正是需要的水平镜像功能。点击这个选项就能完成图像的水平镜像变换，所以下一步应该点击Flip Horizontally。
+
+Action:
+pyautogui.click(624.0, 225.72, button='left')
+
+==================================================
+STEP 5
+==================================================
+
+Action:
+DONE

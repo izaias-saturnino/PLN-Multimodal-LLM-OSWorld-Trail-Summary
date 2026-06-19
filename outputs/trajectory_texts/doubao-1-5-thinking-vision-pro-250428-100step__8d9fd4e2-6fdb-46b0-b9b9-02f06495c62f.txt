@@ -1,0 +1,42 @@
+Trajectory ID: 8d9fd4e2-6fdb-46b0-b9b9-02f06495c62f
+Source Model: doubao-1-5-thinking-vision-pro-250428-100step
+Domain: vlc
+
+Task:
+Can you enable fullscreen mode in VLC so that the video fill up the whole screen?
+
+Success Binary: True
+Success Raw: 1.0
+
+Number of Steps: 3
+
+============================================================
+TRAJECTORY
+============================================================
+
+==================================================
+STEP 1
+==================================================
+
+Thought:
+要在VLC中启用全屏模式，可通过菜单栏的“View”选项操作。首先需点击顶部菜单栏的“View”按钮，打开其下拉菜单以找到全屏选项。计划是点击“View”菜单，后续再选择全屏选项。因此，下一步要点击界面顶部菜单栏中的“View”按钮。
+
+Action:
+pyautogui.click(408.96, 72.36, button='left')
+
+==================================================
+STEP 2
+==================================================
+
+Thought:
+现在View菜单已展开，其中“Fullscreen Interface”选项是实现全屏模式的关键。点击该选项可让视频填充整个屏幕，这是完成任务的直接步骤。因此，下一步要点击View菜单下的“Fullscreen Interface”选项。
+
+Action:
+pyautogui.click(443.52, 180.36, button='left')
+
+==================================================
+STEP 3
+==================================================
+
+Action:
+DONE

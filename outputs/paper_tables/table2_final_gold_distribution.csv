@@ -1,0 +1,33 @@
+distribution,value,count
+source_model,UI-TARS-0717-100step,69
+source_model,doubao-1-5-thinking-vision-pro-250428-100step,69
+domain,chrome,20
+domain,gimp,18
+domain,libreoffice_calc,22
+domain,libreoffice_impress,22
+domain,libreoffice_writer,4
+domain,multi_apps,20
+domain,os,4
+domain,thunderbird,10
+domain,vlc,12
+domain,vs_code,6
+success_binary,False,87
+success_binary,None,3
+success_binary,True,48
+gold_summary_status,OK,138
+task_domain,chrome,10
+task_domain,gimp,9
+task_domain,libreoffice_calc,11
+task_domain,libreoffice_impress,11
+task_domain,libreoffice_writer,2
+task_domain,multi_apps,10
+task_domain,os,2
+task_domain,thunderbird,5
+task_domain,vlc,6
+task_domain,vs_code,3
+task_success_pattern,doubao-1-5-thinking-vision-pro-250428-100step=False | UI-TARS-0717-100step=False,38
+task_success_pattern,doubao-1-5-thinking-vision-pro-250428-100step=False | UI-TARS-0717-100step=True,8
+task_success_pattern,doubao-1-5-thinking-vision-pro-250428-100step=None | UI-TARS-0717-100step=False,1
+task_success_pattern,doubao-1-5-thinking-vision-pro-250428-100step=None | UI-TARS-0717-100step=None,1
+task_success_pattern,doubao-1-5-thinking-vision-pro-250428-100step=True | UI-TARS-0717-100step=False,2
+task_success_pattern,doubao-1-5-thinking-vision-pro-250428-100step=True | UI-TARS-0717-100step=True,19

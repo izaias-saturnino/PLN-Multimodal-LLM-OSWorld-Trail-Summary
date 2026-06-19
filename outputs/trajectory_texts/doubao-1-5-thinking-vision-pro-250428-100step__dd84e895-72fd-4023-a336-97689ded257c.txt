@@ -1,0 +1,52 @@
+Trajectory ID: dd84e895-72fd-4023-a336-97689ded257c
+Source Model: doubao-1-5-thinking-vision-pro-250428-100step
+Domain: thunderbird
+
+Task:
+Add a star to every email in local Bills folder
+
+Success Binary: True
+Success Raw: 1.0
+
+Number of Steps: 4
+
+============================================================
+TRAJECTORY
+============================================================
+
+==================================================
+STEP 1
+==================================================
+
+Thought:
+要给Local Bills文件夹中每封邮件加星标，首先需打开Bills文件夹以查看其中的邮件。当前界面左侧导航栏中Local Folders下有Bills选项，点击该选项可进入文件夹。因此，下一步是点击Bills文件夹。
+
+Action:
+pyautogui.click(192.0, 506.52, button='left')
+
+==================================================
+STEP 2
+==================================================
+
+Thought:
+现在Bills文件夹已打开，显示有两封邮件。要给每封邮件加星标，需先处理第一封邮件。每封邮件右侧有星标图标，点击该图标可添加星标。因此，下一步是点击第一封邮件“Amazon Web Services Invoice Available [Account: 0123456789ab] [Invoice ID: 01...]”对应的星标位置，为其添加星标。
+
+Action:
+pyautogui.click(1019.52, 180.36, button='left')
+
+==================================================
+STEP 3
+==================================================
+
+Thought:
+目前Bills文件夹中第一封邮件已成功添加星标，还需为第二封邮件添加星标。第二封邮件“Your receipt from X (formerly Twitter) #0123-4567”右侧有星标图标，点击该图标即可完成星标添加。因此，下一步是点击第二封邮件对应的星标位置，为其添加星标。
+
+Action:
+pyautogui.click(1019.52, 217.08, button='left')
+
+==================================================
+STEP 4
+==================================================
+
+Action:
+DONE

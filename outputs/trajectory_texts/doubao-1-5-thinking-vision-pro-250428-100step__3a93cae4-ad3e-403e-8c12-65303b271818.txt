@@ -1,0 +1,73 @@
+Trajectory ID: 3a93cae4-ad3e-403e-8c12-65303b271818
+Source Model: doubao-1-5-thinking-vision-pro-250428-100step
+Domain: multi_apps
+
+Task:
+Could you please add a two-hour lecture slot to my weekly course timetable, scheduled for every Wednesday at 12 PM? It seems I accidentally omitted that when setting up my schedule. I'd appreciate you taking care of that for me. Thanks!
+
+Success Binary: False
+Success Raw: 0.0
+
+Number of Steps: 6
+
+============================================================
+TRAJECTORY
+============================================================
+
+==================================================
+STEP 1
+==================================================
+
+Thought:
+要完成添加课程时段的任务，首先需要打开课程表文件。桌面右侧有“Course Timetable.xlsx”文件，双击该文件可进入编辑界面。因此，下一步是双击打开这个Excel文件。
+
+Action:
+pyautogui.doubleClick(1848.96, 198.72, button='left')
+
+==================================================
+STEP 2
+==================================================
+
+Thought:
+为了添加课程时段，首先需要成功打开“Course Timetable.xlsx”文件。上一次双击可能因系统响应或操作精度问题未打开，因此需要再次尝试双击该文件。目标文件位于桌面右侧，图标为绿色Excel样式，文件名明确。双击后可进入文件编辑界面，后续才能进行课程时段的添加操作。
+
+Action:
+pyautogui.doubleClick(1848.96, 198.72, button='left')
+
+==================================================
+STEP 3
+==================================================
+
+Thought:
+要添加每周三12点的两小时讲座，需先定位到对应单元格。表格中“Wed”列（D列）与“12:00”行（第5行）的交叉单元格为D5，点击该单元格以激活编辑状态，后续可输入讲座信息。
+
+Action:
+pyautogui.click(729.6, 398.52, button='left')
+
+==================================================
+STEP 4
+==================================================
+
+Thought:
+现在需要在已选中的D5单元格（对应周三12:00的时段）中输入讲座信息。参考表格中其他课程的格式（如“Lec 1 (8:00-10:00)”“Tutorial 2 (14:00-15:00)”），需保持格式一致，输入“Lecture (12:00-14:00)”以明确课程类型和时间范围。因此，下一步是在D5单元格中输入该内容。
+
+Action:
+pyperclip.copy('Lecture (12:00-14:00)')
+pyautogui.hotkey('ctrl', 'v')
+
+==================================================
+STEP 5
+==================================================
+
+Thought:
+为确保添加的讲座时段被保存，需执行保存操作。使用快捷键“ctrl s”是最快捷的保存方式，能立即将修改写入文件。因此，下一步是按下“ctrl s”保存文件。
+
+Action:
+pyautogui.hotkey('ctrl', 's')
+
+==================================================
+STEP 6
+==================================================
+
+Action:
+DONE

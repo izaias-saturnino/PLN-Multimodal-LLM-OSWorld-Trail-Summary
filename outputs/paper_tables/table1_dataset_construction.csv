@@ -1,0 +1,10 @@
+stage,unit,count,notes
+Screened trajectories,trajectory,722,All trajectories after LLM complexity screening.
+Selected by complexity screening,trajectory,477,selected_for_gold_generation == true.
+Rejected by complexity screening,trajectory,189,selected_for_gold_generation == false.
+Incomplete screening,trajectory,56,No final screening decision.
+Paired balanced selected tasks,task pair,150,Task-level paired subset before gold revision.
+Paired balanced selected trajectories,trajectory,300,Two source-agent trajectories per selected task.
+Valid gold records before pair filtering,trajectory,191,Human-revised gold summaries with non-empty gold.
+Final clean paired gold tasks,task pair,69,Final paired tasks with valid gold for all required source agents.
+Final clean paired gold trajectories,trajectory,138,Final evaluation trajectories.

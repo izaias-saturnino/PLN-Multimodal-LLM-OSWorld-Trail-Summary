@@ -1,0 +1,82 @@
+Trajectory ID: d53ff5ee-3b1a-431e-b2be-30ed2673079b
+Source Model: UI-TARS-0717-100step
+Domain: libreoffice_writer
+
+Task:
+I am currently engaged in text processing and require assistance in converting all uppercase text to lowercase within my document. This precision is critical for maintaining a uniform and polished presentation. Could you help me on this?
+
+Success Binary: True
+Success Raw: 1.0
+
+Number of Steps: 7
+
+============================================================
+TRAJECTORY
+============================================================
+
+==================================================
+STEP 1
+==================================================
+
+Thought:
+要将文档中所有大写文本转为小写，首先需要全选文档内容。在LibreOffice Writer中，全选可以用快捷键Ctrl+A。然后通过格式菜单里的字符选项，或者工具栏中的大小写转换功能来实现。步骤：1. 全选文档内容（Ctrl+A）；2. 找到格式菜单下的“更改大小写”选项，选择转为小写。首先执行全选操作。
+
+Action:
+pyautogui.hotkey('ctrl', 'a')
+
+==================================================
+STEP 2
+==================================================
+
+Thought:
+现在已经全选了文档内容，接下来需要找到转换大小写的功能。在LibreOffice Writer中，这个功能在“Format”（格式）菜单下的“Character”（字符）选项里，或者可以直接找“Change Case”相关的选项。首先点击顶部菜单栏的“Format”，展开菜单后找到字符相关的大小写转换选项，选择转为小写。
+
+Action:
+pyautogui.click(288.0, 75.6, button='left')
+
+==================================================
+STEP 3
+==================================================
+
+Thought:
+现在Format菜单已经展开，接下来需要找到Text子菜单，因为大小写转换的功能在Text里面。将鼠标移动到Format菜单下的Text选项，展开子菜单后找到Change Case，然后选择转为小写。首先点击Text选项。
+
+Action:
+pyautogui.click(318.72, 124.2, button='left')
+
+==================================================
+STEP 4
+==================================================
+
+Thought:
+刚才点错了Spacing，现在需要回到Format菜单的Text子菜单，找到Change Case选项。先重新点击Text，展开正确的子菜单，里面应该有Change Case，然后选择转为小写。现在纠正步骤，点击Text选项下的正确路径，找到Change Case。
+
+Action:
+pyautogui.click(303.36, 99.36, button='left')
+
+==================================================
+STEP 5
+==================================================
+
+Thought:
+现在Text子菜单下已经展开了大小写转换的选项，看到有“lowercase”选项，这正是需要的将所有大写转为小写的功能。因为已经全选了文档内容，所以点击“lowercase”选项就能完成转换。
+
+Action:
+pyautogui.click(583.68, 432.0, button='left')
+
+==================================================
+STEP 6
+==================================================
+
+Thought:
+现在文档中的大写已经成功转为小写，为了保存修改，需要使用快捷键Ctrl+S来保存文档，确保更改不会丢失。
+
+Action:
+pyautogui.hotkey('ctrl', 's')
+
+==================================================
+STEP 7
+==================================================
+
+Action:
+DONE

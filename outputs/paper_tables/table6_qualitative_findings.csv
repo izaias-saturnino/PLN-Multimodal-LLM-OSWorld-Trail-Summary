@@ -1,0 +1,135 @@
+analysis_set,category,value,count
+success_failure_cases,recommended_paper_use,high,6
+success_failure_cases,recommended_paper_use,medium,4
+success_failure_cases,case_type,mixed_success_failure,10
+success_failure_cases,better_failure_awareness,claude_sonnet_4_6,1
+success_failure_cases,better_failure_awareness,gpt_5_5,1
+success_failure_cases,better_failure_awareness,tie,8
+success_failure_cases,main_qualitative_finding_text,Both models describe procedural errors without connecting them to task failure outcomes.,1
+success_failure_cases,main_qualitative_finding_text,"Claude Sonnet 4.6 provides more granular procedural detail than GPT-5.5, particularly for the failing trajectory.",1
+success_failure_cases,main_qualitative_finding_text,"Both models produce highly similar summaries for the successful trajectory, with only minor specificity differences.",1
+success_failure_cases,main_qualitative_finding_text,The paired case reveals that task failure can be opaque even to high-quality summarizers when the agent's final actions superficially resemble success.,1
+success_failure_cases,main_qualitative_finding_text,"Both models fail to explicitly identify task failure in the UI-TARS trajectory, presenting it as a completed sequence of reasonable actions.",1
+success_failure_cases,main_qualitative_finding_text,Claude Sonnet introduces minor hallucinations that inflate the apparent competence of the agent.,1
+success_failure_cases,main_qualitative_finding_text,"Despite different outcomes, both models produce similarly high-scoring summaries for both trajectories, suggesting current evaluation may not adequately penalize failure omission.",1
+success_failure_cases,main_qualitative_finding_text,The procedural difference between direct click (successful) and right-click context menu (failed) is well-preserved by both models.,1
+success_failure_cases,main_qualitative_finding_text,"Both models fail to flag the doubao trajectory as unsuccessful, presenting a failed approach as if it were valid.",1
+success_failure_cases,main_qualitative_finding_text,The procedural difference that determines success vs. failure (Colorize vs. Bucket Fill) is accurately captured in the action descriptions but not interpreted as meaningful.,1
+success_failure_cases,main_qualitative_finding_text,Claude provides more detailed struggle narratives but introduces temporal ordering errors; GPT-5.5 is more concise and factually precise but loses some procedural specificity.,1
+success_failure_cases,main_qualitative_finding_text,GPT-5.5 correctly identified the paste input method for the doubao trajectory while Claude described it as typing.,1
+success_failure_cases,main_qualitative_finding_text,Both evaluated models successfully preserved the critical success/failure distinction between paired trajectories.,1
+success_failure_cases,main_qualitative_finding_text,"Both models captured error-recovery patterns in the successful trajectory, preserving important procedural learning signals.",1
+success_failure_cases,main_qualitative_finding_text,"This case represents a ceiling performance scenario where both models achieve near-perfect scores, limiting its discriminative value.",1
+success_failure_cases,main_qualitative_finding_text,"Automatic metrics (ROUGE-L, BERTScore) show notable variation despite uniformly high judge scores, suggesting these metrics may not reliably capture summary quality for this task.",1
+success_failure_cases,main_qualitative_finding_text,Both models accurately preserve the critical strategic difference between trajectories: one agent adapts (Command Palette) while the other persists in a failing loop.,1
+success_failure_cases,main_qualitative_finding_text,"Claude Sonnet 4.6 consistently provides more procedural specificity (step numbers, coordinates, attempt counts) without sacrificing accuracy, earning higher specificity scores.",1
+success_failure_cases,main_qualitative_finding_text,"Neither model addresses the paradoxical success label of the UI-TARS trajectory, where the agent issues FAIL but the task is marked successful.",1
+success_failure_cases,main_qualitative_finding_text,"The doubao trajectory's extreme repetition (90+ identical clicks) is a stress test for summarization conciseness, and both models handle it well by abstracting the loop rather than enumerating steps.",1
+success_failure_cases,main_qualitative_finding_text,"Both evaluated models achieved perfect judge scores (5/5 across all dimensions) for both trajectories in this pair, demonstrating that modern LLMs can reliably summarize both successful and failed trajectories.",1
+success_failure_cases,main_qualitative_finding_text,Both models correctly preserved the critical distinction between a self-correcting successful trajectory and a procedurally correct but prematurely terminated failed trajectory.,1
+success_failure_cases,main_qualitative_finding_text,"Despite identical perfect judge scores, reference-based metrics (ROUGE-L, BERTScore) show meaningful variation across models, suggesting these automatic metrics may not align well with human quality judgments for this task.",1
+success_failure_cases,main_qualitative_finding_text,"The failed trajectory was simpler (8 steps) and followed a more linear procedure than the successful one (17 steps with self-correction), yet both models handled the complexity difference well.",1
+success_failure_cases,main_qualitative_finding_text,"Behaviorally identical trajectories can have different success labels, creating a challenge for summarization evaluation.",1
+success_failure_cases,main_qualitative_finding_text,Both evaluated models produce highly consistent summaries across behaviorally equivalent trajectories.,1
+success_failure_cases,main_qualitative_finding_text,"Claude provides slightly higher specificity than GPT-5.5, particularly in noting step ranges and terminal conditions.",1
+success_failure_cases,main_qualitative_finding_text,This case has limited utility for studying failure-awareness in summarization because the 'failure' trajectory is behaviorally indistinguishable from the 'success' trajectory.,1
+success_failure_cases,main_qualitative_finding_text,Both models correctly preserve terminal failure status (FAIL vs DONE) across paired trajectories.,1
+success_failure_cases,main_qualitative_finding_text,GPT-5.5 better preserves mid-trajectory failures and recovery behaviors compared to Claude.,1
+success_failure_cases,main_qualitative_finding_text,Both models achieve high factuality and avoid hallucination across both success and failure trajectories.,1
+success_failure_cases,main_qualitative_finding_text,"The doubao trajectory presents an interesting case where all procedural steps appear correct but the agent self-reports failure, and both models handle this ambiguity appropriately.",1
+success_failure_cases,main_qualitative_finding_text,"Both evaluated models fail to note the doubao agent's omission of visiting the required reference website, a critical procedural gap that explains the task failure.",1
+success_failure_cases,main_qualitative_finding_text,"Claude provides more specific numerical details that enable verification of agent reasoning, particularly for the successful trajectory.",1
+success_failure_cases,main_qualitative_finding_text,"Both models accurately preserve the different answers produced by the two agents ('The Shining' vs. 'Out of the Silent Planet'), maintaining the factual contrast between trajectories.",1
+success_failure_cases,main_qualitative_finding_text,"Error-recovery sequences (accidental typing, failed paste attempts, undo operations) are well-preserved by both models, suggesting that observable UI errors are easier to summarize than reasoning-level failures.",1
+success_failure_cases,main_qualitative_finding_text,The missing Ctrl+S save step in the failed trajectory was not highlighted by either model as a potential cause of failure.,1
+success_failure_cases,main_qualitative_finding_text,Claude Sonnet 4.6 maintained higher specificity than GPT-5.5 on the error-prone (failed) trajectory while both performed equally well on the clean (successful) trajectory.,1
+success_failure_cases,main_qualitative_finding_text,Both models produced near-identical quality summaries for the straightforward successful trajectory but diverged on the more complex failed trajectory.,1
+success_failure_cases,main_qualitative_finding_text,"Neither model explicitly labeled the trajectory outcome as success or failure, potentially misleading downstream consumers.",1
+selected_paper_cases,recommended_paper_use,high,13
+selected_paper_cases,recommended_paper_use,medium,7
+selected_paper_cases,case_type,both_success,1
+selected_paper_cases,case_type,mixed_success_failure,19
+selected_paper_cases,better_failure_awareness,claude_sonnet_4_6,2
+selected_paper_cases,better_failure_awareness,gpt_5_5,3
+selected_paper_cases,better_failure_awareness,tie,15
+selected_paper_cases,main_qualitative_finding_text,Both models reliably preserve failure states and do not hallucinate success when trajectories end without task completion.,1
+selected_paper_cases,main_qualitative_finding_text,"Claude consistently provides higher specificity than GPT-5.5, particularly for repetitive failure patterns, without sacrificing accuracy.",1
+selected_paper_cases,main_qualitative_finding_text,The key behavioral contrast between trajectories—perseveration vs. adaptive recovery—is preserved by both models but with different levels of emphasis.,1
+selected_paper_cases,main_qualitative_finding_text,"Ground-truth success labels can diverge from observable trajectory behavior, creating a challenge for summarizers.",1
+selected_paper_cases,main_qualitative_finding_text,"Both models fail to explicitly mark the failed trajectory as unsuccessful, despite accurately describing the error-recovery process.",1
+selected_paper_cases,main_qualitative_finding_text,"Claude achieves higher specificity on the failed trajectory while GPT-5.5 uses vaguer language, yet both receive high judge scores.",1
+selected_paper_cases,main_qualitative_finding_text,"The successful trajectory is straightforward enough that both models produce near-perfect summaries, suggesting that summarization difficulty scales with trajectory complexity and error presence.",1
+selected_paper_cases,main_qualitative_finding_text,"The contrast between trajectories reveals different entry points to VS Code settings (gear icon vs. File menu), which both models correctly preserve.",1
+selected_paper_cases,main_qualitative_finding_text,"Both models fail to explicitly flag task failure in the unsuccessful trajectory, presenting procedurally reasonable steps as if they led to success.",1
+selected_paper_cases,main_qualitative_finding_text,Claude Sonnet achieves higher specificity but at the cost of minor hallucinations and unsupported interpretive claims.,1
+selected_paper_cases,main_qualitative_finding_text,"The procedural difference between direct click and right-click context menu is preserved by both models, which is critical for understanding the success/failure divergence.",1
+selected_paper_cases,main_qualitative_finding_text,"Despite high judge scores (mostly 5s) for both models on both trajectories, neither model adequately represents the failure status, suggesting judge rubrics may not sufficiently penalize failure omission.",1
+selected_paper_cases,main_qualitative_finding_text,"Both models fail to flag the doubao trajectory's task failure, presenting an unsuccessful approach as if it succeeded.",1
+selected_paper_cases,main_qualitative_finding_text,Both models effectively capture the struggle and recovery narrative in the complex UI-TARS trajectory.,1
+selected_paper_cases,main_qualitative_finding_text,"Claude's temporal ordering error in the UI-TARS summary illustrates a challenge with summarizing long, non-linear trajectories.",1
+selected_paper_cases,main_qualitative_finding_text,"GPT-5.5 more accurately described the input method for the doubao trajectory (paste vs. type), while Claude was more specific about the UI-TARS input method.",1
+selected_paper_cases,main_qualitative_finding_text,The procedural difference between Colorize and Bucket Fill — the core reason one trajectory failed and the other succeeded — is preserved in the summaries but not explicitly contrasted or evaluated.,1
+selected_paper_cases,main_qualitative_finding_text,Both models correctly preserved the critical FAIL vs. DONE distinction between the paired trajectories.,1
+selected_paper_cases,main_qualitative_finding_text,"GPT-5.5 better captured intermediate struggles (failed minimize attempts) in the successful trajectory, while Claude omitted them.",1
+selected_paper_cases,main_qualitative_finding_text,"When procedural steps are nearly identical between success and failure trajectories, the terminal action and subtle differences become the most important elements to preserve.",1
+selected_paper_cases,main_qualitative_finding_text,"Automatic metrics (ROUGE-L, BERTScore) showed notable variation between models despite identical perfect judge scores for the doubao trajectory.",1
+selected_paper_cases,main_qualitative_finding_text,"Both evaluated models fail to note the omission of a required procedural step (visiting howlongtoread.com) in the failed trajectory, despite the human gold summary explicitly flagging this.",1
+selected_paper_cases,main_qualitative_finding_text,Model summaries can make a failed trajectory appear procedurally sound by accurately describing what happened without noting what should have happened.,1
+selected_paper_cases,main_qualitative_finding_text,Both models achieve high judge scores on the failed trajectory despite missing the most important failure-related detail.,1
+selected_paper_cases,main_qualitative_finding_text,"Claude provides notably more specific numerical details than GPT-5.5, particularly for the successful trajectory.",1
+selected_paper_cases,main_qualitative_finding_text,Both models accurately capture the key procedural difference (Open Directory mistake) but neither explicitly flags the task failure outcome.,1
+selected_paper_cases,main_qualitative_finding_text,"Claude Sonnet 4.6 achieves higher specificity scores consistently, particularly through step-number references and exact counts.",1
+selected_paper_cases,main_qualitative_finding_text,"Despite the success/failure difference, both models produce structurally similar summaries for both trajectories, differing mainly in the inclusion of the error episode.",1
+selected_paper_cases,main_qualitative_finding_text,"The case illustrates that procedural missteps alone may not explain task failure, and summaries that omit outcome information leave the reader without crucial context.",1
+selected_paper_cases,main_qualitative_finding_text,Both evaluated models reliably detect and report premature task termination as a failure mode.,1
+selected_paper_cases,main_qualitative_finding_text,Both models accurately capture error-recovery patterns in successful trajectories.,1
+selected_paper_cases,main_qualitative_finding_text,This paired case demonstrates that both models maintain clear differentiation between failed and successful trajectories performing the same task.,1
+selected_paper_cases,main_qualitative_finding_text,"Automatic metrics (ROUGE-L, BERTScore) show notable variation despite identical perfect judge scores.",1
+selected_paper_cases,main_qualitative_finding_text,"Both evaluated models perfectly preserved the success/failure distinction across paired trajectories, receiving maximum judge scores on all dimensions for both summaries.",1
+selected_paper_cases,main_qualitative_finding_text,"The case illustrates that failure can occur at the very last step of an otherwise correct procedure, and both models captured this nuance rather than characterizing the failure trajectory as broadly incorrect.",1
+selected_paper_cases,main_qualitative_finding_text,"The error-recovery pattern in the successful trajectory was well-preserved by both models, maintaining the causal narrative of why the initial attempt failed and how the agent corrected course.",1
+selected_paper_cases,main_qualitative_finding_text,"Despite perfect judge scores, the automatic reference metrics (ROUGE-L, BERTScore) show moderate variation across models and trajectories, suggesting these metrics may not fully capture summary quality for agent trajectories.",1
+selected_paper_cases,main_qualitative_finding_text,"When paired trajectories are procedurally identical but have different success labels, both summarization models produce nearly identical summaries, faithfully reflecting the observed behavior rather than the labels.",1
+selected_paper_cases,main_qualitative_finding_text,"Both models achieved perfect or near-perfect judge scores across all dimensions for both trajectories, suggesting that when trajectories are straightforward and procedurally clear, current models can summarize them reliably.",1
+selected_paper_cases,main_qualitative_finding_text,The paradoxical success/failure labels for identical trajectories highlight a limitation of using success labels as ground truth for summarization evaluation.,1
+selected_paper_cases,main_qualitative_finding_text,"Claude Sonnet 4.6 consistently provided slightly more specific details (step ranges, absence of DONE action) compared to GPT-5.5, though this did not substantially affect overall quality scores.",1
+selected_paper_cases,main_qualitative_finding_text,Claude consistently provides more specific quantitative details about failure loops than GPT-5.5.,1
+selected_paper_cases,main_qualitative_finding_text,Both models correctly preserve the distinct failure mechanisms between the two trajectories.,1
+selected_paper_cases,main_qualitative_finding_text,GPT-5.5 tends to hedge on failure outcomes rather than stating them definitively.,1
+selected_paper_cases,main_qualitative_finding_text,"Claude's higher judge scores do not correspond to higher automatic metrics, highlighting a disconnect between lexical overlap measures and content quality.",1
+selected_paper_cases,main_qualitative_finding_text,"Claude Sonnet 4.6 achieves perfect judge scores on both trajectories despite lower automatic metrics, illustrating a disconnect between reference-based metrics and semantic quality.",1
+selected_paper_cases,main_qualitative_finding_text,"GPT-5.5 introduces misleading hedging language for the clean trajectory, implying agent uncertainty that does not exist.",1
+selected_paper_cases,main_qualitative_finding_text,"Both models successfully differentiate between the clean and error-recovery trajectories, preserving the key procedural contrast.",1
+selected_paper_cases,main_qualitative_finding_text,Specificity loss in GPT-5.5 manifests as omission of cell references and collapsing of distinct retry attempts.,1
+selected_paper_cases,main_qualitative_finding_text,Both models fail to explicitly flag task failure despite both trajectories having success_raw = 0.0.,1
+selected_paper_cases,main_qualitative_finding_text,Claude achieves higher coverage scores but introduces subtle interpretive errors when explaining agent behavior.,1
+selected_paper_cases,main_qualitative_finding_text,The procedural difference in frame capture method (VLC snapshot vs. full-screen PrintScreen) is well-preserved by both models across the paired trajectories.,1
+selected_paper_cases,main_qualitative_finding_text,"GPT-5.5 achieves notably higher ROUGE-L and BERTScore for the doubao trajectory but lower judge scores than Claude, highlighting metric-judgment divergence.",1
+selected_paper_cases,main_qualitative_finding_text,"Models show complementary strengths across paired trajectories, with each excelling on one trajectory but underperforming on the other.",1
+selected_paper_cases,main_qualitative_finding_text,Neither model flags that the task outcome was a failure despite both agents appearing to complete the task.,1
+selected_paper_cases,main_qualitative_finding_text,"Quantitative specificity about repetitive actions (e.g., number of undo clicks) varies significantly between models and affects perceived trajectory understanding.",1
+selected_paper_cases,main_qualitative_finding_text,"Distinguishing between procedurally distinct failure phases (e.g., before vs. after entering edit mode) is important but challenging for summarizers.",1
+selected_paper_cases,main_qualitative_finding_text,Summarizers can misinterpret wrong-setting errors as task success when the procedural steps superficially resemble correct behavior.,1
+selected_paper_cases,main_qualitative_finding_text,Neutral factual reporting without explicit error diagnosis can be preferable to incorrect success framing.,1
+selected_paper_cases,main_qualitative_finding_text,"Both models perform excellently when the trajectory involves a clear, coherent procedural path, even if the task ultimately fails.",1
+selected_paper_cases,main_qualitative_finding_text,Different failure modes within the same task create asymmetric summarization difficulty.,1
+selected_paper_cases,main_qualitative_finding_text,Summarizers are more likely to correctly identify failure when the failure mode is obvious (premature termination) than when it is subtle (missing intermediate steps like text selection or color picker usage).,1
+selected_paper_cases,main_qualitative_finding_text,"Claude's failure awareness is inconsistent across paired trajectories of the same task, correctly identifying failure in one but hallucinating success in the other.",1
+selected_paper_cases,main_qualitative_finding_text,"GPT-5.5's hedging language ('apparently setting') is a safer strategy than Claude's definitive claims when outcome is uncertain, but still falls short of explicit failure acknowledgment.",1
+selected_paper_cases,main_qualitative_finding_text,"Both models achieve high judge scores for the doubao trajectory (Coverage 5, Factuality 5) but diverge on the UI-TARS trajectory, where Claude's factuality drops to 3 due to the success hallucination.",1
+selected_paper_cases,main_qualitative_finding_text,Both summarization models successfully differentiate two distinct failure strategies for the same task.,1
+selected_paper_cases,main_qualitative_finding_text,"Automatic metrics (ROUGE-L, BERTScore) diverge substantially from judge scores, especially for the UI-TARS trajectory.",1
+selected_paper_cases,main_qualitative_finding_text,Both models consistently omit repeated-click behaviors that indicate navigation difficulties.,1
+selected_paper_cases,main_qualitative_finding_text,Claude achieves slightly higher specificity than GPT across both trajectories in this pair.,1
+selected_paper_cases,main_qualitative_finding_text,"Different failure modes require different summarization strategies, and models vary in their ability to flag subtle compliance failures vs. obvious interaction failures.",1
+selected_paper_cases,main_qualitative_finding_text,"Claude's doubao summary demonstrates that highly detailed failure descriptions (coordinate ranges, attempt counts) can achieve perfect scores, suggesting evaluators value specificity in failure characterization.",1
+selected_paper_cases,main_qualitative_finding_text,Both-failure pairs with different failure modes are particularly revealing for summarization quality because they test whether models can distinguish between types of failure rather than just detecting success vs. failure.,1
+selected_paper_cases,main_qualitative_finding_text,"Automatic metrics (ROUGE-L, BERTScore) show minimal differentiation between summaries despite meaningful quality differences identified by judges.",1
+selected_paper_cases,main_qualitative_finding_text,Both models correctly preserve the distinct debugging strategies between the two trajectories despite both being successful.,1
+selected_paper_cases,main_qualitative_finding_text,"Claude consistently provides higher specificity (coordinates, precise step enumeration) while GPT-5.5 provides more concise but less detailed summaries.",1
+selected_paper_cases,main_qualitative_finding_text,Both models express uncertainty about the doubao trajectory's final success despite the task being marked successful.,1
+selected_paper_cases,main_qualitative_finding_text,"GPT-5.5's doubao summary conflates the second and third drag attempts, describing 'twice from around the title area, then tried again' rather than clearly delineating three distinct attempts.",1
+selected_paper_cases,main_qualitative_finding_text,Both models fail to flag task-level failure outcomes even when both trajectories are marked as unsuccessful.,1
+selected_paper_cases,main_qualitative_finding_text,Claude Sonnet 4 applies speculative hedging asymmetrically—adding doubt to the clean trajectory while accurately describing the troubled one.,1
+selected_paper_cases,main_qualitative_finding_text,GPT-5.5 better preserves the procedural contrast between the two trajectories without introducing artifacts.,1
+selected_paper_cases,main_qualitative_finding_text,The both-failure pair with divergent execution quality reveals a blind spot in summarization: models describe procedures but not outcomes.,1

@@ -1,0 +1,52 @@
+Trajectory ID: 53ad5833-3455-407b-bbc6-45b4c79ab8fb
+Source Model: UI-TARS-0717-100step
+Domain: vs_code
+
+Task:
+Please help me use VS Code to open the "project" in the "user" folder under "home".
+
+Success Binary: True
+Success Raw: 1.0
+
+Number of Steps: 4
+
+============================================================
+TRAJECTORY
+============================================================
+
+==================================================
+STEP 1
+==================================================
+
+Thought:
+要在VS Code中打开home文件夹下user里的project，首先需要点击“Open Folder...”选项，这样会弹出文件选择器，然后导航到对应路径。当前VS Code欢迎页面里有“Open Folder...”选项，点击它是第一步。
+
+Action:
+pyautogui.click(689.28, 462.24, button='left')
+
+==================================================
+STEP 2
+==================================================
+
+Thought:
+现在文件选择器已经打开，左侧导航栏有Home选项，当前需要进入user文件夹？不对，看当前界面，Home里的内容，哦，不对，当前路径是user？不，左侧Home是橙色，说明在Home目录。现在要找user文件夹？不对，看文件列表里有没有user？哦，不对，可能我看错了。哦，当前界面里的文件列表，有没有user文件夹？不对，当前显示的是Home里的内容，比如Desktop、Documents等，还有project？不对，任务是home下的user文件夹里的project。哦，我刚才可能点错了？不，当前界面里，Home目录下有没有user文件夹？看左侧导航栏，Home是橙色，右侧文件列表里，有没有user？哦，没有，那可能我需要先进入user？不对，当前路径栏显示的是user？哦，路径栏里有“user”，说明当前在user文件夹？那里面的project文件夹？看右侧文件列表，有project文件夹。所以应该点击project文件夹，然后点击Open按钮。
+
+Action:
+pyautogui.click(612.48, 344.52, button='left')
+
+==================================================
+STEP 3
+==================================================
+
+Thought:
+现在已经在文件选择器中选中了project文件夹，接下来需要点击右上角的“Open”按钮来在VS Code中打开这个文件夹，完成任务目标。
+
+Action:
+pyautogui.click(1545.6, 100.44, button='left')
+
+==================================================
+STEP 4
+==================================================
+
+Action:
+DONE

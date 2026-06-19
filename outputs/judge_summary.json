@@ -1,0 +1,642 @@
+{
+  "input_file": "outputs\\model_summaries.jsonl",
+  "judge_results_file": "outputs\\judge_results.jsonl",
+  "exploded_results_file": "outputs\\judge_results_by_model.jsonl",
+  "judge_name": "claude_judge",
+  "judge_litellm_model": "anthropic/claude-opus-4-6",
+  "num_valid_model_summary_records": 276,
+  "num_grouped_examples": 138,
+  "num_judge_records": 138,
+  "num_judge_ok": 138,
+  "num_judge_error": 0,
+  "pairwise_winners": {
+    "claude_sonnet_4_6": 83,
+    "gpt_5_5": 11,
+    "tie": 44
+  },
+  "by_model": {
+    "claude_sonnet_4_6": {
+      "n": 138,
+      "best_count": 83,
+      "tie_count": 44,
+      "mean_scores": {
+        "coverage_score": 4.971014492753623,
+        "factuality_score": 4.8768115942028984,
+        "temporal_order_score": 4.971014492753623,
+        "specificity_score": 4.949275362318841,
+        "procedural_usefulness_score": 4.956521739130435
+      },
+      "omission_severity_counts": {
+        "minor": 9,
+        "none": 129
+      },
+      "hallucination_severity_counts": {
+        "major": 2,
+        "minor": 9,
+        "none": 127
+      },
+      "main_error_type_counts": {
+        "hallucination": 5,
+        "loss_of_specificity": 4,
+        "misleading_framing": 6,
+        "omission": 6,
+        "wrong_order": 2,
+        "wrong_outcome": 3
+      },
+      "main_error_severity_counts": {
+        "major": 2,
+        "minor": 24
+      }
+    },
+    "gpt_5_5": {
+      "n": 138,
+      "best_count": 11,
+      "tie_count": 44,
+      "mean_scores": {
+        "coverage_score": 4.804347826086956,
+        "factuality_score": 4.927536231884058,
+        "temporal_order_score": 4.956521739130435,
+        "specificity_score": 4.282608695652174,
+        "procedural_usefulness_score": 4.579710144927536
+      },
+      "omission_severity_counts": {
+        "minor": 39,
+        "none": 99
+      },
+      "hallucination_severity_counts": {
+        "minor": 6,
+        "none": 132
+      },
+      "main_error_type_counts": {
+        "hallucination": 1,
+        "loss_of_specificity": 64,
+        "misleading_framing": 4,
+        "omission": 16,
+        "wrong_order": 1
+      },
+      "main_error_severity_counts": {
+        "minor": 86
+      }
+    }
+  },
+  "by_model_and_domain": {
+    "claude_sonnet_4_6 | domain=chrome": {
+      "eval_model_name": "claude_sonnet_4_6",
+      "domain": "chrome",
+      "n": 20,
+      "best_count": 8,
+      "tie_count": 12,
+      "mean_scores": {
+        "coverage_score": 5.0,
+        "factuality_score": 4.95,
+        "temporal_order_score": 5.0,
+        "specificity_score": 4.95,
+        "procedural_usefulness_score": 5.0
+      },
+      "main_error_type_counts": {
+        "omission": 1
+      }
+    },
+    "claude_sonnet_4_6 | domain=gimp": {
+      "eval_model_name": "claude_sonnet_4_6",
+      "domain": "gimp",
+      "n": 18,
+      "best_count": 13,
+      "tie_count": 4,
+      "mean_scores": {
+        "coverage_score": 5.0,
+        "factuality_score": 4.944444444444445,
+        "temporal_order_score": 4.888888888888889,
+        "specificity_score": 5.0,
+        "procedural_usefulness_score": 5.0
+      },
+      "main_error_type_counts": {
+        "loss_of_specificity": 1,
+        "omission": 1,
+        "wrong_order": 1
+      }
+    },
+    "claude_sonnet_4_6 | domain=libreoffice_calc": {
+      "eval_model_name": "claude_sonnet_4_6",
+      "domain": "libreoffice_calc",
+      "n": 22,
+      "best_count": 17,
+      "tie_count": 4,
+      "mean_scores": {
+        "coverage_score": 5.0,
+        "factuality_score": 4.909090909090909,
+        "temporal_order_score": 5.0,
+        "specificity_score": 5.0,
+        "procedural_usefulness_score": 4.954545454545454
+      },
+      "main_error_type_counts": {
+        "hallucination": 1,
+        "misleading_framing": 2,
+        "omission": 1
+      }
+    },
+    "claude_sonnet_4_6 | domain=libreoffice_impress": {
+      "eval_model_name": "claude_sonnet_4_6",
+      "domain": "libreoffice_impress",
+      "n": 22,
+      "best_count": 13,
+      "tie_count": 6,
+      "mean_scores": {
+        "coverage_score": 4.954545454545454,
+        "factuality_score": 4.7727272727272725,
+        "temporal_order_score": 4.909090909090909,
+        "specificity_score": 4.954545454545454,
+        "procedural_usefulness_score": 4.909090909090909
+      },
+      "main_error_type_counts": {
+        "hallucination": 1,
+        "loss_of_specificity": 1,
+        "misleading_framing": 2,
+        "omission": 1,
+        "wrong_order": 1,
+        "wrong_outcome": 2
+      }
+    },
+    "claude_sonnet_4_6 | domain=libreoffice_writer": {
+      "eval_model_name": "claude_sonnet_4_6",
+      "domain": "libreoffice_writer",
+      "n": 4,
+      "best_count": 1,
+      "tie_count": 3,
+      "mean_scores": {
+        "coverage_score": 5.0,
+        "factuality_score": 5.0,
+        "temporal_order_score": 5.0,
+        "specificity_score": 5.0,
+        "procedural_usefulness_score": 5.0
+      },
+      "main_error_type_counts": {}
+    },
+    "claude_sonnet_4_6 | domain=multi_apps": {
+      "eval_model_name": "claude_sonnet_4_6",
+      "domain": "multi_apps",
+      "n": 20,
+      "best_count": 12,
+      "tie_count": 3,
+      "mean_scores": {
+        "coverage_score": 4.9,
+        "factuality_score": 4.7,
+        "temporal_order_score": 5.0,
+        "specificity_score": 4.85,
+        "procedural_usefulness_score": 4.9
+      },
+      "main_error_type_counts": {
+        "hallucination": 3,
+        "loss_of_specificity": 1,
+        "misleading_framing": 2,
+        "omission": 2
+      }
+    },
+    "claude_sonnet_4_6 | domain=os": {
+      "eval_model_name": "claude_sonnet_4_6",
+      "domain": "os",
+      "n": 4,
+      "best_count": 2,
+      "tie_count": 2,
+      "mean_scores": {
+        "coverage_score": 5.0,
+        "factuality_score": 5.0,
+        "temporal_order_score": 5.0,
+        "specificity_score": 4.75,
+        "procedural_usefulness_score": 5.0
+      },
+      "main_error_type_counts": {
+        "loss_of_specificity": 1
+      }
+    },
+    "claude_sonnet_4_6 | domain=thunderbird": {
+      "eval_model_name": "claude_sonnet_4_6",
+      "domain": "thunderbird",
+      "n": 10,
+      "best_count": 8,
+      "tie_count": 2,
+      "mean_scores": {
+        "coverage_score": 5.0,
+        "factuality_score": 5.0,
+        "temporal_order_score": 5.0,
+        "specificity_score": 5.0,
+        "procedural_usefulness_score": 5.0
+      },
+      "main_error_type_counts": {}
+    },
+    "claude_sonnet_4_6 | domain=vlc": {
+      "eval_model_name": "claude_sonnet_4_6",
+      "domain": "vlc",
+      "n": 12,
+      "best_count": 5,
+      "tie_count": 6,
+      "mean_scores": {
+        "coverage_score": 4.916666666666667,
+        "factuality_score": 4.833333333333333,
+        "temporal_order_score": 5.0,
+        "specificity_score": 4.916666666666667,
+        "procedural_usefulness_score": 4.916666666666667
+      },
+      "main_error_type_counts": {
+        "wrong_outcome": 1
+      }
+    },
+    "claude_sonnet_4_6 | domain=vs_code": {
+      "eval_model_name": "claude_sonnet_4_6",
+      "domain": "vs_code",
+      "n": 6,
+      "best_count": 4,
+      "tie_count": 2,
+      "mean_scores": {
+        "coverage_score": 5.0,
+        "factuality_score": 5.0,
+        "temporal_order_score": 5.0,
+        "specificity_score": 5.0,
+        "procedural_usefulness_score": 5.0
+      },
+      "main_error_type_counts": {}
+    },
+    "gpt_5_5 | domain=chrome": {
+      "eval_model_name": "gpt_5_5",
+      "domain": "chrome",
+      "n": 20,
+      "best_count": 0,
+      "tie_count": 12,
+      "mean_scores": {
+        "coverage_score": 4.85,
+        "factuality_score": 4.95,
+        "temporal_order_score": 5.0,
+        "specificity_score": 4.45,
+        "procedural_usefulness_score": 4.8
+      },
+      "main_error_type_counts": {
+        "loss_of_specificity": 6
+      }
+    },
+    "gpt_5_5 | domain=gimp": {
+      "eval_model_name": "gpt_5_5",
+      "domain": "gimp",
+      "n": 18,
+      "best_count": 1,
+      "tie_count": 4,
+      "mean_scores": {
+        "coverage_score": 4.833333333333333,
+        "factuality_score": 5.0,
+        "temporal_order_score": 4.944444444444445,
+        "specificity_score": 4.166666666666667,
+        "procedural_usefulness_score": 4.666666666666667
+      },
+      "main_error_type_counts": {
+        "loss_of_specificity": 9,
+        "omission": 3
+      }
+    },
+    "gpt_5_5 | domain=libreoffice_calc": {
+      "eval_model_name": "gpt_5_5",
+      "domain": "libreoffice_calc",
+      "n": 22,
+      "best_count": 1,
+      "tie_count": 4,
+      "mean_scores": {
+        "coverage_score": 4.681818181818182,
+        "factuality_score": 4.863636363636363,
+        "temporal_order_score": 5.0,
+        "specificity_score": 4.136363636363637,
+        "procedural_usefulness_score": 4.318181818181818
+      },
+      "main_error_type_counts": {
+        "loss_of_specificity": 16,
+        "misleading_framing": 2,
+        "omission": 4
+      }
+    },
+    "gpt_5_5 | domain=libreoffice_impress": {
+      "eval_model_name": "gpt_5_5",
+      "domain": "libreoffice_impress",
+      "n": 22,
+      "best_count": 3,
+      "tie_count": 6,
+      "mean_scores": {
+        "coverage_score": 4.7727272727272725,
+        "factuality_score": 4.818181818181818,
+        "temporal_order_score": 4.909090909090909,
+        "specificity_score": 4.181818181818182,
+        "procedural_usefulness_score": 4.5
+      },
+      "main_error_type_counts": {
+        "hallucination": 1,
+        "loss_of_specificity": 9,
+        "misleading_framing": 1,
+        "omission": 3
+      }
+    },
+    "gpt_5_5 | domain=libreoffice_writer": {
+      "eval_model_name": "gpt_5_5",
+      "domain": "libreoffice_writer",
+      "n": 4,
+      "best_count": 0,
+      "tie_count": 3,
+      "mean_scores": {
+        "coverage_score": 5.0,
+        "factuality_score": 5.0,
+        "temporal_order_score": 5.0,
+        "specificity_score": 4.75,
+        "procedural_usefulness_score": 5.0
+      },
+      "main_error_type_counts": {}
+    },
+    "gpt_5_5 | domain=multi_apps": {
+      "eval_model_name": "gpt_5_5",
+      "domain": "multi_apps",
+      "n": 20,
+      "best_count": 5,
+      "tie_count": 3,
+      "mean_scores": {
+        "coverage_score": 4.75,
+        "factuality_score": 4.95,
+        "temporal_order_score": 4.9,
+        "specificity_score": 4.35,
+        "procedural_usefulness_score": 4.6
+      },
+      "main_error_type_counts": {
+        "loss_of_specificity": 10,
+        "misleading_framing": 1,
+        "omission": 4,
+        "wrong_order": 1
+      }
+    },
+    "gpt_5_5 | domain=os": {
+      "eval_model_name": "gpt_5_5",
+      "domain": "os",
+      "n": 4,
+      "best_count": 0,
+      "tie_count": 2,
+      "mean_scores": {
+        "coverage_score": 5.0,
+        "factuality_score": 5.0,
+        "temporal_order_score": 5.0,
+        "specificity_score": 4.5,
+        "procedural_usefulness_score": 4.5
+      },
+      "main_error_type_counts": {
+        "loss_of_specificity": 2
+      }
+    },
+    "gpt_5_5 | domain=thunderbird": {
+      "eval_model_name": "gpt_5_5",
+      "domain": "thunderbird",
+      "n": 10,
+      "best_count": 0,
+      "tie_count": 2,
+      "mean_scores": {
+        "coverage_score": 5.0,
+        "factuality_score": 5.0,
+        "temporal_order_score": 5.0,
+        "specificity_score": 4.2,
+        "procedural_usefulness_score": 4.4
+      },
+      "main_error_type_counts": {
+        "loss_of_specificity": 6
+      }
+    },
+    "gpt_5_5 | domain=vlc": {
+      "eval_model_name": "gpt_5_5",
+      "domain": "vlc",
+      "n": 12,
+      "best_count": 1,
+      "tie_count": 6,
+      "mean_scores": {
+        "coverage_score": 4.833333333333333,
+        "factuality_score": 5.0,
+        "temporal_order_score": 5.0,
+        "specificity_score": 4.5,
+        "procedural_usefulness_score": 4.75
+      },
+      "main_error_type_counts": {
+        "loss_of_specificity": 1,
+        "omission": 2
+      }
+    },
+    "gpt_5_5 | domain=vs_code": {
+      "eval_model_name": "gpt_5_5",
+      "domain": "vs_code",
+      "n": 6,
+      "best_count": 0,
+      "tie_count": 2,
+      "mean_scores": {
+        "coverage_score": 4.666666666666667,
+        "factuality_score": 4.833333333333333,
+        "temporal_order_score": 4.833333333333333,
+        "specificity_score": 4.0,
+        "procedural_usefulness_score": 4.5
+      },
+      "main_error_type_counts": {
+        "loss_of_specificity": 5
+      }
+    }
+  },
+  "by_model_and_source_agent": {
+    "claude_sonnet_4_6 | source_model=UI-TARS-0717-100step": {
+      "eval_model_name": "claude_sonnet_4_6",
+      "source_model": "UI-TARS-0717-100step",
+      "n": 69,
+      "best_count": 36,
+      "tie_count": 26,
+      "mean_scores": {
+        "coverage_score": 4.956521739130435,
+        "factuality_score": 4.840579710144928,
+        "temporal_order_score": 4.942028985507246,
+        "specificity_score": 4.927536231884058,
+        "procedural_usefulness_score": 4.942028985507246
+      },
+      "main_error_type_counts": {
+        "hallucination": 4,
+        "loss_of_specificity": 2,
+        "misleading_framing": 4,
+        "omission": 4,
+        "wrong_order": 2,
+        "wrong_outcome": 1
+      }
+    },
+    "claude_sonnet_4_6 | source_model=doubao-1-5-thinking-vision-pro-250428-100step": {
+      "eval_model_name": "claude_sonnet_4_6",
+      "source_model": "doubao-1-5-thinking-vision-pro-250428-100step",
+      "n": 69,
+      "best_count": 47,
+      "tie_count": 18,
+      "mean_scores": {
+        "coverage_score": 4.9855072463768115,
+        "factuality_score": 4.913043478260869,
+        "temporal_order_score": 5.0,
+        "specificity_score": 4.971014492753623,
+        "procedural_usefulness_score": 4.971014492753623
+      },
+      "main_error_type_counts": {
+        "hallucination": 1,
+        "loss_of_specificity": 2,
+        "misleading_framing": 2,
+        "omission": 2,
+        "wrong_outcome": 2
+      }
+    },
+    "gpt_5_5 | source_model=UI-TARS-0717-100step": {
+      "eval_model_name": "gpt_5_5",
+      "source_model": "UI-TARS-0717-100step",
+      "n": 69,
+      "best_count": 7,
+      "tie_count": 26,
+      "mean_scores": {
+        "coverage_score": 4.855072463768116,
+        "factuality_score": 4.956521739130435,
+        "temporal_order_score": 4.9855072463768115,
+        "specificity_score": 4.405797101449275,
+        "procedural_usefulness_score": 4.7101449275362315
+      },
+      "main_error_type_counts": {
+        "loss_of_specificity": 27,
+        "misleading_framing": 2,
+        "omission": 7
+      }
+    },
+    "gpt_5_5 | source_model=doubao-1-5-thinking-vision-pro-250428-100step": {
+      "eval_model_name": "gpt_5_5",
+      "source_model": "doubao-1-5-thinking-vision-pro-250428-100step",
+      "n": 69,
+      "best_count": 4,
+      "tie_count": 18,
+      "mean_scores": {
+        "coverage_score": 4.753623188405797,
+        "factuality_score": 4.898550724637682,
+        "temporal_order_score": 4.927536231884058,
+        "specificity_score": 4.159420289855072,
+        "procedural_usefulness_score": 4.449275362318841
+      },
+      "main_error_type_counts": {
+        "hallucination": 1,
+        "loss_of_specificity": 37,
+        "misleading_framing": 2,
+        "omission": 9,
+        "wrong_order": 1
+      }
+    }
+  },
+  "by_model_and_success": {
+    "claude_sonnet_4_6 | success_binary=False": {
+      "eval_model_name": "claude_sonnet_4_6",
+      "success_binary": "False",
+      "n": 87,
+      "best_count": 50,
+      "tie_count": 28,
+      "mean_scores": {
+        "coverage_score": 4.977011494252873,
+        "factuality_score": 4.862068965517241,
+        "temporal_order_score": 4.977011494252873,
+        "specificity_score": 4.942528735632184,
+        "procedural_usefulness_score": 4.954022988505747
+      },
+      "main_error_type_counts": {
+        "hallucination": 2,
+        "loss_of_specificity": 4,
+        "misleading_framing": 5,
+        "omission": 3,
+        "wrong_order": 1,
+        "wrong_outcome": 3
+      }
+    },
+    "claude_sonnet_4_6 | success_binary=None": {
+      "eval_model_name": "claude_sonnet_4_6",
+      "success_binary": "None",
+      "n": 3,
+      "best_count": 2,
+      "tie_count": 0,
+      "mean_scores": {
+        "coverage_score": 4.666666666666667,
+        "factuality_score": 4.666666666666667,
+        "temporal_order_score": 5.0,
+        "specificity_score": 4.666666666666667,
+        "procedural_usefulness_score": 4.666666666666667
+      },
+      "main_error_type_counts": {
+        "hallucination": 1,
+        "omission": 1
+      }
+    },
+    "claude_sonnet_4_6 | success_binary=True": {
+      "eval_model_name": "claude_sonnet_4_6",
+      "success_binary": "True",
+      "n": 48,
+      "best_count": 31,
+      "tie_count": 16,
+      "mean_scores": {
+        "coverage_score": 4.979166666666667,
+        "factuality_score": 4.916666666666667,
+        "temporal_order_score": 4.958333333333333,
+        "specificity_score": 4.979166666666667,
+        "procedural_usefulness_score": 4.979166666666667
+      },
+      "main_error_type_counts": {
+        "hallucination": 2,
+        "misleading_framing": 1,
+        "omission": 2,
+        "wrong_order": 1
+      }
+    },
+    "gpt_5_5 | success_binary=False": {
+      "eval_model_name": "gpt_5_5",
+      "success_binary": "False",
+      "n": 87,
+      "best_count": 9,
+      "tie_count": 28,
+      "mean_scores": {
+        "coverage_score": 4.804597701149425,
+        "factuality_score": 4.942528735632184,
+        "temporal_order_score": 4.954022988505747,
+        "specificity_score": 4.310344827586207,
+        "procedural_usefulness_score": 4.574712643678161
+      },
+      "main_error_type_counts": {
+        "loss_of_specificity": 34,
+        "misleading_framing": 2,
+        "omission": 13,
+        "wrong_order": 1
+      }
+    },
+    "gpt_5_5 | success_binary=None": {
+      "eval_model_name": "gpt_5_5",
+      "success_binary": "None",
+      "n": 3,
+      "best_count": 1,
+      "tie_count": 0,
+      "mean_scores": {
+        "coverage_score": 5.0,
+        "factuality_score": 5.0,
+        "temporal_order_score": 5.0,
+        "specificity_score": 4.333333333333333,
+        "procedural_usefulness_score": 4.666666666666667
+      },
+      "main_error_type_counts": {
+        "loss_of_specificity": 2
+      }
+    },
+    "gpt_5_5 | success_binary=True": {
+      "eval_model_name": "gpt_5_5",
+      "success_binary": "True",
+      "n": 48,
+      "best_count": 1,
+      "tie_count": 16,
+      "mean_scores": {
+        "coverage_score": 4.791666666666667,
+        "factuality_score": 4.895833333333333,
+        "temporal_order_score": 4.958333333333333,
+        "specificity_score": 4.229166666666667,
+        "procedural_usefulness_score": 4.583333333333333
+      },
+      "main_error_type_counts": {
+        "hallucination": 1,
+        "loss_of_specificity": 28,
+        "misleading_framing": 2,
+        "omission": 3
+      }
+    }
+  }
+}

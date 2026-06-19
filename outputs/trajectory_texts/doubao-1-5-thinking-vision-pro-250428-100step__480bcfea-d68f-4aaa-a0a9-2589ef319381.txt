@@ -1,0 +1,104 @@
+Trajectory ID: 480bcfea-d68f-4aaa-a0a9-2589ef319381
+Source Model: doubao-1-5-thinking-vision-pro-250428-100step
+Domain: chrome
+
+Task:
+I do not like the design of the new 2023 chrome UI. I want to keep using the original one. Can you disable the new 2023 version chrome UI for me? 
+
+Success Binary: False
+Success Raw: 0.0
+
+Number of Steps: 9
+
+============================================================
+TRAJECTORY
+============================================================
+
+==================================================
+STEP 1
+==================================================
+
+Thought:
+要禁用Chrome的新2023 UI，需先访问Chrome的实验性功能页面（chrome://flags）。第一步要激活地址栏以输入该网址，因此需点击地址栏。地址栏位于浏览器顶部，显示“Search Google or type a URL”的区域。点击后可输入目标网址。
+
+Action:
+pyautogui.click(311.04, 88.56, button='left')
+
+==================================================
+STEP 2
+==================================================
+
+Thought:
+要进入Chrome的实验性功能设置页面，需在已激活的地址栏中输入“chrome://flags”。输入该网址后按回车可进入对应页面，在那里能找到控制新UI的相关选项。因此，下一步是在地址栏输入“chrome://flags”。
+
+Action:
+pyperclip.copy('chrome://flags')
+pyautogui.hotkey('ctrl', 'v')
+
+==================================================
+STEP 3
+==================================================
+
+Thought:
+地址栏已输入“chrome://flags”，按下回车键可导航至Chrome实验性功能设置页面，这是找到禁用新UI选项的必要步骤。需执行回车键操作来加载该页面。
+
+Action:
+pyautogui.hotkey('enter')
+
+==================================================
+STEP 4
+==================================================
+
+Thought:
+要找到禁用2023新UI的选项，需在实验性功能页面的搜索框中输入关键词。首先要激活搜索框，以便输入“chrome refresh 2023”来定位相关设置。搜索框位于页面顶部，显示“Search flags”，点击它可开始输入。
+
+Action:
+pyautogui.click(768.0, 139.32, button='left')
+
+==================================================
+STEP 5
+==================================================
+
+Thought:
+要定位到控制2023新Chrome UI的实验性标志，需在已激活的搜索框中输入关键词“chrome refresh 2023”。该关键词对应新UI的更新项目，输入后可筛选出相关设置选项，以便后续调整。因此，需在搜索框中输入该内容。
+
+Action:
+pyperclip.copy('chrome refresh 2023')
+pyautogui.hotkey('ctrl', 'v')
+
+==================================================
+STEP 6
+==================================================
+
+Thought:
+要禁用2023新Chrome UI，需调整“Chrome Refresh 2023”选项的设置。该选项当前为“Default”，需点击其右侧下拉菜单以选择“Disabled”。点击下拉菜单是修改设置的第一步，之后可选择禁用选项。
+
+Action:
+pyautogui.click(1272.96, 420.12, button='left')
+
+==================================================
+STEP 7
+==================================================
+
+Thought:
+要禁用2023新Chrome UI，需将“Chrome Refresh 2023”选项的下拉菜单从“Default”改为“Disabled”。当前下拉菜单已展开，显示可选选项，点击“Disabled”选项即可完成该设置的修改，这是实现目标的关键步骤。
+
+Action:
+pyautogui.click(1228.8, 475.2, button='left')
+
+==================================================
+STEP 8
+==================================================
+
+Thought:
+要使禁用2023新Chrome UI的设置生效，需重启Chrome浏览器。页面右下角有“Relaunch”按钮，点击该按钮可完成重启，应用修改后的设置。因此，下一步是点击“Relaunch”按钮。
+
+Action:
+pyautogui.click(1824.0, 1033.56, button='left')
+
+==================================================
+STEP 9
+==================================================
+
+Action:
+DONE

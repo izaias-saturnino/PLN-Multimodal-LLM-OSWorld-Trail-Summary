@@ -1,0 +1,42 @@
+Trajectory ID: d52d6308-ec58-42b7-a2c9-de80e4837b2b
+Source Model: doubao-1-5-thinking-vision-pro-250428-100step
+Domain: gimp
+
+Task:
+Could you help me remove the dock on the left side of the screen in the GIMP?
+
+Success Binary: True
+Success Raw: 1.0
+
+Number of Steps: 3
+
+============================================================
+TRAJECTORY
+============================================================
+
+==================================================
+STEP 1
+==================================================
+
+Thought:
+要移除GIMP左侧的dock，需先通过菜单栏的Windows选项管理界面布局。首先点击顶部菜单栏的“Windows”按钮，展开相关窗口控制选项，以便后续找到隐藏左侧dock的设置。
+
+Action:
+pyautogui.click(535.68, 74.52, button='left')
+
+==================================================
+STEP 2
+==================================================
+
+Thought:
+现在Windows菜单已展开，其中“Hide Docks”选项可用于隐藏左侧的dock区域。选择该选项能直接实现隐藏左侧dock的目标，因此下一步应点击“Hide Docks”选项。
+
+Action:
+pyautogui.click(558.72, 186.84, button='left')
+
+==================================================
+STEP 3
+==================================================
+
+Action:
+DONE

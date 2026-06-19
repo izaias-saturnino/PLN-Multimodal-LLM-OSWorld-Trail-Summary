@@ -1,0 +1,71 @@
+Trajectory ID: 9d425400-e9b2-4424-9a4b-d4c7abac4140
+Source Model: UI-TARS-0717-100step
+Domain: vs_code
+
+Task:
+I want to make the tabs wrapped over multiple lines when exceeding available space, please help modify the setting of VS Code.
+
+Success Binary: True
+Success Raw: 1.0
+
+Number of Steps: 5
+
+============================================================
+TRAJECTORY
+============================================================
+
+==================================================
+STEP 1
+==================================================
+
+Thought:
+要修改VS Code中标签页换行的设置，首先需要打开设置界面。VS Code的设置可以通过左下角的齿轮图标进入，或者用快捷键Ctrl+,。首先观察界面，左下角有齿轮图标，点击它可以打开设置菜单，然后进入设置页面查找标签页相关的配置。
+
+首先，点击左下角的齿轮（Settings）图标，打开设置入口。然后在设置中搜索“tabs wrap”相关的选项，找到控制标签页换行的设置，修改为允许换行。
+
+步骤：
+1. 点击左下角的齿轮图标，打开设置菜单。
+2. 在设置中搜索“workbench.editor.wrapTabs”，找到该选项并启用。
+
+现在第一步是点击左下角的齿轮图标。
+
+Action:
+pyautogui.click(90.24, 1031.4, button='left')
+
+==================================================
+STEP 2
+==================================================
+
+Thought:
+现在已经打开了齿轮图标的菜单，下一步需要进入设置界面来查找标签页换行的选项。菜单中看到“Settings”选项，点击它可以进入VS Code的设置页面，之后就能搜索相关的配置项“workbench.editor.wrapTabs”来启用标签页换行。所以现在应该点击菜单里的“Settings”选项。
+
+Action:
+pyautogui.click(192.0, 847.8, button='left')
+
+==================================================
+STEP 3
+==================================================
+
+Thought:
+现在已经进入了VS Code的设置页面，需要找到控制标签页换行的设置项。这个设置项的名称是“workbench.editor.wrapTabs”，所以应该在顶部的搜索框中输入这个关键词来定位。首先点击搜索框，然后输入“workbench.editor.wrapTabs”来查找相关设置。
+
+Action:
+pyperclip.copy('workbench.editor.wrapTabs')
+pyautogui.hotkey('ctrl', 'v')
+
+==================================================
+STEP 4
+==================================================
+
+Thought:
+现在已经找到了“Workbench > Editor: Wrap Tabs”这个设置项，它的描述是控制标签页是否在空间不足时换行。当前这个选项的复选框是未选中的，需要点击复选框来启用这个功能，这样标签页就会在超出可用空间时换行显示。
+
+Action:
+pyautogui.click(792.96, 263.52, button='left')
+
+==================================================
+STEP 5
+==================================================
+
+Action:
+DONE

@@ -1,0 +1,1022 @@
+Trajectory ID: 030eeff7-b492-4218-b312-701ec99ee0cc
+Source Model: doubao-1-5-thinking-vision-pro-250428-100step
+Domain: chrome
+
+Task:
+Can you enable the 'Do Not Track' feature in Chrome to enhance my online privacy?
+
+Success Binary: False
+Success Raw: 0.0
+
+Number of Steps: 100
+
+============================================================
+TRAJECTORY
+============================================================
+
+==================================================
+STEP 1
+==================================================
+
+Thought:
+要启用Chrome的“Do Not Track”功能，首先需打开Chrome的设置菜单。Chrome浏览器右上角的三点图标是打开设置菜单的入口，所以第一步应点击该三点图标。点击后会展开包含“设置”等选项的下拉菜单，后续才能进入隐私设置区域。
+
+Action:
+pyautogui.click(1895.04, 88.56, button='left')
+
+==================================================
+STEP 2
+==================================================
+
+Thought:
+要启用“Do Not Track”功能，需先进入Chrome的设置页面。当前已打开浏览器右上角的菜单，其中“Settings”选项是进入设置界面的入口。点击“Settings”后，就能在设置页面中找到隐私和安全性相关的配置项，进而找到“Do Not Track”的设置选项。因此，下一步应点击菜单中的“Settings”选项。
+
+Action:
+pyautogui.click(1566.72, 807.84, button='left')
+
+==================================================
+STEP 3
+==================================================
+
+Thought:
+要启用“Do Not Track”功能，需先进入“隐私和安全性”设置页面。当前在Chrome的设置主界面，左侧菜单栏中有“Privacy and security”选项，点击该选项可进入隐私相关设置区域，后续才能找到“Do Not Track”的配置项。因此，下一步应点击左侧的“Privacy and security”选项。
+
+Action:
+pyautogui.click(174.72, 276.48, button='left')
+
+==================================================
+STEP 4
+==================================================
+
+Thought:
+要启用“Do Not Track”功能，需进入“Site settings”选项，因为该选项用于控制网站可使用和显示的信息（如位置、摄像头、弹出窗口等），而“Do Not Track”属于网站相关的隐私设置范畴。当前在“Privacy and security”页面，“Site settings”选项位于页面下方，点击该选项可进入更详细的网站设置界面，后续就能找到“Do Not Track”的配置项。因此，下一步应点击“Site settings”选项。
+
+Action:
+pyautogui.click(746.88, 981.72, button='left')
+
+==================================================
+STEP 5
+==================================================
+
+Thought:
+当前处于Chrome的“Site settings”页面，需找到“Do Not Track”选项。由于页面内容较长，当前可见区域未显示该选项，因此需要向下滚动页面以查看更多设置项。通过滚动操作可以浏览到页面下方可能包含“Do Not Track”的区域，从而继续完成启用该功能的任务。
+
+Action:
+pyautogui.scroll(-5, x=992.64, y=937.44)
+
+==================================================
+STEP 6
+==================================================
+
+Thought:
+当前处于Chrome的“Site settings”页面，目标是找到“Do Not Track”选项。由于页面内容较长，当前可见区域未显示该选项，因此需要继续向下滚动页面以浏览更多设置项，确保能定位到“Do Not Track”的配置入口。
+
+Action:
+pyautogui.scroll(-5, x=992.64, y=937.44)
+
+==================================================
+STEP 7
+==================================================
+
+Thought:
+当前处于Chrome的“Site settings”页面，目标是找到“Do Not Track”选项。此前两次向下滚动后页面未显示该选项，推测需调整滚动区域以覆盖更多内容。需继续向下滚动页面，聚焦于页面中间区域，确保浏览到包含“Do Not Track”的设置项，从而推进启用该功能的任务。
+
+Action:
+pyautogui.scroll(-5, x=992.64, y=711.72)
+
+==================================================
+STEP 8
+==================================================
+
+Thought:
+当前处于Chrome的“Site settings”页面，目标是找到“Do Not Track”选项。此前多次滚动后仍未显示该选项，需继续向下滚动页面以覆盖更多设置区域，确保定位到“Do Not Track”的配置入口。通过调整滚动方向和范围，浏览页面下方可能隐藏的设置项，推进启用该功能的任务。
+
+Action:
+pyautogui.scroll(-5, x=992.64, y=711.72)
+
+==================================================
+STEP 9
+==================================================
+
+Thought:
+之前错误进入了“Site settings”页面，而“Do Not Track”功能实际位于“Privacy and security”主页面。需先返回“Privacy and security”页面，再寻找目标设置项。因此，应点击页面左上角的返回箭头（左箭头图标），回到上一级“Privacy and security”界面，以便后续定位“Do Not Track”选项。
+
+Action:
+pyautogui.click(677.76, 195.48, button='left')
+
+==================================================
+STEP 10
+==================================================
+
+Thought:
+当前处于Chrome的“Location”设置子页面，这是之前误操作进入的路径，需返回至上一级页面以继续寻找“Do Not Track”功能。页面左上角“Location”标题旁的左箭头按钮是返回“Site settings”页面的入口，点击该按钮可回到上一级，后续再从“Site settings”或“Privacy and security”主页面定位目标设置项。因此，下一步应点击该左箭头返回按钮。
+
+Action:
+pyautogui.click(685.44, 195.48, button='left')
+
+==================================================
+STEP 11
+==================================================
+
+Thought:
+之前错误进入“Site settings”页面，而“Do Not Track”功能实际位于“Privacy and security”主页面。需点击页面左上角“Site settings”标题旁的左箭头按钮，返回至上一级“Privacy and security”界面，以便后续定位目标设置项。
+
+Action:
+pyautogui.click(685.44, 195.48, button='left')
+
+==================================================
+STEP 12
+==================================================
+
+Thought:
+当前已回到Chrome的“Privacy and security”主页面，需找到“Do Not Track”功能。由于页面可见区域未显示该选项，需向下滚动页面以浏览更多隐私与安全设置项，确保定位到目标功能入口。因此，下一步应在页面中间区域执行向下滚动操作，查看下方隐藏的设置内容。
+
+Action:
+pyautogui.scroll(-5, x=992.64, y=612.36)
+
+==================================================
+STEP 13
+==================================================
+
+Thought:
+当前处于Chrome的“Privacy and security”页面，需找到“Do Not Track”功能。页面可见区域暂未显示该选项，需继续向下滚动页面以浏览更多隐私与安全设置项，确保定位到目标功能入口。因此，下一步应在页面中间区域执行向下滚动操作，查看下方隐藏的设置内容。
+
+Action:
+pyautogui.scroll(-5, x=992.64, y=612.36)
+
+==================================================
+STEP 14
+==================================================
+
+Thought:
+当前处于Chrome的“Privacy and security”页面，目标是找到“Do Not Track”功能。页面可见区域暂未显示该选项，需继续向下滚动页面以探索更多隐私与安全设置项。通过调整滚动范围，确保覆盖页面下方可能隐藏的设置内容，从而定位到“Do Not Track”的入口。因此，下一步需在页面中间区域执行向下滚动操作，查看更多设置项。
+
+Action:
+pyautogui.scroll(-5, x=992.64, y=612.36)
+
+==================================================
+STEP 15
+==================================================
+
+Thought:
+此前多次滚动页面未找到“Do Not Track”选项，效率较低。页面顶部的“Search settings”搜索框可快速定位目标设置项，因此应先点击该搜索框，激活后输入关键词以精准查找“Do Not Track”功能。
+
+Action:
+pyautogui.click(720.0, 139.32, button='left')
+
+==================================================
+STEP 16
+==================================================
+
+Thought:
+已激活搜索框，为快速定位“Do Not Track”功能，需在搜索框中输入关键词“Do Not Track”。通过搜索可直接过滤出目标设置项，避免继续手动滚动页面查找，提升效率。因此，下一步应在搜索框中输入“Do Not Track”。
+
+Action:
+pyperclip.copy('Do Not Track')
+pyautogui.hotkey('ctrl', 'v')
+
+==================================================
+STEP 17
+==================================================
+
+Thought:
+搜索结果显示存在1个与“Do Not Track”相关的设置项，需进入“Site settings”（其功能为控制网站可使用和显示的信息）以找到目标选项。因此，下一步应点击“Site settings”选项，进入后即可定位并启用“Do Not Track”功能。
+
+Action:
+pyautogui.click(746.88, 583.2, button='left')
+
+==================================================
+STEP 18
+==================================================
+
+Thought:
+当前处于“Site settings”页面，需找到“Do Not Track”设置项。页面可见区域未显示该选项，因此需向下滚动页面以查看更多设置内容，确保定位到目标功能入口。通过滚动操作浏览页面下方隐藏的设置项，推进启用“Do Not Track”功能的任务。
+
+Action:
+pyautogui.scroll(-5, x=992.64, y=612.36)
+
+==================================================
+STEP 19
+==================================================
+
+Thought:
+当前处于“Site settings”页面，搜索“Do Not Track”后需定位目标设置项。页面可见区域仍未显示该选项，因此需继续向下滚动页面，浏览更多设置内容以找到“Do Not Track”的配置入口。通过滚动操作覆盖页面下方隐藏区域，确保不遗漏目标功能。
+
+Action:
+pyautogui.scroll(-5, x=992.64, y=612.36)
+
+==================================================
+STEP 20
+==================================================
+
+Thought:
+当前处于“Site settings”页面，搜索“Do Not Track”后目标设置项仍未在可见区域显示。需继续向下滚动页面，浏览更多设置内容以定位“Do Not Track”的配置入口，确保覆盖页面下方所有隐藏区域，推进功能启用任务。
+
+Action:
+pyautogui.scroll(-5, x=992.64, y=612.36)
+
+==================================================
+STEP 21
+==================================================
+
+Thought:
+当前处于“Site settings”页面，搜索“Do Not Track”后目标设置项仍未在可见区域显示。为确保覆盖页面所有隐藏内容，需再次向下滚动页面，浏览更多设置项以定位“Do Not Track”的配置入口，推进功能启用任务。
+
+Action:
+pyautogui.scroll(-5, x=992.64, y=612.36)
+
+==================================================
+STEP 22
+==================================================
+
+Thought:
+之前误进入“Site settings”页面且未找到目标，需返回“Privacy and security”主页面重新定位“Do Not Track”功能。页面左上角“Site settings”标题旁的左箭头按钮是返回入口，点击后可回到上一级“Privacy and security”界面，以便在正确区域查找目标设置项。
+
+Action:
+pyautogui.click(677.76, 195.48, button='left')
+
+==================================================
+STEP 23
+==================================================
+
+Thought:
+当前处于“Location”设置子页面，需返回至上一级页面以继续寻找“Do Not Track”功能。页面左上角“Location”标题旁的左箭头按钮是返回“Site settings”页面的入口，点击该按钮可回到上一级，后续再从“Site settings”或“Privacy and security”主页面定位目标设置项。因此，下一步应点击该左箭头返回按钮。
+
+Action:
+pyautogui.click(685.44, 195.48, button='left')
+
+==================================================
+STEP 24
+==================================================
+
+Thought:
+此前在“Site settings”页面多次滚动未找到目标，需返回“Privacy and security”主页面重新定位“Do Not Track”功能。页面左上角“Site settings”标题旁的左箭头按钮是返回入口，点击后可回到上一级“Privacy and security”界面，以便在正确区域查找目标设置项。
+
+Action:
+pyautogui.click(685.44, 195.48, button='left')
+
+==================================================
+STEP 25
+==================================================
+
+Thought:
+当前处于Chrome的“Privacy and security”搜索结果页面，搜索“Do Not Track”后显示的“Privacy”选项是关键入口（描述为“Customise the info used by sites to show you ads”，与跟踪设置相关）。需点击该“Privacy”选项，进入后定位“Do Not Track”功能以完成启用。
+
+Action:
+pyautogui.click(727.68, 451.44, button='left')
+
+==================================================
+STEP 26
+==================================================
+
+Thought:
+当前处于“Ads privacy”页面，该路径与“Do Not Track”功能无关，需返回至上一级“Privacy and security”页面重新定位目标设置项。页面左上角“Ads privacy”标题旁的左箭头按钮是返回入口，点击后可回到“Privacy and security”主界面，以便在正确区域查找“Do Not Track”功能。
+
+Action:
+pyautogui.click(677.76, 195.48, button='left')
+
+==================================================
+STEP 27
+==================================================
+
+Thought:
+要启用“Do Not Track”功能，需进入“Site settings”（其功能为控制网站可使用和显示的信息，包含隐私相关的网站级设置）。当前在“Privacy and security”搜索结果页面，“Site settings”选项是关键入口，点击后进入该页面，再通过滚动或查找定位“Do Not Track”设置项。因此，下一步应点击“Site settings”选项，进入后继续探索目标功能。
+
+Action:
+pyautogui.click(746.88, 583.2, button='left')
+
+==================================================
+STEP 28
+==================================================
+
+Thought:
+当前处于“Site settings”页面，需找到“Do Not Track”设置项。页面可见区域未显示该选项，因此需继续向下滚动页面以浏览更多设置内容，确保定位到目标功能入口。通过滚动操作覆盖页面下方隐藏区域，推进启用“Do Not Track”功能的任务。
+
+Action:
+pyautogui.scroll(-5, x=992.64, y=612.36)
+
+==================================================
+STEP 29
+==================================================
+
+Thought:
+当前处于“Site settings”页面，目标“Do Not Track”设置项仍未在可见区域显示。为确保覆盖页面所有隐藏内容，需再次向下滚动页面，浏览更多设置项以定位“Do Not Track”的配置入口，推进功能启用任务。
+
+Action:
+pyautogui.scroll(-5, x=992.64, y=612.36)
+
+==================================================
+STEP 30
+==================================================
+
+Thought:
+此前操作在“Site settings”页面反复滚动未找到目标，需回到“Privacy and security”主页面重新定位。点击左侧菜单栏的“Privacy and security”选项，进入该页面后可直接查找“Do Not Track”功能（其在页面中显示为“Send a 'Do Not Track' request with your browsing traffic”选项），避免在错误路径继续消耗时间。
+
+Action:
+pyautogui.click(174.72, 276.48, button='left')
+
+==================================================
+STEP 31
+==================================================
+
+Thought:
+为高效定位“Do Not Track”功能，需利用页面顶部的搜索框。当前处于“Privacy and security”页面，点击搜索框并输入关键词可直接过滤出目标设置项，避免手动滚动页面的低效操作。因此，下一步应点击搜索框以激活输入状态，准备输入“Do Not Track”。
+
+Action:
+pyautogui.click(720.0, 139.32, button='left')
+
+==================================================
+STEP 32
+==================================================
+
+Thought:
+已激活搜索框，为快速定位“Do Not Track”功能，需在搜索框中输入关键词“Do Not Track”。通过搜索可直接过滤出目标设置项，避免继续手动滚动页面查找，提升效率。因此，下一步应在搜索框中输入“Do Not Track”。
+
+Action:
+pyperclip.copy('Do Not Track')
+pyautogui.hotkey('ctrl', 'v')
+
+==================================================
+STEP 33
+==================================================
+
+Thought:
+搜索结果显示存在1个与“Do Not Track”相关的结果，对应“Privacy”选项（功能为自定义网站用于展示广告的信息）。需点击该“Privacy”选项进入子页面，以定位并启用“Do Not Track”功能。因此，下一步应点击“Privacy”选项。
+
+Action:
+pyautogui.click(727.68, 451.44, button='left')
+
+==================================================
+STEP 34
+==================================================
+
+Thought:
+当前处于“Ads privacy”页面，该路径与“Do Not Track”功能无关，需返回至上一级“Privacy and security”页面重新定位目标设置项。页面左上角“Ads privacy”标题旁的左箭头按钮是返回入口，点击后可回到“Privacy and security”主界面，以便在正确区域查找“Do Not Track”功能。
+
+Action:
+pyautogui.click(677.76, 195.48, button='left')
+
+==================================================
+STEP 35
+==================================================
+
+Thought:
+要启用“Do Not Track”功能，需回到“Privacy and security”主页面并直接浏览设置项。当前处于搜索结果页面，应先点击左侧菜单栏的“Privacy and security”选项，进入该页面后**向下滚动**查找“Send a 'Do Not Track' request with your browsing traffic”这一设置项（该选项通常位于页面中下部，需手动滚动浏览）。通过直接进入主页面并滚动，可避免搜索功能的误导，精准定位目标设置。
+
+Action:
+pyautogui.click(174.72, 276.48, button='left')
+
+==================================================
+STEP 36
+==================================================
+
+Thought:
+当前处于Chrome的“Privacy and security”主页面，需找到“Do Not Track”功能对应的设置项（通常显示为“Send a 'Do Not Track' request with your browsing traffic”）。页面可见区域未显示该选项，因此需**向下滚动页面**以浏览更多隐私与安全设置内容，确保定位到目标功能入口。选择页面中间区域作为滚动焦点，覆盖下方隐藏的设置项，推进启用“Do Not Track”的任务。
+
+Action:
+pyautogui.scroll(-5, x=992.64, y=612.36)
+
+==================================================
+STEP 37
+==================================================
+
+Thought:
+当前处于Chrome的“Privacy and security”页面，目标设置项“Send a 'Do Not Track' request with your browsing traffic”尚未在可见区域显示。需继续向下滚动页面，聚焦于页面中间区域，浏览更多隐私与安全设置内容，确保定位到目标功能入口。通过持续滚动操作覆盖页面下方隐藏的设置项，推进启用“Do Not Track”功能的任务。
+
+Action:
+pyautogui.scroll(-5, x=992.64, y=612.36)
+
+==================================================
+STEP 38
+==================================================
+
+Thought:
+要启用“Do Not Track”功能，需进入“Site settings”（该选项控制网站可使用和显示的信息，包含“Do Not Track”这类网站级隐私设置）。当前在“Privacy and security”页面，“Site settings”选项清晰可见，点击后进入该页面，即可通过滚动或直接查找定位目标设置项。因此，下一步应点击“Site settings”选项，推进功能启用流程。
+
+Action:
+pyautogui.click(746.88, 981.72, button='left')
+
+==================================================
+STEP 39
+==================================================
+
+Thought:
+当前处于Chrome的“Site settings”页面，目标“Do Not Track”设置项未在可见区域显示。需继续向下滚动页面，浏览“Permissions”及“Additional permissions”等区域的隐藏设置项，确保定位到目标功能入口。选择页面中间区域作为滚动焦点，覆盖下方更多内容，推进启用“Do Not Track”的任务。
+
+Action:
+pyautogui.scroll(-5, x=992.64, y=937.44)
+
+==================================================
+STEP 40
+==================================================
+
+Thought:
+当前处于Chrome的“Site settings”页面，目标“Do Not Track”设置项仍未在可见区域显示。需继续向下滚动页面，探索“Additional content settings”及更下方的隐藏设置项，确保覆盖所有可能包含目标功能的区域。通过持续滚动操作，推进定位并启用“Do Not Track”功能的任务。
+
+Action:
+pyautogui.scroll(-5, x=992.64, y=937.44)
+
+==================================================
+STEP 41
+==================================================
+
+Thought:
+此前在“Site settings”页面反复滚动未找到目标，需返回“Privacy and security”主页面重新定位。点击页面左上角“Site settings”标题旁的左箭头按钮，回到上一级“Privacy and security”界面后，**向下滚动页面**即可找到“Send a 'Do Not Track' request with your browsing traffic”设置项（该选项位于隐私与安全设置的中下部区域）。通过返回主页面并滚动，可精准定位目标功能以完成启用。
+
+Action:
+pyautogui.click(677.76, 195.48, button='left')
+
+==================================================
+STEP 42
+==================================================
+
+Thought:
+当前处于“Location”设置子页面，需返回至上一级“Site settings”页面以继续寻找“Do Not Track”功能。页面左上角“Location”标题旁的左箭头按钮是返回入口，点击该按钮可回到“Site settings”界面，后续再从“Site settings”返回“Privacy and security”主页面，确保在正确路径上定位目标设置项。因此，下一步应点击该左箭头返回按钮。
+
+Action:
+pyautogui.click(685.44, 195.48, button='left')
+
+==================================================
+STEP 43
+==================================================
+
+Thought:
+此前在“Site settings”页面多次操作未找到目标，需返回“Privacy and security”主页面重新定位“Do Not Track”功能。页面左上角“Site settings”标题旁的左箭头按钮是返回入口，点击后可回到上一级“Privacy and security”界面，在该页面中**向下滚动**即可找到“Send a 'Do Not Track' request with your browsing traffic”设置项（位于隐私与安全设置的中下部区域）。因此，下一步应点击该左箭头返回按钮，回到主页面后继续操作。
+
+Action:
+pyautogui.click(685.44, 195.48, button='left')
+
+==================================================
+STEP 44
+==================================================
+
+Thought:
+为高效定位“Do Not Track”功能，需利用页面顶部的搜索框快速过滤设置项。当前处于“Privacy and security”主页面，点击搜索框并输入关键词可避免手动滚动的低效操作，直接定位目标设置。因此，下一步应点击搜索框以激活输入状态，准备输入“Do Not Track”。
+
+Action:
+pyautogui.click(720.0, 139.32, button='left')
+
+==================================================
+STEP 45
+==================================================
+
+Thought:
+已激活搜索框，为快速定位“Do Not Track”功能，需在搜索框中输入关键词“Do Not Track”。通过搜索可直接过滤出目标设置项，避免继续手动滚动页面查找，提升效率。因此，下一步应在搜索框中输入“Do Not Track”。
+
+Action:
+pyperclip.copy('Do Not Track')
+pyautogui.hotkey('ctrl', 'v')
+
+==================================================
+STEP 46
+==================================================
+
+Thought:
+搜索结果显示存在1个与“Do Not Track”相关的结果，对应“Privacy”选项（功能为自定义网站用于展示广告的信息，可能包含跟踪相关设置）。需点击该“Privacy”选项进入子页面，以定位并启用“Do Not Track”功能。因此，下一步应点击“Privacy”选项。
+
+Action:
+pyautogui.click(727.68, 451.44, button='left')
+
+==================================================
+STEP 47
+==================================================
+
+Thought:
+当前处于“Ads privacy”页面，该路径与“Do Not Track”功能无关，需返回至上一级“Privacy and security”页面重新定位目标设置项。页面左上角“Ads privacy”标题旁的左箭头按钮是返回入口，点击后可回到“Privacy and security”主界面，以便在正确区域（通过向下滚动查找“Send a 'Do Not Track' request with your browsing traffic”选项）继续操作。因此，下一步应点击该左箭头返回按钮。
+
+Action:
+pyautogui.click(677.76, 195.48, button='left')
+
+==================================================
+STEP 48
+==================================================
+
+Thought:
+要启用“Do Not Track”功能，需先进入Chrome的“Privacy and security”主页面，再通过滚动浏览找到目标设置项。当前处于搜索结果页面，应点击左侧菜单栏的“Privacy and security”选项，进入该页面后**向下滚动**查找“Send a 'Do Not Track' request with your browsing traffic”设置项（该选项位于隐私与安全设置的中下部区域）。通过直接进入主页面并滚动，可精准定位目标功能以完成启用。
+
+Action:
+pyautogui.click(174.72, 276.48, button='left')
+
+==================================================
+STEP 49
+==================================================
+
+Thought:
+当前处于Chrome的“Privacy and security”主页面，需找到“Do Not Track”功能对应的设置项（显示为“Send a 'Do Not Track' request with your browsing traffic”）。页面可见区域未显示该选项，因此需向下滚动页面以浏览更多隐私与安全设置内容，确保定位到目标功能入口。选择页面中间区域作为滚动焦点，覆盖下方隐藏的设置项，推进启用“Do Not Track”的任务。
+
+Action:
+pyautogui.scroll(-5, x=992.64, y=612.36)
+
+==================================================
+STEP 50
+==================================================
+
+Thought:
+当前处于Chrome的“Privacy and security”页面，目标设置项“Send a 'Do Not Track' request with your browsing traffic”仍未在可见区域显示。需继续向下滚动页面，聚焦页面中间区域以浏览更多隐私与安全设置内容，确保覆盖下方隐藏的设置项，推进定位并启用“Do Not Track”功能的任务。
+
+Action:
+pyautogui.scroll(-5, x=992.64, y=612.36)
+
+==================================================
+STEP 51
+==================================================
+
+Thought:
+当前处于Chrome的“Privacy and security”页面，目标设置项“Send a 'Do Not Track' request with your browsing traffic”仍未在可见区域显示。需继续聚焦页面中间区域向下滚动，浏览更多隐私与安全设置内容，确保覆盖下方隐藏的设置项，以定位并启用“Do Not Track”功能。
+
+Action:
+pyautogui.scroll(-5, x=992.64, y=612.36)
+
+==================================================
+STEP 52
+==================================================
+
+Thought:
+当前处于Chrome的“Privacy and security”页面，目标设置项“Send a 'Do Not Track' request with your browsing traffic”需在页面下方区域查找。此前滚动操作未覆盖到目标区域，需继续聚焦页面中间区域向下滚动，确保浏览到隐私与安全设置的完整内容，以定位并启用“Do Not Track”功能。
+
+Action:
+pyautogui.scroll(-5, x=992.64, y=612.36)
+
+==================================================
+STEP 53
+==================================================
+
+Thought:
+此前多次滚动和页面跳转操作效率低下，需利用搜索功能精准定位。当前处于“Privacy and security”页面，页面顶部的“Search settings”搜索框可快速过滤设置项。计划：点击搜索框并输入“Do Not Track”，直接定位目标功能，避免手动滚动的盲目性。
+
+Action:
+pyautogui.click(720.0, 139.32, button='left')
+
+==================================================
+STEP 54
+==================================================
+
+Thought:
+已激活搜索框，为快速定位“Do Not Track”功能，需在搜索框中输入关键词“Do Not Track”。通过搜索可直接过滤出目标设置项，避免继续手动滚动页面的低效操作，确保精准定位功能入口以完成启用。
+
+Action:
+pyperclip.copy('Do Not Track')
+pyautogui.hotkey('ctrl', 'v')
+
+==================================================
+STEP 55
+==================================================
+
+Thought:
+搜索结果显示1个与“Do Not Track”相关的结果，对应“Privacy”选项（功能为自定义网站用于展示广告的信息，可能包含跟踪相关设置）。需点击该“Privacy”选项进入子页面，以定位并启用“Do Not Track”功能。因此，下一步应点击“Privacy”选项。
+
+Action:
+pyautogui.click(727.68, 451.44, button='left')
+
+==================================================
+STEP 56
+==================================================
+
+Thought:
+当前处于“Ads privacy”页面，该路径与“Do Not Track”功能设置无关，需返回至上一级“Privacy and security”页面重新定位目标。点击页面左上角“Ads privacy”标题旁的左箭头返回按钮，回到“Privacy and security”主界面后，**缓慢向下滚动页面**，重点查看“Send a 'Do Not Track' request with your browsing traffic”选项（该选项位于隐私与安全设置的中下部区域，需仔细浏览避免遗漏）。通过返回主页面并精准滚动，可高效定位目标功能以完成启用。
+
+Action:
+pyautogui.click(677.76, 195.48, button='left')
+
+==================================================
+STEP 57
+==================================================
+
+Thought:
+要启用“Do Not Track”功能，需先进入Chrome的“Privacy and security”主页面，再通过滚动浏览找到目标设置项。当前处于搜索结果页面，点击左侧菜单栏的**“Privacy and security”**选项，进入该页面后可直接向下滚动查找“Send a 'Do Not Track' request with your browsing traffic”设置项（该选项位于隐私与安全设置的中下部区域）。通过直接进入主页面并滚动，可精准定位目标功能以完成启用。
+
+Action:
+pyautogui.click(174.72, 276.48, button='left')
+
+==================================================
+STEP 58
+==================================================
+
+Thought:
+当前处于Chrome的“Privacy and security”主页面，需找到“Do Not Track”功能对应的设置项（显示为“Send a 'Do Not Track' request with your browsing traffic”）。页面可见区域未显示该选项，因此需**向下滚动页面**以浏览更多隐私与安全设置内容，确保定位到目标功能入口。选择页面中间区域作为滚动焦点，覆盖下方隐藏的设置项，推进启用“Do Not Track”的任务。
+
+Action:
+pyautogui.scroll(-5, x=992.64, y=612.36)
+
+==================================================
+STEP 59
+==================================================
+
+Thought:
+当前处于Chrome的“Privacy and security”页面，目标设置项“Send a 'Do Not Track' request with your browsing traffic”仍未在可见区域显示。需继续聚焦页面中间区域向下滚动，浏览更多隐私与安全设置内容，确保覆盖下方隐藏的设置项，以定位并启用“Do Not Track”功能。
+
+Action:
+pyautogui.scroll(-5, x=992.64, y=612.36)
+
+==================================================
+STEP 60
+==================================================
+
+Thought:
+当前处于Chrome的“Privacy and security”页面，目标设置项“Send a 'Do Not Track' request with your browsing traffic”需在页面下方区域查找。此前滚动操作未完全覆盖目标区域，需**继续向下滚动页面**，聚焦页面中间区域以浏览更多隐私与安全设置内容，确保定位到该功能入口。通过持续滚动覆盖下方隐藏项，推进启用“Do Not Track”的任务。
+
+Action:
+pyautogui.scroll(-5, x=992.64, y=612.36)
+
+==================================================
+STEP 61
+==================================================
+
+Thought:
+当前处于Chrome的“Privacy and security”页面，目标设置项“Send a 'Do Not Track' request with your browsing traffic”仍未在可见区域显示。需**持续向下滚动页面**，聚焦页面中间区域以覆盖更多隐私与安全设置内容，确保定位到该功能入口。通过逐步浏览下方隐藏项，推进启用“Do Not Track”的任务。
+
+Action:
+pyautogui.scroll(-5, x=992.64, y=612.36)
+
+==================================================
+STEP 62
+==================================================
+
+Thought:
+此前多次滚动和页面跳转操作效率低下，需利用搜索功能精准定位目标。当前处于“Privacy and security”页面，点击顶部**“Search settings”搜索框**并输入“Do Not Track”，可直接过滤出目标设置项，避免手动滚动的盲目性，快速推进启用流程。
+
+Action:
+pyautogui.click(720.0, 139.32, button='left')
+
+==================================================
+STEP 63
+==================================================
+
+Thought:
+已激活搜索框，为快速定位“Do Not Track”功能，需在搜索框中输入关键词“Do Not Track”。通过搜索可直接过滤出目标设置项，避免手动滚动页面的低效操作，确保精准定位功能入口以完成启用。
+
+Action:
+pyperclip.copy('Do Not Track')
+pyautogui.hotkey('ctrl', 'v')
+
+==================================================
+STEP 64
+==================================================
+
+Thought:
+搜索结果显示1个与“Do Not Track”相关的结果，对应“Privacy”选项（功能为自定义网站用于展示广告的信息，可能包含跟踪相关设置）。需点击该“Privacy”选项进入子页面，以定位并启用“Do Not Track”功能。因此，下一步应点击“Privacy”选项。
+
+Action:
+pyautogui.click(727.68, 451.44, button='left')
+
+==================================================
+STEP 65
+==================================================
+
+Thought:
+当前处于“Ads privacy”页面，该路径与“Do Not Track”功能设置无关，需返回至上一级“Privacy and security”页面重新定位目标。点击页面左上角“Ads privacy”标题旁的左箭头返回按钮，回到“Privacy and security”主界面后，需**仔细向下滚动页面**，重点查找“Send a 'Do Not Track' request with your browsing traffic”选项（该选项位于隐私与安全设置的中下部区域，需逐行浏览避免遗漏）。通过返回主页面并精准滚动，可高效定位目标功能以完成启用。
+
+Action:
+pyautogui.click(677.76, 195.48, button='left')
+
+==================================================
+STEP 66
+==================================================
+
+Thought:
+要启用“Do Not Track”功能，需先进入Chrome的“Privacy and security”主页面，在该页面中**向下滚动**查找目标设置项（“Send a 'Do Not Track' request with your browsing traffic”）。当前处于搜索结果页面，点击左侧菜单栏的**“Privacy and security”**选项，进入主页面后可直接浏览隐私与安全设置的完整内容，避免搜索功能的误导，精准定位目标功能以完成启用。
+
+Action:
+pyautogui.click(174.72, 276.48, button='left')
+
+==================================================
+STEP 67
+==================================================
+
+Thought:
+当前处于Chrome的“Privacy and security”主页面，目标设置项“Send a 'Do Not Track' request with your browsing traffic”未在可见区域显示。需通过**向下滚动页面**浏览更多隐私与安全设置内容，确保覆盖下方隐藏的设置项以定位目标功能。选择页面中间区域作为滚动焦点，高效推进启用“Do Not Track”的任务。
+
+Action:
+pyautogui.scroll(-5, x=992.64, y=612.36)
+
+==================================================
+STEP 68
+==================================================
+
+Thought:
+当前处于Chrome的“Privacy and security”主页面，目标设置项“Send a 'Do Not Track' request with your browsing traffic”未在可见区域显示。需继续**向下滚动页面**，聚焦页面中间区域以浏览更多隐私与安全设置内容，确保覆盖下方隐藏的设置项，从而定位到目标功能入口，推进启用“Do Not Track”的任务。
+
+Action:
+pyautogui.scroll(-5, x=992.64, y=612.36)
+
+==================================================
+STEP 69
+==================================================
+
+Thought:
+当前处于Chrome的“Privacy and security”主页面，目标设置项“Send a 'Do Not Track' request with your browsing traffic”尚未在可见区域显示。需继续聚焦页面中间区域执行**向下滚动**操作，以浏览更多隐私与安全设置内容，确保覆盖下方隐藏的设置项，从而定位到目标功能入口，推进启用“Do Not Track”的任务。
+
+Action:
+pyautogui.scroll(-5, x=992.64, y=612.36)
+
+==================================================
+STEP 70
+==================================================
+
+Thought:
+当前处于Chrome的“Privacy and security”主页面，目标设置项“Send a 'Do Not Track' request with your browsing traffic”需在页面下方区域查找。此前滚动操作未完全覆盖目标区域，需**继续向下滚动页面**，聚焦页面中间区域以浏览更多隐私与安全设置内容，确保定位到该功能入口。通过持续滚动覆盖下方隐藏项，推进启用“Do Not Track”的任务。
+
+Action:
+pyautogui.scroll(-5, x=992.64, y=612.36)
+
+==================================================
+STEP 71
+==================================================
+
+Thought:
+此前多次手动滚动和页面跳转操作效率极低，需利用搜索功能精准定位目标。当前处于“Privacy and security”页面，应点击顶部**“Search settings”搜索框**并输入“Do Not Track”，通过搜索直接过滤出目标设置项（“Send a 'Do Not Track' request with your browsing traffic”），避免手动滚动的盲目性，快速推进启用流程。
+
+Action:
+pyautogui.click(720.0, 139.32, button='left')
+
+==================================================
+STEP 72
+==================================================
+
+Thought:
+已激活搜索框，为快速定位“Do Not Track”功能，需在搜索框中输入关键词“Do Not Track”。通过搜索可直接过滤出目标设置项，避免手动滚动页面的低效操作，确保精准定位功能入口以完成启用。
+
+Action:
+pyperclip.copy('Do Not Track')
+pyautogui.hotkey('ctrl', 'v')
+
+==================================================
+STEP 73
+==================================================
+
+Thought:
+搜索结果显示1个与“Do Not Track”相关的结果，对应“Privacy”选项（功能为自定义网站用于展示广告的信息，可能包含跟踪相关设置）。需点击该“Privacy”选项进入子页面，以定位并启用“Do Not Track”功能。因此，下一步应点击“Privacy”选项。
+
+Action:
+pyautogui.click(727.68, 451.44, button='left')
+
+==================================================
+STEP 74
+==================================================
+
+Thought:
+当前处于“Ads privacy”页面，该路径与“Do Not Track”功能设置无关，需返回至上一级“Privacy and security”页面重新定位目标。点击页面左上角“Ads privacy”标题旁的左箭头返回按钮，回到“Privacy and security”主界面后，**缓慢向下滚动页面**，重点查找“Send a 'Do Not Track' request with your browsing traffic”选项（该选项位于隐私与安全设置的中下部区域，需仔细浏览避免遗漏）。通过返回主页面并精准滚动，可高效定位目标功能以完成启用。
+
+Action:
+pyautogui.click(677.76, 195.48, button='left')
+
+==================================================
+STEP 75
+==================================================
+
+Thought:
+要启用“Do Not Track”功能，需进入“Site settings”（该选项负责控制网站可使用和显示的信息，包含“Do Not Track”这类网站级隐私设置）。当前搜索结果中“Site settings”选项清晰可见，点击后进入该页面，即可通过滚动定位目标设置项。因此，下一步应点击“Site settings”选项，推进功能启用流程。
+
+Action:
+pyautogui.click(746.88, 583.2, button='left')
+
+==================================================
+STEP 76
+==================================================
+
+Thought:
+当前处于Chrome的“Site settings”页面，目标“Do Not Track”设置项未在可见区域显示。需**向下滚动页面**以浏览“Permissions”“Additional permissions”及更下方的隐藏设置项，确保定位到目标功能入口。选择页面中间区域作为滚动焦点，覆盖更多内容，推进启用“Do Not Track”的任务。
+
+Action:
+pyautogui.scroll(-5, x=992.64, y=612.36)
+
+==================================================
+STEP 77
+==================================================
+
+Thought:
+当前处于Chrome的“Site settings”页面，目标“Do Not Track”设置项仍未在可见区域显示。需继续聚焦页面中间区域执行**向下滚动**操作，浏览“Additional content settings”及更下方的隐藏设置项，确保覆盖所有可能包含目标功能的区域，推进定位并启用“Do Not Track”功能的任务。
+
+Action:
+pyautogui.scroll(-5, x=992.64, y=612.36)
+
+==================================================
+STEP 78
+==================================================
+
+Thought:
+此前在“Site settings”页面的反复操作未找到目标，需返回“Privacy and security”主页面重新定位。点击页面左上角“Site settings”标题旁的左箭头按钮，回到上一级“Privacy and security”界面后，**向下滚动页面**即可找到“Send a 'Do Not Track' request with your browsing traffic”设置项（该选项位于隐私与安全设置的中下部区域）。通过返回主页面并滚动，可精准定位目标功能以完成启用。
+
+Action:
+pyautogui.click(677.76, 195.48, button='left')
+
+==================================================
+STEP 79
+==================================================
+
+Thought:
+当前处于“Location”设置子页面，需返回至上一级“Site settings”页面以继续寻找“Do Not Track”功能。页面左上角“Location”标题旁的左箭头按钮是返回入口，点击该按钮可回到“Site settings”界面，后续再从“Site settings”返回“Privacy and security”主页面，确保在正确路径上定位目标设置项。因此，下一步应点击该左箭头返回按钮。
+
+Action:
+pyautogui.click(685.44, 195.48, button='left')
+
+==================================================
+STEP 80
+==================================================
+
+Thought:
+此前在“Site settings”页面的反复操作未找到目标，需返回“Privacy and security”主页面重新定位“Do Not Track”功能。点击页面左上角“Site settings”标题旁的左箭头按钮，回到上一级“Privacy and security”界面后，**向下滚动页面**即可找到“Send a 'Do Not Track' request with your browsing traffic”设置项（该选项位于隐私与安全设置的中下部区域）。通过返回主页面并滚动，可精准定位目标功能以完成启用。
+
+Action:
+pyautogui.click(685.44, 195.48, button='left')
+
+==================================================
+STEP 81
+==================================================
+
+Thought:
+要启用“Do Not Track”功能，需先进入Chrome的“Privacy and security”详细设置页面。当前处于搜索结果的概览界面，点击左侧菜单栏的**“Privacy and security”**选项，进入该页面后可直接浏览隐私与安全设置的完整内容，进而定位到目标功能“Send a 'Do Not Track' request with your browsing traffic”（位于页面中下部区域）。通过进入主页面并滚动，可精准完成启用任务。
+
+Action:
+pyautogui.click(174.72, 276.48, button='left')
+
+==================================================
+STEP 82
+==================================================
+
+Thought:
+当前处于Chrome的“Privacy and security”主页面，目标设置项“Send a 'Do Not Track' request with your browsing traffic”未在可见区域显示。需通过**向下滚动页面**浏览隐私与安全设置的更多内容，确保覆盖下方隐藏区域以定位目标功能入口。选择页面中间区域作为滚动焦点，高效推进启用“Do Not Track”的任务。
+
+Action:
+pyautogui.scroll(-5, x=992.64, y=612.36)
+
+==================================================
+STEP 83
+==================================================
+
+Thought:
+当前处于Chrome的“Privacy and security”主页面，目标设置项“Send a 'Do Not Track' request with your browsing traffic”未在可见区域显示。需通过**向下滚动页面**浏览隐私与安全设置的更多内容，确保覆盖下方隐藏区域以定位目标功能入口。选择页面中间区域作为滚动焦点，高效推进启用“Do Not Track”的任务。
+
+Action:
+pyautogui.scroll(-5, x=992.64, y=612.36)
+
+==================================================
+STEP 84
+==================================================
+
+Thought:
+当前处于Chrome的“Privacy and security”主页面，目标设置项“Send a 'Do Not Track' request with your browsing traffic”需在页面下方区域查找。此前滚动操作未完全覆盖目标区域，需**继续向下滚动页面**，聚焦页面中间区域以浏览更多隐私与安全设置内容，确保定位到该功能入口。通过持续滚动覆盖下方隐藏项，推进启用“Do Not Track”的任务。
+
+Action:
+pyautogui.scroll(-5, x=992.64, y=612.36)
+
+==================================================
+STEP 85
+==================================================
+
+Thought:
+当前处于Chrome的“Privacy and security”主页面，目标设置项“Send a 'Do Not Track' request with your browsing traffic”需在页面中下部区域查找。此前滚动操作未完全覆盖该区域，需**持续向下滚动页面**，聚焦页面中间区域以浏览更多隐私与安全设置内容，确保定位到该功能入口。通过覆盖下方隐藏项，推进启用“Do Not Track”的任务。
+
+Action:
+pyautogui.scroll(-5, x=992.64, y=612.36)
+
+==================================================
+STEP 86
+==================================================
+
+Thought:
+此前多次手动滚动和页面跳转导致操作低效，需改用搜索功能精准定位目标。当前处于“Privacy and security”页面，应点击顶部**“Search settings”搜索框**，激活后输入“Do Not Track”，通过搜索直接过滤出目标设置项（“Send a 'Do Not Track' request with your browsing traffic”），避免盲目滚动，快速推进启用流程。
+
+Action:
+pyautogui.click(720.0, 139.32, button='left')
+
+==================================================
+STEP 87
+==================================================
+
+Thought:
+已激活搜索框，为快速定位“Do Not Track”功能，需在搜索框中输入关键词“Do Not Track”。通过搜索可直接过滤出目标设置项，避免手动滚动页面的低效操作，确保精准定位功能入口以完成启用。
+
+Action:
+pyperclip.copy('Do Not Track')
+pyautogui.hotkey('ctrl', 'v')
+
+==================================================
+STEP 88
+==================================================
+
+Thought:
+搜索结果显示1个与“Do Not Track”相关的结果，对应“Privacy”选项（功能为自定义网站用于展示广告的信息，可能包含跟踪相关设置）。需点击该“Privacy”选项进入子页面，以定位并启用“Do Not Track”功能。因此，下一步应点击“Privacy”选项。
+
+Action:
+pyautogui.click(727.68, 451.44, button='left')
+
+==================================================
+STEP 89
+==================================================
+
+Thought:
+当前处于“Ads privacy”页面，该路径与“Do Not Track”功能设置无关，需返回至上一级“Privacy and security”页面重新定位目标。点击页面左上角“Ads privacy”标题旁的左箭头返回按钮，回到“Privacy and security”主界面后，需**缓慢向下滚动页面**，重点查找“Send a 'Do Not Track' request with your browsing traffic”选项（该选项位于隐私与安全设置的中下部区域，需仔细浏览避免遗漏）。通过返回主页面并精准滚动，可高效定位目标功能以完成启用。
+
+Action:
+pyautogui.click(677.76, 195.48, button='left')
+
+==================================================
+STEP 90
+==================================================
+
+Thought:
+要启用“Do Not Track”功能，需先进入Chrome的“Privacy and security”主页面，在该页面中**向下滚动**查找目标设置项（“Send a 'Do Not Track' request with your browsing traffic”）。当前处于搜索结果页面，点击左侧菜单栏的**“Privacy and security”**选项，进入主页面后可直接浏览隐私与安全设置的完整内容，避免搜索功能的误导，精准定位目标功能以完成启用。
+
+Action:
+pyautogui.click(174.72, 276.48, button='left')
+
+==================================================
+STEP 91
+==================================================
+
+Thought:
+当前处于Chrome的“Privacy and security”主页面，目标设置项“Send a 'Do Not Track' request with your browsing traffic”未在可见区域显示。需通过**向下滚动页面**浏览隐私与安全设置的更多内容，确保覆盖下方隐藏区域以定位目标功能入口。选择页面中间区域作为滚动焦点，高效推进启用“Do Not Track”的任务。
+
+Action:
+pyautogui.scroll(-5, x=992.64, y=612.36)
+
+==================================================
+STEP 92
+==================================================
+
+Thought:
+当前处于Chrome的“Privacy and security”主页面，目标设置项“Send a 'Do Not Track' request with your browsing traffic”未在可见区域显示。需通过**向下滚动页面**浏览隐私与安全设置的更多内容，确保覆盖下方隐藏区域以定位目标功能入口。选择页面中间区域作为滚动焦点，高效推进启用“Do Not Track”的任务。
+
+Action:
+pyautogui.scroll(-5, x=992.64, y=612.36)
+
+==================================================
+STEP 93
+==================================================
+
+Thought:
+当前处于Chrome的“Privacy and security”主页面，目标设置项“Send a 'Do Not Track' request with your browsing traffic”未在可见区域显示。需通过**向下滚动页面**浏览隐私与安全设置的更多内容，确保覆盖下方隐藏区域以定位该功能入口。选择页面中间区域作为滚动焦点，持续推进启用“Do Not Track”的任务。
+
+Action:
+pyautogui.scroll(-5, x=992.64, y=612.36)
+
+==================================================
+STEP 94
+==================================================
+
+Thought:
+要启用“Do Not Track”功能，需进入“Site settings”（该选项负责管理网站可使用的信息与权限，包含“Do Not Track”这类隐私相关的网站级设置）。当前在“Privacy and security”页面中，“Site settings”选项清晰可见，点击后进入该页面，即可通过滚动定位到目标设置项。因此，下一步应点击“Site settings”选项，推进功能启用流程。
+
+Action:
+pyautogui.click(746.88, 981.72, button='left')
+
+==================================================
+STEP 95
+==================================================
+
+Thought:
+当前处于Chrome的“Site settings”页面，目标“Do Not Track”设置项未在可见区域显示。需**向下滚动页面**以浏览“Permissions”“Additional permissions”及更下方的隐藏设置项，确保定位到目标功能入口。选择页面中间区域（如“Embedded content”附近）作为滚动焦点，覆盖更多内容，推进启用“Do Not Track”的任务。
+
+Action:
+pyautogui.scroll(-5, x=992.64, y=937.44)
+
+==================================================
+STEP 96
+==================================================
+
+Thought:
+当前处于Chrome的“Site settings”页面，目标“Do Not Track”设置项仍未在可见区域显示。需继续聚焦页面中间区域（如“Additional content settings”附近）执行**向下滚动**操作，浏览更多隐藏的设置项，确保覆盖所有可能包含目标功能的区域，推进定位并启用“Do Not Track”功能的任务。
+
+Action:
+pyautogui.scroll(-5, x=992.64, y=937.44)
+
+==================================================
+STEP 97
+==================================================
+
+Thought:
+此前在“Site settings”页面的反复操作未找到目标，需返回“Privacy and security”主页面重新定位“Do Not Track”功能。点击页面左上角“Site settings”标题旁的左箭头按钮，回到上一级“Privacy and security”界面后，**向下滚动页面**即可找到“Send a 'Do Not Track' request with your browsing traffic”设置项（该选项位于隐私与安全设置的中下部区域）。通过返回主页面并滚动，可精准定位目标功能以完成启用。
+
+Action:
+pyautogui.click(677.76, 195.48, button='left')
+
+==================================================
+STEP 98
+==================================================
+
+Thought:
+当前处于“Location”设置子页面，需返回至上一级“Site settings”页面以继续寻找“Do Not Track”功能。页面左上角“Location”标题旁的左箭头按钮是返回入口，点击该按钮可回到“Site settings”界面，后续再从“Site settings”返回“Privacy and security”主页面，确保在正确路径上定位目标设置项。因此，下一步应点击该左箭头返回按钮。
+
+Action:
+pyautogui.click(685.44, 195.48, button='left')
+
+==================================================
+STEP 99
+==================================================
+
+Thought:
+此前在“Site settings”页面的反复操作未找到目标，需返回“Privacy and security”主页面重新定位“Do Not Track”功能。点击页面左上角“Site settings”标题旁的左箭头按钮，回到上一级“Privacy and security”界面后，**向下滚动页面**即可找到“Send a 'Do Not Track' request with your browsing traffic”设置项（该选项位于隐私与安全设置的中下部区域）。通过返回主页面并滚动，可精准定位目标功能以完成启用。
+
+Action:
+pyautogui.click(685.44, 195.48, button='left')
+
+==================================================
+STEP 100
+==================================================
+
+Thought:
+此前多次手动滚动和页面跳转导致操作低效，需改用搜索功能精准定位目标。当前处于“Privacy and security”页面，点击顶部**“Search settings”搜索框**，激活后输入“Do Not Track”，可直接过滤出目标设置项（“Send a 'Do Not Track' request with your browsing traffic”），避免盲目滚动，快速推进启用流程。
+
+Action:
+pyautogui.click(720.0, 139.32, button='left')

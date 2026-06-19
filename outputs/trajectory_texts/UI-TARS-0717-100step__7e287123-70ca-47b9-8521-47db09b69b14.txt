@@ -1,0 +1,105 @@
+Trajectory ID: 7e287123-70ca-47b9-8521-47db09b69b14
+Source Model: UI-TARS-0717-100step
+Domain: multi_apps
+
+Task:
+I am an assistant professor of CS at HKU, I want to apply for the General Research Fund next year, I need to get some insights, so I need you to help me to organise the data. First please help me to organise the pass rate of the GRF applications of the CS departments of each school for 2019~2023 in percentage form with 2 decimal digits in a table, which I can use subsequently. Set the headers as "Year", "#Applied", "#Supported", and "Success Rate". The materials are saved under Documents/Fundings. And please save the result table as "GRF-p5y.xlsx" on my desktop.
+
+Success Binary: False
+Success Raw: 0.0
+
+Number of Steps: 8
+
+============================================================
+TRAJECTORY
+============================================================
+
+==================================================
+STEP 1
+==================================================
+
+Thought:
+首先，用户需要处理GRF申请数据，创建表格。首先得打开合适的软件，比如LibreOffice Calc（因为图标在左侧，绿色表格图标），用来创建Excel格式的表格。然后需要访问Documents/Fundings里的材料，最后保存为指定文件名到桌面。
+
+第一步应该是打开LibreOffice Calc。左侧栏里有绿色的电子表格图标，点击它启动程序。
+
+目标：启动LibreOffice Calc来创建表格。点击左侧栏中的绿色表格图标（LibreOffice Calc）。
+
+Action:
+pyautogui.click(30.72, 405.0, button='left')
+
+==================================================
+STEP 2
+==================================================
+
+Action:
+WAIT
+
+==================================================
+STEP 3
+==================================================
+
+Thought:
+现在LibreOffice Calc已经打开，首先需要设置表头。表头是“Year”、“#Applied”、“#Supported”、“Success Rate”。首先点击单元格A1，输入“Year”，然后B1输入“#Applied”，C1输入“#Supported”，D1输入“Success Rate”。不过在此之前，可能需要先获取Documents/Fundings里的材料数据。所以应该先打开文件管理器，找到Documents/Fundings里的相关数据文件。左侧栏有文件管理器图标（灰色文件夹，大概在第9个位置？不对，左侧栏里的图标，从下往上看，有一个灰色的文件夹图标，点击它打开文件管理器，然后导航到Documents/Fundings。
+
+目标：打开文件管理器，找到数据文件。点击左侧栏中的文件管理器图标（灰色文件夹，位置在左侧栏，大概是第8个图标？看截图里左侧栏，有一个灰色的文件夹图标，点击它）。
+
+Action:
+pyautogui.click(30.72, 604.8, button='left')
+
+==================================================
+STEP 4
+==================================================
+
+Thought:
+现在文件管理器已经打开，需要导航到Documents/Fundings文件夹。首先看到左侧导航栏有Documents选项，点击它进入Documents文件夹，然后找到Fundings子文件夹。
+
+目标：进入Documents文件夹。点击左侧导航栏中的Documents选项。
+
+Action:
+pyautogui.click(144.0, 244.08, button='left')
+
+==================================================
+STEP 5
+==================================================
+
+Thought:
+现在在Documents文件夹里，看到了Fundings文件夹。需要进入这个文件夹来获取GRF申请的数据。所以应该双击Fundings文件夹图标，打开它查看里面的文件。
+
+目标：进入Fundings文件夹。双击Documents文件夹中的Fundings文件夹图标。
+
+Action:
+pyautogui.doubleClick(347.52, 114.48, button='left')
+
+==================================================
+STEP 6
+==================================================
+
+Thought:
+现在在Fundings文件夹里，看到两个文件夹：ecs和grf。用户需要的是CS部门的GRF申请数据，CS属于ecs？或者grf文件夹里是GRF相关数据？应该进入grf文件夹，因为名字是grf，对应General Research Fund。所以双击grf文件夹，查看里面的文件。
+
+目标：进入grf文件夹。双击Fundings文件夹中的grf文件夹图标。
+
+Action:
+pyautogui.doubleClick(497.28, 114.48, button='left')
+
+==================================================
+STEP 7
+==================================================
+
+Thought:
+现在在grf文件夹里，看到从grf15到grf23的pdf文件，还有一个客户信息表。用户需要的是2019-2023年的数据，所以对应的是grf19.pdf到grf23.pdf。需要先查看这些pdf里的CS部门GRF申请数据。首先打开grf19.pdf，查看里面的CS部门数据：申请数、支持数，计算成功率。
+
+不过现在需要同时处理表格，所以应该回到LibreOffice Calc，同时打开这些pdf来提取数据。首先，点击左侧的LibreOffice Calc图标（绿色表格图标），切换回表格窗口，开始设置表头，然后逐个打开pdf提取数据。
+
+目标：切换回LibreOffice Calc窗口。点击左侧栏中的LibreOffice Calc图标（绿色表格图标）。
+
+Action:
+pyautogui.click(30.72, 405.0, button='left')
+
+==================================================
+STEP 8
+==================================================
+
+Action:
+FAIL

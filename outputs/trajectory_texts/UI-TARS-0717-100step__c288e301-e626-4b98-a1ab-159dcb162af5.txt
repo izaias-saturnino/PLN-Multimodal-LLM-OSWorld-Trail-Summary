@@ -1,0 +1,94 @@
+Trajectory ID: c288e301-e626-4b98-a1ab-159dcb162af5
+Source Model: UI-TARS-0717-100step
+Domain: os
+
+Task:
+Please set the default Python version to Python4 on my Ubuntu system.
+
+Success Binary: True
+Success Raw: 1.0
+
+Number of Steps: 7
+
+============================================================
+TRAJECTORY
+============================================================
+
+==================================================
+STEP 1
+==================================================
+
+Thought:
+要设置Ubuntu系统的默认Python版本为Python4，首先需要打开终端。在Ubuntu中，终端可以通过Activities菜单找到，或者用快捷键Ctrl+Alt+T，不过先点击左上角的Activities按钮来打开活动概览，以便搜索终端。
+
+首先，点击屏幕左上角的“Activities”按钮，进入活动概览界面，这样可以搜索并打开终端，之后才能进行Python版本的配置操作。
+
+Action:
+pyautogui.click(42.24, 12.96, button='left')
+
+==================================================
+STEP 2
+==================================================
+
+Thought:
+现在已经进入了Activities概览界面，顶部有搜索框。要设置默认Python版本，首先需要打开终端。所以在搜索框中输入“terminal”来找到终端应用程序。
+
+首先点击搜索框激活它，然后输入“terminal”，这样就能找到终端并打开，之后才能进行Python版本的配置操作。
+
+Action:
+pyperclip.copy('terminal')
+pyautogui.hotkey('ctrl', 'v')
+
+==================================================
+STEP 3
+==================================================
+
+Thought:
+现在搜索结果中显示了终端图标，需要点击它来打开终端，这样才能执行设置默认Python版本的命令。首先要确认终端图标的位置，在搜索结果的上方，是一个带有“>_”符号的灰色图标，下面标注了Terminal。点击这个图标打开终端，之后就可以进行后续的update-alternatives等配置操作。
+
+Action:
+pyautogui.click(990.72, 184.68, button='left')
+
+==================================================
+STEP 4
+==================================================
+
+Thought:
+现在终端已经打开，首先需要检查系统中已安装的Python版本，以及是否有Python4。不过通常Ubuntu默认没有Python4，可能需要先安装？但任务是设置默认版本为Python4，所以首先需要确认是否存在Python4的可执行文件。不过可能用户是想设置某个版本为默认，或者可能是输入错误？不过先按步骤来，首先使用update-alternatives来配置Python的默认版本。
+
+首先，需要先查看系统中已有的Python版本，输入命令“ls /usr/bin/python*”来列出相关的Python可执行文件，看看是否有python4。
+
+Action:
+pyperclip.copy('ls /usr/bin/python*')
+pyautogui.hotkey('ctrl', 'v')
+
+==================================================
+STEP 5
+==================================================
+
+Thought:
+刚才输入命令时可能没成功，终端里没显示输入的内容。需要重新输入“ls /usr/bin/python*”并回车，查看系统里的Python可执行文件，确认是否有python4。首先确保终端输入正确，重新输入命令，然后按回车执行，这样才能知道系统里有哪些Python版本，后续才能配置默认版本。
+
+Action:
+pyperclip.copy('ls /usr/bin/python*
+hotkey(key=\'enter\')')
+pyautogui.hotkey('ctrl', 'v')
+
+==================================================
+STEP 6
+==================================================
+
+Thought:
+刚才输入命令后终端没反应，可能是输入没聚焦到终端？现在终端窗口是激活的，重新输入“ls /usr/bin/python*”并回车，确保命令正确输入。先检查光标是否在终端里，然后输入命令，按回车执行，查看系统中的Python版本，这样才能知道是否有python4，后续才能配置默认版本。
+
+Action:
+pyperclip.copy('ls /usr/bin/python*
+hotkey(key=\'enter\')')
+pyautogui.hotkey('ctrl', 'v')
+
+==================================================
+STEP 7
+==================================================
+
+Action:
+FAIL

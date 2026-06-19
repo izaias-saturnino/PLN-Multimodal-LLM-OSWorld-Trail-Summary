@@ -1,0 +1,72 @@
+Trajectory ID: 3299584d-8f11-4457-bf4c-ce98f7600250
+Source Model: doubao-1-5-thinking-vision-pro-250428-100step
+Domain: chrome
+
+Task:
+On my surface pro whenever I launch Chrome it always opens "funbrain.com." I don't want this. I cleared my cache but it still happens. What should I do?
+
+Success Binary: True
+Success Raw: 1.0
+
+Number of Steps: 6
+
+============================================================
+TRAJECTORY
+============================================================
+
+==================================================
+STEP 1
+==================================================
+
+Thought:
+用户需要解决Chrome启动自动打开funbrain.com的问题，首先应进入Chrome的设置菜单查看启动页面配置。计划是点击Chrome窗口右上角的三点菜单按钮，以展开设置选项。总结下一步动作：点击Chrome右上角的三点菜单按钮，打开设置选项入口。
+
+Action:
+pyautogui.click(1895.04, 88.56, button='left')
+
+==================================================
+STEP 2
+==================================================
+
+Thought:
+要解决Chrome启动自动打开指定网站的问题，需进入设置页面检查启动配置。当前已打开Chrome菜单，“Settings”选项是进入设置界面的入口。点击“Settings”后可进一步查看启动页面、扩展程序或恶意软件等可能导致自动跳转的设置。因此，下一步是点击菜单中的“Settings”选项。
+
+Action:
+pyautogui.click(1584.0, 810.0, button='left')
+
+==================================================
+STEP 3
+==================================================
+
+Thought:
+要解决Chrome启动时自动打开指定网站的问题，需检查启动页面设置。左侧菜单栏中的“On start - up”选项负责管理Chrome启动时的行为，点击该选项可进入对应设置页面，查看是否有强制打开funbrain.com的配置。因此，下一步应点击左侧菜单中的“On start - up”选项。
+
+Action:
+pyautogui.click(167.04, 475.2, button='left')
+
+==================================================
+STEP 4
+==================================================
+
+Thought:
+当前处于Chrome的启动设置页面，“Open a specific page or set of pages”选项下显示了自动启动的funbrain.com网址。要解决启动时自动打开该网站的问题，需先点击该网址右侧的三点菜单按钮，以展开操作选项（如删除该页面）。因此，下一步应点击funbrain.com网址右侧的垂直三点按钮，打开操作菜单。
+
+Action:
+pyautogui.click(1297.92, 405.0, button='left')
+
+==================================================
+STEP 5
+==================================================
+
+Thought:
+要解决Chrome启动时自动打开funbrain.com的问题，需将该网址从启动页面列表中移除。当前已打开操作菜单，其中“Remove”选项可实现此功能。点击“Remove”后，funbrain.com将不再作为启动时自动打开的页面，从而解决问题。因此，下一步应点击菜单中的“Remove”选项。
+
+Action:
+pyautogui.click(1234.56, 451.44, button='left')
+
+==================================================
+STEP 6
+==================================================
+
+Action:
+DONE

@@ -1,0 +1,42 @@
+Trajectory ID: af23762e-2bfd-4a1d-aada-20fa8de9ce07
+Source Model: UI-TARS-0717-100step
+Domain: libreoffice_impress
+
+Task:
+I am making PPT on LibreOffice Impress for presentation tomorrow. I need to summarize contents on one slide use Impress "Summary Slide" feature. Could you make that for me?
+
+Success Binary: True
+Success Raw: 1.0
+
+Number of Steps: 3
+
+============================================================
+TRAJECTORY
+============================================================
+
+==================================================
+STEP 1
+==================================================
+
+Thought:
+要在LibreOffice Impress中创建摘要幻灯片，首先需要找到相关功能。通常“Slide”菜单里可能有“Summary Slide”选项。首先应该点击顶部菜单栏的“Slide”选项，查看下拉菜单中的相关功能。
+
+Action:
+pyautogui.click(343.68, 72.36, button='left')
+
+==================================================
+STEP 2
+==================================================
+
+Thought:
+现在“Slide”菜单已经展开，里面能看到“Summary Slide”选项。这正是需要的功能，点击它就能创建摘要幻灯片，汇总当前演示文稿的内容。所以下一步应该点击这个选项。
+
+Action:
+pyautogui.click(397.44, 603.72, button='left')
+
+==================================================
+STEP 3
+==================================================
+
+Action:
+DONE

@@ -1,0 +1,62 @@
+Trajectory ID: 982d12a5-beab-424f-8d38-d2a48429e511
+Source Model: UI-TARS-0717-100step
+Domain: vs_code
+
+Task:
+Please help me change the color theme of VS Code to Visual Studio Dark.
+
+Success Binary: True
+Success Raw: 1.0
+
+Number of Steps: 5
+
+============================================================
+TRAJECTORY
+============================================================
+
+==================================================
+STEP 1
+==================================================
+
+Thought:
+要将VS Code的颜色主题改为Visual Studio Dark，首先需要打开设置相关的选项。VS Code中更改主题可以通过快捷键`Ctrl+K Ctrl+T`，或者通过菜单栏的File -> Preferences -> Color Theme，也可以点击左下角的设置齿轮图标。观察当前界面，左下角有设置齿轮图标，点击它可以找到主题设置选项。所以下一步应该点击左下角的设置齿轮图标，打开设置菜单，然后找到颜色主题的选项进行更改。
+
+Action:
+pyautogui.click(90.24, 1031.4, button='left')
+
+==================================================
+STEP 2
+==================================================
+
+Thought:
+现在设置菜单已经打开，看到里面有Themes选项，这是更改主题的入口。要将颜色主题改为Visual Studio Dark，首先需要进入Themes子菜单，然后选择Color Theme选项。所以下一步应该点击Themes选项，展开其下的子菜单，找到Color Theme。
+
+Action:
+pyautogui.click(174.72, 967.68, button='left')
+
+==================================================
+STEP 3
+==================================================
+
+Thought:
+现在Themes的子菜单已经展开，看到有Color Theme选项，这正是需要的。点击Color Theme后会弹出主题选择列表，然后就可以找到Visual Studio Dark主题并选择。所以下一步应该点击Color Theme选项。
+
+Action:
+pyautogui.click(597.12, 967.68, button='left')
+
+==================================================
+STEP 4
+==================================================
+
+Thought:
+现在颜色主题的选择列表已经打开，需要找到并选择“Dark (Visual Studio)”这个主题。在列表中可以看到这个选项，点击它就能将VS Code的颜色主题切换为Visual Studio Dark。所以下一步应该点击“Dark (Visual Studio)”选项。
+
+Action:
+pyautogui.click(758.4, 289.44, button='left')
+
+==================================================
+STEP 5
+==================================================
+
+Action:
+DONE

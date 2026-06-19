@@ -1,0 +1,72 @@
+Trajectory ID: 9656a811-9b5b-4ddf-99c7-5117bcef0626
+Source Model: doubao-1-5-thinking-vision-pro-250428-100step
+Domain: chrome
+
+Task:
+I want Chrome to warn me whenever I visit a potentially harmful or unsafe website. Can you enable this safety feature?
+
+Success Binary: True
+Success Raw: 1.0
+
+Number of Steps: 6
+
+============================================================
+TRAJECTORY
+============================================================
+
+==================================================
+STEP 1
+==================================================
+
+Thought:
+要启用Chrome的安全浏览功能，首先需进入设置页面。Chrome的设置入口在右上角的三点菜单中，所以第一步要点击该菜单按钮。点击后会展开菜单选项，后续才能找到安全设置相关选项。因此，下一步是点击右上角的三点菜单按钮。
+
+Action:
+pyautogui.click(1895.04, 88.56, button='left')
+
+==================================================
+STEP 2
+==================================================
+
+Thought:
+要启用安全浏览功能，需先进入Chrome的设置页面。当前菜单已展开，“Settings”选项是进入设置的入口。点击“Settings”后，就能在设置页面中找到安全浏览的配置项。因此，下一步是点击菜单中的“Settings”选项。
+
+Action:
+pyautogui.click(1584.0, 807.84, button='left')
+
+==================================================
+STEP 3
+==================================================
+
+Thought:
+要启用安全浏览功能，需进入“Privacy and security”（隐私和安全）设置页面，因为该功能属于安全相关配置。当前左侧菜单栏中可见“Privacy and security”选项，点击它可进入对应设置界面，后续才能找到安全浏览的具体设置项。因此，下一步是点击左侧菜单中的“Privacy and security”选项。
+
+Action:
+pyautogui.click(174.72, 276.48, button='left')
+
+==================================================
+STEP 4
+==================================================
+
+Thought:
+要启用安全浏览功能，需进入“Security”设置项，因为其描述明确包含“Safe Browsing (protection from dangerous sites)”。点击该选项后可进入具体的安全浏览配置页面，从而完成功能启用。因此，下一步是点击“Security”选项。
+
+Action:
+pyautogui.click(744.96, 915.84, button='left')
+
+==================================================
+STEP 5
+==================================================
+
+Thought:
+要让Chrome在访问潜在危险网站时发出警告，需选择更高级的安全浏览保护。当前页面中“Enhanced protection”选项提供了更主动的防护（如针对危险网站、下载、扩展的预警及密码泄露提醒），比“Standard protection”更全面。因此，下一步需点击“Enhanced protection”对应的单选按钮来启用该功能。
+
+Action:
+pyautogui.click(679.68, 576.72, button='left')
+
+==================================================
+STEP 6
+==================================================
+
+Action:
+DONE

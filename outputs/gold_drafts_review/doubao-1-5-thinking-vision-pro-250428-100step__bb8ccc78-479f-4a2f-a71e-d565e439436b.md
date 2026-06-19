@@ -1,0 +1,25 @@
+# Gold Draft Review
+
+## Metadata
+
+- trajectory_id: `bb8ccc78-479f-4a2f-a71e-d565e439436b`
+- source_model: `doubao-1-5-thinking-vision-pro-250428-100step`
+- domain: `libreoffice_writer`
+- success_binary: `False`
+- success_raw: `0.0`
+- num_steps: `78`
+- gold_draft_status: `ERROR`
+
+## Task Instruction
+
+Share this document with my team and let us edit it together in real-time.
+
+## Draft Summary
+
+
+
+## Human-Revised Gold Summary
+
+<!-- Replace this section with your final human-revised gold summary. -->
+
+

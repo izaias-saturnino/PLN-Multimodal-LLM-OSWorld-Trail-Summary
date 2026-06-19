@@ -1,0 +1,25 @@
+# Gold Draft Review
+
+## Metadata
+
+- trajectory_id: `a669ef01-ded5-4099-9ea9-25e99b569840`
+- source_model: `doubao-1-5-thinking-vision-pro-250428-100step`
+- domain: `libreoffice_impress`
+- success_binary: `False`
+- success_raw: `0.0`
+- num_steps: `100`
+- gold_draft_status: `ERROR`
+
+## Task Instruction
+
+I want to do something like the following on Page 3 of the current LibreOffice Impress file: make the "continuation of the sub topics" indented the same as "main idea" and "sub topics" without a bullet in front of it. Could you help me with it?
+
+## Draft Summary
+
+
+
+## Human-Revised Gold Summary
+
+<!-- Replace this section with your final human-revised gold summary. -->
+
+

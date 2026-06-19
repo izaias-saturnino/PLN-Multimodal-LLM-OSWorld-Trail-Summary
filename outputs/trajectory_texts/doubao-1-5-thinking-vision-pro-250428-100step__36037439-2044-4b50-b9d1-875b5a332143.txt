@@ -1,0 +1,80 @@
+Trajectory ID: 36037439-2044-4b50-b9d1-875b5a332143
+Source Model: doubao-1-5-thinking-vision-pro-250428-100step
+Domain: multi_apps
+
+Task:
+Could you please pull up the Google Scholar page of the corresponding author for me in Chrome?
+
+Success Binary: False
+Success Raw: 0.0
+
+Number of Steps: 7
+
+============================================================
+TRAJECTORY
+============================================================
+
+==================================================
+STEP 1
+==================================================
+
+Thought:
+当前界面是全屏显示的PDF文档，需先退出全屏模式以进行后续操作。按Esc键可退出全屏，这是完成任务的第一步，之后才能关闭该窗口并打开Chrome浏览器访问Google Scholar。因此，下一步是按Esc键退出全屏。
+
+Action:
+pyautogui.hotkey('esc')
+
+==================================================
+STEP 2
+==================================================
+
+Thought:
+要完成访问Google Scholar的任务，首先需要打开Chrome浏览器。观察到桌面左侧任务栏最上方的图标是Chrome浏览器图标，点击该图标可以启动Chrome。因此，下一步是点击Chrome浏览器图标来启动应用程序。
+
+Action:
+pyautogui.click(32.64, 62.64, button='left')
+
+==================================================
+STEP 3
+==================================================
+
+Action:
+WAIT
+
+==================================================
+STEP 4
+==================================================
+
+Thought:
+要访问Google Scholar页面，需先在Chrome的地址栏输入对应网址。当前Chrome显示新标签页，顶部地址栏为“Search Google or type a URL”，需先点击地址栏使其激活，以便输入网址。因此，下一步是点击地址栏。
+
+Action:
+pyautogui.click(311.04, 88.56, button='left')
+
+==================================================
+STEP 5
+==================================================
+
+Thought:
+地址栏已激活，需输入Google Scholar的网址以访问该页面。输入“scholar.google.com”后按回车键可直接导航至Google Scholar主页，这是访问目标页面的必要步骤。因此，下一步是在地址栏输入网址并回车。
+
+Action:
+pyperclip.copy('scholar.google.com')
+pyautogui.hotkey('ctrl', 'v')
+
+==================================================
+STEP 6
+==================================================
+
+Thought:
+地址栏已输入“scholar.google.com”，按下回车键可确认并导航至Google Scholar页面，这是访问目标网站的关键步骤。因此，下一步是按下回车键提交网址并加载页面。
+
+Action:
+pyautogui.hotkey('enter')
+
+==================================================
+STEP 7
+==================================================
+
+Action:
+DONE
