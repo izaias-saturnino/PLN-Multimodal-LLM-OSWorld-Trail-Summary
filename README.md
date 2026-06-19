@@ -363,6 +363,3 @@ If you use this repository, cite the course paper or repository as appropriate:
   note = {Course project, Universidade Federal do Rio Grande do Sul}
 }
 ```
-
-```
-```
