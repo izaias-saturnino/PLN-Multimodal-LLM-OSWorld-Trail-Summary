@@ -1,4 +1,3 @@
-````markdown
 # Factual Summarization of Multimodal Agent Trajectories in OSWorld
 
 This repository contains the code and derived artifacts for a project on factual summarization of multimodal agent trajectories derived from OSWorld. The project constructs a paired dataset of OSWorld task executions, creates human-revised gold summaries, and evaluates two language models as trajectory summarizers.
