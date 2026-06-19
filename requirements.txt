@@ -1,0 +1,17 @@
+# Python 3.10+ recommended
+
+# LLM API calls through LiteLLM
+litellm>=1.60.0
+
+# Progress bars and YAML config files
+tqdm>=4.66.0
+PyYAML>=6.0.0
+
+# Metrics and table export
+pandas>=2.0.0
+rouge-score>=0.1.2
+bert-score>=0.3.13
+
+# BERTScore backend
+torch>=2.0.0
+transformers>=4.30.0
