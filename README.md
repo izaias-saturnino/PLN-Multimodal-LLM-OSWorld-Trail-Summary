@@ -17,15 +17,6 @@ Raw OSWorld and OSWorld-Verified trajectories are **not included** in this repos
 
 The raw trajectory folders, screenshots, result files, runtime logs, and task files are not authored by this repository and should be downloaded separately from the original OSWorld or OSWorld-Verified sources. This repository is intended to contain the project code, derived small outputs, paper tables, and reproduction instructions.
 
-Do not commit raw trajectory folders such as:
-
-```text
-doubao-1-5-thinking-vision-pro-250428-100step/
-UI-TARS-0717-100step/
-````
-
-or other raw OSWorld trajectory directories.
-
 ## Repository structure
 
 A suggested repository layout is:
